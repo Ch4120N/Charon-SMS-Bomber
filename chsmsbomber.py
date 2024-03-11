@@ -413,8 +413,9 @@ class CharonSMSBomber:
             self.Menu()
         return True
     def Menu(self):
+	    self.Horizontal(self.Logo())
         while True:
-            self.Horizontal(self.Logo())
+            
             try:
                 print(f"\n{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}1{Fore.LIGHTGREEN_EX}] Charon SMS Bomber")
                 print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}2{Fore.LIGHTGREEN_EX}] {Fore.LIGHTBLUE_EX}Developer")
