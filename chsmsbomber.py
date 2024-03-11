@@ -711,7 +711,7 @@ every month This Script Update
                 # }, # This one will send your IP to your target.
             
             ]
-            self.run(bombing_times, process_num, proxy_dict)
+            self.run(int(bombing_times), int(process_num), proxy_dict)
             input('press to back menu ....')
         except KeyboardInterrupt:
             sys.exit('Good By')
