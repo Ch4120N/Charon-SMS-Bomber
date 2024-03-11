@@ -441,7 +441,7 @@ class CharonSMSBomber:
 #           -p, --process - number of processes   # Default: 5                           #
 #           -x, --proxy - Set the proxy           # (http/https/socks)                   #
 #                                                                                        #
-# Example: chsmsbomb 09XXXXXXXXX --times 10 --process 3 --proxy socks5://127.0.0.1:9050  #
+# Example: chsmsbomber 09XXXXXXXXX --times 10 --process 3 -x socks5://127.0.0.1:9050     #
 #                                                                                        #
 ##########################################################################################
         '''
