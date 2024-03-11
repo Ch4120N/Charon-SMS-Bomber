@@ -413,9 +413,9 @@ class CharonSMSBomber:
             self.Menu()
         return True
     def Menu(self):
-    	self.Horizontal(self.Logo())
+        
         while True:
-            
+            print(self.Horizontal(self.Logo())) 
             try:
                 print(f"\n{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}1{Fore.LIGHTGREEN_EX}] Charon SMS Bomber")
                 print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}2{Fore.LIGHTGREEN_EX}] {Fore.LIGHTBLUE_EX}Developer")
@@ -439,7 +439,7 @@ every month This Script Update
             except KeyboardInterrupt:
                 sys.exit('Good By')
     def Menu2(self):
-        self.Horizontal(self.Logo())
+        print(self.Horizontal(self.Logo()))
         try:
             print('\n[+] Charon SMS Bomber : Please Fill All Prompts')
             phone_number = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Phone Number (without: +98 start with: 0){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
