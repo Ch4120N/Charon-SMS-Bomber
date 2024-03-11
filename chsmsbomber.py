@@ -420,7 +420,7 @@ class CharonSMSBomber:
                 print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}2{Fore.LIGHTGREEN_EX}] {Fore.LIGHTBLUE_EX}Developer")
                 print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}3{Fore.LIGHTGREEN_EX}] {Fore.LIGHTRED_EX}Exit")
                 
-                choose = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Home{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}~{Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}#')
+                choose = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Home{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}~{Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}# ')
                 if str(choose) == '1':
                     self.Menu2()
                 if str(choose) == '2':
@@ -441,10 +441,10 @@ every month This Script Update
         self.Horizontal(self.Logo())
         try:
             print('\n[+] Charon SMS Bomber : Please Fill All Prompts')
-            phone_number = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Phone Number (without: +98){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}#')
-            bombing_times = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Bombing Time (Default: 7){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}#')
-            process_num = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Threads (Default: 5){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}#')
-            proxy = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}Set The Proxy (Default: Nothing){Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}#')
+            phone_number = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Phone Number (without: +98 start with: 0){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
+            bombing_times = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Bombing Time (Default: 7){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
+            process_num = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Threads (Default: 5){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
+            proxy = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}Set The Proxy (Default: Nothing){Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}# ')
             
             if proxy == "" or proxy == " " or proxy == None:
                 proxy_dict = None
