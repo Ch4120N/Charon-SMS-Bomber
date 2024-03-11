@@ -137,7 +137,7 @@ python chxsscan.py -d 3 --url http://testphp.vulnweb.com  -pl 6 -m 2
 * Many settings that can be customized
 * Advanced error handling
 * Very High Speed -->
-* There Is No Limit (If The Server Gets Stuck, Use The VPN OR ==_Recommended_ : Use Tor Service== )
+* There Is No Limit (If The Server Gets Stuck, Use The VPN OR `Recommended : Use Tor Service` )
 * Ability To Use Proxy
 * The Possibility Of Using Multi Processing
 * Good Design
