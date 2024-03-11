@@ -96,8 +96,8 @@ python chsmsbomber.py
 ```
 
 ## Supported Operating Systems
-[+] Debian
-[+] Kali Linux
+[X] Debian
+[X] Kali Linux
 * Ubuntu
 * Arch Linux
 * Android (With Termux)
