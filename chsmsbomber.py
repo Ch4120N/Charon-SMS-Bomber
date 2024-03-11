@@ -413,7 +413,7 @@ class CharonSMSBomber:
             self.Menu()
         return True
     def Menu(self):
-	    self.Horizontal(self.Logo())
+    	self.Horizontal(self.Logo())
         while True:
             
             try:
