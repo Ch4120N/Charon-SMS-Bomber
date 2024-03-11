@@ -73,13 +73,36 @@ $${\color{red}Red}$$
 
 ## ⚙️ Installation
 
+### For Linux
+
 ```bash
+sudo apt install python3 python git -y
 git clone https://github.com/Ch4120N/Charon-SMS-Bomber
 chmod 755 -R Charon-SMS-Bomber
 cd Charon-SMS-Bomber
 python -m pip install -r requirements.txt
 python chsmsbomber.py
 ```
+
+### For Termux
+```bash
+termux-setup-storage
+pkg install python git -y
+git clone https://github.com/Ch4120N/Charon-SMS-Bomber
+chmod 755 -R Charon-SMS-Bomber
+cd Charon-SMS-Bomber
+python -m pip install -r requirements.txt
+python chsmsbomber.py
+```
+
+## Supported Operating Systems
+[+] Debian
+[+] Kali Linux
+* Ubuntu
+* Arch Linux
+* Android (With Termux)
+* Windows 7/8/10/11
+
 ## 📑 Usage/Example
 
 ```
