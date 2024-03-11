@@ -1,0 +1,7 @@
+requests
+pystyle
+fake-useragent
+stem
+alive_progress
+fake-headers
+colorama
