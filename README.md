@@ -96,12 +96,12 @@ python chsmsbomber.py
 ```
 
 ## Supported Operating Systems
-[X] Debian
-[X] Kali Linux
-* Ubuntu
-* Arch Linux
-* Android (With Termux)
-* Windows 7/8/10/11
+- [X] Debian
+- [X] Kali Linux
+- [X] Ubuntu
+- [X] Arch Linux
+- [X] Android (With Termux)
+- [X] Windows 7/8/10/11
 
 ## 📑 Usage/Example
 
