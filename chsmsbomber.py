@@ -25,6 +25,10 @@
 import requests
 import random
 import time
+import os
+import subprocess
+import shutil
+import platform
 # import json
 # import re
 import sys
@@ -101,6 +105,7 @@ class CharonSMSBomber:
         
     }
     def __init__(self):
+        self.is_termux()
         # signal.signal(signal.SIGINT, self.sigint_handler)
         parser = argparse.ArgumentParser(add_help=False, usage=self.Usage(), exit_on_error=False,formatter_class=CusHelpFormatter)
         parser.add_argument(
@@ -112,7 +117,7 @@ class CharonSMSBomber:
             "--times",
             help="Specify the number of bombing times, default is 7",
             type=int,
-            default=1,
+            default=7,
             )
         parser.add_argument(
             "-p",
@@ -396,9 +401,100 @@ class CharonSMSBomber:
             # }, # This one will send your IP to your target.
         
         ]
+        if platform.system().lower() == "windows":
+            pass
+        else:
+            self.dependencies()
+
         self.run(bombing_times, process_num, proxy_dict)
-        
-        
+    
+    def is_termux(self):
+        if os.path.isdir("/data/data/com.termux/files/home"):
+            self.Menu()
+        return True
+    def Menu(self):
+        while True:
+            self.Horizontal(self.Logo())
+            try:
+                print(f"\n{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}1{Fore.LIGHTGREEN_EX}] Charon SMS Bomber")
+                print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}2{Fore.LIGHTGREEN_EX}] {Fore.LIGHTBLUE_EX}Developer")
+                print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}3{Fore.LIGHTGREEN_EX}] {Fore.LIGHTRED_EX}Exit")
+                
+                choose = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Home{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}~{Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}#')
+                if str(choose) == '1':
+                    self.Menu2()
+                if str(choose) == '2':
+                    print('''
+**********************
+Powered By [ Ch4120N ]
+Assistance With Charon Security Agency
+Version 1.0
+every month This Script Update                      
+                        ''')
+                    input('press to back menu ....')
+            except KeyboardInterrupt:
+                sys.exit('Good By')
+    def Menu2(self):
+        self.Horizontal(self.Logo())
+        try:
+            print('\n[+] Charon SMS Bomber : Please Fill All Prompts')
+            phone_number = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Phone Number (without: +98){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}#')
+            bombing_times = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Bombing Time (Default: 7){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}#')
+            process_num = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Threads (Default: 5){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}#')
+            proxy = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}Set The Proxy (Default: Nothing){Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}#')
+            
+            if proxy == "" or proxy == " " or proxy == None:
+                proxy_dict = None
+            else:
+                print(f"\n{Fore.LIGHTBLUE_EX}[{Fore.LIGHTGREEN_EX}+{Fore.LIGHTBLUE_EX}] {Fore.LIGHTRED_EX} Using Proxy: {proxy}")
+                proxy_dict = {"http": proxy, "https": proxy}
+
+            if len(phone_number) > 11:
+                print("Please Enter Correct Phone Number")
+            
+            self.run(bombing_times, process_num, proxy_dict)
+            input('press to back menu ....')
+        except KeyboardInterrupt:
+            sys.exit('Good By')
+
+    def dependencies(self):
+        print("\n{}[{}+{}]{} Installing required packages...".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN))
+
+        # if os.path.isdir("/data/data/com.termux/files/home"):
+            # if not shutil.which("proot"):
+            #     print("\n{}[{}+{}]{} Installing package : {}proot{}".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN, Fore.LIGHTYELLOW_EX, Fore.CYAN, Fore.WHITE))
+            #     subprocess.run(["pkg", "install", "tor", "resolv-conf", "python","git", "-y"])
+
+            # if not shutil.which("tput"):
+            #     print("\n{}[{}+{}]{} Installing package : {}ncurses-utils{}".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN, Fore.LIGHTYELLOW_EX, Fore.CYAN, Fore.WHITE))
+            #     subprocess.run(["pkg", "install", "ncurses-utils", "-y"])
+
+        if all(shutil.which(cmd) for cmd in ["php", "curl", "unzip"]):
+            print("\n{}[{}+{}]{} Packages already installed.".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.GREEN))
+        else:
+            pkgs = ["tor", "python", "git"]
+            for pkg in pkgs:
+                if not shutil.which(pkg):
+                    print("\n{}[{}+{}]{} Installing package : {}{}{}".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN, Fore.LIGHTYELLOW_EX, pkg, Fore.CYAN, Fore.WHITE))
+                    if shutil.which("pkg"):
+                        subprocess.run(["pkg", "install", pkg, "-y"])
+                    elif shutil.which("apt"):
+                        subprocess.run(["sudo", "apt", "install", pkg, "-y"])
+                    elif shutil.which("apt-get"):
+                        subprocess.run(["sudo", "apt-get", "install", pkg, "-y"])
+                    elif shutil.which("pacman"):
+                        subprocess.run(["sudo", "pacman", "-S", pkg, "--noconfirm"])
+            
+                    elif shutil.which("dnf"):
+                        subprocess.run(["sudo", "dnf", "-y", "install", pkg])
+                    elif shutil.which("yum"):
+                        subprocess.run(["sudo", "yum", "-y", "install", pkg])
+                    else:
+                        print("\n{}[{}!{}]{} Unsupported package manager, Install packages manually.".format(Fore.RED, Fore.WHITE, Fore.RED, Fore.RED))
+                        # reset_color()
+                        exit(1)
+
+# dependencies()
     def Horizontal(self, logo=None):
         return Colorate.Horizontal(Colors.rainbow, logo)
     def send_request(self, api_name, api_url, data, timeout, proxy=None):
@@ -441,7 +537,7 @@ class CharonSMSBomber:
 #           -p, --process - number of processes   # Default: 5                           #
 #           -x, --proxy - Set the proxy           # (http/https/socks)                   #
 #                                                                                        #
-# Example: chsmsbomber 09XXXXXXXXX --times 10 --process 3 -x socks5://127.0.0.1:9050     #
+# Example: chsmsbomb 09XXXXXXXXX --times 10 --process 3 --proxy socks5://127.0.0.1:9050  #
 #                                                                                        #
 ##########################################################################################
         '''
@@ -484,6 +580,10 @@ class CharonSMSBomber:
             sys.exit(1)
     
     def Logo(self):
+        if platform.system() == 'Windows':
+            os.system('cls')
+        else:
+            os.system('clear')
         a1 = r'''
               ^         
              | |        
