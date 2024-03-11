@@ -432,6 +432,9 @@ Version 1.0
 every month This Script Update                      
                         ''')
                     input('press to back menu ....')
+                if str(choose) == '3':
+                    sys.exit('Good By')
+                    
             except KeyboardInterrupt:
                 sys.exit('Good By')
     def Menu2(self):
