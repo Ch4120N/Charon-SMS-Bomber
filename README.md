@@ -65,6 +65,9 @@ python chsmsbomber.py
 ## ❤️ Donation 
 > bitcoin:   bc1ql4syps7qpa3djqrxwht3g66tldyh4j7qsyjkq0
 
+## Licence
+* CGBL (Charon General Black Licence)
+
 ## 🚨 Reporting Issues
 
 If you are facing a configuration issue or something is not working as you expected to be, please use the **Ch4120N@Poroton.me**
