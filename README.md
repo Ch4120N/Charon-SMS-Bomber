@@ -65,9 +65,6 @@ python chsmsbomber.py
 ## ❤️ Donation 
 > bitcoin:   bc1ql4syps7qpa3djqrxwht3g66tldyh4j7qsyjkq0
 
-## Licence
-* CGBL (Charon General Black Licence)
-
 ## 🚨 Reporting Issues
 
 If you are facing a configuration issue or something is not working as you expected to be, please use the **Ch4120N@Poroton.me**
@@ -75,3 +72,6 @@ If you are facing a configuration issue or something is not working as you expec
 ## ⚠️ Legal disclaimer ⚠️
 
 > Usage of `Charon SMS Bomber` for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+
+## Licence
+* CGBL (Charon General Black Licence)
