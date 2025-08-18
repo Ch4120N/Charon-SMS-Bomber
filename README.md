@@ -5,7 +5,7 @@
 # Charon SMS Bomber
 
 ## Project Programmer
-> Ch4120N - Ch4120N@Poroton.me
+> Ch4120N - Ch4120N@Proton.me
 
 ## Made For
 > Attacking To Multiple Phone Numbers With SMS & CALL Spam
@@ -67,7 +67,7 @@ python chsmsbomber.py
 
 ## 🚨 Reporting Issues
 
-If you are facing a configuration issue or something is not working as you expected to be, please use the **Ch4120N@Poroton.me**
+If you are facing a configuration issue or something is not working as you expected to be, please use the **Ch4120N@Proton.me**
 
 ## ⚠️ Legal disclaimer ⚠️
 
