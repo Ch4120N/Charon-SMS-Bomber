@@ -1,8 +1,17 @@
 <head>
   <meta name="google-site-verification" content="l4gzIHopgDDt57xRYeRvJZ5DYgg4lLb-qPciUxhNxkY" />
 </head>
+<div align="center">
+  <img alt="Charon SMS Bomber" src="images/logo.png" width="650"> 
+  <h1>Charon SMS Bomber</h1>
+  <img alt="Language" src="https://img.shields.io/badge/Language-Python%203.9-blue?style=for-the-badge">
+  <img alt="Supported Platform" src="https://img.shields.io/badge/Platform-All_Platforms-red?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/Licence-CGBL-orange?style=for-the-badge">
+  <p>
+<code>Charon SMS Bomber</code> is a powerful open-source tool written in Python 3, designed to deliver massive volumes of SMS and call spam simultaneously to multiple target numbers.
+  </p>
+</div>
 
-# Charon SMS Bomber
 
 ## Project Programmer
 > Ch4120N - Ch4120N@Proton.me
