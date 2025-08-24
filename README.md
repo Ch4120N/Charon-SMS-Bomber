@@ -11,9 +11,9 @@
 > Attacking To Multiple Phone Numbers With SMS & CALL Spam
 
 ## 👀 Screenshot
-<img src="images/prew1.png">
-<img src="images/prew2.png">
-<img src="images/prew3.png">
+<img src="images/prev1.png">
+<img src="images/prev2.png">
+<img src="images/prev3.png">
 
 ## ⚓ Requires
 > Python3
@@ -45,6 +45,16 @@ python -m pip install -r requirements.txt
 python chsmsbomber.py
 ```
 
+### For Windows
+If you have Git on your computer, you can use this installation guide: 
+```batch
+git clone https://github.com/Ch4120N/Charon-SMS-Bomber.git
+cd Charon-SMS-Bomber
+python -m pip install -r requirements.txt
+python chsmsbomber.py
+```
+Otherwise, you can download the zip file from this [link](https://github.com/Ch4120N/Charon-SMS-Bomber/releases), extract it, and use it.
+
 ## Supported Operating Systems
 - [X] Debian
 - [X] Kali Linux
@@ -54,6 +64,7 @@ python chsmsbomber.py
 - [X] Windows 7/8/10/11
 
 ## ✨ Features
+* More Than 250 API For Attacking
 * Multi Target Phone Numbers
 * Config Persistence
 * Support Multi Processing
