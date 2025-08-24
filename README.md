@@ -14,22 +14,26 @@
   </p>
 </div>
 
-
 ## Project Programmer
+
 > Ch4120N - Ch4120N@Proton.me
 
 ## Made For
+
 > Attacking To Multiple Phone Numbers With SMS & CALL Spam
 
 ## 👀 Screenshot
-<img src="images/prev1.png">
-<img src="images/prev2.png">
-<img src="images/prev3.png">
+
+<img alt="preview 1" src="images/prev1.png">
+<img alt="preview 2" src="images/prev2.png">
+<img alt="preview 3" src="images/prev3.png">
 
 ## ⚓ Requires
+
 > Python3
 
 ### Installing Requirement Packages
+
 > python -m pip install -r requirements.txt
 
 ## ⚙️ Installation
@@ -46,6 +50,7 @@ python chsmsbomber.py
 ```
 
 ### For Termux
+
 ```bash
 termux-setup-storage
 apt install python git -y
@@ -57,35 +62,41 @@ python chsmsbomber.py
 ```
 
 ### For Windows
-If you have Git on your computer, you can use this installation guide: 
+
+If you have Git on your computer, you can use this installation guide:
+
 ```batch
 git clone https://github.com/Ch4120N/Charon-SMS-Bomber.git
 cd Charon-SMS-Bomber
 python -m pip install -r requirements.txt
 python chsmsbomber.py
 ```
+
 Otherwise, you can download the zip file from this [link](https://github.com/Ch4120N/Charon-SMS-Bomber/releases), extract it, and use it.
 
 ## 💻 Supported Operating Systems
-- [X] Debian
-- [X] Kali Linux
-- [X] Ubuntu
-- [X] Arch Linux
-- [X] Android (With Termux)
-- [X] Windows 7/8/10/11
+
+- [x] Debian
+- [x] Kali Linux
+- [x] Ubuntu
+- [x] Arch Linux
+- [x] Android (With Termux)
+- [x] Windows 7/8/10/11
 
 ## ✨ Features
-* More Than 250 API For Attacking
-* Multi Target Phone Numbers
-* Config Persistence
-* Support Multi Processing
-* Update Checker
-* Good Design
-* Very High Speed
-* Advanced Error Handling
 
-## ❤️ Donation 
-> bitcoin:   bc1ql4syps7qpa3djqrxwht3g66tldyh4j7qsyjkq0
+- More Than 250 API For Attacking
+- Multi Target Phone Numbers
+- Config Persistence
+- Support Multi Processing
+- Update Checker
+- Good Design
+- Very High Speed
+- Advanced Error Handling
+
+## ❤️ Donation
+
+> bitcoin: bc1ql4syps7qpa3djqrxwht3g66tldyh4j7qsyjkq0
 
 ## 🚨 Reporting Issues
 
@@ -96,4 +107,5 @@ If you are facing a configuration issue or something is not working as you expec
 > Usage of `Charon SMS Bomber` for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ## Licence
-* CGBL (Charon General Black Licence)
+
+- CGBL (Charon General Black Licence)
