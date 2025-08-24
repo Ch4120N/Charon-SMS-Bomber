@@ -55,7 +55,7 @@ python chsmsbomber.py
 ```
 Otherwise, you can download the zip file from this [link](https://github.com/Ch4120N/Charon-SMS-Bomber/releases), extract it, and use it.
 
-## Supported Operating Systems
+## 💻 Supported Operating Systems
 - [X] Debian
 - [X] Kali Linux
 - [X] Ubuntu
