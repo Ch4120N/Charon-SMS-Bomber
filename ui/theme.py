@@ -389,3 +389,4 @@ def api(text: str) -> str:
     return f"[{API_NAME}]{text}[/]"
 
 
+def muted(text: str) -> str:
