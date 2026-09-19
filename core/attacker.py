@@ -103,3 +103,4 @@ class Attacker:
         self.rate = RateLimiter(float(cfg["attack"].get("rate_limit_per_sec", 0)))
 
         self.stats = Stats()
+        self.stop_flag = threading.Event()
