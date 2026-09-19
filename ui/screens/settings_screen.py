@@ -97,3 +97,4 @@ class SettingsScreen(Screen):
         body = Table.grid(padding=(0, 2))
         body.add_column(ratio=1)
 
+        for i in range(self.top, min(self.top + self.page_size, len(self.fields))):
