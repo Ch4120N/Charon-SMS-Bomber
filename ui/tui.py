@@ -129,3 +129,4 @@ class TuiApp:
         self.apis = apis
         self.logger = logger
         self.notifications = NotificationCenter()
+
