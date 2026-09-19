@@ -45,3 +45,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
         # numeric codes — 0 / 200 / 201 = ok, >= 400 = bad
         for k in ("code", "status_code", "statusCode", "status"):
             v = obj.get(k)
+            if isinstance(v, int):
