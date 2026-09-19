@@ -206,3 +206,4 @@ class HelpScreen(Screen):
             ("user_agent.custom", "If set, chosen from randomly."),
             ("api_health.failure_threshold", "Consecutive failures before cooldown."),
             ("api_health.cooldown_seconds", "Cooldown duration."),
+            ("output.report_format", "json or csv. HTML is written alongside."),
