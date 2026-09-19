@@ -131,3 +131,4 @@ class SettingsScreen(Screen):
                     try:
                         int(result) if f.kind == "int" else float(result)
                     except ValueError:
+                        self.app.notify(f"invalid {f.kind}", style=BAD)
