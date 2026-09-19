@@ -11,3 +11,4 @@ from utils.version import APP_VERSION
 DEFAULT_CONFIG: dict[str, Any] = {
     "version": APP_VERSION,
     "network": {
+        "timeout": 5,
