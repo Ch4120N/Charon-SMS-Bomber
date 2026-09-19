@@ -54,3 +54,4 @@ class HistoryScreen(Screen):
             box=None, show_header=True, header_style=f"bold {PRIMARY}",
             padding=(0, 1), expand=True,
         )
+        t.add_column("", width=2)
