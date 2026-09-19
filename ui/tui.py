@@ -316,3 +316,4 @@ class TuiApp:
             while self.running and self.stack:
                 top = self.stack[-1]
                 now = time.time()
+
