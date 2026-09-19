@@ -335,3 +335,4 @@ class TuiApp:
                     self.console.height,
                 )
                 if cache_key != self._cached_key or animating:
+                    live.update(self._layout(), refresh=True)
