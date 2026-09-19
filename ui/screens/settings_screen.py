@@ -114,3 +114,4 @@ class SettingsScreen(Screen):
 
         return Panel(
             Align.left(Group(body, info), vertical="top"),
+            title=f"[bold {PRIMARY}]  Settings  [/]",
