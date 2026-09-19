@@ -21,3 +21,4 @@ class ApiHealthTracker:
             if not st:
                 return True
             if st.get("disabled_until", 0) > time.time():
+                return False
