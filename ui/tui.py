@@ -124,3 +124,4 @@ class TuiApp:
         apis: list[dict[str, Any]],
         logger: Any,
     ) -> None:
+        self.console = console
