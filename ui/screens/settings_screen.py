@@ -195,3 +195,4 @@ class SettingsScreen(Screen):
         section, key = parts
         target = self.app.cfg.get(section, {})
         if f.kind in ("text", "int", "float"):
+            val: object = f.widget.value  # type: ignore
