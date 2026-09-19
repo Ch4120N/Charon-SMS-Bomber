@@ -82,3 +82,4 @@ class KeyReader:
     def drain(self) -> None:
         try:
             while True:
+                self.q.get_nowait()
