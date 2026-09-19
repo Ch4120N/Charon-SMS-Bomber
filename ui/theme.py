@@ -280,3 +280,4 @@ PROGRESS_PCT        = TEXT_PRIMARY
 # 18. SPINNERS
 # ══════════════════════════════════════════════════════════════════════
 SPINNER_RUNNING     = WARNING                      # yellow running spinner
+SPINNER_IDLE        = TEXT_TERTIARY
