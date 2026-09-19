@@ -51,3 +51,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
     return {
         "app": APP_NAME,
         "version": APP_VERSION,
+        "timestamp": datetime.now().isoformat(),
