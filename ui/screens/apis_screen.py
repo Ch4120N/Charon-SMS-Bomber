@@ -23,3 +23,4 @@ class ApisScreen(Screen):
     hotkeys = {"r": "reload", "/": "filter", "g/G": "jump"}
 
     def __init__(self, app) -> None:
+        super().__init__(app)
