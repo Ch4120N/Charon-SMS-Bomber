@@ -20,3 +20,4 @@ from ui.widgets import TextInput
 class ApisScreen(Screen):
     name = "apis"
     title = "API Manager"
+    hotkeys = {"r": "reload", "/": "filter", "g/G": "jump"}
