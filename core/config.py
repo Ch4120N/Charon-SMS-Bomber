@@ -62,3 +62,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
 
 def _deep_merge(base: dict, override: dict) -> dict:
     out = dict(base)
+    for k, v in override.items():
