@@ -119,3 +119,4 @@ def download_apis(
         backup = APIS_PATH.with_name(f"apis.json.bak.{ts}")
         shutil.copy2(APIS_PATH, backup)
 
+    tmp = APIS_PATH.with_suffix(".json.tmp")
