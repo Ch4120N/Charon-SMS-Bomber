@@ -26,3 +26,4 @@ class HistoryScreen(Screen):
         self.entries = []
         self.cursor = 0
         self.top = 0
+        self.page_size = 18
