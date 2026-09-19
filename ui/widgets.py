@@ -148,3 +148,4 @@ class Field:
             t.append(" ▌ ", style=f"bold {FORM_MARKER}")
         else:
             t.append("   ", style=TEXT_DISABLED)
+
