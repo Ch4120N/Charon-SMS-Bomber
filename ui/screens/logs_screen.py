@@ -5,3 +5,4 @@ from pathlib import Path
 from typing import Any, Optional
 
 from rich.align import Align
+from rich.console import Group
