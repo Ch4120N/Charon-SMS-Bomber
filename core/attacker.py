@@ -104,3 +104,4 @@ class Attacker:
 
         self.stats = Stats()
         self.stop_flag = threading.Event()
+        self.round_idx = 0
