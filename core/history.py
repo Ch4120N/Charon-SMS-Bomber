@@ -22,3 +22,4 @@ class HistoryEntry:
     threads: int
     rounds: int
     sent: int
+    success: int
