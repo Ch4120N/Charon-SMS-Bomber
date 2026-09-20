@@ -149,3 +149,4 @@ class TuiApp:
         self.keys = KeyReader()
         self.keys.start()
 
+        self._toast_lock = threading.Lock()
