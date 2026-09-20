@@ -30,3 +30,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
     for entry in data:
         if not isinstance(entry, dict) or "url" not in entry:
             continue
+        e = dict(entry)
