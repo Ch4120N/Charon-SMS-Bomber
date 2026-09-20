@@ -164,3 +164,4 @@ class StartScreen(Screen):
             threads = max(1, int(self.fields[1].widget.value))  # type: ignore
             rounds = int(self.fields[2].widget.value)           # type: ignore
             delay = max(0.0, float(self.fields[3].widget.value))  # type: ignore
+        except ValueError:
