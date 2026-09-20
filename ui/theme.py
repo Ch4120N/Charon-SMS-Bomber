@@ -157,3 +157,4 @@ CHIP_FG_DEFAULT    = _c("#0d0e12", "black")
 # ── 9.1  Panel frame ─────────────────────────────────────────────────
 STATUS_BAR_BORDER          = BORDER_DEFAULT        # #2e3342 slate
 STATUS_BAR_BG              = SURFACE_BASE          # #0d0e12 app bg
+
