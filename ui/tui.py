@@ -20,3 +20,4 @@ from core.notifications import NotificationCenter
 from ui.theme import (
     PRIMARY, PRIMARY_ALT, ACCENT, OK, WARN, BAD, INFO,
     FG, FG_DIM, FG_MUTED, BG, BG_PANEL, BG_HILITE,
+    BORDER, API_COLOR,
