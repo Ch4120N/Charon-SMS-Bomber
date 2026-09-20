@@ -228,3 +228,4 @@ class TuiApp:
     #  Footer with hotkey chips + notifications
     def _footer(self, screen: Screen) -> Panel:
         from ui.theme import (
+            chip, FOOTER_HINT_TEXT, FOOTER_SEPARATOR,
