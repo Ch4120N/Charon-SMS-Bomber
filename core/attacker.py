@@ -26,3 +26,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         ),
     },
     "unlimited": {
+        "label": "Unlimited",
