@@ -167,3 +167,4 @@ class Sender:
             kwargs["data"] = d
             if isinstance(d, str):
                 headers.setdefault("Content-Type", "application/x-www-form-urlencoded")
+        elif "params" in api:
