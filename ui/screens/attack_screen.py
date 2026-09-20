@@ -83,3 +83,4 @@ class AttackScreen(Screen):
                 self.show_spinner = False
                 self.animating = False
                 self._save_history_once()
+                self.app.notify("attack complete", style=OK)
