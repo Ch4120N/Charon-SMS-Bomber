@@ -106,3 +106,4 @@ class SettingsScreen(Screen):
 
         info = Text()
         info.append(
+            f"\n  showing "
