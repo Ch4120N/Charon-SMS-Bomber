@@ -34,3 +34,4 @@ def _has_truecolor() -> bool:
     ct = os.environ.get("COLORTERM", "").lower()
     return ct in ("truecolor", "24bit")
 
+
