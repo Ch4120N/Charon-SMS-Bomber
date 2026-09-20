@@ -67,3 +67,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
     """
     Substitute placeholders inside any string of the API definition.
 
+    Tokens:
