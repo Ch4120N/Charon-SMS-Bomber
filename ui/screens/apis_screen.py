@@ -93,3 +93,4 @@ class ApisScreen(Screen):
             )
 
         detail = Text()
+        if items:
