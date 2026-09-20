@@ -138,3 +138,4 @@ def download_apis(
         json.loads(tmp.read_text(encoding="utf-8"))
     except Exception as exc:
         tmp.unlink(missing_ok=True)
+        raise RuntimeError(f"Downloaded apis.json is not valid JSON: {exc}") from exc
