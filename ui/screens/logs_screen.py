@@ -57,3 +57,4 @@ class LogsScreen(Screen):
             self.lines = ["(no log files yet)"]
             self._path = None
             return
+        try:
