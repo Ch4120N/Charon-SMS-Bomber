@@ -17,3 +17,4 @@ def save_session(
         ),
         encoding="utf-8",
     )
+
