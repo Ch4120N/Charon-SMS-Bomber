@@ -168,3 +168,4 @@ class Field:
         elif isinstance(self.widget, Toggle):
             t.append_text(self.widget.render())
             if focused:
+                t.append("   space", style=FORM_HINT)
