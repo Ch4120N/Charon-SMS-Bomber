@@ -143,3 +143,4 @@ class TuiApp:
         self._idle_after = float(cfg["ui"].get("idle_after_seconds", 1.5))
 
         # dirty flag cache
+        self._cached_layout: Any = None
