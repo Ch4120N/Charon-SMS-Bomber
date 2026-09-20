@@ -84,3 +84,4 @@ def export_csv(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     REPORTS_DIR.mkdir(exist_ok=True)
     path = REPORTS_DIR / f"report_{_stamp()}.csv"
     with path.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
