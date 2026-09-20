@@ -13,3 +13,4 @@ from typing import Any
 from utils.paths import REPORTS_DIR
 from utils.version import APP_NAME, APP_VERSION
 
+
