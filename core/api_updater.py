@@ -37,3 +37,4 @@ class UpdateCheck:
     local_hash: str
     remote_hash: str
     remote_version: str
+    manifest: dict[str, Any]
