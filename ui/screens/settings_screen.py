@@ -118,3 +118,4 @@ class SettingsScreen(Screen):
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
 
+    def handle_key(self, key: str) -> Optional[str]:
