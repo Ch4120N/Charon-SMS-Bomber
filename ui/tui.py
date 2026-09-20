@@ -359,3 +359,4 @@ class TuiApp:
             self.push("palette")
             return
 
+        top = self.stack[-1]
