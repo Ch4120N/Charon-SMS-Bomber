@@ -34,3 +34,4 @@ class ApisScreen(Screen):
     def _visible(self) -> list[dict]:
         if not self.search:
             return self.app.apis
+        s = self.search.lower()
