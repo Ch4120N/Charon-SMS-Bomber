@@ -75,3 +75,4 @@ class ApisScreen(Screen):
         )
         lst.add_column("", width=2)
         lst.add_column("#", width=4, justify="right", style=FG_MUTED)
+        lst.add_column("Name", style=API_COLOR, no_wrap=True, width=22)
