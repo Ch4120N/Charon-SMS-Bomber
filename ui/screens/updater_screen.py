@@ -83,3 +83,4 @@ class UpdaterScreen(Screen):
             t.add_row("Remote hash", info.remote_hash[:16])
             t.add_row("Local APIs", str(info.local_count))
             t.add_row("Remote APIs", str(info.remote_count))
+            t.add_row("Remote version", info.remote_version)
