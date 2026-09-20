@@ -90,3 +90,4 @@ class UpdaterScreen(Screen):
                 header.append("\n  Update available\n\n", style=f"bold {WARN}")
             else:
                 header.append("\n  Already up to date\n\n", style=f"bold {OK}")
+
