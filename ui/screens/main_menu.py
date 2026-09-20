@@ -63,3 +63,4 @@ class MainMenuScreen(Screen):
             Align.center(grid, vertical="middle"),
             title=f"[bold {PRIMARY}]  Main Menu  [/]",
             subtitle=f"[{FG_MUTED}]{NOTICE}[/]",
+            border_style=BORDER, box=BOX_MAIN, padding=(1, 4),
