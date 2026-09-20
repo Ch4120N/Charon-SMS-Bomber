@@ -138,3 +138,4 @@ class TuiApp:
 
         # adaptive refresh
         self._active_fps = int(cfg["ui"]["refresh_per_second"])
+        self._idle_fps = int(cfg["ui"].get("idle_refresh_per_second", 4))
