@@ -164,3 +164,4 @@ class Attacker:
         if self.health and not self.health.is_available(api):
             return False
         return True
+
