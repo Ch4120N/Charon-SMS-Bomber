@@ -59,3 +59,4 @@ def clear_history() -> None:
 
 
 def make_entry(
+    targets: list[str],
