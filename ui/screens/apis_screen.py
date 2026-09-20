@@ -29,3 +29,4 @@ class ApisScreen(Screen):
         self.page_size = 20
         self.search = ""
         self._searching = False
+        self._search_widget: Optional[TextInput] = None
