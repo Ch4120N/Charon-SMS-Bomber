@@ -144,3 +144,4 @@ class Sender:
         method = api.get("method", "POST").upper()
         url = api["url"]
 
+        headers = dict(api.get("headers", {}))
