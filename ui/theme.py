@@ -271,3 +271,4 @@ TABLE_TITLE         = BRAND
 # ══════════════════════════════════════════════════════════════════════
 PROGRESS_FILLED     = SUCCESS                      # green fill
 PROGRESS_EMPTY      = TEXT_DISABLED
+PROGRESS_HEAD       = SUCCESS_BRIGHT
