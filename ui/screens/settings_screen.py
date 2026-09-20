@@ -71,3 +71,4 @@ class SettingsScreen(Screen):
     def __init__(self, app) -> None:
         super().__init__(app)
         self.fields = _build_fields(app.cfg)
+        self.cursor = self._first_editable(0)
