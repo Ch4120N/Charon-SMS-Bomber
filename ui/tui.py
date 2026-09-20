@@ -229,3 +229,4 @@ class TuiApp:
     def _footer(self, screen: Screen) -> Panel:
         from ui.theme import (
             chip, FOOTER_HINT_TEXT, FOOTER_SEPARATOR,
+            FOOTER_TOAST_INFO, FOOTER_TOAST_OK, FOOTER_TOAST_WARN,
