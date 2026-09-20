@@ -75,3 +75,4 @@ class SettingsScreen(Screen):
         self.editing = False
         self.top = 0
         self.page_size = 18
+
