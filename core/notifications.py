@@ -16,3 +16,4 @@ class Toast:
     created: float = field(default_factory=time.time)
 
     @property
+    def expired(self) -> bool:
