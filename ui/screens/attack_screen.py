@@ -50,3 +50,4 @@ class AttackScreen(Screen):
         self.started = False
         self.finished = False
         self.reports_saved: list[Path] = []
+        self.dry_run_report: Optional[dict] = None
