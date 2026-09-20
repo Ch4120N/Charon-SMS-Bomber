@@ -158,3 +158,4 @@ class HelpScreen(Screen):
         for title, body in items:
             g = Table.grid(padding=(0, 2))
             g.add_column(style=f"bold {PRIMARY}", width=20)
+            g.add_column(style=FG)
