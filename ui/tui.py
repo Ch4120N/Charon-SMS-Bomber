@@ -211,3 +211,4 @@ class TuiApp:
         crumbs = self.stack
         for i, s in enumerate(crumbs):
             is_last = i == len(crumbs) - 1
+            label = s.title or s.name
