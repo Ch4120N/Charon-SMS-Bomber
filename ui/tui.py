@@ -284,3 +284,4 @@ class TuiApp:
             self.frame // 2 if top.animating or top.show_spinner else 0,
             top.render_cache_key(),
             self.console.width,
+            self.console.height,
