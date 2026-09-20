@@ -308,3 +308,4 @@ class TuiApp:
         with Live(
             self._layout(),
             console=self.console,
+            refresh_per_second=self._active_fps,
