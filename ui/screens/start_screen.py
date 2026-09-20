@@ -180,3 +180,4 @@ class StartScreen(Screen):
         self.app.push(
             "attack",
             targets=targets, threads=threads, rounds=rounds,
+            delay=delay, dry_run=bool(dry_run),
