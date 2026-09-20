@@ -287,3 +287,4 @@ class TuiApp:
             self.console.height,
         )
 
+        header_h = 9 if self.console.width >= 118 else 5
