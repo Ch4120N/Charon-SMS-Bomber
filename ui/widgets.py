@@ -74,3 +74,4 @@ class Toggle:
         self.value = bool(value)
 
     def toggle(self) -> None:
+        self.value = not self.value
