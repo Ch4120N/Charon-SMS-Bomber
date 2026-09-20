@@ -142,3 +142,4 @@ class ApisScreen(Screen):
         if key == "/":
             self._searching = True
             self._search_widget = TextInput(self.search)
+            self.app.notify("typing filter — Enter apply, Esc cancel", style=WARN)
