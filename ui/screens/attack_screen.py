@@ -101,3 +101,4 @@ class AttackScreen(Screen):
                 sent=s.sent,
                 success=s.success,
                 failed=s.failed,
+                elapsed=s.elapsed,
