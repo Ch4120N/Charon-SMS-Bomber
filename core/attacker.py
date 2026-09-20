@@ -193,3 +193,4 @@ class Attacker:
                     jobs.append((api, target))
         return jobs
 
+    def _apply_jitter(self) -> None:
