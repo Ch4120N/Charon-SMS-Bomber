@@ -251,3 +251,4 @@ class TuiApp:
             bar.append_text(Text.from_markup(chip(k)))
             bar.append(f" {d}", style=FOOTER_HINT_TEXT)
 
+        toasts = self.notifications.visible()
