@@ -74,3 +74,4 @@ class UpdaterScreen(Screen):
                 Text(f"  {self.error}\n", style=FG),
             ], subtitle="press r to retry, Esc to return")
 
+        if self.state in ("ready", "downloading", "done") and self.info:
