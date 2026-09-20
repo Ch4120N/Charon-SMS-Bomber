@@ -148,3 +148,4 @@ class HelpScreen(Screen):
              "2xx alone is not success. ChSMSBomber inspects the response body "
              "for error fields. Only requests where the body agrees count as wins."),
             ("Dry-Run",
+             "Plans the attack (targets, jobs, rounds) but sends nothing. "
