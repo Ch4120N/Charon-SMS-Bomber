@@ -122,3 +122,4 @@ class SettingsScreen(Screen):
         f = self.fields[self.cursor]
 
         if self.editing:
+            if key == KEY_ESC:
