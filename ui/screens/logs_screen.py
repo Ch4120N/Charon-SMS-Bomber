@@ -27,3 +27,4 @@ _LEVEL_STYLE = {
 
 class LogsScreen(Screen):
     name = "logs"
+    title = "Logs"
