@@ -218,3 +218,4 @@ class AttackScreen(Screen):
             ),
             title=f"[bold {PRIMARY}]  Attack in progress  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
+        )
