@@ -41,3 +41,4 @@ class AttackScreen(Screen):
     ) -> None:
         super().__init__(app)
         self.targets = targets
+        self.threads = threads
