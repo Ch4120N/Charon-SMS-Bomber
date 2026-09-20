@@ -28,3 +28,4 @@ def load_session() -> Optional[dict[str, Any]]:
         return None
     if not data.get("targets"):
         return None
+    data["threads"] = int(data.get("threads", 10))
