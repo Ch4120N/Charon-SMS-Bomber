@@ -20,3 +20,4 @@ class Toast:
         return time.time() - self.created > self.ttl
 
 
+class NotificationCenter:
