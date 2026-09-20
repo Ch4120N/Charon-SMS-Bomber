@@ -177,3 +177,4 @@ STATUS_BAR_TEXT            = TEXT_SECONDARY        # #9fa5b2
 # ── 9.4  Gap between hotkey groups ───────────────────────────────────
 STATUS_BAR_SEPARATOR       = TEXT_DISABLED         # #454a55
 
+# ── 9.5  Toast bullet prefix "●" ─────────────────────────────────────
