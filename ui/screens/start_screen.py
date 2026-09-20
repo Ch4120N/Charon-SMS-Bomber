@@ -150,3 +150,4 @@ class StartScreen(Screen):
 
     def _handle_action(self, which: str) -> Optional[str]:
         if which == "back":
+            return "back"
