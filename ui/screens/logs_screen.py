@@ -124,3 +124,4 @@ class LogsScreen(Screen):
         if key in (KEY_DOWN, "j"):
             self.cursor = min(len(self.lines) - 1, self.cursor + 1)
             return None
+        if key == "g":
