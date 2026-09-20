@@ -312,3 +312,4 @@ class TuiApp:
             transient=False,
             screen=True,
             auto_refresh=False,
+        ) as live:
