@@ -14,3 +14,4 @@ def normalize_phone(raw: str) -> Optional[str]:
     elif s.startswith("98") and len(s) >= 12:
         s = "+" + s
     elif s.startswith("0") and len(s) == 11:
+        s = "+98" + s[1:]
