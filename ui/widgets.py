@@ -62,3 +62,4 @@ class TextInput:
             if self.value:
                 t.append(self.value, style=FORM_VALUE)
                 pad = max(0, width - len(self.value))
+            else:
