@@ -250,3 +250,4 @@ class Attacker:
                 self._cooldown(2.0)
                 continue
 
+            with ThreadPoolExecutor(max_workers=max(1, threads)) as ex:
