@@ -80,3 +80,4 @@ def check_for_updates(
         remote_bytes = ar.content
     except Exception as exc:
         raise RuntimeError(f"Failed to fetch apis.json: {exc}") from exc
+
