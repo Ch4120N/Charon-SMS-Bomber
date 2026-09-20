@@ -17,3 +17,4 @@ class ApiHealthTracker:
 
     def is_available(self, api: dict[str, Any]) -> bool:
         with self._lock:
+            st = self._state.get(api_key(api))
