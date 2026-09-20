@@ -42,3 +42,4 @@ def load_history() -> list[HistoryEntry]:
         except TypeError:
             continue
     return out
+
