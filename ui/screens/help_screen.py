@@ -134,3 +134,4 @@ class HelpScreen(Screen):
              "sense with smart or unlimited strategy."),
             ("Delay / Jitter",
              "Fixed wait plus random jitter between requests. Jitter breaks naive "
+             "rate-limit fingerprinting."),
