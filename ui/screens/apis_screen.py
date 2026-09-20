@@ -53,3 +53,4 @@ class ApisScreen(Screen):
             self.top = self.cursor - self.page_size + 1
 
         info = Table.grid(padding=(0, 2))
+        info.add_column(style=FG_MUTED)
