@@ -135,3 +135,4 @@ class Field:
         elif kind == "action":
             self.widget = None
         else:
+            raise ValueError(f"unknown field kind: {kind}")
