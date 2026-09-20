@@ -119,3 +119,4 @@ class HelpScreen(Screen):
         for key, info in STRATEGIES.items():
             tag = "  ⭐ default" if key == "smart" else ""
             t.add_row(key + tag, info.get("summary", ""), info.get("details", ""))
+        return t
