@@ -37,3 +37,4 @@ class ApisScreen(Screen):
         s = self.search.lower()
         return [
             a for a in self.app.apis
+            if s in a.get("name", "").lower() or s in a.get("url", "").lower()
