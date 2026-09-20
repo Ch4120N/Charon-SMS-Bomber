@@ -206,3 +206,4 @@ class SettingsScreen(Screen):
                     val = float(val)  # type: ignore
                 except ValueError:
                     return
+        elif f.kind in ("bool", "cycle"):
