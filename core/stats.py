@@ -22,3 +22,4 @@ class Stats:
     by_api: dict[str, dict[str, int]] = field(default_factory=dict)
     recent: list[tuple[str, str, bool]] = field(default_factory=list)
     start_ts: float = field(default_factory=time.time)
+
