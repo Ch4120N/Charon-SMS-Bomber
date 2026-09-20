@@ -272,3 +272,4 @@ class TuiApp:
             padding=(0, 1),
         )
 
+    #  Layout + cache
