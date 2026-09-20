@@ -353,3 +353,4 @@ class TuiApp:
             self.running = False
             return
         if key == "?":
+            self.push("help")
