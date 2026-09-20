@@ -48,3 +48,4 @@ def _c(hex_hi: str, fallback: str) -> str:
 SURFACE_BASE       = _c("#0d0e12", "black")
 SURFACE_PANEL      = _c("#16171e", "grey11")
 SURFACE_ELEVATED   = _c("#1e2029", "grey15")
+SURFACE_HOVER      = _c("#272a36", "grey19")
