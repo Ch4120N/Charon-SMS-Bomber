@@ -89,3 +89,4 @@ class SettingsScreen(Screen):
         return (self.cursor, self.top, self.editing)
 
     def render(self) -> Panel:
+        if self.cursor < self.top:
