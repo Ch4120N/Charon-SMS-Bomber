@@ -91,3 +91,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
         text = content[:512].decode("utf-8", errors="ignore").lower()
         if any(w in text for w in ("error", "invalid", "failed", "denied")):
             return False
+        if any(w in text for w in ("success", "sent", "ok")):
