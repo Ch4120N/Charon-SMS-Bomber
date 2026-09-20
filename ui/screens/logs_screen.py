@@ -95,3 +95,4 @@ class LogsScreen(Screen):
             body.append(line + "\n", style=style)
 
         head = Text()
+        head.append("  file: ", style=FG_MUTED)
