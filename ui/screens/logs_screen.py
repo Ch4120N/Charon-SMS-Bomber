@@ -36,3 +36,4 @@ class LogsScreen(Screen):
         self.cursor = 0
         self.top = 0
         self.page_size = 24
+        self._last_mtime = 0.0
