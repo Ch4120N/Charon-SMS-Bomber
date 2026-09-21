@@ -122,3 +122,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  <tbody>{rows}</tbody>
 </table>
 <div class="totals">
+ <b>Total sent:</b> {stats.sent} ·
