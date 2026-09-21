@@ -57,3 +57,4 @@ class HelpScreen(Screen):
                 tabs.append(f" {label} ", style=f"bold black on {PRIMARY_ALT}")
             else:
                 tabs.append(f" {label} ", style=FG_DIM)
+            tabs.append("   ")
