@@ -12,3 +12,4 @@ from typing import Deque, Optional
 class Toast:
     text: str
     style: str = "white"
+    ttl: float = 3.5
