@@ -132,3 +132,4 @@ class ApisScreen(Screen):
                 self.cursor = (self.cursor + 1) % len(items)
             return None
         if key == "g":
+            self.cursor = 0
