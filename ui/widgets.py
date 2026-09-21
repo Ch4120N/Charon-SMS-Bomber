@@ -69,3 +69,4 @@ class TextInput:
         return t
 
 
+class Toggle:
