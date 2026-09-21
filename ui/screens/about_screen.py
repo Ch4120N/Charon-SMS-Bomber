@@ -39,3 +39,4 @@ class AboutScreen(Screen):
         head = Text("\n  About\n\n", style=f"bold {ACCENT}")
         foot = Text("\n  press o to open the repository in your browser\n",
                     style=FG_MUTED)
+
