@@ -99,3 +99,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     rows = "\n".join(
         f"<tr><td>{html.escape(k)}</td><td>{v['sent']}</td>"
         f"<td class='ok'>{v['success']}</td>"
+        f"<td class='bad'>{v['failed']}</td></tr>"
