@@ -82,3 +82,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
         if isinstance(obj, str):
             return (
                 obj.replace("{cc}", cc)
+                   .replace("{intl}", intl)
