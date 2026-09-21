@@ -11,3 +11,4 @@ from typing import Deque, Optional
 @dataclass
 class Toast:
     text: str
+    style: str = "white"
