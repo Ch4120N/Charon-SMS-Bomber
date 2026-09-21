@@ -109,3 +109,4 @@ class HelpScreen(Screen):
     
     def _render_strategies(self) -> Table:
         t = Table(
+            box=None, show_header=True, header_style=f"bold {API_COLOR}",
