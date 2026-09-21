@@ -136,3 +136,4 @@ BORDER_STATUS_BAD  = ERROR_DIM
 #  8. CHIP BACKGROUNDS — bright, distinct hues for key caps and tabs
 # ══════════════════════════════════════════════════════════════════════
 CHIP_BG_DEFAULT    = _c("#ffb88c", "color(216)")   # peach orange (key caps)
+CHIP_BG_ALT        = _c("#e8a0f5", "bright_magenta")   # magenta (help tabs)
