@@ -9,3 +9,4 @@ from utils.paths import LOGS_DIR
 from utils.version import APP_NAME
 
 
+def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
