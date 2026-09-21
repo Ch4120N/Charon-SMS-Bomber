@@ -118,3 +118,4 @@ class UpdaterScreen(Screen):
 
             footer = Text()
             if info.available:
+                footer.append("\n  press Enter to download and install, "
