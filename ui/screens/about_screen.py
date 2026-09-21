@@ -26,3 +26,4 @@ class AboutScreen(Screen):
     def render(self) -> Panel:
         t = Table.grid(padding=(0, 2))
         t.add_column(style=FG_MUTED, justify="right")
+        t.add_column(style=FG)
