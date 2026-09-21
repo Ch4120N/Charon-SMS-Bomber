@@ -64,3 +64,4 @@ def make_entry(
     threads: int,
     rounds: int,
     sent: int,
+    success: int,
