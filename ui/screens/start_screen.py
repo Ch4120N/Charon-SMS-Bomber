@@ -112,3 +112,4 @@ class StartScreen(Screen):
             return None
 
         if key in (KEY_UP, "k"):
+            self.cursor = (self.cursor - 1) % len(self.fields)
