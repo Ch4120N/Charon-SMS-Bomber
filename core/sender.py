@@ -52,3 +52,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                     return False
             if isinstance(v, str) and v.isdigit():
                 n = int(v)
+                if n in (0, 200, 201, 202, 204):
