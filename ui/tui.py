@@ -243,3 +243,4 @@ class TuiApp:
         hints.append(("Esc", "back"))
         if len(self.stack) <= 1:
             hints.append(("q", "quit"))
+
