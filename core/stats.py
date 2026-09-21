@@ -24,3 +24,4 @@ class Stats:
     start_ts: float = field(default_factory=time.time)
 
     def record(self, api_name: str, target: str, ok: bool) -> None:
+        self.sent += 1
