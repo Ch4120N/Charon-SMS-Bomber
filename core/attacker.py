@@ -110,3 +110,4 @@ class Attacker:
         self.current_targets: list[str] = []
         self.strategy = cfg["attack"].get("strategy", DEFAULT_STRATEGY)
 
+        # Per-API success weights (smart strategy)
