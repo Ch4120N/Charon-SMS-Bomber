@@ -19,3 +19,4 @@ class Toast:
     def expired(self) -> bool:
         return time.time() - self.created > self.ttl
 
+
