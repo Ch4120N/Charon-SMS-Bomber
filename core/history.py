@@ -67,3 +67,4 @@ def make_entry(
     success: int,
     failed: int,
     elapsed: float,
+) -> HistoryEntry:
