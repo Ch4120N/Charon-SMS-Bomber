@@ -270,3 +270,4 @@ TABLE_TITLE         = BRAND
 # 17. PROGRESS
 # ══════════════════════════════════════════════════════════════════════
 PROGRESS_FILLED     = SUCCESS                      # green fill
+PROGRESS_EMPTY      = TEXT_DISABLED
