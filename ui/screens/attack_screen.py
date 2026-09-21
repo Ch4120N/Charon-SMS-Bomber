@@ -250,3 +250,4 @@ class AttackScreen(Screen):
         if key == "s":
             self._save_reports()
             return None
+        if key == KEY_SPACE and not self.finished:
