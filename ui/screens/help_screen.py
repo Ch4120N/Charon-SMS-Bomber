@@ -216,3 +216,4 @@ class HelpScreen(Screen):
             g.add_column(style=FG)
             g.add_row(k, v)
             rows.append(g)
+            rows.append(Text(""))
