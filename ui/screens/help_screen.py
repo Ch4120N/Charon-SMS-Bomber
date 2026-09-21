@@ -180,3 +180,4 @@ class HelpScreen(Screen):
             ("l", "Open live logs"),
             ("h", "Open session history"),
             ("i", "About"),
+            ("g / G", "Jump to first / last item"),
