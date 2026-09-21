@@ -76,3 +76,4 @@ class HelpScreen(Screen):
         if self.scroll > 0:
             scroll_note.append(f"  ↑ scrolled {self.scroll}", style=FG_MUTED)
         hint = Text()
+        hint.append("  ", style=FG_MUTED)
