@@ -132,3 +132,4 @@ class UpdaterScreen(Screen):
             Align.left(Group(*body), vertical="top"),
             title=f"[bold {PRIMARY}]  Check for Updates  [/]",
             subtitle=f"[{FG_MUTED}]{subtitle}[/]",
+            border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
