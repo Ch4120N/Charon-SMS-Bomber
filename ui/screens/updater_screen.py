@@ -113,3 +113,4 @@ class UpdaterScreen(Screen):
                 return self._panel([
                     header, t,
                     Text("\n  apis.json updated successfully.\n",
+                         style=f"bold {OK}"),
