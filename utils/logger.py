@@ -31,3 +31,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
     return logger
 
 
+__all__ = ["setup_logger"]
