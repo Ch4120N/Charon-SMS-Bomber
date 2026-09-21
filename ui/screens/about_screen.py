@@ -54,3 +54,4 @@ class AboutScreen(Screen):
             return None
         if key in (KEY_ESC, KEY_ENTER):
             return "back"
+        return None
