@@ -318,3 +318,4 @@ class TuiApp:
                 now = time.time()
 
                 # adaptive fps
+                animating = top.animating or top.show_spinner
