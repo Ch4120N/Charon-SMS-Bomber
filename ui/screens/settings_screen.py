@@ -67,3 +67,4 @@ class SettingsScreen(Screen):
     name = "settings"
     title = "Settings"
     hotkeys = {"⏎": "edit", "space": "toggle", "←→": "change"}
+
