@@ -388,3 +388,4 @@ def link(text: str) -> str:
 def api(text: str) -> str:
     return f"[{API_NAME}]{text}[/]"
 
+
