@@ -149,3 +149,4 @@ class Sender:
             headers = {k: v.replace("{ua}", self._pick_ua()) for k, v in headers.items()}
         headers.setdefault("User-Agent", self._pick_ua())
 
+        kwargs: dict[str, Any] = {
