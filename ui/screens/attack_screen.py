@@ -16,3 +16,4 @@ from core.session import save_session
 from core.stats import export_csv, export_html, export_json
 from ui.theme import (
     PRIMARY, PRIMARY_ALT, API_COLOR, ACCENT, OK, WARN, BAD,
+    FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN, SPINNER_BAR,
