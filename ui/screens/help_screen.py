@@ -175,3 +175,4 @@ class HelpScreen(Screen):
             ("s", "Start (menu) / save reports (attack)"),
             ("r", "Resume / reload / re-check"),
             ("e", "Open Settings"),
+            ("a", "Open API Manager"),
