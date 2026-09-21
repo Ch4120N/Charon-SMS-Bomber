@@ -205,3 +205,4 @@ class AttackScreen(Screen):
         footer = Text()
         if self.finished:
             footer.append("\n  ✓ attack complete.  ", style=f"bold {OK}")
+            footer.append("s = save reports   Esc = return", style=FG_DIM)
