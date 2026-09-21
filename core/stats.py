@@ -94,3 +94,4 @@ def export_csv(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
 
 
 def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
+    REPORTS_DIR.mkdir(exist_ok=True)
