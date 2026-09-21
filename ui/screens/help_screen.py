@@ -69,3 +69,4 @@ class HelpScreen(Screen):
                                style=f"bold {PRIMARY}")
 
         # Body
+        body = self._render_section()
