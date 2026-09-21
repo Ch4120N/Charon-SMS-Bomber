@@ -10,3 +10,4 @@ def normalize_phone(raw: str) -> Optional[str]:
     if not s:
         return None
     if s.startswith("+98"):
+        pass
