@@ -254,3 +254,4 @@ class TuiApp:
         toasts = self.notifications.visible()
         toast_line = Text()
         if toasts:
+            toast_line.append(" ")
