@@ -51,3 +51,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 if v >= 400:
                     return False
             if isinstance(v, str) and v.isdigit():
+                n = int(v)
