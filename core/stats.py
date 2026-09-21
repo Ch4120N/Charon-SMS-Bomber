@@ -86,3 +86,4 @@ def export_csv(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     with path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["API", "Sent", "Success", "Failed"])
+        for name, b in stats.by_api.items():
