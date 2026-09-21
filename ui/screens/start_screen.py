@@ -152,3 +152,4 @@ class StartScreen(Screen):
         if which == "back":
             return "back"
         if which == "go":
+            self._launch()
