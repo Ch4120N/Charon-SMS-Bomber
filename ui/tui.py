@@ -327,3 +327,4 @@ class TuiApp:
                 self.frame += 1
 
                 # render
+                cache_key = (
