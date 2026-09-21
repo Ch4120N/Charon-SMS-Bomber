@@ -146,3 +146,4 @@ class UpdaterScreen(Screen):
             return None
         return None
 
+    def _download(self) -> None:
