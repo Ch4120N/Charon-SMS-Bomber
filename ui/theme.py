@@ -408,3 +408,4 @@ __all__ = [
     # 3. Brand
     "BRAND", "BRAND_DIM", "BRAND_BRIGHT", "BRAND_ON_BG",
     # 4. Focus
+    "FOCUS", "FOCUS_DIM", "FOCUS_BRIGHT", "FOCUS_ON_BG",
