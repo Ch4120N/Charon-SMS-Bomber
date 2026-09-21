@@ -131,3 +131,4 @@ class Field:
         elif kind == "bool":
             self.widget = Toggle(bool(value))
         elif kind == "cycle":
+            self.widget = Cycle(choices or [], str(value))
