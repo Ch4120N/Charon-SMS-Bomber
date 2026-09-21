@@ -278,3 +278,4 @@ class TuiApp:
         layout = Layout()
         if top is None:
             return layout
+
