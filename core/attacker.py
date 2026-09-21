@@ -174,3 +174,4 @@ class Attacker:
         if self.strategy == "smart":
             # Weighted random per target, single pass per cycle
             for target in self.current_targets:
+                for _ in range(max(1, len(eligible))):
