@@ -187,3 +187,4 @@ class Sender:
         # Body inspection
         verdict = inspect_response_body(r.content)
         if verdict is None:
+            # Can't determine → assume success (2xx is the best signal we have)
