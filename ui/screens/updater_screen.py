@@ -70,3 +70,4 @@ class UpdaterScreen(Screen):
 
         if self.state == "error":
             return self._panel([
+                Text("\n  Update check failed\n", style=f"bold {BAD}"),
