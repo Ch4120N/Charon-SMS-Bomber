@@ -46,3 +46,4 @@ class LogsScreen(Screen):
         return (self.cursor, self.top, len(self.lines))
 
     def _latest_log(self) -> Optional[Path]:
+        if not LOGS_DIR.exists():
