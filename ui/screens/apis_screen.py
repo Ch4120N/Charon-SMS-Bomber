@@ -52,3 +52,4 @@ class ApisScreen(Screen):
         elif self.cursor >= self.top + self.page_size:
             self.top = self.cursor - self.page_size + 1
 
+        info = Table.grid(padding=(0, 2))
