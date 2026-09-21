@@ -106,3 +106,4 @@ class Attacker:
         self.stop_flag = threading.Event()
         self.round_idx = 0
         self.total_rounds = 0
+        self.unlimited = False
