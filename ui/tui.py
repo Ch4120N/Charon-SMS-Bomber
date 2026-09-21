@@ -277,3 +277,4 @@ class TuiApp:
         top = self.stack[-1] if self.stack else None
         layout = Layout()
         if top is None:
+            return layout
