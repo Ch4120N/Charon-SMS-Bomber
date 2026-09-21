@@ -91,3 +91,4 @@ class Attacker:
             tags=cfg["attack"].get("api_filter_tags") or [],
             enabled_only=bool(cfg["attack"].get("api_filter_enabled_only", True)),
         )
+
