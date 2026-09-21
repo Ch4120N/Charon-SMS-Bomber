@@ -111,3 +111,4 @@ class AttackScreen(Screen):
         s = self.attacker.stats
         return (s.sent, s.success, s.failed, self.attacker.round_idx,
                 self.finished, self.app.frame)
+
