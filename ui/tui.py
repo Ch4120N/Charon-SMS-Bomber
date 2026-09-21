@@ -22,3 +22,4 @@ from ui.theme import (
     FG, FG_DIM, FG_MUTED, BG, BG_PANEL, BG_HILITE,
     BORDER, API_COLOR,
     SPINNER_DOTS,
+    BOX_MAIN,
