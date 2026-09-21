@@ -71,3 +71,4 @@ class ApisScreen(Screen):
 
         lst = Table(
             box=None, show_header=True, header_style=f"bold {API_BRIGHT}",
+            padding=(0, 1), expand=True,
