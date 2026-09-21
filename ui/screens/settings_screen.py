@@ -188,3 +188,4 @@ class SettingsScreen(Screen):
                 self.cursor = i
                 return
 
+    def _apply(self, f: Field) -> None:
