@@ -104,3 +104,4 @@ class AttackScreen(Screen):
                 elapsed=s.elapsed,
             ))
         except Exception:
+            pass
