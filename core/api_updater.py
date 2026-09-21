@@ -116,3 +116,4 @@ def download_apis(
     # Backup existing
     if APIS_PATH.exists():
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup = APIS_PATH.with_name(f"apis.json.bak.{ts}")
