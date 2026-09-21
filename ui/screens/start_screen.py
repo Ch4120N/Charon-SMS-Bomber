@@ -127,3 +127,4 @@ class StartScreen(Screen):
                 return self._handle_action(field.key)
             if field.kind in ("text", "int", "float"):
                 self.editing = True
+                self.app.notify(f"editing {field.label} — Enter save, Esc cancel",
