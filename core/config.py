@@ -102,3 +102,4 @@ def save_config(cfg: dict[str, Any], path: Optional[str | Path] = None) -> None:
         encoding="utf-8",
     )
 
+
