@@ -33,3 +33,4 @@ DEFAULT_APIS_URL = (
 class UpdateCheck:
     available: bool
     local_count: int
+    remote_count: int
