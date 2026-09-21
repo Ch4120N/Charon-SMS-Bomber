@@ -78,3 +78,4 @@ def make_entry(
         sent=sent,
         success=success,
         failed=failed,
+        rate=round(rate, 2),
