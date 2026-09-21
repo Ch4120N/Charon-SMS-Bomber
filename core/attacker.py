@@ -177,3 +177,4 @@ class Attacker:
                 for _ in range(max(1, len(eligible))):
                     api = self._weighted_pick(eligible)
                     jobs.append((api, target))
+        elif self.strategy == "unlimited":
