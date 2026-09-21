@@ -69,3 +69,4 @@ class MainMenuScreen(Screen):
     def handle_key(self, key: str) -> Optional[str]:
         if key in (KEY_UP, "k"):
             self.cursor = (self.cursor - 1) % len(_ITEMS)
+            return None
