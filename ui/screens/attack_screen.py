@@ -150,3 +150,4 @@ class AttackScreen(Screen):
             head = pos if pos < bar_len else bar_len * 2 - pos
             bar = Text("  ")
             for i in range(bar_len):
+                if abs(i - head) <= 4:
