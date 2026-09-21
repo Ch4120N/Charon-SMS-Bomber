@@ -458,3 +458,4 @@ __all__ = [
     # 17. Progress
     "PROGRESS_FILLED", "PROGRESS_EMPTY", "PROGRESS_HEAD", "PROGRESS_TAIL",
     "PROGRESS_LABEL", "PROGRESS_PCT",
+    # 18. Spinner
