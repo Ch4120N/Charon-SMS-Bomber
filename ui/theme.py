@@ -141,3 +141,4 @@ CHIP_BG_OK         = _c("#a0e8a8", "bright_green")     # green
 CHIP_BG_WARN       = _c("#ffe890", "bright_yellow")    # yellow
 CHIP_BG_BAD        = _c("#ff8888", "bright_red")       # red
 CHIP_BG_API        = _c("#96e8f5", "bright_cyan")      # cyan
+CHIP_BG_INFO       = _c("#c0c8ff", "bright_blue")      # lavender
