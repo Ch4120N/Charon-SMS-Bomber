@@ -22,3 +22,4 @@ class AboutScreen(Screen):
     name = "about"
     title = "About"
     hotkeys = {"o": "open repo"}
+
