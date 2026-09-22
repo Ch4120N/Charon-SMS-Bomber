@@ -232,3 +232,4 @@ class AttackScreen(Screen):
         t.add_row("Rounds", str(r.get("rounds", 0)))
         t.add_row("Total requests", str(r.get("total_requests", 0)))
         t.add_row("Threads", str(r.get("threads", 0)))
+        rate = r.get("rate_limit", 0)
