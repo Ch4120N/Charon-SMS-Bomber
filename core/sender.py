@@ -34,3 +34,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
         for k in ("success", "ok", "valid", "sent", "result"):
             v = obj.get(k)
             if isinstance(v, bool):
+                return v
