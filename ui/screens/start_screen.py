@@ -57,3 +57,4 @@ class StartScreen(Screen):
                   choices=list(STRATEGIES.keys())),
             Field("dry_run", "Dry-run (no send)", "bool", cfg.get("dry_run", False)),
             Field("go", "START ATTACK", "action", None),
+            Field("back", "Back to menu", "action", None),
