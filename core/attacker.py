@@ -245,3 +245,4 @@ class Attacker:
             self.round_idx = r + 1
             jobs = self._build_jobs()
 
+            if not jobs:
