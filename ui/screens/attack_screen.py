@@ -173,3 +173,4 @@ class AttackScreen(Screen):
             box=None, show_edge=False, expand=True, padding=(0, 1),
         )
         api_tbl.add_column("API", style=API_COLOR, no_wrap=True)
+        api_tbl.add_column("Sent", justify="right", style=FG)
