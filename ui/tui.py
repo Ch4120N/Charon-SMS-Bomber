@@ -153,3 +153,4 @@ class TuiApp:
 
     #  API surface for screens
     def register(self, cls: type[Screen]) -> None:
+        self._screens[cls.name] = cls
