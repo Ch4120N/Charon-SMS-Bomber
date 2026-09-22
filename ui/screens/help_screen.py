@@ -275,3 +275,4 @@ class HelpScreen(Screen):
             return None
         if key in (KEY_RIGHT, "l"):
             self.section_idx = (self.section_idx + 1) % len(_SECTIONS)
+            self.scroll = 0
