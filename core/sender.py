@@ -152,3 +152,4 @@ class Sender:
         kwargs: dict[str, Any] = {
             "headers": headers,
             "timeout": self.cfg["network"]["timeout"],
+            "verify": self.cfg["network"]["verify_ssl"],
