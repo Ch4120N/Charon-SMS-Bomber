@@ -168,3 +168,4 @@ class StartScreen(Screen):
             self.app.notify("invalid numeric field", style=BAD)
             return
 
+        strategy = self.fields[4].widget.value  # type: ignore
