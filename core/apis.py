@@ -17,3 +17,4 @@ DEFAULT_HEADERS: dict[str, str] = {
     "Connection": "keep-alive",
 }
 
+
