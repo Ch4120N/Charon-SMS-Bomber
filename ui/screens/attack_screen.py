@@ -191,3 +191,4 @@ class AttackScreen(Screen):
             if atk.strategy == "smart":
                 with atk._weights_lock:  # type: ignore
                     weight = f"{atk._weights.get(name, 1.0):.2f}"  # type: ignore
+            api_tbl.add_row(
