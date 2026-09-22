@@ -271,3 +271,4 @@ class Attacker:
             if not self.stop_flag.is_set():
                 cooldown = float(self.cfg["attack"]["round_cooldown"])
                 if cooldown > 0:
+                    self._cooldown(cooldown)
