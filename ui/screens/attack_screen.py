@@ -210,3 +210,4 @@ class AttackScreen(Screen):
             footer.append("\n  ⠿ running...  ", style=f"bold {WARN}")
             footer.append("Space / Esc to stop", style=FG_DIM)
         footer.append(f"\n  {NOTICE}", style=FG_MUTED)
+
