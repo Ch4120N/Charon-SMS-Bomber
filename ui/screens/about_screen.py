@@ -28,3 +28,4 @@ class AboutScreen(Screen):
         t.add_column(style=FG_MUTED, justify="right")
         t.add_column(style=FG)
         t.add_row("Program", APP_NAME)
+        t.add_row("Version", APP_VERSION)
