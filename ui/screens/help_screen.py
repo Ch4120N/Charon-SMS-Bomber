@@ -141,3 +141,4 @@ class HelpScreen(Screen):
             ("API Health",
              "Per-API failure counter. N consecutive failures triggers M seconds "
              "of cooldown. Live status is on the attack screen."),
+            ("Smart Weight",
