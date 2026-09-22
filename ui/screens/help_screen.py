@@ -91,3 +91,4 @@ class HelpScreen(Screen):
                              Text(""), scroll_note, hint),
                        vertical="top"),
             title=f"[bold {PRIMARY}]  Help  [/]",
+            border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
