@@ -398,3 +398,4 @@ def accent(text: str) -> str:
 
 
 __all__ = [
+    "TRUECOLOR",
