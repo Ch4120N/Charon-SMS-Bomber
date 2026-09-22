@@ -26,3 +26,4 @@ def load_session() -> Optional[dict[str, Any]]:
         data = json.loads(SESSION_PATH.read_text(encoding="utf-8"))
     except Exception:
         return None
+    if not data.get("targets"):
