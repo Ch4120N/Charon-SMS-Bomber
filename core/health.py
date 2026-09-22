@@ -45,3 +45,4 @@ class ApiHealthTracker:
                     st["disabled_until"] = time.time() + self.cooldown
 
     def snapshot(self) -> dict[str, dict[str, float]]:
+        with self._lock:
