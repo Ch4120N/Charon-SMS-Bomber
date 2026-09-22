@@ -120,3 +120,4 @@ class ApisScreen(Screen):
                 self._search_widget = None
                 self.cursor = 0
                 self.top = 0
+            return None
