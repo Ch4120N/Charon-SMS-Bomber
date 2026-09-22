@@ -127,3 +127,4 @@ class HelpScreen(Screen):
              "Iranian mobile numbers. Formats: 0912..., 98912..., +98912.... "
              "Separate multiple targets with ';'. Duplicates are removed."),
             ("Threads",
+             "Concurrent HTTP requests. Higher = faster but easier to rate-limit. "
