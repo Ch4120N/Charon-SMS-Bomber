@@ -298,3 +298,4 @@ class TuiApp:
         layout["body"].update(top.render())
         layout["footer"].update(self._footer(top))
 
+        self._cached_key = cache_key
