@@ -201,3 +201,4 @@ class Attacker:
         elif base > 0:
             time.sleep(base)
 
+    def _send_one(self, api: dict[str, Any], target: str) -> tuple[str, bool]:
