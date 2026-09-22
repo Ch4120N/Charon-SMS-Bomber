@@ -35,3 +35,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         ),
     },
     "round-robin": {
+        "label": "Round-Robin",
