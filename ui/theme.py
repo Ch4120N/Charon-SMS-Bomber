@@ -470,3 +470,4 @@ __all__ = [
     # 22. Boxes + frames
     "BOX_MAIN", "BOX_SUB", "BOX_TABLE", "BOX_MIN",
     "SPINNER_DOTS", "SPINNER_PULSE", "SPINNER_BAR",
+    # Aliases
