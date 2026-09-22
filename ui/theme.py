@@ -69,3 +69,4 @@ TEXT_INVERSE       = _c("#0d0e12", "black")
 # ══════════════════════════════════════════════════════════════════════
 BRAND              = _c("#e879f9", "bright_magenta")
 BRAND_DIM          = _c("#b85cc8", "magenta")
+BRAND_BRIGHT       = _c("#f5a0ff", "bright_magenta")
