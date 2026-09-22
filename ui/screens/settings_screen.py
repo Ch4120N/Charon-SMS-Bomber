@@ -198,3 +198,4 @@ class SettingsScreen(Screen):
             val: object = f.widget.value  # type: ignore
             if f.kind == "int":
                 try:
+                    val = int(val)  # type: ignore
