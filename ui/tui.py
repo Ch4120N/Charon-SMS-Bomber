@@ -29,3 +29,4 @@ from utils.version import APP_NAME, APP_VERSION
 
 
 #  Key constants
+KEY_UP = readchar.key.UP
