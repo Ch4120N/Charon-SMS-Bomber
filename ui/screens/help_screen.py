@@ -178,3 +178,4 @@ class HelpScreen(Screen):
             ("a", "Open API Manager"),
             ("u", "Check for API updates"),
             ("l", "Open live logs"),
+            ("h", "Open session history"),
