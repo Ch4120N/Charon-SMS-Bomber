@@ -70,3 +70,4 @@ class HistoryScreen(Screen):
                 "▌" if focused else " ",
                 e.ts.replace("T", " "),
                 e.strategy,
+                ", ".join(e.targets)[:40],
