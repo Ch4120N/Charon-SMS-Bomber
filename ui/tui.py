@@ -62,3 +62,4 @@ class KeyReader:
         self.stop = threading.Event()
         self._t = threading.Thread(target=self._run, daemon=True)
 
+    def start(self) -> None:
