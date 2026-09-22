@@ -132,3 +132,4 @@ class Sender:
         attempt = 0
         while attempt <= retries:
             try:
+                return self._send_once(api)
