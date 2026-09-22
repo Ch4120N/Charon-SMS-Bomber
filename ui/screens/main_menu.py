@@ -43,3 +43,4 @@ class MainMenuScreen(Screen):
         self.cursor = 0
 
     def render(self) -> Panel:
+        grid = Table.grid(padding=(0, 3))
