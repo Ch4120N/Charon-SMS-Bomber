@@ -73,3 +73,4 @@ class LogsScreen(Screen):
         # auto-reload if file changed and user hasn't scrolled up
         path = self._latest_log()
         at_bottom = self.cursor >= len(self.lines) - 2
+        if path and path.stat().st_mtime != self._last_mtime and at_bottom:
