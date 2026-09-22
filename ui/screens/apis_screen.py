@@ -54,3 +54,4 @@ class ApisScreen(Screen):
 
         info = Table.grid(padding=(0, 2))
         info.add_column(style=FG_MUTED)
+        info.add_column(style=FG)
