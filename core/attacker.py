@@ -254,3 +254,4 @@ class Attacker:
                 futures_map = {
                     ex.submit(self._send_one, api, tgt): (api, tgt)
                     for api, tgt in jobs
+                }
