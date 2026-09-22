@@ -140,3 +140,4 @@ class UpdaterScreen(Screen):
             return "back"
         if key == "r":
             self._start_check()
+            return None
