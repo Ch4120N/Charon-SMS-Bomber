@@ -58,3 +58,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                     return False
 
         # status string
+        v = obj.get("status")
