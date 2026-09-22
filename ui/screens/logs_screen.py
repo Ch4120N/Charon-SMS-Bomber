@@ -90,3 +90,4 @@ class LogsScreen(Screen):
                 if f"[{level}]" in line:
                     style = lstyle
                     break
+            marker = "▌" if focused else " "
