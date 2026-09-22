@@ -57,3 +57,4 @@ class ApisScreen(Screen):
         info.add_column(style=FG)
         info.add_row("Total", str(len(self.app.apis)))
         info.add_row("Enabled",
+                     str(sum(1 for a in self.app.apis if a.get("enabled", True))))
