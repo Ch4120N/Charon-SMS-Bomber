@@ -364,3 +364,4 @@ def chip_alt(text: str) -> str:
     """Magenta chip — help tabs."""
     return f"[bold {CHIP_FG_DEFAULT} on {CHIP_BG_ALT}] {text} [/]"
 
+
