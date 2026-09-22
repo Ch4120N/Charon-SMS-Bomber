@@ -212,3 +212,4 @@ class AttackScreen(Screen):
         footer.append(f"\n  {NOTICE}", style=FG_MUTED)
 
         return Panel(
+            Align.left(
