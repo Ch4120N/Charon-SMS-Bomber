@@ -92,3 +92,4 @@ class Cycle:
 
     def next(self) -> None:
         i = self.choices.index(self.value)
+        self.value = self.choices[(i + 1) % len(self.choices)]
