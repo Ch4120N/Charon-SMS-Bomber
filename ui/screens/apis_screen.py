@@ -86,3 +86,4 @@ class ApisScreen(Screen):
             lst.add_row(
                 "▌" if focused else " ",
                 str(i + 1),
+                api.get("name", "?"),
