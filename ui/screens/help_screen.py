@@ -152,3 +152,4 @@ class HelpScreen(Screen):
              "Great for checking config before committing."),
             ("Reports",
              "Every finished attack can be exported to ./reports/ as JSON, CSV, "
+             "or HTML. Press 's' on the attack screen after it stops."),
