@@ -127,3 +127,4 @@ class Field:
         self.action = action
 
         if kind in ("text", "int", "float"):
+            self.widget = TextInput(str(value))
