@@ -246,3 +246,4 @@ TOGGLE_OFF_BG       = ERROR_DIM                    # red
 TOGGLE_OFF_FG       = TEXT_INVERSE
 
 # ══════════════════════════════════════════════════════════════════════
+# 15. CYCLES
