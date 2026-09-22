@@ -52,3 +52,4 @@ def filter_apis(
 ) -> list[dict[str, Any]]:
     out = []
     tagset = {t.lower() for t in (tags or [])}
+    for api in apis:
