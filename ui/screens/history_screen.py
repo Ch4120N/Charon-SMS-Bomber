@@ -79,3 +79,4 @@ class HistoryScreen(Screen):
 
         detail = Text()
         if self.entries:
+            e = self.entries[self.cursor]
