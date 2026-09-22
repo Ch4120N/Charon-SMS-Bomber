@@ -31,3 +31,4 @@ class TextInput:
             self.cursor = max(0, self.cursor - 1)
             return None
         if key == KEY_RIGHT:
+            self.cursor = min(len(self.value), self.cursor + 1)
