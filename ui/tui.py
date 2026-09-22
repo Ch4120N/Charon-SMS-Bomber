@@ -196,3 +196,4 @@ class TuiApp:
         else:
             art = Text(_ART_COMPACT, style=f"bold {HEADER_ART}")
 
+        line = Text(" ")
