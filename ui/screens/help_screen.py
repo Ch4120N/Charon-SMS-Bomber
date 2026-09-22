@@ -32,3 +32,4 @@ class HelpScreen(Screen):
     hotkeys = {"←→": "tab", "↑↓": "scroll", "/": "search"}
 
     def __init__(self, app) -> None:
+        super().__init__(app)
