@@ -157,3 +157,4 @@ class Attacker:
             cur = self._weights.get(name, 1.0)
             if ok:
                 self._weights[name] = min(5.0, cur + 0.15)
+            else:
