@@ -173,3 +173,4 @@ class HelpScreen(Screen):
             ("Space", "Toggle boolean, stop attack"),
             ("?", "Open this help screen from anywhere"),
             ("s", "Start (menu) / save reports (attack)"),
+            ("r", "Resume / reload / re-check"),
