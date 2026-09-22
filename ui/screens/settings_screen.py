@@ -133,3 +133,4 @@ class SettingsScreen(Screen):
                     except ValueError:
                         self.app.notify(f"invalid {f.kind}", style=BAD)
                         return None
+                f.widget.value = result  # type: ignore
