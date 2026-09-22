@@ -35,3 +35,4 @@ class UpdaterScreen(Screen):
         self.bytes_total = 0
 
     def on_enter(self) -> None:
+        self._start_check()
