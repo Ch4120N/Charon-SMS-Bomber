@@ -18,3 +18,4 @@ Hue role assignment
     Green     #7fd68a   success:   OK, positive counters, progress
     Yellow    #f0d468   warning:   running spinner, warnings
     Red       #e86b6b   error:     failures, error toasts
+    Lavender  #a4b0f0   info:      informational toasts, neutral accent
