@@ -199,3 +199,4 @@ FOOTER_TOAST_BAD    = STATUS_BAR_TOAST_BAD
 FOOTER_TOAST_BULLET = STATUS_BAR_BULLET
 
 # ══════════════════════════════════════════════════════════════════════
+# 11. HEADER
