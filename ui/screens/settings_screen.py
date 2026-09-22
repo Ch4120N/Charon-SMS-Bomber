@@ -207,3 +207,4 @@ class SettingsScreen(Screen):
                 except ValueError:
                     return
         elif f.kind in ("bool", "cycle"):
+            val = f.widget.value  # type: ignore
