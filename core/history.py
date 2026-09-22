@@ -72,3 +72,4 @@ def make_entry(
     return HistoryEntry(
         ts=datetime.now().isoformat(timespec="seconds"),
         targets=targets,
+        strategy=strategy,
