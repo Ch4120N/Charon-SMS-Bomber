@@ -5,3 +5,4 @@ import string
 
 
 def rand_id(n: int = 8) -> str:
+    return "".join(random.choices(string.ascii_lowercase + string.digits, k=n))
