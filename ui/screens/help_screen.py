@@ -137,3 +137,4 @@ class HelpScreen(Screen):
              "rate-limit fingerprinting."),
             ("Rate Cap",
              "Global requests/sec ceiling across all threads. 0 = disabled. "
+             "Use if you start seeing HTTP 429."),
