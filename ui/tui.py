@@ -119,3 +119,4 @@ class Screen(ABC):
 class TuiApp:
     def __init__(
         self,
+        console: Console,
