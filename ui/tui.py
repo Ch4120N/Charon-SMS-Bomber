@@ -209,3 +209,4 @@ class TuiApp:
         line.append("   ")
 
         crumbs = self.stack
+        for i, s in enumerate(crumbs):
