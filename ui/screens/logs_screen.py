@@ -22,3 +22,4 @@ _LEVEL_STYLE = {
     "WARNING": WARN,
     "ERROR": BAD,
     "CRITICAL": f"bold {BAD}",
+}
