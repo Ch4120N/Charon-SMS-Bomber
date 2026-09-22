@@ -19,3 +19,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
     if cfg["logging"]["enabled"]:
         stamp = datetime.now().strftime("%Y%m%d")
         handler = RotatingFileHandler(
+            LOGS_DIR / f"chsmsbomber_{stamp}.log",
