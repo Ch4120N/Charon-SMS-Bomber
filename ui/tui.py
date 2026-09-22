@@ -334,3 +334,4 @@ class TuiApp:
                     self.console.width,
                     self.console.height,
                 )
+                if cache_key != self._cached_key or animating:
