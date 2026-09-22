@@ -29,3 +29,4 @@ def parse_targets(raw: str) -> list[str]:
     for token in raw.replace(",", ";").split(";"):
         n = normalize_phone(token)
         if n and n not in seen:
+            seen.add(n)
