@@ -79,3 +79,4 @@ class Attacker:
     def __init__(
         self,
         cfg: dict[str, Any],
+        apis: list[dict[str, Any]],
