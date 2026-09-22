@@ -84,3 +84,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
     if not p.exists():
         p.write_text(
             json.dumps(DEFAULT_CONFIG, indent=4, ensure_ascii=False),
+            encoding="utf-8",
