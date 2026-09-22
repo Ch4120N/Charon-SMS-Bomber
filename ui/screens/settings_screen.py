@@ -154,3 +154,4 @@ class SettingsScreen(Screen):
         if f.kind == "cycle":
             if key == KEY_LEFT:
                 f.widget.prev()  # type: ignore
+                self._apply(f)
