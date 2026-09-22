@@ -155,3 +155,4 @@ class Sender:
             "verify": self.cfg["network"]["verify_ssl"],
             "allow_redirects": True,
         }
+        proxies = self._pick_proxy()
