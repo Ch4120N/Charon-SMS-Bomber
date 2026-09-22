@@ -83,3 +83,4 @@ class Attacker:
         logger: logging.Logger,
     ) -> None:
         self.cfg = cfg
+        self.all_apis = apis
