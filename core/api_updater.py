@@ -43,3 +43,4 @@ class UpdateCheck:
 def _sha256_bytes(b: bytes) -> str:
     return hashlib.sha256(b).hexdigest()
 
+
