@@ -47,3 +47,4 @@ class LogsScreen(Screen):
 
     def _latest_log(self) -> Optional[Path]:
         if not LOGS_DIR.exists():
+            return None
