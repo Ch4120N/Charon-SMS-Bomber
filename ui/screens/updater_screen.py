@@ -45,3 +45,4 @@ class UpdaterScreen(Screen):
 
         def _worker() -> None:
             try:
+                info = check_for_updates(DEFAULT_MANIFEST_URL, DEFAULT_APIS_URL)
