@@ -83,3 +83,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
 def inspect_response_body(content: bytes) -> Optional[bool]:
     """Best-effort body verdict. None = can't determine."""
     if not content:
+        return None
