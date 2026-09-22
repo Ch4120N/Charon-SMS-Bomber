@@ -44,3 +44,4 @@ class TextInput:
             FORM_PLACEHOLDER, TEXT_DISABLED,
         )
         t = Text()
+        before = self.value[: self.cursor]
