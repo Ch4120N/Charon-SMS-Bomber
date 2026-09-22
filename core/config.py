@@ -79,3 +79,4 @@ def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
     return merged
 
 
+def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
