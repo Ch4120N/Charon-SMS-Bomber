@@ -72,3 +72,4 @@ class StartScreen(Screen):
         header = Text()
         header.append("  Target Setup\n", style=f"bold {ACCENT}")
         header.append("  ↑ ↓ move   ⏎ edit/activate   ← → change   Esc back\n",
+                      style=FG_MUTED)
