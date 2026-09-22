@@ -13,3 +13,4 @@ from core.attacker import STRATEGIES
 from ui.theme import (
     PRIMARY, PRIMARY_ALT, API_COLOR, ACCENT, OK, WARN, BAD,
     FG, FG_DIM, FG_MUTED, BORDER,
+    BOX_MAIN,
