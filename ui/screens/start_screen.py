@@ -166,3 +166,4 @@ class StartScreen(Screen):
             delay = max(0.0, float(self.fields[3].widget.value))  # type: ignore
         except ValueError:
             self.app.notify("invalid numeric field", style=BAD)
+            return
