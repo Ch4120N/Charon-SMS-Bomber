@@ -164,3 +164,4 @@ class Field:
         if isinstance(self.widget, TextInput):
             t.append_text(self.widget.render(focused))
             if focused and self.hint:
+                t.append(f"   {self.hint}", style=FORM_HINT)
