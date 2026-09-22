@@ -134,3 +134,4 @@ class UpdaterScreen(Screen):
             subtitle=f"[{FG_MUTED}]{subtitle}[/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
+
