@@ -211,3 +211,4 @@ class AttackScreen(Screen):
             footer.append("Space / Esc to stop", style=FG_DIM)
         footer.append(f"\n  {NOTICE}", style=FG_MUTED)
 
+        return Panel(
