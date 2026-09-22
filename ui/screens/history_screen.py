@@ -25,3 +25,4 @@ class HistoryScreen(Screen):
         super().__init__(app)
         self.entries = []
         self.cursor = 0
+        self.top = 0
