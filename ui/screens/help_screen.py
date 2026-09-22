@@ -240,3 +240,4 @@ class HelpScreen(Screen):
             g.add_row(k, v)
 
         note = Text("\n  Placeholders\n", style=f"bold {PRIMARY}")
+        ph = Table.grid(padding=(0, 2))
