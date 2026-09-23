@@ -97,3 +97,4 @@ class Screen(ABC):
     # If True, TUI keeps 30 FPS even when nothing changes (for animations)
     animating: bool = False
 
+    def __init__(self, app: "TuiApp", **kwargs: Any) -> None:
