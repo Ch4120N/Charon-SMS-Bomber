@@ -130,3 +130,4 @@ class AttackScreen(Screen):
         header.add_column(style=FG)
         header.add_row("Targets", ", ".join(self.targets))
         header.add_row("Strategy", strat)
+        header.add_row("Threads", str(self.threads))
