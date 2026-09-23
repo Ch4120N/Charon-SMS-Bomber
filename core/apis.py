@@ -87,3 +87,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
                    .replace("{ts}", ts)
             )
         if isinstance(obj, dict):
+            return {k: _sub(v) for k, v in obj.items()}
