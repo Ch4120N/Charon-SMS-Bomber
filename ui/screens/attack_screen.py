@@ -26,3 +26,4 @@ from utils.version import NOTICE
 class AttackScreen(Screen):
     name = "attack"
     title = "Attack"
+    hotkeys = {"space": "stop", "Esc": "stop/back", "s": "save reports"}
