@@ -195,3 +195,4 @@ class TuiApp:
                     art.append("\n")
         else:
             art = Text(_ART_COMPACT, style=f"bold {HEADER_ART}")
+
