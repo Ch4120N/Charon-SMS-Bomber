@@ -324,3 +324,4 @@ class TuiApp:
                 frame_interval = 1.0 / max(1, fps)
 
                 # update frame counter
+                self.frame += 1
