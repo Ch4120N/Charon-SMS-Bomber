@@ -17,3 +17,4 @@ MAX_ENTRIES = 50
 @dataclass
 class HistoryEntry:
     ts: str
+    targets: list[str]
