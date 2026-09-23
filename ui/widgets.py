@@ -23,3 +23,4 @@ class TextInput:
         if key == KEY_ENTER:
             return self.value
         if key == KEY_BACKSPACE:
+            if self.cursor > 0:
