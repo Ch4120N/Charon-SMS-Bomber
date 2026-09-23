@@ -69,3 +69,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
 
     Tokens:
       {cc}    → 9123456789        (no plus, no leading zero)
+      {intl}  → +989123456789     (E.164)
