@@ -366,3 +366,4 @@ class TuiApp:
         if result == "back":
             self.pop()
         elif result == "quit":
+            self.running = False
