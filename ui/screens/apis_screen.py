@@ -40,3 +40,4 @@ class ApisScreen(Screen):
             if s in a.get("name", "").lower() or s in a.get("url", "").lower()
         ]
 
+    def render_cache_key(self):
