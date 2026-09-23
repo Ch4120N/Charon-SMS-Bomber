@@ -38,3 +38,4 @@ class NotificationCenter:
             )
             return list(self._items)[-self.max_visible :]
 
+    def clear(self) -> None:
