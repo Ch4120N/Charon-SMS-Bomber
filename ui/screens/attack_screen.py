@@ -156,3 +156,4 @@ class AttackScreen(Screen):
                     bar.append("▓", style=OK)
                 else:
                     bar.append("░", style=FG_MUTED)
+            bar.append(f"   elapsed {int(stats.elapsed)}s", style=FG_DIM)
