@@ -122,3 +122,4 @@ class StartScreen(Screen):
         if key == "/":
             return "help"
 
+        if key == KEY_ENTER:
