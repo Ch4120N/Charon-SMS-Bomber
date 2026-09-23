@@ -137,3 +137,4 @@ class AttackScreen(Screen):
         for _ in range(4):
             counters.add_column(justify="center")
         counters.add_row(
+            f"[{FG_DIM}]Sent[/]\n[bold {PRIMARY}]{stats.sent}[/]",
