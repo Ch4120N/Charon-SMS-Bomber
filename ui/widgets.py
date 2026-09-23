@@ -120,3 +120,4 @@ class Field:
         hint: str = "", choices: Optional[list[str]] = None,
         action: bool = False,
     ) -> None:
+        self.key = key
