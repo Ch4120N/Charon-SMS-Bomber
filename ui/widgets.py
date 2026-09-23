@@ -90,3 +90,4 @@ class Cycle:
         self.choices = choices
         self.value = value if value in choices else choices[0]
 
+    def next(self) -> None:
