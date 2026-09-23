@@ -150,3 +150,4 @@ class HelpScreen(Screen):
             ("Dry-Run",
              "Plans the attack (targets, jobs, rounds) but sends nothing. "
              "Great for checking config before committing."),
+            ("Reports",
