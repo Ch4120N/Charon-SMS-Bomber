@@ -30,3 +30,4 @@ class Stats:
         b = self.by_api.setdefault(api_name, {"sent": 0, "success": 0, "failed": 0})
         b["sent"] += 1
         b["success" if ok else "failed"] += 1
+        self.recent.append((api_name, target, ok))
