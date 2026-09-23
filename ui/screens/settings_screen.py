@@ -27,3 +27,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         cfg["api_health"], cfg["output"], cfg["logging"],
     )
     return [
+        Field("section", "ATTACK", "action", None),
