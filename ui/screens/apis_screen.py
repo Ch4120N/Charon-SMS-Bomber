@@ -153,3 +153,4 @@ class ApisScreen(Screen):
             return None
         if key == KEY_ENTER:
             api = items[self.cursor]
+            self.app.notify(f"{api.get('name')}: {api.get('url')}", style=FG)
