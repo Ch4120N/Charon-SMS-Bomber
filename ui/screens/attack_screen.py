@@ -224,3 +224,4 @@ class AttackScreen(Screen):
         r = self.dry_run_report or {}
         t = Table.grid(padding=(0, 2))
         t.add_column(style=FG_MUTED)
+        t.add_column(style=FG)
