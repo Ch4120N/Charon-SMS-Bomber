@@ -127,3 +127,4 @@ class SettingsScreen(Screen):
                 return None
             result = f.widget.handle(key)  # type: ignore
             if result is not None:
+                if f.kind in ("int", "float"):
