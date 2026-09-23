@@ -39,3 +39,4 @@ def load_history() -> list[HistoryEntry]:
     for item in raw:
         try:
             out.append(HistoryEntry(**item))
+        except TypeError:
