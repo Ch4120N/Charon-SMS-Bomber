@@ -28,3 +28,4 @@ import os
 from rich import box
 
 
+def _has_truecolor() -> bool:
