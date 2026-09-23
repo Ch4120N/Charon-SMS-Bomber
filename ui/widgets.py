@@ -169,3 +169,4 @@ class Field:
             t.append_text(self.widget.render())
             if focused:
                 t.append("   space", style=FORM_HINT)
+        elif isinstance(self.widget, Cycle):
