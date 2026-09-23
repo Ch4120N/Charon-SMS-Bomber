@@ -87,3 +87,4 @@ class UpdaterScreen(Screen):
 
             header = Text()
             if info.available:
+                header.append("\n  Update available\n\n", style=f"bold {WARN}")
