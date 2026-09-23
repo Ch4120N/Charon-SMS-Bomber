@@ -42,3 +42,4 @@ class HelpScreen(Screen):
     @property
     def section(self) -> str:
         return _SECTIONS[self.section_idx]
+
