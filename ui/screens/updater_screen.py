@@ -47,3 +47,4 @@ class UpdaterScreen(Screen):
             try:
                 info = check_for_updates(DEFAULT_MANIFEST_URL, DEFAULT_APIS_URL)
                 self.info = info
+                self.state = "ready"
