@@ -35,3 +35,4 @@ class ApisScreen(Screen):
         if not self.search:
             return self.app.apis
         s = self.search.lower()
+        return [
