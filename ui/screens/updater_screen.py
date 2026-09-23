@@ -73,3 +73,4 @@ class UpdaterScreen(Screen):
                 Text("\n  Update check failed\n", style=f"bold {BAD}"),
                 Text(f"  {self.error}\n", style=FG),
             ], subtitle="press r to retry, Esc to return")
+
