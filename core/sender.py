@@ -96,3 +96,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
         return None
 
     return _walk(data)
+
