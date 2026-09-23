@@ -259,3 +259,4 @@ class AttackScreen(Screen):
                 self.attacker.stop_flag.set()
             return "back"
         if key == KEY_ENTER and self.finished:
+            return "back"
