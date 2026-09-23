@@ -66,3 +66,4 @@ class MainMenuScreen(Screen):
             border_style=BORDER, box=BOX_MAIN, padding=(1, 4),
         )
 
+    def handle_key(self, key: str) -> Optional[str]:
