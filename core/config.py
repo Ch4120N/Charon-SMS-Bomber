@@ -33,3 +33,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
     "user_agent": {
         "rotate": True,
+        "custom": [],
