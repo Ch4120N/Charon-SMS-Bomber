@@ -132,3 +132,4 @@ class HelpScreen(Screen):
             ("Rounds",
              "How many times to walk the API list. '0' = unlimited and only makes "
              "sense with smart or unlimited strategy."),
+            ("Delay / Jitter",
