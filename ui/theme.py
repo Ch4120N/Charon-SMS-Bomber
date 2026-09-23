@@ -284,3 +284,4 @@ SPINNER_IDLE        = TEXT_TERTIARY
 SPINNER_LABEL       = TEXT_SECONDARY
 
 # ══════════════════════════════════════════════════════════════════════
+# 19. STATUS INDICATORS
