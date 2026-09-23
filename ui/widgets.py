@@ -157,3 +157,4 @@ class Field:
         if self.action:
             if focused:
                 t.append("[ Enter ]", style=f"bold {FORM_ACTION_FOCUS}")
+            else:
