@@ -75,3 +75,4 @@ class UpdaterScreen(Screen):
             ], subtitle="press r to retry, Esc to return")
 
         if self.state in ("ready", "downloading", "done") and self.info:
+            info = self.info
