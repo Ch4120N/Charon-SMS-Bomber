@@ -11,3 +11,4 @@ def save_session(
     targets: list[str], threads: int, rounds: int, delay: float
 ) -> None:
     SESSION_PATH.write_text(
+        json.dumps(
