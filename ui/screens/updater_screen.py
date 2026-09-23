@@ -54,3 +54,4 @@ class UpdaterScreen(Screen):
                 self.error = str(exc)
                 self.state = "error"
                 self.show_spinner = False
+                self.app.notify(f"check failed: {exc}", style=BAD)
