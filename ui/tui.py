@@ -203,3 +203,4 @@ class TuiApp:
             line.append("  ")
         else:
             line.append("·", style=HEADER_SPINNER_IDLE)
+            line.append("  ")
