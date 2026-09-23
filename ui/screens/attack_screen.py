@@ -143,3 +143,4 @@ class AttackScreen(Screen):
             f"[{FG_DIM}]Rate[/]\n[bold {WARN}]{stats.rate:.1f}%[/]",
         )
 
+        bar_len = 46
