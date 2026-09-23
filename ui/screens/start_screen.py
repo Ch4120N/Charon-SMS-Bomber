@@ -47,3 +47,4 @@ class StartScreen(Screen):
                 delay_val = str(data["delay"])
 
         self.fields: list[Field] = [
+            Field("targets", "Targets", "text", targets_val,
