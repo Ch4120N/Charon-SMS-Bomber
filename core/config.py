@@ -100,3 +100,4 @@ def save_config(cfg: dict[str, Any], path: Optional[str | Path] = None) -> None:
     p.write_text(
         json.dumps(cfg, indent=4, ensure_ascii=False),
         encoding="utf-8",
+    )
