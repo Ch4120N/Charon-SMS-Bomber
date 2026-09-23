@@ -38,3 +38,4 @@ def load_history() -> list[HistoryEntry]:
     out: list[HistoryEntry] = []
     for item in raw:
         try:
+            out.append(HistoryEntry(**item))
