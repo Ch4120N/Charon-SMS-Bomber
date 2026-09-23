@@ -179,3 +179,4 @@ class Sender:
         # Per-API explicit override
         regex = api.get("success_regex")
         if regex:
+            try:
