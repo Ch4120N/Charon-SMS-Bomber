@@ -131,3 +131,4 @@ class UpdaterScreen(Screen):
         return Panel(
             Align.left(Group(*body), vertical="top"),
             title=f"[bold {PRIMARY}]  Check for Updates  [/]",
+            subtitle=f"[{FG_MUTED}]{subtitle}[/]",
