@@ -21,3 +21,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
         handler = RotatingFileHandler(
             LOGS_DIR / f"chsmsbomber_{stamp}.log",
             maxBytes=int(cfg["logging"]["max_bytes"]),
+            backupCount=int(cfg["logging"]["backup_count"]),
