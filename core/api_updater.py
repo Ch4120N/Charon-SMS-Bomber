@@ -46,3 +46,4 @@ def _sha256_bytes(b: bytes) -> str:
 
 def _sha256_file(p: Path) -> str:
     return _sha256_bytes(p.read_bytes())
+
