@@ -311,3 +311,4 @@ class TuiApp:
             refresh_per_second=self._active_fps,
             transient=False,
             screen=True,
+            auto_refresh=False,
