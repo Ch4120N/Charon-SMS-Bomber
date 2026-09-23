@@ -219,3 +219,4 @@ class TuiApp:
                 line.append("  ›  ", style=HEADER_BREADCRUMB_SEP)
 
         return Panel(
+            Group(Align.left(art), Align.left(line)),
