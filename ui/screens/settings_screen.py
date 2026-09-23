@@ -209,3 +209,4 @@ class SettingsScreen(Screen):
         elif f.kind in ("bool", "cycle"):
             val = f.widget.value  # type: ignore
         else:
+            return
