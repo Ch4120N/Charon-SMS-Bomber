@@ -121,3 +121,4 @@ class Field:
         action: bool = False,
     ) -> None:
         self.key = key
+        self.label = label
