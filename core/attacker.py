@@ -29,3 +29,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         "label": "Unlimited",
         "summary": "Every API, every cycle, forever, until you stop it.",
         "details": (
+            "Cycles through every enabled API in round-robin fashion, "
