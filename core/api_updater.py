@@ -75,3 +75,4 @@ def check_for_updates(
 
     # Remote apis.json
     try:
+        ar = requests.get(apis_url, timeout=timeout)
