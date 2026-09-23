@@ -113,3 +113,4 @@ class HelpScreen(Screen):
             padding=(0, 2), expand=True,
         )
         t.add_column("Strategy", style=f"bold {PRIMARY}", width=16)
+        t.add_column("Summary", style=FG, width=42)
