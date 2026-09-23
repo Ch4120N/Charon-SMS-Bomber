@@ -52,3 +52,4 @@ class TextInput:
             cur = "*" if cur != " " else " "
             after = "*" * len(after)
 
+        if focused:
