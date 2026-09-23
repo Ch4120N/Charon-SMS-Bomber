@@ -245,3 +245,4 @@ class AttackScreen(Screen):
             title=f"[bold {PRIMARY}]  Dry Run  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
+    
