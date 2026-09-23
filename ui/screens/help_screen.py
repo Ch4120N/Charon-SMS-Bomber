@@ -238,3 +238,4 @@ class HelpScreen(Screen):
         g.add_column(style=FG)
         for k, v in fields:
             g.add_row(k, v)
+
