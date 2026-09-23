@@ -212,3 +212,4 @@ class HelpScreen(Screen):
         rows = []
         for k, v in items:
             g = Table.grid(padding=(0, 2))
+            g.add_column(style=f"bold {PRIMARY}", width=34)
