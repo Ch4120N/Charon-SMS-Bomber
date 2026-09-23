@@ -250,3 +250,4 @@ class TuiApp:
                 bar.append("  ", style=FOOTER_SEPARATOR)
             bar.append_text(Text.from_markup(chip(k)))
             bar.append(f" {d}", style=FOOTER_HINT_TEXT)
+
