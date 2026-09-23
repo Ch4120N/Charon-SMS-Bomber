@@ -9,3 +9,4 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 from core.apis import expand_api, filter_apis
+from core.health import ApiHealthTracker
