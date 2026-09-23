@@ -355,3 +355,4 @@ class TuiApp:
         if key == "?":
             self.push("help")
             return
+        if key == "ctrl+k":
