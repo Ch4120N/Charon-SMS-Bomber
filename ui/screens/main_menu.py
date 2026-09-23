@@ -60,3 +60,4 @@ class MainMenuScreen(Screen):
             )
 
         return Panel(
+            Align.center(grid, vertical="middle"),
