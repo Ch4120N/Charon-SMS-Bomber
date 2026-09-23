@@ -194,3 +194,4 @@ class HelpScreen(Screen):
             t.add_row(k, v)
         return t
 
+    def _render_config(self) -> Group:
