@@ -71,3 +71,4 @@ class KeyReader:
                 k = readchar.readkey()
             except Exception:
                 break
+            self.q.put(k)
