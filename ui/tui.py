@@ -266,3 +266,4 @@ class TuiApp:
             body.append(Align.left(toast_line))
 
         return Panel(
+            Group(*body),
