@@ -13,3 +13,4 @@ class Toast:
     text: str
     style: str = "white"
     ttl: float = 3.5
+    created: float = field(default_factory=time.time)
