@@ -16,3 +16,4 @@ class TextInput:
     def __init__(self, value: str = "", mask: bool = False) -> None:
         self.value = value
         self.cursor = len(value)
+        self.mask = mask
