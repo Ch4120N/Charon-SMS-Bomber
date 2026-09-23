@@ -57,3 +57,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "report_format": "json",
         "include_html": True,
     },
+}
