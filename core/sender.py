@@ -113,3 +113,4 @@ class Sender:
             try:
                 return self.ua.random
             except Exception:
+                return self._fallback_ua
