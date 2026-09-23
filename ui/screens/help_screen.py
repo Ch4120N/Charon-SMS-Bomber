@@ -56,3 +56,4 @@ class HelpScreen(Screen):
             if i == self.section_idx:
                 tabs.append(f" {label} ", style=f"bold black on {PRIMARY_ALT}")
             else:
+                tabs.append(f" {label} ", style=FG_DIM)
