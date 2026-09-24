@@ -66,3 +66,4 @@ def make_entry(
     sent: int,
     success: int,
     failed: int,
+    elapsed: float,
