@@ -66,3 +66,4 @@ def check_for_updates(
     local_count = _count_apis(APIS_PATH) if APIS_PATH.exists() else 0
 
     # Remote manifest
+    try:
