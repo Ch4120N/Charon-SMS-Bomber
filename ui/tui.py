@@ -236,3 +236,4 @@ class TuiApp:
         hints: list[tuple[str, str]] = [
             ("↑↓", "move"),
             ("⏎", "select"),
+        ]
