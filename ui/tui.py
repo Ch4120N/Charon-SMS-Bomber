@@ -58,3 +58,4 @@ _ART_COMPACT = "  ╭─ CHSMSBOMBER ─╮"
 #  KeyReader
 class KeyReader:
     def __init__(self) -> None:
+        self.q: "queue.Queue[str]" = queue.Queue()
