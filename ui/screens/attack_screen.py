@@ -120,3 +120,4 @@ class AttackScreen(Screen):
         stats = atk.stats
 
         rounds_label = (
+            "unlimited" if atk.unlimited
