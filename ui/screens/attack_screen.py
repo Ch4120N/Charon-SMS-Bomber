@@ -145,3 +145,4 @@ class AttackScreen(Screen):
 
         bar_len = 46
         if atk.unlimited:
+            frame = self.app.frame
