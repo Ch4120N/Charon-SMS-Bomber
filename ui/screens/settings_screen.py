@@ -60,3 +60,4 @@ def _build_fields(cfg: dict) -> list[Field]:
               choices=["DEBUG", "INFO", "WARNING", "ERROR"]),
         Field("action.save", "Save settings", "action", None),
         Field("action.back", "Back", "action", None),
+    ]
