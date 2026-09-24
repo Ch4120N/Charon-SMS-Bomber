@@ -263,3 +263,4 @@ class AttackScreen(Screen):
         return None
 
     def _save_reports(self) -> None:
+        if not self.attacker.stats.sent and not self.dry_run:
