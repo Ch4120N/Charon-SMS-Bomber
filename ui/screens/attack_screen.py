@@ -98,3 +98,4 @@ class AttackScreen(Screen):
                 strategy=self.attacker.strategy,
                 threads=self.threads,
                 rounds=self.rounds,
+                sent=s.sent,
