@@ -49,3 +49,4 @@ class MainMenuScreen(Screen):
         grid.add_column(ratio=1)
 
         for i, (_id, name, desc) in enumerate(_ITEMS):
+            focused = i == self.cursor
