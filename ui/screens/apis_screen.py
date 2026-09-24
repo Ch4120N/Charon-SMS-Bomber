@@ -99,3 +99,4 @@ class ApisScreen(Screen):
             hdrs = api.get("headers") or {}
             detail.append(", ".join(list(hdrs.keys())[:6]) if hdrs else "(none)",
                           style=FG)
+            detail.append("   weight: ", style=FG_MUTED)
