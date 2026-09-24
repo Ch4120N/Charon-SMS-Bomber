@@ -213,3 +213,4 @@ class AttackScreen(Screen):
 
         return Panel(
             Align.left(
+                Group(header, Text(""), counters, bar, Text(""), api_tbl, footer),
