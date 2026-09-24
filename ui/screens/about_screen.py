@@ -51,3 +51,4 @@ class AboutScreen(Screen):
             import webbrowser
             webbrowser.open(APP_REPO)
             self.app.notify("opening repository…", style=OK)
+            return None
