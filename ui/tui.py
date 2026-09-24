@@ -85,3 +85,4 @@ class KeyReader:
                 self.q.get_nowait()
         except queue.Empty:
             pass
+
