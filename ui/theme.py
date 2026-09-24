@@ -181,3 +181,4 @@ STATUS_BAR_SEPARATOR       = TEXT_DISABLED         # #454a55
 STATUS_BAR_BULLET          = TEXT_TERTIARY         # #6a7080
 
 # ── 9.6  Toast notification text, per level ──────────────────────────
+STATUS_BAR_TOAST_INFO      = INFO                  # #a4b0f0 lavender
