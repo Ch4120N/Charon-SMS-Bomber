@@ -24,3 +24,4 @@ class AboutScreen(Screen):
     hotkeys = {"o": "open repo"}
 
     def render(self) -> Panel:
+        t = Table.grid(padding=(0, 2))
