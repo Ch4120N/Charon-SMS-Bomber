@@ -319,3 +319,4 @@ class TuiApp:
 
                 # adaptive fps
                 animating = top.animating or top.show_spinner
+                idle = (now - self._last_input_ts) > self._idle_after
