@@ -91,3 +91,4 @@ class Cycle:
         self.value = value if value in choices else choices[0]
 
     def next(self) -> None:
+        i = self.choices.index(self.value)
