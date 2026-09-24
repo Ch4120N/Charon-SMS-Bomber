@@ -35,3 +35,4 @@ class UpdateCheck:
     local_count: int
     remote_count: int
     local_hash: str
+    remote_hash: str
