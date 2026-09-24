@@ -56,3 +56,4 @@ def _count_apis(path: Path) -> int:
         return 0
 
 
+def check_for_updates(
