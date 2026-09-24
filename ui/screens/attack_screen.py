@@ -46,3 +46,4 @@ class AttackScreen(Screen):
         self.delay = delay
         self.dry_run = dry_run
 
+        self.attacker = Attacker(app.cfg, app.apis, app.logger)
