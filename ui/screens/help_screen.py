@@ -122,3 +122,4 @@ class HelpScreen(Screen):
         return t
 
     def _render_concepts(self) -> Group:
+        items = [
