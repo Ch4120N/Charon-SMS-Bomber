@@ -126,3 +126,4 @@ class HistoryScreen(Screen):
             return None
         if key == "c":
             clear_history()
+            self.entries = []
