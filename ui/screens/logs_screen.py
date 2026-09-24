@@ -79,3 +79,4 @@ class LogsScreen(Screen):
         if self.cursor < self.top:
             self.top = self.cursor
         elif self.cursor >= self.top + self.page_size:
+            self.top = self.cursor - self.page_size + 1
