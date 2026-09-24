@@ -164,3 +164,4 @@ class AttackScreen(Screen):
             )
             filled = int(bar_len * pct / 100)
             bar = Text("  ")
+            bar.append("█" * filled, style=f"bold {OK}")
