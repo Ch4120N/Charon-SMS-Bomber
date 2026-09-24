@@ -212,3 +212,4 @@ class Attacker:
         expanded = expand_api(api, target)
         ok = self.sender.send(expanded)
 
+        if self.health:
