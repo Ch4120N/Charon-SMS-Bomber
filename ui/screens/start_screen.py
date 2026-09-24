@@ -29,3 +29,4 @@ class StartScreen(Screen):
 
     def __init__(self, app, mode: str = "new") -> None:
         super().__init__(app)
+        self.mode = mode
