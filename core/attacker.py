@@ -67,3 +67,4 @@ class RateLimiter:
             return
         with self._lock:
             now = time.time()
+            wait = self._last + self.min_interval - now
