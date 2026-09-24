@@ -27,3 +27,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
         raise ValueError(f"{p.name} must contain a non-empty JSON list.")
     # Normalize: ensure every entry has sane fields.
     out: list[dict[str, Any]] = []
+    for entry in data:
