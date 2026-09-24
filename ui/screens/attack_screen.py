@@ -107,3 +107,4 @@ class AttackScreen(Screen):
             pass
 
     
+    def render_cache_key(self):
