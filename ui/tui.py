@@ -364,3 +364,4 @@ class TuiApp:
         if result is None:
             return
         if result == "back":
+            self.pop()
