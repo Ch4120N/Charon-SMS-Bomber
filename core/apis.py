@@ -12,3 +12,4 @@ from utils.paths import APIS_PATH
 DEFAULT_HEADERS: dict[str, str] = {
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "en-US,en;q=0.9,fa;q=0.8",
+    "Cache-Control": "no-cache",
