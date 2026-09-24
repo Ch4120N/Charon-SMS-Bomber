@@ -150,3 +150,4 @@ class TuiApp:
         self.keys.start()
 
         self._toast_lock = threading.Lock()
+
