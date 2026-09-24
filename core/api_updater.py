@@ -129,3 +129,4 @@ def download_apis(
                 if not chunk:
                     continue
                 fh.write(chunk)
+                written += len(chunk)
