@@ -125,3 +125,4 @@ LINK_HOVER         = _c("#96e8f5", "bright_cyan")
 # ══════════════════════════════════════════════════════════════════════
 BORDER_DEFAULT     = _c("#2e3342", "grey27")
 BORDER_SUBTLE      = _c("#23262f", "grey23")
+BORDER_FOCUSED     = BRAND
