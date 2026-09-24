@@ -110,3 +110,4 @@ class ApisScreen(Screen):
             title=f"[bold {PRIMARY}]  API Manager  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 1),
         )
+
