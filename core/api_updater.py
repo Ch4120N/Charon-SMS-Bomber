@@ -26,3 +26,4 @@ DEFAULT_MANIFEST_URL = (
 DEFAULT_APIS_URL = (
     "https://raw.githubusercontent.com/Ch4120N/Charon-SMS-Bomber/"
     "master/apis.json"
+)
