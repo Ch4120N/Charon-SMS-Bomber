@@ -125,3 +125,4 @@ class HistoryScreen(Screen):
             self.app.notify("history reloaded", style=OK)
             return None
         if key == "c":
+            clear_history()
