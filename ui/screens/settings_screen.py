@@ -145,3 +145,4 @@ class SettingsScreen(Screen):
             self._move(1)
             return None
         if key == KEY_ESC:
+            return "back"
