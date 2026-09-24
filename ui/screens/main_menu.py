@@ -20,3 +20,4 @@ _ITEMS = [
     ("continue", "Resume Session",     "reuse last saved session"),
     ("settings", "Settings",           "edit config.json values"),
     ("apis",     "API Manager",        "browse, filter, reload APIs"),
+    ("updates",  "Check for Updates",  "download latest apis.json"),
