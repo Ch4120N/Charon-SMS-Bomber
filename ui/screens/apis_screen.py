@@ -85,3 +85,4 @@ class ApisScreen(Screen):
             focused = i == self.cursor
             lst.add_row(
                 "▌" if focused else " ",
+                str(i + 1),
