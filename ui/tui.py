@@ -76,3 +76,4 @@ class KeyReader:
     def get(self, timeout: float = 0.05) -> Optional[str]:
         try:
             return self.q.get(timeout=timeout)
+        except queue.Empty:
