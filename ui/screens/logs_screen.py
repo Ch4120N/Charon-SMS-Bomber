@@ -34,3 +34,4 @@ class LogsScreen(Screen):
         super().__init__(app)
         self.lines: list[str] = []
         self.cursor = 0
+        self.top = 0
