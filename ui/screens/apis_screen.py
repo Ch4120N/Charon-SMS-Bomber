@@ -114,3 +114,4 @@ class ApisScreen(Screen):
     def handle_key(self, key: str) -> Optional[str]:
         if self._searching:
             result = self._search_widget.handle(key)  # type: ignore
+            if result is not None:
