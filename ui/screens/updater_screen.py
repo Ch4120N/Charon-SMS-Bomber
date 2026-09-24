@@ -57,3 +57,4 @@ class UpdaterScreen(Screen):
                 self.app.notify(f"check failed: {exc}", style=BAD)
 
         threading.Thread(target=_worker, daemon=True).start()
+
