@@ -188,3 +188,4 @@ class AttackScreen(Screen):
                 if rem > 0:
                     status = f"[{BAD}]cooling {int(rem)}s[/]"
             weight = ""
+            if atk.strategy == "smart":
