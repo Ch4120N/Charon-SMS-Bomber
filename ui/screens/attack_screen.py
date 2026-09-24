@@ -59,3 +59,4 @@ class AttackScreen(Screen):
             self.dry_run_report = self.attacker.dry_run(self.targets)
             self.finished = True
             self.show_spinner = False
+            self.animating = False
