@@ -21,3 +21,4 @@ Hue role assignment
     Lavender  #a4b0f0   info:      informational toasts, neutral accent
     Grey      #9fa5b2   all other text
 """
+from __future__ import annotations
