@@ -63,3 +63,4 @@ class HistoryScreen(Screen):
         t.add_column("Fail", justify="right", style=BAD)
         t.add_column("Rate", justify="right", style=WARN)
 
+        for i in range(self.top, min(self.top + self.page_size, len(self.entries))):
