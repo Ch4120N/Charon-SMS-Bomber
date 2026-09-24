@@ -97,3 +97,4 @@ class UpdaterScreen(Screen):
                     if self.bytes_total else 0
                 )
                 bar_len = 40
+                filled = int(bar_len * pct / 100)
