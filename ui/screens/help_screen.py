@@ -202,3 +202,4 @@ class HelpScreen(Screen):
             ("network.proxy_enabled", "Route via network.proxy_pool."),
             ("attack.hard_max_rounds", "Hard cap on rounds."),
             ("attack.round_cooldown", "Wait between finite rounds."),
+            ("user_agent.rotate", "Fresh UA per request via fake-useragent."),
