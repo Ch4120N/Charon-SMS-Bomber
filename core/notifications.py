@@ -25,3 +25,4 @@ class NotificationCenter:
         self._items: Deque[Toast] = deque(maxlen=10)
         self._lock = threading.Lock()
         self.max_visible = max_visible
+
