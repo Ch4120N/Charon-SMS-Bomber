@@ -73,3 +73,4 @@ class Toggle:
     def __init__(self, value: bool) -> None:
         self.value = bool(value)
 
+    def toggle(self) -> None:
