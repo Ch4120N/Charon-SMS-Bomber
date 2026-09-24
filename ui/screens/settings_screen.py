@@ -82,3 +82,4 @@ class SettingsScreen(Screen):
                 return i
         return start
 
+    def _is_section(self, i: int) -> bool:
