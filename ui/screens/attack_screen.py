@@ -144,3 +144,4 @@ class AttackScreen(Screen):
         )
 
         bar_len = 46
+        if atk.unlimited:
