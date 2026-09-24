@@ -68,3 +68,4 @@ class UpdaterScreen(Screen):
                 Text("  fetching manifest and apis.json\n", style=FG_MUTED),
             ], subtitle="please wait")
 
+        if self.state == "error":
