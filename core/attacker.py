@@ -33,3 +33,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "with no upper limit on rounds. Ignores the 'rounds' config. "
             "Stop with the space bar or Esc."
         ),
+    },
