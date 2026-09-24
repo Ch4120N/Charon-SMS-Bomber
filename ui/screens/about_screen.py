@@ -27,3 +27,4 @@ class AboutScreen(Screen):
         t = Table.grid(padding=(0, 2))
         t.add_column(style=FG_MUTED, justify="right")
         t.add_column(style=FG)
+        t.add_row("Program", APP_NAME)
