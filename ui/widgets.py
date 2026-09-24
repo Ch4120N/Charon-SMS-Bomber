@@ -86,3 +86,4 @@ class Toggle:
 
 
 class Cycle:
+    def __init__(self, choices: list[str], value: str) -> None:
