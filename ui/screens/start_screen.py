@@ -161,3 +161,4 @@ class StartScreen(Screen):
             self.app.notify("no valid targets", style=BAD)
             return
         try:
+            threads = max(1, int(self.fields[1].widget.value))  # type: ignore
