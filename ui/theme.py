@@ -16,3 +16,4 @@ Hue role assignment
     Orange    #ff9d6b   focus:     focused fields, cycle values, sections
     Cyan      #5fd4e8   APIs + links ONLY
     Green     #7fd68a   success:   OK, positive counters, progress
+    Yellow    #f0d468   warning:   running spinner, warnings
