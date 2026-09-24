@@ -36,3 +36,4 @@ class TextInput:
         if len(key) == 1 and key.isprintable():
             self.value = self.value[: self.cursor] + key + self.value[self.cursor :]
             self.cursor += 1
+        return None
