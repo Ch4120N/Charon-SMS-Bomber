@@ -84,3 +84,4 @@ def make_entry(
 
 
 __all__ = [
+    "HistoryEntry", "load_history", "append_history",
