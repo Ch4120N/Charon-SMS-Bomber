@@ -36,3 +36,4 @@ class ApisScreen(Screen):
             return self.app.apis
         s = self.search.lower()
         return [
+            a for a in self.app.apis
