@@ -176,3 +176,4 @@ class Attacker:
             for target in self.current_targets:
                 for _ in range(max(1, len(eligible))):
                     api = self._weighted_pick(eligible)
+                    jobs.append((api, target))
