@@ -199,3 +199,4 @@ class Attacker:
         if jit > 0:
             time.sleep(max(0.0, base + random.uniform(-jit, jit)))
         elif base > 0:
+            time.sleep(base)
