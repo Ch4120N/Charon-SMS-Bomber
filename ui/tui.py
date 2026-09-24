@@ -255,3 +255,4 @@ class TuiApp:
         toast_line = Text()
         if toasts:
             toast_line.append(" ")
+            for t in toasts:
