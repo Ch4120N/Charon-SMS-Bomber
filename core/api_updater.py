@@ -73,3 +73,4 @@ def check_for_updates(
     except Exception as exc:
         raise RuntimeError(f"Failed to fetch manifest: {exc}") from exc
 
+    # Remote apis.json
