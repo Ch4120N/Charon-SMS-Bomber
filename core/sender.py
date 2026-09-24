@@ -89,3 +89,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
     except Exception:
         # plaintext fallback
         text = content[:512].decode("utf-8", errors="ignore").lower()
+        if any(w in text for w in ("error", "invalid", "failed", "denied")):
