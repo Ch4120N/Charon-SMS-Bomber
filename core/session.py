@@ -30,3 +30,4 @@ def load_session() -> Optional[dict[str, Any]]:
         return None
     data["threads"] = int(data.get("threads", 10))
     data["rounds"] = int(data.get("rounds", 10))
+    data["delay"] = float(data.get("delay", 0.05))
