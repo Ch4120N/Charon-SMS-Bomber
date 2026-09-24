@@ -91,3 +91,4 @@ class AttackScreen(Screen):
         if self._history_saved or self.dry_run:
             return
         self._history_saved = True
+        s = self.attacker.stats
