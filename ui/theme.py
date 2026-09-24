@@ -393,3 +393,4 @@ def muted(text: str) -> str:
     return f"[{TEXT_SECONDARY}]{text}[/]"
 
 
+def accent(text: str) -> str:
