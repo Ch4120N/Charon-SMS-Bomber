@@ -235,3 +235,4 @@ class Attacker:
 
         self.stats = Stats()
 
+        r = 0
