@@ -27,3 +27,4 @@ class NotificationCenter:
         self.max_visible = max_visible
 
     def push(self, text: str, style: str = "white", ttl: float = 3.5) -> None:
+        with self._lock:
