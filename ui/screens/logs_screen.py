@@ -17,3 +17,4 @@ from utils.paths import LOGS_DIR
 
 
 _LEVEL_STYLE = {
+    "DEBUG": FG_MUTED,
