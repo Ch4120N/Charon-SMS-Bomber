@@ -126,3 +126,4 @@ class Field:
         self.hint = hint
         self.action = action
 
+        if kind in ("text", "int", "float"):
