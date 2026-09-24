@@ -121,3 +121,4 @@ class TuiApp:
         self,
         console: Console,
         cfg: dict[str, Any],
+        apis: list[dict[str, Any]],
