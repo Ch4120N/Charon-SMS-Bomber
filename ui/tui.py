@@ -197,3 +197,4 @@ class TuiApp:
             art = Text(_ART_COMPACT, style=f"bold {HEADER_ART}")
 
         line = Text(" ")
+        if screen.show_spinner:
