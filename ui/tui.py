@@ -341,3 +341,4 @@ class TuiApp:
                 key = self.keys.get(timeout=frame_interval)
                 if key is not None:
                     self._last_input_ts = now
+                    self._dispatch(key)
