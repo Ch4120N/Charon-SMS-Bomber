@@ -102,3 +102,4 @@ class SettingsScreen(Screen):
             if self._is_section(i):
                 body.add_row(Text(f"\n  ── {f.label} ──", style=f"bold {ACCENT}"))
                 continue
+            body.add_row(f.render(i == self.cursor))
