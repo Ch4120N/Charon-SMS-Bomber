@@ -269,3 +269,4 @@ class HelpScreen(Screen):
             return None
 
         # Navigation
+        if key in (KEY_LEFT, "h"):
