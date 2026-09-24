@@ -40,3 +40,4 @@ class LogsScreen(Screen):
         self._path: Optional[Path] = None
 
     def on_enter(self) -> None:
+        self._load()
