@@ -233,3 +233,4 @@ class Attacker:
         if not unlimited_by_strategy:
             self.unlimited = False
 
+        self.stats = Stats()
