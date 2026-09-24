@@ -43,3 +43,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         ),
     },
     "random": {
+        "label": "Random",
