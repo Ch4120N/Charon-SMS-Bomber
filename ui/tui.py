@@ -130,3 +130,4 @@ class TuiApp:
         self.logger = logger
         self.notifications = NotificationCenter()
 
+        self.stack: list[Screen] = []
