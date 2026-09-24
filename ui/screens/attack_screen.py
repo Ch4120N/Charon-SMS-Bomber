@@ -199,3 +199,4 @@ class AttackScreen(Screen):
                 weight,
                 status,
             )
+        if not rows:
