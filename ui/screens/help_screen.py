@@ -239,3 +239,4 @@ class HelpScreen(Screen):
         for k, v in fields:
             g.add_row(k, v)
 
+        note = Text("\n  Placeholders\n", style=f"bold {PRIMARY}")
