@@ -124,3 +124,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
 <div class="totals">
  <b>Total sent:</b> {stats.sent} ·
  <b>Success:</b> <span class="ok">{stats.success}</span> ·
+ <b>Failed:</b> <span class="bad">{stats.failed}</span> ·
