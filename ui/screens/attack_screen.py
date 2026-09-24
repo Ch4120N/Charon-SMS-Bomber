@@ -99,3 +99,4 @@ class AttackScreen(Screen):
                 threads=self.threads,
                 rounds=self.rounds,
                 sent=s.sent,
+                success=s.success,
