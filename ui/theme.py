@@ -98,3 +98,4 @@ WARNING_DIM        = _c("#c8a848", "yellow")
 WARNING_BRIGHT     = _c("#ffe890", "bright_yellow")
 WARNING_ON_BG      = _c("#0d0e12", "black")
 
+# 5.3 Error — Red
