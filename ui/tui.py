@@ -83,3 +83,4 @@ class KeyReader:
         try:
             while True:
                 self.q.get_nowait()
+        except queue.Empty:
