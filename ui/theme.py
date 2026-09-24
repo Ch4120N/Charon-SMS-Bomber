@@ -254,3 +254,4 @@ CYCLE_FG_FOCUSED    = TEXT_INVERSE
 CYCLE_BG_FOCUSED    = FOCUS                        # bright orange
 CYCLE_ARROW         = FOCUS_BRIGHT
 
+# ══════════════════════════════════════════════════════════════════════
