@@ -31,3 +31,4 @@ class ApiHealthTracker:
             if not st:
                 return 0.0
             return max(0.0, st.get("disabled_until", 0) - time.time())
+
