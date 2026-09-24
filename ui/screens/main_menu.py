@@ -26,3 +26,4 @@ _ITEMS = [
     ("help",     "Help",               "strategies, hotkeys, concepts"),
     ("about",    "About",              "program info and credits"),
     ("exit",     "Exit",               "quit ChSMSBomber"),
+]
