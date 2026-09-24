@@ -192,3 +192,4 @@ class SettingsScreen(Screen):
         parts = f.key.split(".")
         if len(parts) != 2:
             return
+        section, key = parts
