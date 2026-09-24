@@ -40,3 +40,4 @@ class ApiHealthTracker:
                 st["failures"] = 0
                 st["disabled_until"] = 0
             else:
+                st["failures"] = st.get("failures", 0) + 1
