@@ -31,3 +31,4 @@ class StartScreen(Screen):
         super().__init__(app)
         self.mode = mode
         cfg = app.cfg["attack"]
+
