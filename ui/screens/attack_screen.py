@@ -240,3 +240,4 @@ class AttackScreen(Screen):
                 Text("\n  DRY RUN — no requests were sent.\n\n",
                      style=f"bold {WARN}"),
                 t,
+                Text("\n  Press s to save, Esc to return.\n", style=FG_MUTED),
