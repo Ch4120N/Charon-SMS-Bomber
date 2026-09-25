@@ -39,3 +39,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("attack.dry_run", "Dry-run", "bool", A["dry_run"]),
         Field("section", "NETWORK", "action", None),
         Field("network.timeout", "Timeout (s)", "int", N["timeout"]),
+        Field("network.retries", "Retries", "int", N["retries"]),
