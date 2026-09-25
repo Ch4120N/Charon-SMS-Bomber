@@ -19,3 +19,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "proxy_pool": [],
     },
     "attack": {
+        "threads": 10,
