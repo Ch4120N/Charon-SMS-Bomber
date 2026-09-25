@@ -48,3 +48,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
     "logging": {
         "enabled": True,
+        "level": "INFO",
