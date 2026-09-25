@@ -155,3 +155,4 @@ class SettingsScreen(Screen):
             if key == KEY_LEFT:
                 f.widget.prev()  # type: ignore
                 self._apply(f)
+                return None
