@@ -40,3 +40,4 @@ class AboutScreen(Screen):
         foot = Text("\n  press o to open the repository in your browser\n",
                     style=FG_MUTED)
 
+        return Panel(
