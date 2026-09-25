@@ -36,3 +36,4 @@ class AttackScreen(Screen):
         targets: list[str],
         threads: int,
         rounds: int,
+        delay: float,
