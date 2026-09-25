@@ -9,3 +9,4 @@ from rich.table import Table
 from rich.text import Text
 
 from ui.theme import (
+    PRIMARY, ACCENT, OK, BAD, FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN,
