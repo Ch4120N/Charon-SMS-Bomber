@@ -133,3 +133,4 @@ class HelpScreen(Screen):
              "How many times to walk the API list. '0' = unlimited and only makes "
              "sense with smart or unlimited strategy."),
             ("Delay / Jitter",
+             "Fixed wait plus random jitter between requests. Jitter breaks naive "
