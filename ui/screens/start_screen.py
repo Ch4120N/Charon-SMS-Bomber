@@ -184,3 +184,4 @@ class StartScreen(Screen):
         )
 
 
+def _valid_number(s: str, kind: str) -> bool:
