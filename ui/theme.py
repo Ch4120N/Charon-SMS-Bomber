@@ -172,3 +172,4 @@ STATUS_BAR_KEY_FG_DISABLED = TEXT_DISABLED         # #454a55
 STATUS_BAR_KEY_BG_DISABLED = SURFACE_ELEVATED      # #1e2029
 
 # ── 9.3  Description text next to each key cap ───────────────────────
+STATUS_BAR_TEXT            = TEXT_SECONDARY        # #9fa5b2
