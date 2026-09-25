@@ -39,3 +39,4 @@ class StartScreen(Screen):
         strategy_val = cfg["strategy"]
 
         if mode == "resume":
+            data = load_session()
