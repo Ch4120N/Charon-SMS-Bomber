@@ -343,3 +343,4 @@ class TuiApp:
                     self._last_input_ts = now
                     self._dispatch(key)
                     # force redraw after input
+                    live.update(self._layout(), refresh=True)
