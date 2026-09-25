@@ -40,3 +40,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "failure_threshold": 5,
         "cooldown_seconds": 60,
     },
+    "ui": {
