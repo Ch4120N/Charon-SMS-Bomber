@@ -97,3 +97,4 @@ class Attacker:
             ApiHealthTracker(
                 cfg["api_health"]["failure_threshold"],
                 cfg["api_health"]["cooldown_seconds"],
+            )
