@@ -15,3 +15,4 @@ Hue role assignment
     Magenta   #e879f9   brand:     headers, cursors, menu markers
     Orange    #ff9d6b   focus:     focused fields, cycle values, sections
     Cyan      #5fd4e8   APIs + links ONLY
+    Green     #7fd68a   success:   OK, positive counters, progress
