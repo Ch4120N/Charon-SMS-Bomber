@@ -266,3 +266,4 @@ TABLE_CELL_BORDER   = BORDER_SUBTLE
 TABLE_MARKER        = BRAND
 TABLE_TITLE         = BRAND
 
+# ══════════════════════════════════════════════════════════════════════
