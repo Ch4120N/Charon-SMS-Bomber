@@ -25,3 +25,4 @@ from ui.widgets import TextInput
 
 _SECTIONS = ["strategies", "concepts", "hotkeys", "config", "apis"]
 
+
