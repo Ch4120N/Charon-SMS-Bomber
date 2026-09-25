@@ -69,3 +69,4 @@ class LogsScreen(Screen):
         self.top = max(0, len(self.lines) - self.page_size)
 
 
+    def render(self) -> Panel:
