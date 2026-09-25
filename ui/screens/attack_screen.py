@@ -39,3 +39,4 @@ class AttackScreen(Screen):
         delay: float,
         dry_run: bool = False,
     ) -> None:
+        super().__init__(app)
