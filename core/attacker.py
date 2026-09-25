@@ -136,3 +136,4 @@ class Attacker:
             "rate_limit": float(self.cfg["attack"].get("rate_limit_per_sec", 0)),
             "strategy": self.strategy,
             "per_api": per_api,
+        }
