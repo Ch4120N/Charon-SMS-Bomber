@@ -59,3 +59,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
 }
 
+
