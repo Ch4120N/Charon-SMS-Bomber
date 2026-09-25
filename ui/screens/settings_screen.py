@@ -148,3 +148,4 @@ class SettingsScreen(Screen):
             return "back"
 
         if f.kind == "bool" and key == KEY_SPACE:
+            f.widget.toggle()  # type: ignore
