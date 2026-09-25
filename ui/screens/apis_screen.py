@@ -141,3 +141,4 @@ class ApisScreen(Screen):
             return "back"
         if key == "/":
             self._searching = True
+            self._search_widget = TextInput(self.search)
