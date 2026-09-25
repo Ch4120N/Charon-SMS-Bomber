@@ -164,3 +164,4 @@ STATUS_BAR_BG              = SURFACE_BASE          # #0d0e12 app bg
 #     Contrast ≈ 14 : 1 — always readable.
 STATUS_BAR_KEY_FG          = CHIP_FG_DEFAULT       # #0d0e12
 STATUS_BAR_KEY_BG          = CHIP_BG_DEFAULT       # #ffb88c
+
