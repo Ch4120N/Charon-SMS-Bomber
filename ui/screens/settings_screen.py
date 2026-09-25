@@ -46,3 +46,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("section", "USER-AGENT", "action", None),
         Field("user_agent.rotate", "Rotate UA", "bool", U["rotate"]),
         Field("section", "API HEALTH", "action", None),
+        Field("api_health.enabled", "Enabled", "bool", H["enabled"]),
