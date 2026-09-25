@@ -131,3 +131,4 @@ class HelpScreen(Screen):
              "8-20 is a safe range on a typical connection."),
             ("Rounds",
              "How many times to walk the API list. '0' = unlimited and only makes "
+             "sense with smart or unlimited strategy."),
