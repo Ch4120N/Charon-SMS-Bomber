@@ -98,3 +98,4 @@ class SettingsScreen(Screen):
         body.add_column(ratio=1)
 
         for i in range(self.top, min(self.top + self.page_size, len(self.fields))):
+            f = self.fields[i]
