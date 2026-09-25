@@ -332,3 +332,4 @@ class TuiApp:
                     self.frame if animating else 0,
                     top.render_cache_key(),
                     self.console.width,
+                    self.console.height,
