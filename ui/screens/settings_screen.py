@@ -34,3 +34,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("attack.rounds", "Rounds", "int", A["rounds"], hint="0 = unlimited"),
         Field("attack.delay", "Delay (s)", "float", A["delay"]),
         Field("attack.jitter", "Jitter (s)", "float", A["jitter"]),
+        Field("attack.round_cooldown", "Round cooldown", "float", A["round_cooldown"]),
