@@ -12,3 +12,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "version": APP_VERSION,
     "network": {
         "timeout": 5,
+        "retries": 2,
