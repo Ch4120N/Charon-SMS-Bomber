@@ -241,3 +241,4 @@ class TuiApp:
             hints.append((k, d))
         hints.append(("?", "help"))
         hints.append(("Esc", "back"))
+        if len(self.stack) <= 1:
