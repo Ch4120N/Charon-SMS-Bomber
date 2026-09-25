@@ -18,3 +18,4 @@ def humanize_seconds(s: float) -> str:
     h, m = divmod(m, 60)
     return f"{h}h {m}m"
 
+
