@@ -191,3 +191,4 @@ class Attacker:
             for target in self.current_targets:
                 for api in eligible:
                     jobs.append((api, target))
+        return jobs
