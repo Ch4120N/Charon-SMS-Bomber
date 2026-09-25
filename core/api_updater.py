@@ -5,3 +5,4 @@ import hashlib
 import json
 import shutil
 import time
+from dataclasses import dataclass
