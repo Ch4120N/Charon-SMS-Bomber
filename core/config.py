@@ -20,3 +20,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
     "attack": {
         "threads": 10,
+        "rounds": 0,
