@@ -138,3 +138,4 @@ class SettingsScreen(Screen):
                 self._apply(f)
             return None
 
+        if key in (KEY_UP, "k"):
