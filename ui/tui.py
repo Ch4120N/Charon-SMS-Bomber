@@ -220,3 +220,4 @@ class TuiApp:
 
         return Panel(
             Group(Align.left(art), Align.left(line)),
+            box=box.ROUNDED,
