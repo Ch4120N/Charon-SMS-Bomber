@@ -76,3 +76,4 @@ class StartScreen(Screen):
         rows.add_row(header)
         rows.add_row(Text(""))
 
+        for i, f in enumerate(self.fields):
