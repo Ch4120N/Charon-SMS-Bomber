@@ -138,3 +138,4 @@ class StartScreen(Screen):
             if key == KEY_LEFT:
                 field.widget.prev()  # type: ignore
                 return None
+            if key == KEY_RIGHT:
