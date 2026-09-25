@@ -23,3 +23,4 @@ _ITEMS = [
     ("updates",  "Check for Updates",  "download latest apis.json"),
     ("logs",     "Live Logs",          "tail the runtime log file"),
     ("history",  "Session History",    "past attack results"),
+    ("help",     "Help",               "strategies, hotkeys, concepts"),
