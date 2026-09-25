@@ -165,3 +165,4 @@ class Sender:
         elif "data" in api:
             d = api["data"]
             kwargs["data"] = d
+            if isinstance(d, str):
