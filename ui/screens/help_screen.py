@@ -135,3 +135,4 @@ class HelpScreen(Screen):
             ("Delay / Jitter",
              "Fixed wait plus random jitter between requests. Jitter breaks naive "
              "rate-limit fingerprinting."),
+            ("Rate Cap",
