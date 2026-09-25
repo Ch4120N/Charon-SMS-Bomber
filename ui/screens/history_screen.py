@@ -111,3 +111,4 @@ class HistoryScreen(Screen):
                 self.cursor = (self.cursor - 1) % len(self.entries)
             return None
         if key in (KEY_DOWN, "j"):
+            if self.entries:
