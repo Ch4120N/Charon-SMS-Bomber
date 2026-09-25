@@ -104,3 +104,4 @@ class StartScreen(Screen):
                 return None
             result = field.widget.handle(key)  # type: ignore
             if result is not None:
+                if field.kind in ("int", "float") and not _valid_number(result, field.kind):
