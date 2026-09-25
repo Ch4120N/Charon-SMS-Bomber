@@ -87,3 +87,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
     try:
         data = json.loads(content)
     except Exception:
+        # plaintext fallback
