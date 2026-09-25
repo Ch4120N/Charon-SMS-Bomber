@@ -112,3 +112,4 @@ class Sender:
         if ua_cfg["rotate"]:
             try:
                 return self.ua.random
+            except Exception:
