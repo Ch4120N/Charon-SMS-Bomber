@@ -20,3 +20,4 @@ from ui.theme import (
 )
 from ui.tui import Screen, KEY_ESC, KEY_ENTER, KEY_SPACE
 from utils.paths import REPORTS_DIR
+from utils.version import NOTICE
