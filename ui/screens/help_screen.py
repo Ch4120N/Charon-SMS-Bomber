@@ -155,3 +155,4 @@ class HelpScreen(Screen):
              "or HTML. Press 's' on the attack screen after it stops."),
         ]
         rows = []
+        for title, body in items:
