@@ -67,3 +67,4 @@ class HelpScreen(Screen):
         elif self.search:
             search_line.append(f"  filter: {self.search}",
                                style=f"bold {PRIMARY}")
+
