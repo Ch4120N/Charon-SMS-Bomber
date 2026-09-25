@@ -61,3 +61,4 @@ class MainMenuScreen(Screen):
 
         return Panel(
             Align.center(grid, vertical="middle"),
+            title=f"[bold {PRIMARY}]  Main Menu  [/]",
