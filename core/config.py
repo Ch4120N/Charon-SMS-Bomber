@@ -70,3 +70,4 @@ def _deep_merge(base: dict, override: dict) -> dict:
     return out
 
 
+def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
