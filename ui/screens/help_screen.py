@@ -219,3 +219,4 @@ class HelpScreen(Screen):
             rows.append(Text(""))
         return Group(*rows)
 
+    def _render_apis(self) -> Group:
