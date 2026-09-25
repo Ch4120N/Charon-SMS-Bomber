@@ -313,3 +313,4 @@ HELP_CODE           = API_NAME
 # 22. BOXES + SPINNER FRAMES
 # ══════════════════════════════════════════════════════════════════════
 BOX_MAIN  = box.ROUNDED
+BOX_SUB   = box.ROUNDED
