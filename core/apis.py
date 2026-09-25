@@ -39,3 +39,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
         e.setdefault("headers", {})
         out.append(e)
     return out
+
