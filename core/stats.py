@@ -25,3 +25,4 @@ class Stats:
 
     def record(self, api_name: str, target: str, ok: bool) -> None:
         self.sent += 1
+        self.success += int(ok)
