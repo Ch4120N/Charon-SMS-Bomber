@@ -262,3 +262,4 @@ class TuiApp:
                 toast_line.append("   ")
 
         body: list[Any] = [Align.left(bar)]
+        if toasts:
