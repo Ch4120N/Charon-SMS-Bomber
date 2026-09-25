@@ -70,3 +70,4 @@ class HelpScreen(Screen):
 
         # Body
         body = self._render_section()
+
