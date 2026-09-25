@@ -296,3 +296,4 @@ class HelpScreen(Screen):
             return None
         if key == KEY_ESC:
             return "back"
+        return None
