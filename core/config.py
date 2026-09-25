@@ -77,3 +77,4 @@ def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
     ):
         merged["attack"]["strategy"] = "smart"
     return merged
+
