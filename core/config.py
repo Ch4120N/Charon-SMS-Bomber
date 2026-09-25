@@ -38,3 +38,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "api_health": {
         "enabled": True,
         "failure_threshold": 5,
+        "cooldown_seconds": 60,
