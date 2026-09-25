@@ -27,3 +27,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "hard_max_rounds": 100,
         "round_cooldown": 1.0,
         "rate_limit_per_sec": 0,
+        "dry_run": False,
