@@ -80,3 +80,4 @@ class MainMenuScreen(Screen):
             "u": "updates", "l": "logs",
             "h": "history", "i": "about", "x": "exit",
         }
+        if key in hk:
