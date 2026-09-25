@@ -54,3 +54,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
         "timestamp": datetime.now().isoformat(),
         "targets": targets,
         "elapsed_seconds": round(stats.elapsed, 2),
+        "totals": {
