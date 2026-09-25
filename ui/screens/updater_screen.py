@@ -126,3 +126,4 @@ class UpdaterScreen(Screen):
             return self._panel([header, t, footer], subtitle="ready")
 
         return self._panel([Text("\n  idle\n")], subtitle="")
+
