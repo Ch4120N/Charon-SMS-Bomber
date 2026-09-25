@@ -50,3 +50,4 @@ def filter_apis(
     tags: list[str] | None = None,
     enabled_only: bool = True,
 ) -> list[dict[str, Any]]:
+    out = []
