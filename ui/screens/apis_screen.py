@@ -56,3 +56,4 @@ class ApisScreen(Screen):
         info.add_column(style=FG_MUTED)
         info.add_column(style=FG)
         info.add_row("Total", str(len(self.app.apis)))
+        info.add_row("Enabled",
