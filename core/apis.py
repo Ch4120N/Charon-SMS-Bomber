@@ -89,3 +89,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
         if isinstance(obj, dict):
             return {k: _sub(v) for k, v in obj.items()}
         if isinstance(obj, list):
+            return [_sub(v) for v in obj]
