@@ -86,3 +86,4 @@ class AttackScreen(Screen):
                 self.app.notify("attack complete", style=OK)
 
         threading.Thread(target=_run, daemon=True).start()
+
