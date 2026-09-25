@@ -233,3 +233,4 @@ class HelpScreen(Screen):
             ("tags", "Labels used by the tag filter."),
             ("success_regex", "Optional regex, overrides body check."),
         ]
+        g = Table.grid(padding=(0, 2))
