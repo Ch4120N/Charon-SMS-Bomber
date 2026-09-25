@@ -72,3 +72,4 @@ class TextInput:
 class Toggle:
     def __init__(self, value: bool) -> None:
         self.value = bool(value)
+
