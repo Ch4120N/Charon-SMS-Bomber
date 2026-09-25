@@ -186,3 +186,4 @@ class Sender:
 
         # Body inspection
         verdict = inspect_response_body(r.content)
+        if verdict is None:
