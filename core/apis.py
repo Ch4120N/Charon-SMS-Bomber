@@ -94,3 +94,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
 
     expanded = _sub(api)
     # Merge headers: defaults ← api.headers
+    merged_headers = dict(DEFAULT_HEADERS)
