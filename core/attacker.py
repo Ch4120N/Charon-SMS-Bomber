@@ -213,3 +213,4 @@ class Attacker:
         ok = self.sender.send(expanded)
 
         if self.health:
+            self.health.record(api, ok)
