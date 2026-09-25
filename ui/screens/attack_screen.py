@@ -276,3 +276,4 @@ class AttackScreen(Screen):
                 export_json(self.attacker.stats, self.targets, cfg)
             if cfg["output"].get("include_html", True):
                 export_html(self.attacker.stats, self.targets, cfg)
+            self.app.notify("reports saved to ./reports/", style=OK)
