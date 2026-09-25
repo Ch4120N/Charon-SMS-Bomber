@@ -195,3 +195,4 @@ class HelpScreen(Screen):
         return t
 
     def _render_config(self) -> Group:
+        items = [
