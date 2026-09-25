@@ -111,3 +111,4 @@ INFO_BRIGHT        = _c("#c0c8ff", "bright_blue")
 INFO_ON_BG         = _c("#0d0e12", "black")
 
 # ══════════════════════════════════════════════════════════════════════
+#  6. API / LINK — Cyan (#5fd4e8) — the ONLY cyan family
