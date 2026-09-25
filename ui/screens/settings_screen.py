@@ -22,3 +22,4 @@ from ui.widgets import Field
 
 
 def _build_fields(cfg: dict) -> list[Field]:
+    A, N, U, H, O, L = (
