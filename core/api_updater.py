@@ -64,3 +64,4 @@ def check_for_updates(
     """Fetch remote manifest + apis.json, compare with local."""
     local_hash = _sha256_file(APIS_PATH) if APIS_PATH.exists() else ""
     local_count = _count_apis(APIS_PATH) if APIS_PATH.exists() else 0
+
