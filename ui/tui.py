@@ -357,3 +357,4 @@ class TuiApp:
             return
         if key == "ctrl+k":
             self.push("palette")
+            return
