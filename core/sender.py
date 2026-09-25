@@ -182,3 +182,4 @@ class Sender:
             try:
                 return bool(re.search(regex, r.text))
             except re.error:
+                pass
