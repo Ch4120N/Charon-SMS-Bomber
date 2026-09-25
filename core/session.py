@@ -25,3 +25,4 @@ def load_session() -> Optional[dict[str, Any]]:
     try:
         data = json.loads(SESSION_PATH.read_text(encoding="utf-8"))
     except Exception:
+        return None
