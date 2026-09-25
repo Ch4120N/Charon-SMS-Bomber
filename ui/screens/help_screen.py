@@ -203,3 +203,4 @@ class HelpScreen(Screen):
             ("attack.hard_max_rounds", "Hard cap on rounds."),
             ("attack.round_cooldown", "Wait between finite rounds."),
             ("user_agent.rotate", "Fresh UA per request via fake-useragent."),
+            ("user_agent.custom", "If set, chosen from randomly."),
