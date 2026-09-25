@@ -236,3 +236,4 @@ class HelpScreen(Screen):
         g = Table.grid(padding=(0, 2))
         g.add_column(style=f"bold {API_COLOR}", width=18)
         g.add_column(style=FG)
+        for k, v in fields:
