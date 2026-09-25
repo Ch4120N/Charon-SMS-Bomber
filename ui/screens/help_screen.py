@@ -60,3 +60,4 @@ class HelpScreen(Screen):
             tabs.append("   ")
 
         # Search line
+        search_line = Text()
