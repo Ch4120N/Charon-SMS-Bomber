@@ -471,3 +471,4 @@ __all__ = [
     "BOX_MAIN", "BOX_SUB", "BOX_TABLE", "BOX_MIN",
     "SPINNER_DOTS", "SPINNER_PULSE", "SPINNER_BAR",
     # Aliases
+    "BG", "BG_PANEL", "BG_HILITE", "FG", "FG_DIM", "FG_MUTED",
