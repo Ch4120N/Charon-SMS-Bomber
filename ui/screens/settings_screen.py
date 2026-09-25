@@ -86,3 +86,4 @@ class SettingsScreen(Screen):
         return self.fields[i].key == "section"
 
     def render_cache_key(self):
+        return (self.cursor, self.top, self.editing)
