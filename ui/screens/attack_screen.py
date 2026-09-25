@@ -152,3 +152,4 @@ class AttackScreen(Screen):
             for i in range(bar_len):
                 if abs(i - head) <= 4:
                     bar.append("█", style=f"bold {OK}")
+                elif abs(i - head) <= 7:
