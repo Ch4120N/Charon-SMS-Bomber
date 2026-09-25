@@ -188,3 +188,4 @@ class HelpScreen(Screen):
             box=None, show_header=True, header_style=f"bold {API_COLOR}",
             padding=(0, 2), expand=True,
         )
+        t.add_column("Key", style=f"bold {PRIMARY}", width=24)
