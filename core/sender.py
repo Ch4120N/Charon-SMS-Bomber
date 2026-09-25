@@ -137,3 +137,4 @@ class Sender:
                 attempt += 1
                 if attempt > retries:
                     break
+                time.sleep(backoff ** attempt)
