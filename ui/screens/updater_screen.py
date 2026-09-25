@@ -98,3 +98,4 @@ class UpdaterScreen(Screen):
                 )
                 bar_len = 40
                 filled = int(bar_len * pct / 100)
+                bar = Text("  ")
