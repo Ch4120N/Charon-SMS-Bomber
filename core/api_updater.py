@@ -114,3 +114,4 @@ def download_apis(
     Returns the path to the newly-installed file.
     """
     # Backup existing
+    if APIS_PATH.exists():
