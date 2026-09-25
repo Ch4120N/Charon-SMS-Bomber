@@ -70,3 +70,4 @@ class StartScreen(Screen):
         rows.add_column(ratio=1)
 
         header = Text()
+        header.append("  Target Setup\n", style=f"bold {ACCENT}")
