@@ -24,3 +24,4 @@ from ui.widgets import Field
 
 class StartScreen(Screen):
     name = "start"
+    title = "New Attack"
