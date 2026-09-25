@@ -34,3 +34,4 @@ class ApiHealthTracker:
 
     def record(self, api: dict[str, Any], success: bool) -> None:
         with self._lock:
+            k = api_key(api)
