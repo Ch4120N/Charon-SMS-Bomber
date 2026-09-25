@@ -49,3 +49,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Same as round-robin, but the API list is reshuffled each round. "
             "Runs exactly 'rounds' times. Useful for avoiding trivial patterns."
         ),
+    },
