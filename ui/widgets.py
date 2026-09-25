@@ -128,3 +128,4 @@ class Field:
 
         if kind in ("text", "int", "float"):
             self.widget = TextInput(str(value))
+        elif kind == "bool":
