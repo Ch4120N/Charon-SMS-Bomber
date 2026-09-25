@@ -261,3 +261,4 @@ TABLE_HEADER        = FOCUS                        # orange column titles
 TABLE_ROW           = TEXT_PRIMARY
 TABLE_ROW_ALT       = TEXT_SECONDARY
 TABLE_ROW_FOCUSED   = BRAND_BRIGHT                 # magenta cursor row
+TABLE_ROW_DISABLED  = TEXT_DISABLED
