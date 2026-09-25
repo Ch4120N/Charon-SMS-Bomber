@@ -93,3 +93,4 @@ class StartScreen(Screen):
             Align.left(Group(rows, desc), vertical="top"),
             title=f"[bold {PRIMARY}]  {self.title}  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
+        )
