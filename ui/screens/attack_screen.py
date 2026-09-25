@@ -170,3 +170,4 @@ class AttackScreen(Screen):
 
         api_tbl = Table(
             title=f"[bold {API_COLOR}]  API Health  [/]",
+            box=None, show_edge=False, expand=True, padding=(0, 1),
