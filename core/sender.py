@@ -77,3 +77,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
         # heuristic — any non-empty list of errors = failure
         return None
 
+    return None
