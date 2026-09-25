@@ -83,3 +83,4 @@ class ApisScreen(Screen):
         for i in range(self.top, min(self.top + self.page_size, len(items))):
             api = items[i]
             focused = i == self.cursor
+            lst.add_row(
