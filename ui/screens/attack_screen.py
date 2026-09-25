@@ -216,3 +216,4 @@ class AttackScreen(Screen):
                 Group(header, Text(""), counters, bar, Text(""), api_tbl, footer),
                 vertical="top",
             ),
+            title=f"[bold {PRIMARY}]  Attack in progress  [/]",
