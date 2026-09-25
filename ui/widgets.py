@@ -33,3 +33,4 @@ class TextInput:
         if key == KEY_RIGHT:
             self.cursor = min(len(self.value), self.cursor + 1)
             return None
+        if len(key) == 1 and key.isprintable():
