@@ -136,3 +136,4 @@ class SettingsScreen(Screen):
                 f.widget.value = result  # type: ignore
                 self.editing = False
                 self._apply(f)
+            return None
