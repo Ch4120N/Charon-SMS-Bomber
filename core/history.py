@@ -50,3 +50,4 @@ def append_history(entry: HistoryEntry) -> None:
     items = items[-MAX_ENTRIES:]
     HISTORY_PATH.write_text(
         json.dumps([asdict(e) for e in items], indent=2, ensure_ascii=False),
+        encoding="utf-8",
