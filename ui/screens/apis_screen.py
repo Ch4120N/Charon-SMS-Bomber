@@ -95,3 +95,4 @@ class ApisScreen(Screen):
         detail = Text()
         if items:
             api = items[self.cursor]
+            detail.append("\n  Headers: ", style=FG_MUTED)
