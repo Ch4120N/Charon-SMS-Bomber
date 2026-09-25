@@ -261,3 +261,4 @@ class AttackScreen(Screen):
         if key == KEY_ENTER and self.finished:
             return "back"
         return None
+
