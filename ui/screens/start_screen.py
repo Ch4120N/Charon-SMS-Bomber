@@ -124,3 +124,4 @@ class StartScreen(Screen):
 
         if key == KEY_ENTER:
             if field.kind == "action":
+                return self._handle_action(field.key)
