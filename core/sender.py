@@ -125,3 +125,4 @@ class Sender:
         raw = random.choice(pool)
         return {"http": raw, "https": raw}
 
+    def send(self, api: dict[str, Any]) -> bool:
