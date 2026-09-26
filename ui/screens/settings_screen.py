@@ -147,3 +147,4 @@ class SettingsScreen(Screen):
         if key == KEY_ESC:
             return "back"
 
+        if f.kind == "bool" and key == KEY_SPACE:
