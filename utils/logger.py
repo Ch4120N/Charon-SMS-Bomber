@@ -30,3 +30,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
         logger.addHandler(handler)
     return logger
 
+
