@@ -85,3 +85,4 @@ class Toggle:
         return Text(" ○ OFF ", style=f"bold {TOGGLE_OFF_FG} on {TOGGLE_OFF_BG}")
 
 
+class Cycle:
