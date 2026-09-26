@@ -73,3 +73,4 @@ def make_entry(
         ts=datetime.now().isoformat(timespec="seconds"),
         targets=targets,
         strategy=strategy,
+        threads=threads,
