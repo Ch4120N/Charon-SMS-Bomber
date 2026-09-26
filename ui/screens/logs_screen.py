@@ -89,3 +89,4 @@ class LogsScreen(Screen):
             for level, lstyle in _LEVEL_STYLE.items():
                 if f"[{level}]" in line:
                     style = lstyle
+                    break
