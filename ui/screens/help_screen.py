@@ -54,3 +54,4 @@ class HelpScreen(Screen):
         for i, name in enumerate(_SECTIONS):
             label = name.upper()
             if i == self.section_idx:
+                tabs.append(f" {label} ", style=f"bold black on {PRIMARY_ALT}")
