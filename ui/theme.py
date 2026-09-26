@@ -46,3 +46,4 @@ def _c(hex_hi: str, fallback: str) -> str:
 #  1. SURFACES
 # ══════════════════════════════════════════════════════════════════════
 SURFACE_BASE       = _c("#0d0e12", "black")
+SURFACE_PANEL      = _c("#16171e", "grey11")
