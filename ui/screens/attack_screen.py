@@ -229,3 +229,4 @@ class AttackScreen(Screen):
         t.add_row("APIs", str(r.get("apis", 0)))
         t.add_row("Strategy", r.get("strategy", ""))
         t.add_row("Jobs / round", str(r.get("jobs_per_round", 0)))
+        t.add_row("Rounds", str(r.get("rounds", 0)))
