@@ -93,3 +93,4 @@ class HistoryScreen(Screen):
         foot.append(" scroll   ", style=FG_DIM)
         foot.append("r", style=f"bold {OK}")
         foot.append(" reload   ", style=FG_DIM)
+        foot.append("c", style=f"bold {OK}")
