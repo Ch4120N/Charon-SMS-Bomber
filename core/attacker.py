@@ -120,3 +120,4 @@ class Attacker:
         per_api: dict[str, int] = {}
         for _t in targets:
             for api in self.apis:
+                w = max(1, int(api.get("weight", 1)))
