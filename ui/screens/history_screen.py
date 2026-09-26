@@ -116,3 +116,4 @@ class HistoryScreen(Screen):
             return None
         if key == "g":
             self.cursor = 0
+            return None
