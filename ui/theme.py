@@ -327,3 +327,4 @@ SPINNER_BAR   = ["▏", "▎", "▍", "▌", "▋", "▊", "▉", "█",
 #  BACKWARDS-COMPATIBILITY ALIASES
 # ══════════════════════════════════════════════════════════════════════
 BG          = SURFACE_BASE
+BG_PANEL    = SURFACE_PANEL
