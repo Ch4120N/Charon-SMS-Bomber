@@ -166,3 +166,4 @@ class TuiApp:
         if self.stack:
             top = self.stack.pop()
             top.on_exit()
+            self.invalidate()
