@@ -21,3 +21,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
     """Return True/False if body clearly says success/failure; None if unknown."""
     if depth > 3:
         return None
+
