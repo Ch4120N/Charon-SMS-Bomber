@@ -130,3 +130,4 @@ class SettingsScreen(Screen):
                 if f.kind in ("int", "float"):
                     try:
                         int(result) if f.kind == "int" else float(result)
+                    except ValueError:
