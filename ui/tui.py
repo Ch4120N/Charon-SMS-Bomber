@@ -113,3 +113,4 @@ class Screen(ABC):
         """Override to enable dirty-flag caching of rendered panels."""
         return None
 
+
