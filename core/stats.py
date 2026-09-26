@@ -35,3 +35,4 @@ class Stats:
             self.recent = self.recent[-12:]
 
     @property
+    def elapsed(self) -> float:
