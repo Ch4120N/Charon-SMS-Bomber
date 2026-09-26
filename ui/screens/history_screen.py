@@ -101,3 +101,4 @@ class HistoryScreen(Screen):
         return Panel(
             Align.left(Group(t, detail, foot), vertical="top"),
             title=f"[bold {PRIMARY}]  Session History  [/]",
+            subtitle=f"[{FG_MUTED}]{len(self.entries)} entries[/]",
