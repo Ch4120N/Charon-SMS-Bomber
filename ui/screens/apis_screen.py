@@ -146,3 +146,4 @@ class ApisScreen(Screen):
             return None
         if key == "r":
             try:
+                self.app.apis = load_apis()
