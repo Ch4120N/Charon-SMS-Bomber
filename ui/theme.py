@@ -81,3 +81,4 @@ FOCUS              = _c("#ff9d6b", "color(215)")
 FOCUS_DIM          = _c("#d47a4e", "color(173)")
 FOCUS_BRIGHT       = _c("#ffb88c", "color(216)")
 FOCUS_ON_BG        = _c("#0d0e12", "black")
+
