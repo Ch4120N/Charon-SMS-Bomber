@@ -51,3 +51,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("api_health.cooldown_seconds", "Cooldown (s)", "int", H["cooldown_seconds"]),
         Field("section", "OUTPUT", "action", None),
         Field("output.save_report", "Save report", "bool", O["save_report"]),
+        Field("output.report_format", "Format", "cycle", O["report_format"],
