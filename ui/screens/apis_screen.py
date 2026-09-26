@@ -92,3 +92,4 @@ class ApisScreen(Screen):
                 api.get("url", "?"),
             )
 
+        detail = Text()
