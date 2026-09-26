@@ -168,3 +168,4 @@ class Attacker:
     def _build_jobs(self) -> list[tuple[dict[str, Any], str]]:
         jobs: list[tuple[dict[str, Any], str]] = []
         eligible = [a for a in self.apis if self._eligible(a)]
+        if not eligible:
