@@ -220,3 +220,4 @@ MENU_DESC_FOCUSED   = TEXT_SECONDARY
 MENU_SEPARATOR      = TEXT_DISABLED
 MENU_GROUP_LABEL    = FOCUS                        # orange section header
 
+# ══════════════════════════════════════════════════════════════════════
