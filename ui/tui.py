@@ -339,3 +339,4 @@ class TuiApp:
 
                 # keys
                 key = self.keys.get(timeout=frame_interval)
+                if key is not None:
