@@ -76,3 +76,4 @@ def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
         "smart", "unlimited", "round-robin", "random"
     ):
         merged["attack"]["strategy"] = "smart"
+    return merged
