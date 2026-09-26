@@ -144,3 +144,4 @@ class UpdaterScreen(Screen):
         if key == KEY_ENTER and self.state == "ready" and self.info and self.info.available:
             self._download()
             return None
+        return None
