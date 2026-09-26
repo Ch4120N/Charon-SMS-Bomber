@@ -330,3 +330,4 @@ class TuiApp:
                 cache_key = (
                     top.name,
                     self.frame if animating else 0,
+                    top.render_cache_key(),
