@@ -105,3 +105,4 @@ class StartScreen(Screen):
             result = field.widget.handle(key)  # type: ignore
             if result is not None:
                 if field.kind in ("int", "float") and not _valid_number(result, field.kind):
+                    self.app.notify(f"invalid {field.kind}: {result!r}", style=BAD)
