@@ -82,3 +82,4 @@ class HistoryScreen(Screen):
             e = self.entries[self.cursor]
             detail.append("\n  elapsed: ", style=FG_MUTED)
             detail.append(f"{e.elapsed}s", style=FG)
+            detail.append("   threads: ", style=FG_MUTED)
