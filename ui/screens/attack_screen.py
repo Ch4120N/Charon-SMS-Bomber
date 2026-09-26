@@ -251,3 +251,4 @@ class AttackScreen(Screen):
             self._save_reports()
             return None
         if key == KEY_SPACE and not self.finished:
+            self.attacker.stop_flag.set()
