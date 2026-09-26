@@ -99,3 +99,4 @@ class HistoryScreen(Screen):
         foot.append(" back", style=FG_DIM)
 
         return Panel(
+            Align.left(Group(t, detail, foot), vertical="top"),
