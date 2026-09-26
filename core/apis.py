@@ -63,3 +63,4 @@ def filter_apis(
     return out
 
 
+def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
