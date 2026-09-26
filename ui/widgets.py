@@ -104,3 +104,4 @@ class Cycle:
             CYCLE_ARROW,
         )
         if focused:
+            bg, fg = CYCLE_BG_FOCUSED, CYCLE_FG_FOCUSED
