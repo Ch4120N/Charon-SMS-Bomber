@@ -13,3 +13,4 @@ from core.history import clear_history, load_history
 from ui.theme import (
     PRIMARY, ACCENT, OK, WARN, BAD, FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN,
 )
+from ui.tui import Screen, KEY_UP, KEY_DOWN, KEY_ESC, KEY_ENTER
