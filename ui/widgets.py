@@ -56,3 +56,4 @@ class TextInput:
             t.append(before, style=FORM_VALUE_FOCUSED)
             t.append(cur, style=f"bold {FORM_CURSOR_FG} on {FORM_CURSOR_BG}")
             t.append(after, style=FORM_VALUE_FOCUSED)
+            pad = max(0, width - len(before) - 1 - len(after))
