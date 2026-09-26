@@ -155,3 +155,4 @@ class Field:
         )
 
         if self.action:
+            if focused:
