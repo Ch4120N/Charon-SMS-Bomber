@@ -254,3 +254,4 @@ class AttackScreen(Screen):
             self.attacker.stop_flag.set()
             self.app.notify("stopping…", style=WARN)
             return None
+        if key == KEY_ESC:
