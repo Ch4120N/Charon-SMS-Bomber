@@ -149,3 +149,4 @@ class HelpScreen(Screen):
              "for error fields. Only requests where the body agrees count as wins."),
             ("Dry-Run",
              "Plans the attack (targets, jobs, rounds) but sends nothing. "
+             "Great for checking config before committing."),
