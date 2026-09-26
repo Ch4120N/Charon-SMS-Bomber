@@ -107,3 +107,4 @@ class HelpScreen(Screen):
         return self._render_apis()
 
     
+    def _render_strategies(self) -> Table:
