@@ -66,3 +66,4 @@ class TextInput:
                 t.append("-", style=FORM_PLACEHOLDER)
                 pad = max(0, width - 1)
             t.append(" " * pad, style=TEXT_DISABLED)
+        return t
