@@ -107,3 +107,4 @@ class UpdaterScreen(Screen):
                     style=FG_DIM,
                 )
                 return self._panel([header, t, Text(""), bar],
+                                   subtitle="downloading…")
