@@ -60,3 +60,4 @@ class StartScreen(Screen):
             Field("back", "Back to menu", "action", None),
         ]
         self.cursor = 0
+        self.editing = False
