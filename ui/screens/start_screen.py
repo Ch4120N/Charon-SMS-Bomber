@@ -63,3 +63,4 @@ class StartScreen(Screen):
         self.editing = False
 
     def render(self) -> Panel:
+        strat = self.fields[4].widget.value  # type: ignore
