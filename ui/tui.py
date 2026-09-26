@@ -70,3 +70,4 @@ class KeyReader:
             try:
                 k = readchar.readkey()
             except Exception:
+                break
