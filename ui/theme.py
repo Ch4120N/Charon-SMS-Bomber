@@ -249,3 +249,4 @@ TOGGLE_OFF_FG       = TEXT_INVERSE
 # 15. CYCLES
 # ══════════════════════════════════════════════════════════════════════
 CYCLE_BG            = FOCUS_DIM                    # muted orange
+CYCLE_FG            = TEXT_INVERSE
