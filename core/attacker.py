@@ -46,3 +46,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         "label": "Random",
         "summary": "Shuffles the API list every round.",
         "details": (
+            "Same as round-robin, but the API list is reshuffled each round. "
