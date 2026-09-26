@@ -105,3 +105,4 @@ class Screen(ABC):
 
     @abstractmethod
     def render(self) -> Panel: ...
+
