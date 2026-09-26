@@ -45,3 +45,4 @@ def api_key(api: dict[str, Any]) -> str:
     return f"{api.get('method', 'POST').upper()} {api.get('url', '?')}"
 
 
+def filter_apis(
