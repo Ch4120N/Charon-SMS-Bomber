@@ -54,3 +54,4 @@ class AttackScreen(Screen):
         self._history_saved = False
 
     def on_enter(self) -> None:
+        save_session(self.targets, self.threads, self.rounds, self.delay)
