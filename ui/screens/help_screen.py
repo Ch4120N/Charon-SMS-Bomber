@@ -249,3 +249,4 @@ class HelpScreen(Screen):
         ph.add_row("{ts}", "unix ms timestamp")
         ph.add_row("{ua}", "rotated user-agent string")
 
+        return Group(g, note, ph)
