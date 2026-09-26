@@ -236,3 +236,4 @@ class AttackScreen(Screen):
         t.add_row("Rate cap", f"{rate}/s" if rate else "off")
 
         return Panel(
+            Align.left(Group(
