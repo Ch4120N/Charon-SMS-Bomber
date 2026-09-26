@@ -154,3 +154,4 @@ class Field:
             style=f"bold {FORM_LABEL_FOCUSED}" if focused else FORM_LABEL,
         )
 
+        if self.action:
