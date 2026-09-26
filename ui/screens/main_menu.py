@@ -56,3 +56,4 @@ class MainMenuScreen(Screen):
             grid.add_row(
                 marker,
                 Text(name, style=name_style),
+                Text(desc, style=desc_style),
