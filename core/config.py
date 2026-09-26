@@ -30,3 +30,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "dry_run": False,
         "api_filter_tags": [],
         "api_filter_enabled_only": True,
+    },
