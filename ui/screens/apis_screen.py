@@ -74,3 +74,4 @@ class ApisScreen(Screen):
             padding=(0, 1), expand=True,
         )
         lst.add_column("", width=2)
+        lst.add_column("#", width=4, justify="right", style=FG_MUTED)
