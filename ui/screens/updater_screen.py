@@ -168,3 +168,4 @@ class UpdaterScreen(Screen):
                 self.state = "error"
                 self.show_spinner = False
                 self.app.notify(f"download failed: {exc}", style=BAD)
+
