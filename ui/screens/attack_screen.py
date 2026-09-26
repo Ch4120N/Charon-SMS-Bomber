@@ -100,3 +100,4 @@ class AttackScreen(Screen):
                 rounds=self.rounds,
                 sent=s.sent,
                 success=s.success,
+                failed=s.failed,
