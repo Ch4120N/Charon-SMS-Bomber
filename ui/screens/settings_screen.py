@@ -95,3 +95,4 @@ class SettingsScreen(Screen):
             self.top = self.cursor - self.page_size + 1
 
         body = Table.grid(padding=(0, 2))
+        body.add_column(ratio=1)
