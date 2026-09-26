@@ -192,3 +192,4 @@ class HelpScreen(Screen):
         t.add_column("Action", style=FG)
         for k, v in rows:
             t.add_row(k, v)
+        return t
