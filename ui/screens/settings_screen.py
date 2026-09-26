@@ -21,3 +21,4 @@ from ui.tui import (
 from ui.widgets import Field
 
 
+def _build_fields(cfg: dict) -> list[Field]:
