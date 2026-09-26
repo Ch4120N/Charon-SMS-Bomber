@@ -287,3 +287,4 @@ SPINNER_LABEL       = TEXT_SECONDARY
 # 19. STATUS INDICATORS
 # ══════════════════════════════════════════════════════════════════════
 STATUS_ACTIVE       = SUCCESS
+STATUS_COOLING      = WARNING
