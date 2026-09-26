@@ -158,3 +158,4 @@ class Attacker:
             if ok:
                 self._weights[name] = min(5.0, cur + 0.15)
             else:
+                self._weights[name] = max(0.05, cur * 0.65)
