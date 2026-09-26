@@ -118,3 +118,4 @@ class StartScreen(Screen):
             self.cursor = (self.cursor + 1) % len(self.fields)
             return None
         if key == KEY_ESC:
+            return "back"
