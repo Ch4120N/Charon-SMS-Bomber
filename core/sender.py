@@ -164,3 +164,4 @@ class Sender:
             headers.setdefault("Content-Type", "application/json")
         elif "data" in api:
             d = api["data"]
+            kwargs["data"] = d
