@@ -18,3 +18,4 @@ from rich import box
 
 from core.notifications import NotificationCenter
 from ui.theme import (
+    PRIMARY, PRIMARY_ALT, ACCENT, OK, WARN, BAD, INFO,
