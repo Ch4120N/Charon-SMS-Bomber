@@ -225,3 +225,4 @@ class HelpScreen(Screen):
             ("method", "POST or GET."),
             ("url", "Endpoint. Placeholders: {cc} {intl} {local} {ts} {ua}."),
             ("headers", "Per-API headers. {ua} = rotated user-agent."),
+            ("payload", "JSON body (application/json)."),
