@@ -51,3 +51,4 @@ class StartScreen(Screen):
                   hint="sep ';'  e.g. 0912...;0935..."),
             Field("threads", "Threads", "int", threads_val),
             Field("rounds", "Rounds", "int", rounds_val,
+                  hint="0 = unlimited"),
