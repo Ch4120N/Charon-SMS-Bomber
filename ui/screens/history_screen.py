@@ -88,3 +88,4 @@ class HistoryScreen(Screen):
             detail.append(str(e.rounds), style=FG)
 
         foot = Text()
+        foot.append("\n  ", style=FG_MUTED)
