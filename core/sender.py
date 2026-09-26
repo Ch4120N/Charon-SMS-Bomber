@@ -174,3 +174,4 @@ class Sender:
             r = s.request(method, url, **kwargs)
 
         if not (200 <= r.status_code < 300):
+            return False
