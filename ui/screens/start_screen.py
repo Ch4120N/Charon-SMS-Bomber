@@ -37,3 +37,4 @@ class StartScreen(Screen):
         rounds_val = str(cfg["rounds"])
         delay_val = str(cfg["delay"])
         strategy_val = cfg["strategy"]
+
