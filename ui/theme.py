@@ -162,3 +162,4 @@ STATUS_BAR_BG              = SURFACE_BASE          # #0d0e12 app bg
 #     Foreground = #0d0e12  (near-black)
 #     Background = #ffb88c  (bright peach-orange)
 #     Contrast ≈ 14 : 1 — always readable.
+STATUS_BAR_KEY_FG          = CHIP_FG_DEFAULT       # #0d0e12
