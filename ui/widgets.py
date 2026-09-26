@@ -19,3 +19,4 @@ class TextInput:
         self.mask = mask
 
     def handle(self, key: str) -> Optional[str]:
+        from ui.tui import KEY_ENTER, KEY_BACKSPACE, KEY_LEFT, KEY_RIGHT
