@@ -67,3 +67,4 @@ class StartScreen(Screen):
         info = STRATEGIES.get(strat, {})
 
         rows = Table.grid(padding=(0, 2))
+        rows.add_column(ratio=1)
