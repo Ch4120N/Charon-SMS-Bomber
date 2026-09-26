@@ -27,3 +27,4 @@ class TextInput:
                 self.value = self.value[: self.cursor - 1] + self.value[self.cursor :]
                 self.cursor -= 1
             return None
+        if key == KEY_LEFT:
