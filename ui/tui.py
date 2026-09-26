@@ -56,3 +56,4 @@ _ART_COMPACT = "  ╭─ CHSMSBOMBER ─╮"
 
 
 #  KeyReader
+class KeyReader:
