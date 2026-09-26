@@ -451,3 +451,4 @@ __all__ = [
     "TOGGLE_ON_BG", "TOGGLE_ON_FG", "TOGGLE_OFF_BG", "TOGGLE_OFF_FG",
     # 15. Cycles
     "CYCLE_BG", "CYCLE_FG", "CYCLE_FG_FOCUSED", "CYCLE_BG_FOCUSED",
+    "CYCLE_ARROW",
