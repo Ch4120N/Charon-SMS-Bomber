@@ -33,3 +33,4 @@ KEY_UP = readchar.key.UP
 KEY_DOWN = readchar.key.DOWN
 KEY_LEFT = readchar.key.LEFT
 KEY_RIGHT = readchar.key.RIGHT
+KEY_ENTER = readchar.key.ENTER
