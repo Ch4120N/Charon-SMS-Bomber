@@ -363,3 +363,4 @@ class TuiApp:
         result = top.handle_key(key)
         if result is None:
             return
+        if result == "back":
