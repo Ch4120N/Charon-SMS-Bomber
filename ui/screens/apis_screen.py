@@ -94,3 +94,4 @@ class ApisScreen(Screen):
 
         detail = Text()
         if items:
+            api = items[self.cursor]
