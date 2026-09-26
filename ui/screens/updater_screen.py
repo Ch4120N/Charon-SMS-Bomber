@@ -114,3 +114,4 @@ class UpdaterScreen(Screen):
                     header, t,
                     Text("\n  apis.json updated successfully.\n",
                          style=f"bold {OK}"),
+                ], subtitle="press r to re-check, Esc to return")
