@@ -24,3 +24,4 @@ class HistoryEntry:
     sent: int
     success: int
     failed: int
+    rate: float
