@@ -22,3 +22,4 @@ from ui.tui import (
 from ui.widgets import Field
 
 
+class StartScreen(Screen):
