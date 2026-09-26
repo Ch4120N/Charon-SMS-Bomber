@@ -174,3 +174,4 @@ class SettingsScreen(Screen):
                                 style=WARN)
                 return None
             if f.kind == "bool":
+                f.widget.toggle()  # type: ignore
