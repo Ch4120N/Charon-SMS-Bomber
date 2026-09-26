@@ -58,3 +58,4 @@ class MainMenuScreen(Screen):
                 Text(name, style=name_style),
                 Text(desc, style=desc_style),
             )
+
