@@ -278,3 +278,4 @@ class HelpScreen(Screen):
             self.scroll = 0
             return None
         if key in (KEY_UP, "k"):
+            self.scroll = max(0, self.scroll - 1)
