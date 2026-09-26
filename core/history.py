@@ -41,3 +41,4 @@ def load_history() -> list[HistoryEntry]:
             out.append(HistoryEntry(**item))
         except TypeError:
             continue
+    return out
