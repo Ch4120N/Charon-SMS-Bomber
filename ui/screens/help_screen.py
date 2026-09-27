@@ -220,3 +220,4 @@ class HelpScreen(Screen):
         return Group(*rows)
 
     def _render_apis(self) -> Group:
+        fields = [
