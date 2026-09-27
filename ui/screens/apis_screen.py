@@ -28,3 +28,4 @@ class ApisScreen(Screen):
         self.top = 0
         self.page_size = 20
         self.search = ""
+        self._searching = False
