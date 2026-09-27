@@ -161,3 +161,4 @@ class Sender:
 
         if "payload" in api:
             kwargs["json"] = api["payload"]
+            headers.setdefault("Content-Type", "application/json")
