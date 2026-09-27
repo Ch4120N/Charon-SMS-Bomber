@@ -115,3 +115,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  .ok {{ color:#6ee787; }} .bad {{ color:#ff6b6b; }}
  .totals {{ margin-top:20px; font-size:1.1em; }}
 </style></head><body>
+<h1>{APP_NAME} v{APP_VERSION} — attack report</h1>
