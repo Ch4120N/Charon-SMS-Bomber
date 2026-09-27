@@ -104,3 +104,4 @@ class LogsScreen(Screen):
 
         foot = Text()
         foot.append("\n  ", style=FG_MUTED)
+        foot.append("↑ ↓", style=f"bold {OK}")
