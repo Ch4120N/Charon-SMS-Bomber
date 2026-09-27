@@ -161,3 +161,4 @@ class AttackScreen(Screen):
             pct = (
                 atk.round_idx / atk.total_rounds * 100
                 if atk.total_rounds else 0
+            )
