@@ -128,3 +128,4 @@ class HistoryScreen(Screen):
             clear_history()
             self.entries = []
             self.app.notify("history cleared", style=WARN)
+            return None
