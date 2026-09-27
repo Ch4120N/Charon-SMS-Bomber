@@ -20,3 +20,4 @@ from utils.paths import APIS_PATH, BASE_DIR
 #  Adjust these to your release URLs.
 # ──────────────────────────────────────────────────────────────────────
 DEFAULT_MANIFEST_URL = (
+    "https://raw.githubusercontent.com/Ch4120N/Charon-SMS-Bomber/"
