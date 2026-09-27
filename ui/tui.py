@@ -17,3 +17,4 @@ from rich.text import Text
 from rich import box
 
 from core.notifications import NotificationCenter
+from ui.theme import (
