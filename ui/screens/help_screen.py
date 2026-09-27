@@ -140,3 +140,4 @@ class HelpScreen(Screen):
              "Use if you start seeing HTTP 429."),
             ("API Health",
              "Per-API failure counter. N consecutive failures triggers M seconds "
+             "of cooldown. Live status is on the attack screen."),
