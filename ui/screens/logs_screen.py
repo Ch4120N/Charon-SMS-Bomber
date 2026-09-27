@@ -59,3 +59,4 @@ class LogsScreen(Screen):
             return
         try:
             raw = path.read_text(encoding="utf-8", errors="ignore").splitlines()
+        except Exception as exc:
