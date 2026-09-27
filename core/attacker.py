@@ -179,3 +179,4 @@ class Attacker:
                     jobs.append((api, target))
         elif self.strategy == "unlimited":
             for target in self.current_targets:
+                for api in eligible:
