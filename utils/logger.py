@@ -5,3 +5,4 @@ from datetime import datetime
 from logging.handlers import RotatingFileHandler
 from typing import Any
 
+from utils.paths import LOGS_DIR
