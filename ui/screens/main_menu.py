@@ -38,3 +38,4 @@ class MainMenuScreen(Screen):
         "h": "history", "?": "help", "i": "about",
     }
 
+    def __init__(self, app) -> None:
