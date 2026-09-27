@@ -159,3 +159,4 @@ class HelpScreen(Screen):
             g = Table.grid(padding=(0, 2))
             g.add_column(style=f"bold {PRIMARY}", width=20)
             g.add_column(style=FG)
+            g.add_row(title, body)
