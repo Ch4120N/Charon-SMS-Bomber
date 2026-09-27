@@ -99,3 +99,4 @@ class Attacker:
                 cfg["api_health"]["cooldown_seconds"],
             )
             if cfg["api_health"]["enabled"] else None
+        )
