@@ -130,3 +130,4 @@ class Attacker:
             "targets": targets,
             "apis": len(self.apis),
             "jobs_per_round": total_jobs,
+            "rounds": "unlimited" if unlimited else rounds,
