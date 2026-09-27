@@ -22,3 +22,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
     if depth > 3:
         return None
 
+    if isinstance(obj, dict):
