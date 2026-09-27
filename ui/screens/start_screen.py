@@ -146,3 +146,4 @@ class StartScreen(Screen):
             field.widget.toggle()  # type: ignore
             return None
 
+        return None
