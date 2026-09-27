@@ -91,3 +91,4 @@ class MainMenuScreen(Screen):
     def _activate(self, item_id: str) -> None:
         if item_id == "exit":
             self.app.running = False
+        elif item_id == "start":
