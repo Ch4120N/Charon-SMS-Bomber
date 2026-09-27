@@ -122,3 +122,4 @@ class HistoryScreen(Screen):
             return None
         if key == "r":
             self.entries = load_history()
+            self.app.notify("history reloaded", style=OK)
