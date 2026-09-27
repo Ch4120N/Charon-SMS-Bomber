@@ -223,3 +223,4 @@ class Attacker:
         self, targets: list[str], threads: int, rounds: int, delay: float
     ) -> Stats:
         self.current_targets = list(targets)
+        self.cfg["attack"]["threads"] = int(threads)
