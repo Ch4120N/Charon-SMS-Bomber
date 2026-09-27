@@ -123,3 +123,4 @@ def download_apis(
     with requests.get(apis_url, stream=True, timeout=timeout) as r:
         r.raise_for_status()
         total = int(r.headers.get("Content-Length") or 0)
+        written = 0
