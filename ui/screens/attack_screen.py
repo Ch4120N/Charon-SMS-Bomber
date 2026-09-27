@@ -176,3 +176,4 @@ class AttackScreen(Screen):
         api_tbl.add_column("Sent", justify="right", style=FG)
         api_tbl.add_column("OK", justify="right", style=OK)
         api_tbl.add_column("Fail", justify="right", style=BAD)
+        api_tbl.add_column("Weight", justify="right", style=ACCENT)
