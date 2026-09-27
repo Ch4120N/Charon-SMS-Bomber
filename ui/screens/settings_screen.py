@@ -87,3 +87,4 @@ class SettingsScreen(Screen):
 
     def render_cache_key(self):
         return (self.cursor, self.top, self.editing)
+
