@@ -61,3 +61,4 @@ def check_for_updates(
     apis_url: str = DEFAULT_APIS_URL,
     timeout: int = 10,
 ) -> UpdateCheck:
+    """Fetch remote manifest + apis.json, compare with local."""
