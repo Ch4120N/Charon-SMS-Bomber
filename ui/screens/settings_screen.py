@@ -140,3 +140,4 @@ class SettingsScreen(Screen):
 
         if key in (KEY_UP, "k"):
             self._move(-1)
+            return None
