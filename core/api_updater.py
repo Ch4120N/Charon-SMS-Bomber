@@ -152,3 +152,4 @@ __all__ = [
     "UpdateCheck",
     "check_for_updates",
     "download_apis",
+    "list_backups",
