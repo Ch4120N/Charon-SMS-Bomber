@@ -66,3 +66,4 @@ class StartScreen(Screen):
         strat = self.fields[4].widget.value  # type: ignore
         info = STRATEGIES.get(strat, {})
 
+        rows = Table.grid(padding=(0, 2))
