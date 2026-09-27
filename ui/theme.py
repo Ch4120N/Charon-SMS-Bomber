@@ -391,3 +391,4 @@ def api(text: str) -> str:
 
 def muted(text: str) -> str:
     return f"[{TEXT_SECONDARY}]{text}[/]"
+
