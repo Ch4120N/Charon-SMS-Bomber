@@ -162,3 +162,4 @@ class UpdaterScreen(Screen):
                 self.app.apis = load_apis()
                 self.state = "done"
                 self.show_spinner = False
+                self.app.notify("apis.json updated", style=OK)
