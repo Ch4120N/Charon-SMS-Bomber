@@ -155,3 +155,4 @@ class AttackScreen(Screen):
                 elif abs(i - head) <= 7:
                     bar.append("▓", style=OK)
                 else:
+                    bar.append("░", style=FG_MUTED)
