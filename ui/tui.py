@@ -205,3 +205,4 @@ class TuiApp:
             line.append("·", style=HEADER_SPINNER_IDLE)
             line.append("  ")
 
+        line.append("v" + APP_VERSION, style=HEADER_VERSION)
