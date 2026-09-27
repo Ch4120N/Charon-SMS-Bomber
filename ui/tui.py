@@ -98,3 +98,4 @@ class Screen(ABC):
     animating: bool = False
 
     def __init__(self, app: "TuiApp", **kwargs: Any) -> None:
+        self.app = app
