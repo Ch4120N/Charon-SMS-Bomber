@@ -168,3 +168,4 @@ class SettingsScreen(Screen):
                 return None
             if f.kind == "action" and f.key == "action.back":
                 return "back"
+            if f.kind in ("text", "int", "float"):
