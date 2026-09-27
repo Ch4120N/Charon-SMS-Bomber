@@ -50,3 +50,4 @@ class HelpScreen(Screen):
     
     def render(self) -> Panel:
         # Tabs
+        tabs = Text("  ")
