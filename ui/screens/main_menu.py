@@ -99,3 +99,4 @@ class MainMenuScreen(Screen):
             self.app.push("settings")
         elif item_id == "apis":
             self.app.push("apis")
+        elif item_id == "updates":
