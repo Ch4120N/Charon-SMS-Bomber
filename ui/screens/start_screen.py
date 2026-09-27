@@ -176,3 +176,4 @@ class StartScreen(Screen):
         self.app.cfg["attack"]["delay"] = delay
         self.app.cfg["attack"]["strategy"] = strategy
         self.app.cfg["attack"]["dry_run"] = bool(dry_run)
+
