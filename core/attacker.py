@@ -182,3 +182,4 @@ class Attacker:
                 for api in eligible:
                     jobs.append((api, target))
         elif self.strategy == "random":
+            pool = list(eligible)
