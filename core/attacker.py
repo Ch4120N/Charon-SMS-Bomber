@@ -256,3 +256,4 @@ class Attacker:
                     for api, tgt in jobs
                 }
                 for fut in as_completed(futures_map):
+                    api, tgt = futures_map[fut]
