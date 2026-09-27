@@ -93,3 +93,4 @@ class AttackScreen(Screen):
         self._history_saved = True
         s = self.attacker.stats
         try:
+            append_history(make_entry(
