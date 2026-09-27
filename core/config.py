@@ -93,3 +93,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
         raw = {}
     return _migrate(raw)
 
+
