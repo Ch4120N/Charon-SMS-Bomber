@@ -53,3 +53,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "backup_count": 3,
     },
     "output": {
+        "save_report": True,
