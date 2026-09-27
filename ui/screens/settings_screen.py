@@ -180,3 +180,4 @@ class SettingsScreen(Screen):
         return None
 
     def _move(self, delta: int) -> None:
+        n = len(self.fields)
