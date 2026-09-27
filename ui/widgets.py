@@ -84,3 +84,4 @@ class Toggle:
             return Text(" ● ON  ", style=f"bold {TOGGLE_ON_FG} on {TOGGLE_ON_BG}")
         return Text(" ○ OFF ", style=f"bold {TOGGLE_OFF_FG} on {TOGGLE_OFF_BG}")
 
+
