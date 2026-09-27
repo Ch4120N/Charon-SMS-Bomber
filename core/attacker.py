@@ -22,3 +22,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         "details": (
             "Continuously picks APIs weighted by their observed success rate. "
             "Failing APIs drop in priority; cooling APIs are skipped. "
+            "Runs without a round cap unless 'rounds' is set > 0."
