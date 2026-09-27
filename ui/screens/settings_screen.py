@@ -160,3 +160,4 @@ class SettingsScreen(Screen):
                 f.widget.next()  # type: ignore
                 self._apply(f)
                 return None
+
