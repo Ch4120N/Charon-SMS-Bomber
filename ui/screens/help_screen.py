@@ -61,3 +61,4 @@ class HelpScreen(Screen):
 
         # Search line
         search_line = Text()
+        if self._searching:
