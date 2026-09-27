@@ -13,3 +13,4 @@ from core.config import save_config
 from ui.theme import (
     PRIMARY, ACCENT, OK, WARN, BAD,
     FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN,
+)
