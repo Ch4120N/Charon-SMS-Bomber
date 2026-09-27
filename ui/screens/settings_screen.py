@@ -32,3 +32,4 @@ def _build_fields(cfg: dict) -> list[Field]:
               choices=list(STRATEGIES.keys())),
         Field("attack.threads", "Threads", "int", A["threads"]),
         Field("attack.rounds", "Rounds", "int", A["rounds"], hint="0 = unlimited"),
+        Field("attack.delay", "Delay (s)", "float", A["delay"]),
