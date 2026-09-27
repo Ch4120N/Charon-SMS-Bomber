@@ -201,3 +201,4 @@ class TuiApp:
             frame = SPINNER_DOTS[self.frame % len(SPINNER_DOTS)]
             line.append(frame, style=f"bold {HEADER_SPINNER}")
             line.append("  ")
+        else:
