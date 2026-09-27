@@ -14,3 +14,4 @@ class ApiHealthTracker:
         self.cooldown = max(1, int(cooldown))
         self._lock = threading.Lock()
         self._state: dict[str, dict[str, float]] = {}
+
