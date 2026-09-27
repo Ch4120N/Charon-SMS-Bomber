@@ -242,3 +242,4 @@ class HelpScreen(Screen):
         note = Text("\n  Placeholders\n", style=f"bold {PRIMARY}")
         ph = Table.grid(padding=(0, 2))
         ph.add_column(style=f"bold {API_COLOR}", width=18)
+        ph.add_column(style=FG)
