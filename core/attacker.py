@@ -57,3 +57,4 @@ DEFAULT_STRATEGY = "smart"
 
 #  Rate limiter
 class RateLimiter:
+    def __init__(self, per_sec: float) -> None:
