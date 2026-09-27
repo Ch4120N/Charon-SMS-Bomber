@@ -214,3 +214,4 @@ class TuiApp:
             label = s.title or s.name
             if is_last:
                 line.append(label, style=f"bold {HEADER_BREADCRUMB_ACTIVE}")
+            else:
