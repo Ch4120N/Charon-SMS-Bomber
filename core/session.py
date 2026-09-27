@@ -19,3 +19,4 @@ def save_session(
     )
 
 
+def load_session() -> Optional[dict[str, Any]]:
