@@ -56,3 +56,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("output.include_html", "Include HTML", "bool", O["include_html"]),
         Field("section", "LOGGING", "action", None),
         Field("logging.enabled", "Log to file", "bool", L["enabled"]),
+        Field("logging.level", "Level", "cycle", L["level"],
