@@ -67,3 +67,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
             "delay": cfg["attack"]["delay"],
             "strategy": cfg["attack"]["strategy"],
         },
+    }
