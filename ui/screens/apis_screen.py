@@ -25,3 +25,4 @@ class ApisScreen(Screen):
     def __init__(self, app) -> None:
         super().__init__(app)
         self.cursor = 0
+        self.top = 0
