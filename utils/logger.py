@@ -25,3 +25,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
             encoding="utf-8",
         )
         handler.setFormatter(logging.Formatter(
+            "%(asctime)s [%(levelname)s] %(message)s"
