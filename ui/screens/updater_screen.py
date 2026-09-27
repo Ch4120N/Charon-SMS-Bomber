@@ -53,3 +53,4 @@ class UpdaterScreen(Screen):
             except Exception as exc:
                 self.error = str(exc)
                 self.state = "error"
+                self.show_spinner = False
