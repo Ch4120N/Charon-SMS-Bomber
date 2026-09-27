@@ -156,3 +156,4 @@ class TuiApp:
         self._screens[cls.name] = cls
 
     def push(self, name: str, **kwargs: Any) -> None:
+        cls = self._screens[name]
