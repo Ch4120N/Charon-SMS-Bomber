@@ -19,3 +19,4 @@ _ITEMS = [
     ("start",    "Start Attack",       "launch a new SMS attack"),
     ("continue", "Resume Session",     "reuse last saved session"),
     ("settings", "Settings",           "edit config.json values"),
+    ("apis",     "API Manager",        "browse, filter, reload APIs"),
