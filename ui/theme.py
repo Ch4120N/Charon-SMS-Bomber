@@ -158,3 +158,4 @@ CHIP_FG_DEFAULT    = _c("#0d0e12", "black")
 STATUS_BAR_BORDER          = BORDER_DEFAULT        # #2e3342 slate
 STATUS_BAR_BG              = SURFACE_BASE          # #0d0e12 app bg
 
+# ── 9.2  Navigation BUTTONS (key caps) ───────────────────────────────
