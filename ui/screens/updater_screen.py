@@ -37,3 +37,4 @@ class UpdaterScreen(Screen):
     def on_enter(self) -> None:
         self._start_check()
 
+    def _start_check(self) -> None:
