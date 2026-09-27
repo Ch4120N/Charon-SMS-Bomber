@@ -27,3 +27,4 @@ class UpdaterScreen(Screen):
     show_spinner = True
 
     def __init__(self, app) -> None:
+        super().__init__(app)
