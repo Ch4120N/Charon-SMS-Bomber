@@ -111,3 +111,4 @@ class Sender:
             return random.choice(ua_cfg["custom"])
         if ua_cfg["rotate"]:
             try:
+                return self.ua.random
