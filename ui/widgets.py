@@ -60,3 +60,4 @@ class TextInput:
             t.append(" " * pad, style=TEXT_DISABLED)
         else:
             if self.value:
+                t.append(self.value, style=FORM_VALUE)
