@@ -33,3 +33,4 @@ class UpdaterScreen(Screen):
         self.error: Optional[str] = None
         self.bytes_written = 0
         self.bytes_total = 0
+
