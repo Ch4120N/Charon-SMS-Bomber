@@ -57,3 +57,4 @@ def append_history(entry: HistoryEntry) -> None:
 def clear_history() -> None:
     HISTORY_PATH.write_text("[]", encoding="utf-8")
 
+
