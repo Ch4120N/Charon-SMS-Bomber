@@ -87,3 +87,4 @@ class HistoryScreen(Screen):
             detail.append("   rounds: ", style=FG_MUTED)
             detail.append(str(e.rounds), style=FG)
 
+        foot = Text()
