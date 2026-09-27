@@ -102,3 +102,4 @@ class LogsScreen(Screen):
                     f"{min(self.top + self.page_size, len(self.lines))}",
                     style=FG_MUTED)
 
+        foot = Text()
