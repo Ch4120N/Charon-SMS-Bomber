@@ -43,3 +43,4 @@ class TextInput:
             FORM_VALUE, FORM_VALUE_FOCUSED, FORM_CURSOR_FG, FORM_CURSOR_BG,
             FORM_PLACEHOLDER, TEXT_DISABLED,
         )
+        t = Text()
