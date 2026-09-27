@@ -176,3 +176,4 @@ class SettingsScreen(Screen):
             if f.kind == "bool":
                 f.widget.toggle()  # type: ignore
                 self._apply(f)
+                return None
