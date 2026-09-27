@@ -113,3 +113,4 @@ class SettingsScreen(Screen):
         )
 
         return Panel(
+            Align.left(Group(body, info), vertical="top"),
