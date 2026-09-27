@@ -4,3 +4,4 @@ import random
 import string
 
 
+def rand_id(n: int = 8) -> str:
