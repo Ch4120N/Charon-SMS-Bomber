@@ -99,3 +99,4 @@ class SettingsScreen(Screen):
 
         for i in range(self.top, min(self.top + self.page_size, len(self.fields))):
             f = self.fields[i]
+            if self._is_section(i):
