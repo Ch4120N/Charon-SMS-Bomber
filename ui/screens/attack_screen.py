@@ -12,3 +12,4 @@ from rich.text import Text
 
 from core.attacker import Attacker, STRATEGIES
 from core.history import append_history, make_entry
+from core.session import save_session
