@@ -124,3 +124,4 @@ class Sender:
             return None
         raw = random.choice(pool)
         return {"http": raw, "https": raw}
+
