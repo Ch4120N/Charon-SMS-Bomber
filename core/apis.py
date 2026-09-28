@@ -93,3 +93,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
         return obj
 
     expanded = _sub(api)
+    # Merge headers: defaults ← api.headers
