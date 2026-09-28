@@ -137,3 +137,4 @@ class SettingsScreen(Screen):
                 self.editing = False
                 self._apply(f)
             return None
+
