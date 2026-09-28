@@ -267,3 +267,4 @@ class AttackScreen(Screen):
             self.app.notify("no data to save", style=WARN)
             return
         try:
+            REPORTS_DIR.mkdir(exist_ok=True)
