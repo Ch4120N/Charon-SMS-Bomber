@@ -37,3 +37,4 @@ class NotificationCenter:
                 maxlen=self._items.maxlen,
             )
             return list(self._items)[-self.max_visible :]
+
