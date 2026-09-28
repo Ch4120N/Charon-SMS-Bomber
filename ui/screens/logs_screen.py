@@ -98,3 +98,4 @@ class LogsScreen(Screen):
         head.append("  file: ", style=FG_MUTED)
         head.append(str(self._path.name) if self._path else "(none)", style=ACCENT)
         head.append(f"   lines: {len(self.lines)}", style=FG_MUTED)
+        head.append(f"   view: {self.top + 1}-"
