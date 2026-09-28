@@ -135,3 +135,4 @@ class Sender:
                 return self._send_once(api)
             except Exception:
                 attempt += 1
+                if attempt > retries:
