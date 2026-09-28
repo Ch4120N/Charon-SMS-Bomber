@@ -29,3 +29,4 @@ _SECTIONS = ["strategies", "concepts", "hotkeys", "config", "apis"]
 class HelpScreen(Screen):
     name = "help"
     title = "Help"
+    hotkeys = {"←→": "tab", "↑↓": "scroll", "/": "search"}
