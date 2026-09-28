@@ -153,3 +153,4 @@ class Attacker:
         return pool[-1]
 
     def _bump_weight(self, name: str, ok: bool) -> None:
+        with self._weights_lock:
