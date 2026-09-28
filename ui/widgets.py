@@ -20,3 +20,4 @@ class TextInput:
 
     def handle(self, key: str) -> Optional[str]:
         from ui.tui import KEY_ENTER, KEY_BACKSPACE, KEY_LEFT, KEY_RIGHT
+        if key == KEY_ENTER:
