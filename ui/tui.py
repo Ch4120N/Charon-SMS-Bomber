@@ -134,3 +134,4 @@ class TuiApp:
         self.running = True
         self._screens: dict[str, type[Screen]] = {}
         self._lock = threading.Lock()
+        self.frame = 0
