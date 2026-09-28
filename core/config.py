@@ -86,3 +86,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
             json.dumps(DEFAULT_CONFIG, indent=4, ensure_ascii=False),
             encoding="utf-8",
         )
+        return dict(DEFAULT_CONFIG)
