@@ -268,3 +268,4 @@ class HelpScreen(Screen):
                 self.scroll = 0
             return None
 
+        # Navigation
