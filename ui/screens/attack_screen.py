@@ -278,3 +278,4 @@ class AttackScreen(Screen):
                 export_html(self.attacker.stats, self.targets, cfg)
             self.app.notify("reports saved to ./reports/", style=OK)
         except Exception as exc:
+            self.app.notify(f"save failed: {exc}", style=BAD)
