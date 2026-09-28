@@ -169,3 +169,4 @@ class HelpScreen(Screen):
             ("↑ / ↓  or  k / j", "Move cursor in lists and forms"),
             ("← / →", "Change cycle fields, switch help tabs"),
             ("Enter", "Select, activate, or commit edit"),
+            ("Esc", "Go back, cancel edit, or stop attack"),
