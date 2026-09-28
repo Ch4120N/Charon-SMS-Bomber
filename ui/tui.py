@@ -106,3 +106,4 @@ class Screen(ABC):
     @abstractmethod
     def render(self) -> Panel: ...
 
+    def handle_key(self, key: str) -> Optional[str]:
