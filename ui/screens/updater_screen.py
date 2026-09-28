@@ -50,3 +50,4 @@ class UpdaterScreen(Screen):
                 self.state = "ready"
                 self.show_spinner = False
                 self.app.notify("check complete", style=OK)
+            except Exception as exc:
