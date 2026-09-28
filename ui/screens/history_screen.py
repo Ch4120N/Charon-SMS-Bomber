@@ -58,3 +58,4 @@ class HistoryScreen(Screen):
         t.add_column("When", style=FG_DIM, width=20)
         t.add_column("Strategy", style=ACCENT, width=12)
         t.add_column("Targets", style=FG, overflow="fold")
+        t.add_column("Sent", justify="right", style=FG_DIM)
