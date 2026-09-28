@@ -58,3 +58,4 @@ class TextInput:
             t.append(after, style=FORM_VALUE_FOCUSED)
             pad = max(0, width - len(before) - 1 - len(after))
             t.append(" " * pad, style=TEXT_DISABLED)
+        else:
