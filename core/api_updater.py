@@ -133,3 +133,4 @@ def download_apis(
                 if progress_cb:
                     progress_cb(written, total)
 
+    # Validate before replacing
