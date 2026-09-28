@@ -44,3 +44,4 @@ class ApisScreen(Screen):
         return (self.cursor, self.top, self.search, len(self.app.apis))
 
     def render(self) -> Panel:
+        items = self._visible()
