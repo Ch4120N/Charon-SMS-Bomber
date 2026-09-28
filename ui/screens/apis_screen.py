@@ -26,3 +26,4 @@ class ApisScreen(Screen):
         super().__init__(app)
         self.cursor = 0
         self.top = 0
+        self.page_size = 20
