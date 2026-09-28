@@ -38,3 +38,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("attack.rate_limit_per_sec", "Rate cap (req/s)", "float", A["rate_limit_per_sec"]),
         Field("attack.dry_run", "Dry-run", "bool", A["dry_run"]),
         Field("section", "NETWORK", "action", None),
+        Field("network.timeout", "Timeout (s)", "int", N["timeout"]),
