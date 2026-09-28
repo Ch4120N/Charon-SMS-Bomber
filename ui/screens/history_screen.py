@@ -121,3 +121,4 @@ class HistoryScreen(Screen):
             self.cursor = max(0, len(self.entries) - 1)
             return None
         if key == "r":
+            self.entries = load_history()
