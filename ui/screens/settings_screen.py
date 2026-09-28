@@ -26,3 +26,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         cfg["attack"], cfg["network"], cfg["user_agent"],
         cfg["api_health"], cfg["output"], cfg["logging"],
     )
+    return [
