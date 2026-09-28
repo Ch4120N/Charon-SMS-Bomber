@@ -194,3 +194,4 @@ class SettingsScreen(Screen):
             return
         section, key = parts
         target = self.app.cfg.get(section, {})
+        if f.kind in ("text", "int", "float"):
