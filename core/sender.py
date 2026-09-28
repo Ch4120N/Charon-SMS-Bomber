@@ -74,3 +74,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                     return verdict
 
     elif isinstance(obj, list) and obj:
+        # heuristic — any non-empty list of errors = failure
