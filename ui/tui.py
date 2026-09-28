@@ -145,3 +145,4 @@ class TuiApp:
         # dirty flag cache
         self._cached_layout: Any = None
         self._cached_key: Any = None
+
