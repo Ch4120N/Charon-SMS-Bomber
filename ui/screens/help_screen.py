@@ -210,3 +210,4 @@ class HelpScreen(Screen):
             ("logging.level", "DEBUG / INFO / WARNING / ERROR."),
         ]
         rows = []
+        for k, v in items:
