@@ -47,3 +47,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("user_agent.rotate", "Rotate UA", "bool", U["rotate"]),
         Field("section", "API HEALTH", "action", None),
         Field("api_health.enabled", "Enabled", "bool", H["enabled"]),
+        Field("api_health.failure_threshold", "Failure threshold", "int", H["failure_threshold"]),
