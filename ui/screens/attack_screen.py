@@ -198,3 +198,4 @@ class AttackScreen(Screen):
                 str(b.get("failed", 0)),
                 weight,
                 status,
+            )
