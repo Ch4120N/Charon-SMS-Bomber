@@ -18,3 +18,4 @@ MAX_ENTRIES = 50
 class HistoryEntry:
     ts: str
     targets: list[str]
+    strategy: str
