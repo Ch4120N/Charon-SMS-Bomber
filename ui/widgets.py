@@ -150,3 +150,4 @@ class Field:
             t.append("   ", style=TEXT_DISABLED)
 
         t.append(
+            f"{self.label:<24}",
