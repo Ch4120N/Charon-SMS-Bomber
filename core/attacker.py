@@ -95,3 +95,4 @@ class Attacker:
         self.sender = Sender(cfg)
         self.health = (
             ApiHealthTracker(
+                cfg["api_health"]["failure_threshold"],
