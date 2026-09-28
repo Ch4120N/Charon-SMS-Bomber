@@ -4,3 +4,4 @@ from __future__ import annotations
 from typing import Any, Optional
 
 from rich.align import Align
+from rich.console import Group
