@@ -38,3 +38,4 @@ def _has_truecolor() -> bool:
 TRUECOLOR = _has_truecolor()
 
 
+def _c(hex_hi: str, fallback: str) -> str:
