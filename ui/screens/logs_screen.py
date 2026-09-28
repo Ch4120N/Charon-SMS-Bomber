@@ -82,3 +82,4 @@ class LogsScreen(Screen):
             self.top = self.cursor - self.page_size + 1
 
         body = Text()
+        for i in range(self.top, min(self.top + self.page_size, len(self.lines))):
