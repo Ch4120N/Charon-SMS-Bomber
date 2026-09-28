@@ -59,3 +59,4 @@ class ApisScreen(Screen):
         info.add_row("Enabled",
                      str(sum(1 for a in self.app.apis if a.get("enabled", True))))
         if self.search:
+            info.add_row("Filter", f"'{self.search}' → {len(items)} matches")
