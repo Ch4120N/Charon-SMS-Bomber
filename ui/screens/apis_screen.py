@@ -109,3 +109,4 @@ class ApisScreen(Screen):
             Align.left(Group(search_line, Text(""), lst, detail), vertical="top"),
             title=f"[bold {PRIMARY}]  API Manager  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 1),
+        )
