@@ -105,3 +105,4 @@ def check_for_updates(
 
 def download_apis(
     apis_url: str = DEFAULT_APIS_URL,
+    timeout: int = 30,
