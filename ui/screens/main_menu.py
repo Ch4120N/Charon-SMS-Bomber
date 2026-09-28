@@ -92,3 +92,4 @@ class MainMenuScreen(Screen):
         if item_id == "exit":
             self.app.running = False
         elif item_id == "start":
+            self.app.push("start", mode="new")
