@@ -117,3 +117,4 @@ class UpdaterScreen(Screen):
                 ], subtitle="press r to re-check, Esc to return")
 
             footer = Text()
+            if info.available:
