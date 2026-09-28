@@ -19,3 +19,4 @@ class HistoryEntry:
     ts: str
     targets: list[str]
     strategy: str
+    threads: int
