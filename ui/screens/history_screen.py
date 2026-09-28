@@ -77,3 +77,4 @@ class HistoryScreen(Screen):
                 f"{e.rate:.1f}%",
             )
 
+        detail = Text()
