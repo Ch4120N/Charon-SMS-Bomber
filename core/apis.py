@@ -92,3 +92,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
             return [_sub(v) for v in obj]
         return obj
 
+    expanded = _sub(api)
