@@ -26,3 +26,4 @@ from ui.widgets import TextInput
 _SECTIONS = ["strategies", "concepts", "hotkeys", "config", "apis"]
 
 
+class HelpScreen(Screen):
