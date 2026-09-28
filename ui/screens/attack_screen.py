@@ -149,3 +149,4 @@ class AttackScreen(Screen):
             pos = frame % (bar_len * 2)
             head = pos if pos < bar_len else bar_len * 2 - pos
             bar = Text("  ")
+            for i in range(bar_len):
