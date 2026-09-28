@@ -108,3 +108,4 @@ class AttackScreen(Screen):
 
     
     def render_cache_key(self):
+        s = self.attacker.stats
