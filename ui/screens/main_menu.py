@@ -97,3 +97,4 @@ class MainMenuScreen(Screen):
             self.app.push("start", mode="resume")
         elif item_id == "settings":
             self.app.push("settings")
+        elif item_id == "apis":
