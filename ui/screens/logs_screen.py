@@ -74,3 +74,4 @@ class LogsScreen(Screen):
         path = self._latest_log()
         at_bottom = self.cursor >= len(self.lines) - 2
         if path and path.stat().st_mtime != self._last_mtime and at_bottom:
+            self._load()
