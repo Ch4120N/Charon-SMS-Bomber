@@ -33,3 +33,4 @@ class AttackScreen(Screen):
     def __init__(
         self,
         app,
+        targets: list[str],
