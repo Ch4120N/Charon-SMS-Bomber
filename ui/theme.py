@@ -221,3 +221,4 @@ MENU_SEPARATOR      = TEXT_DISABLED
 MENU_GROUP_LABEL    = FOCUS                        # orange section header
 
 # ══════════════════════════════════════════════════════════════════════
+# 13. FORMS
