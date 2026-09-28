@@ -172,3 +172,4 @@ class Field:
         elif isinstance(self.widget, Cycle):
             t.append_text(self.widget.render(focused))
             if focused:
+                t.append("   ← →", style=FORM_HINT)
