@@ -32,3 +32,4 @@ def load_history() -> list[HistoryEntry]:
     if not HISTORY_PATH.exists():
         return []
     try:
+        raw = json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
