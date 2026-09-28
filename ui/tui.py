@@ -292,3 +292,4 @@ class TuiApp:
         layout.split_column(
             Layout(name="header", size=header_h),
             Layout(name="body", ratio=1),
+            Layout(name="footer", size=3),
