@@ -56,3 +56,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
         "elapsed_seconds": round(stats.elapsed, 2),
         "totals": {
             "sent": stats.sent,
+            "success": stats.success,
