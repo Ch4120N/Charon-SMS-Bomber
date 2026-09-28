@@ -64,3 +64,4 @@ class KeyReader:
 
     def start(self) -> None:
         self._t.start()
+
