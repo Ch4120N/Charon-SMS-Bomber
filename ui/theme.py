@@ -114,3 +114,4 @@ INFO_ON_BG         = _c("#0d0e12", "black")
 #  6. API / LINK — Cyan (#5fd4e8) — the ONLY cyan family
 #     Role: API names in tables, hyperlinks, inline `code` in help
 # ══════════════════════════════════════════════════════════════════════
+API_NAME           = _c("#5fd4e8", "bright_cyan")
