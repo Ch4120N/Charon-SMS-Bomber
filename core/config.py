@@ -31,3 +31,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "api_filter_tags": [],
         "api_filter_enabled_only": True,
     },
+    "user_agent": {
