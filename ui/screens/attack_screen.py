@@ -47,3 +47,4 @@ class AttackScreen(Screen):
         self.dry_run = dry_run
 
         self.attacker = Attacker(app.cfg, app.apis, app.logger)
+        self.started = False
