@@ -86,3 +86,4 @@ class StartScreen(Screen):
         desc.append("  ", style=FG_DIM)
         desc.append(info.get("details", ""), style=FG_MUTED)
         desc.append("\n  Press ", style=FG_MUTED)
+        desc.append("/", style=f"bold {OK}")
