@@ -84,3 +84,4 @@ class Attacker:
     ) -> None:
         self.cfg = cfg
         self.all_apis = apis
+        self.logger = logger
