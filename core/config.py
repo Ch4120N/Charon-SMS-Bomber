@@ -103,3 +103,4 @@ def save_config(cfg: dict[str, Any], path: Optional[str | Path] = None) -> None:
     )
 
 
+__all__ = ["DEFAULT_CONFIG", "load_config", "save_config"]
