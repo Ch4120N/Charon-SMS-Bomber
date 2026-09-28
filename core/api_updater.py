@@ -92,3 +92,4 @@ def check_for_updates(
         remote_count = 0
 
     available = remote_hash != local_hash
+    return UpdateCheck(
