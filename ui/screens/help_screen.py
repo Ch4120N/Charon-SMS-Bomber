@@ -184,3 +184,4 @@ class HelpScreen(Screen):
             ("/", "Search or filter"),
             ("q", "Quit from the top-level menu"),
         ]
+        t = Table(
