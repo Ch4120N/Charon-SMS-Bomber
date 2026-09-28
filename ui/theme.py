@@ -277,3 +277,4 @@ PROGRESS_LABEL      = TEXT_SECONDARY
 PROGRESS_PCT        = TEXT_PRIMARY
 
 # ══════════════════════════════════════════════════════════════════════
+# 18. SPINNERS
