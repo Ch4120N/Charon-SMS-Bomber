@@ -170,3 +170,4 @@ class Attacker:
         eligible = [a for a in self.apis if self._eligible(a)]
         if not eligible:
             return jobs
+
