@@ -35,3 +35,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "rotate": True,
         "custom": [],
     },
+    "api_health": {
