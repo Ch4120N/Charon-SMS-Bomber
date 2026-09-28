@@ -34,3 +34,4 @@ def load_history() -> list[HistoryEntry]:
     try:
         raw = json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
     except Exception:
+        return []
