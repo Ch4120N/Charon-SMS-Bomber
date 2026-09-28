@@ -123,3 +123,4 @@ class StartScreen(Screen):
             return "help"
 
         if key == KEY_ENTER:
+            if field.kind == "action":
