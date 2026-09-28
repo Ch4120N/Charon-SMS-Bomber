@@ -79,3 +79,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
 
     return None
 
+
