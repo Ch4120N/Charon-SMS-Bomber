@@ -58,3 +58,4 @@ class HelpScreen(Screen):
             else:
                 tabs.append(f" {label} ", style=FG_DIM)
             tabs.append("   ")
+
