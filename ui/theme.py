@@ -361,3 +361,4 @@ def chip(text: str, bg: str | None = None) -> str:
 
 
 def chip_alt(text: str) -> str:
+    """Magenta chip — help tabs."""
