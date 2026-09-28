@@ -110,3 +110,4 @@ class LogsScreen(Screen):
         foot.append(" reload   ", style=FG_DIM)
         foot.append("Esc", style=f"bold {OK}")
         foot.append(" back", style=FG_DIM)
+
