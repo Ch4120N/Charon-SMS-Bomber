@@ -187,3 +187,4 @@ class SettingsScreen(Screen):
             if not self._is_section(i):
                 self.cursor = i
                 return
+
