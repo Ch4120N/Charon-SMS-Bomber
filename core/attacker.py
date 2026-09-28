@@ -109,3 +109,4 @@ class Attacker:
         self.unlimited = False
         self.current_targets: list[str] = []
         self.strategy = cfg["attack"].get("strategy", DEFAULT_STRATEGY)
+
