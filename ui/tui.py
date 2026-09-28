@@ -296,3 +296,4 @@ class TuiApp:
         )
         layout["header"].update(self._header(top))
         layout["body"].update(top.render())
+        layout["footer"].update(self._footer(top))
