@@ -65,3 +65,4 @@ TEXT_INVERSE       = _c("#0d0e12", "black")
 # ══════════════════════════════════════════════════════════════════════
 #  3. BRAND — Magenta (#e879f9)
 #     Role: header art, breadcrumb active, menu markers, table cursors,
+#           focused borders, scrollbar thumb
