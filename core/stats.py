@@ -23,3 +23,4 @@ class Stats:
     recent: list[tuple[str, str, bool]] = field(default_factory=list)
     start_ts: float = field(default_factory=time.time)
 
+    def record(self, api_name: str, target: str, ok: bool) -> None:
