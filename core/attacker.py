@@ -75,3 +75,4 @@ class RateLimiter:
 
 
 #  Attacker
+class Attacker:
