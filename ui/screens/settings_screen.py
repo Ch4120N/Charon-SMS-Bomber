@@ -24,3 +24,4 @@ from ui.widgets import Field
 def _build_fields(cfg: dict) -> list[Field]:
     A, N, U, H, O, L = (
         cfg["attack"], cfg["network"], cfg["user_agent"],
+        cfg["api_health"], cfg["output"], cfg["logging"],
