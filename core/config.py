@@ -17,3 +17,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "verify_ssl": False,
         "proxy_enabled": False,
         "proxy_pool": [],
+    },
