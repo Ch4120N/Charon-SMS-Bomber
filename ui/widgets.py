@@ -68,3 +68,4 @@ class TextInput:
             t.append(" " * pad, style=TEXT_DISABLED)
         return t
 
+
