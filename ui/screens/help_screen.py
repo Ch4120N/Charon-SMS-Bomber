@@ -51,3 +51,4 @@ class HelpScreen(Screen):
     def render(self) -> Panel:
         # Tabs
         tabs = Text("  ")
+        for i, name in enumerate(_SECTIONS):
