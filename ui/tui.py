@@ -158,3 +158,4 @@ class TuiApp:
     def push(self, name: str, **kwargs: Any) -> None:
         cls = self._screens[name]
         screen = cls(self, **kwargs)
+        self.stack.append(screen)
