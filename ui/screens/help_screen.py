@@ -44,3 +44,4 @@ class HelpScreen(Screen):
         return _SECTIONS[self.section_idx]
 
     
+    def render_cache_key(self) -> Any:
