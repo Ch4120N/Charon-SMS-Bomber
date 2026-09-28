@@ -4,3 +4,4 @@ from typing import Optional
 
 from rich.align import Align
 from rich.console import Group
+from rich.panel import Panel
