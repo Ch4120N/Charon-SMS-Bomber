@@ -338,3 +338,4 @@ class TuiApp:
                     live.update(self._layout(), refresh=True)
 
                 # keys
+                key = self.keys.get(timeout=frame_interval)
