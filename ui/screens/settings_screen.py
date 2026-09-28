@@ -107,3 +107,4 @@ class SettingsScreen(Screen):
         info = Text()
         info.append(
             f"\n  showing "
+            f"{self.top + 1}-{min(self.top + self.page_size, len(self.fields))}"
