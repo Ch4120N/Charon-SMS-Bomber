@@ -58,3 +58,4 @@ SURFACE_INPUT_FOC  = _c("#1a1c25", "grey11")
 # ══════════════════════════════════════════════════════════════════════
 TEXT_PRIMARY       = _c("#e4e6eb", "white")
 TEXT_SECONDARY     = _c("#9fa5b2", "grey70")
+TEXT_TERTIARY      = _c("#6a7080", "grey54")
