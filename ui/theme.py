@@ -416,3 +416,4 @@ __all__ = [
     "INFO", "INFO_DIM", "INFO_BRIGHT", "INFO_ON_BG",
     # 6. API / Link
     "API_NAME", "API_NAME_FOCUSED", "LINK", "LINK_UNDERLINE", "LINK_HOVER",
+    # 7. Borders
