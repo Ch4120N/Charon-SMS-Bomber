@@ -286,3 +286,4 @@ class HelpScreen(Screen):
         if key == "g":
             self.scroll = 0
             return None
+        if key == "G":
