@@ -100,3 +100,4 @@ class LogsScreen(Screen):
         head.append(f"   lines: {len(self.lines)}", style=FG_MUTED)
         head.append(f"   view: {self.top + 1}-"
                     f"{min(self.top + self.page_size, len(self.lines))}",
+                    style=FG_MUTED)
