@@ -328,3 +328,4 @@ class TuiApp:
 
                 # render
                 cache_key = (
+                    top.name,
