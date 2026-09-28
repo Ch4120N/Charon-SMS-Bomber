@@ -68,3 +68,4 @@ class AttackScreen(Screen):
     def on_exit(self) -> None:
         self.attacker.stop_flag.set()
 
+    def _start_thread(self) -> None:
