@@ -67,3 +67,4 @@ TEXT_INVERSE       = _c("#0d0e12", "black")
 #     Role: header art, breadcrumb active, menu markers, table cursors,
 #           focused borders, scrollbar thumb
 # ══════════════════════════════════════════════════════════════════════
+BRAND              = _c("#e879f9", "bright_magenta")
