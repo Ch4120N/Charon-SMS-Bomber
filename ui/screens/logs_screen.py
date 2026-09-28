@@ -20,3 +20,4 @@ _LEVEL_STYLE = {
     "DEBUG": FG_MUTED,
     "INFO": FG,
     "WARNING": WARN,
+    "ERROR": BAD,
