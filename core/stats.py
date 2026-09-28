@@ -74,3 +74,4 @@ def export_json(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     REPORTS_DIR.mkdir(exist_ok=True)
     path = REPORTS_DIR / f"report_{_stamp()}.json"
     path.write_text(
+        json.dumps(_payload(stats, targets, cfg), indent=4, ensure_ascii=False),
