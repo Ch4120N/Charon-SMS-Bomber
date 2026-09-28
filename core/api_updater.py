@@ -72,3 +72,4 @@ def check_for_updates(
         manifest = mr.json()
     except Exception as exc:
         raise RuntimeError(f"Failed to fetch manifest: {exc}") from exc
+
