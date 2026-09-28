@@ -72,3 +72,4 @@ class AttackScreen(Screen):
         if self.started:
             return
         self.started = True
+
