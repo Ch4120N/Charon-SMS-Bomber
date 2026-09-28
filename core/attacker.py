@@ -248,3 +248,4 @@ class Attacker:
             if not jobs:
                 # all APIs cooling — back off
                 self._cooldown(2.0)
+                continue
