@@ -410,3 +410,4 @@ __all__ = [
     # 4. Focus
     "FOCUS", "FOCUS_DIM", "FOCUS_BRIGHT", "FOCUS_ON_BG",
     # 5. Semantic
+    "SUCCESS", "SUCCESS_DIM", "SUCCESS_BRIGHT", "SUCCESS_ON_BG",
