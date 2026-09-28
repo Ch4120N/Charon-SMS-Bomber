@@ -24,3 +24,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
 
     if isinstance(obj, dict):
         # error-bearing keys → failure
+        for k in _NEGATIVE_KEYS:
