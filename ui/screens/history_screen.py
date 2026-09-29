@@ -29,3 +29,4 @@ class HistoryScreen(Screen):
         self.page_size = 18
 
     def on_enter(self) -> None:
+        self.entries = load_history()
