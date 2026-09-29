@@ -124,3 +124,4 @@ class ApisScreen(Screen):
 
         items = self._visible()
         if key in (KEY_UP, "k"):
+            if items:
