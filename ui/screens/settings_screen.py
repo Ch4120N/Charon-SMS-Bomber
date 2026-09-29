@@ -117,3 +117,4 @@ class SettingsScreen(Screen):
             title=f"[bold {PRIMARY}]  Settings  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
+
