@@ -125,3 +125,4 @@ class Field:
         self.kind = kind
         self.hint = hint
         self.action = action
+
