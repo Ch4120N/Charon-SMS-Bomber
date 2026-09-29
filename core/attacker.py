@@ -263,3 +263,4 @@ class Attacker:
                         name, ok = api.get("name", "Unknown"), False
                     self.stats.record(name, tgt, ok)
                     self._apply_jitter()
+
