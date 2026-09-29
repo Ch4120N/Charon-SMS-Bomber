@@ -49,3 +49,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 if v in (0, 200, 201, 202, 204):
                     return True
                 if v >= 400:
+                    return False
