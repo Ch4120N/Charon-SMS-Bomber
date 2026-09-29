@@ -76,3 +76,4 @@ def make_entry(
         threads=threads,
         rounds=rounds,
         sent=sent,
+        success=success,
