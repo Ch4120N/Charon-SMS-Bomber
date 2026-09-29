@@ -27,3 +27,4 @@ class HistoryEntry:
     rate: float
     elapsed: float
 
+
