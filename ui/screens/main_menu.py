@@ -50,3 +50,4 @@ class MainMenuScreen(Screen):
 
         for i, (_id, name, desc) in enumerate(_ITEMS):
             focused = i == self.cursor
+            marker = Text("▌", style=f"bold {PRIMARY}") if focused else Text(" ")
