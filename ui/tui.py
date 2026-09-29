@@ -79,3 +79,4 @@ class KeyReader:
         except queue.Empty:
             return None
 
+    def drain(self) -> None:
