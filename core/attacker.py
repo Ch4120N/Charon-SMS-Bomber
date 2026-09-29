@@ -32,3 +32,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Cycles through every enabled API in round-robin fashion, "
             "with no upper limit on rounds. Ignores the 'rounds' config. "
             "Stop with the space bar or Esc."
+        ),
