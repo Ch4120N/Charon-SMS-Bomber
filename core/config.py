@@ -50,3 +50,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "enabled": True,
         "level": "INFO",
         "max_bytes": 5242880,
+        "backup_count": 3,
