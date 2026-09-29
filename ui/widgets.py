@@ -38,3 +38,4 @@ class TextInput:
             self.cursor += 1
         return None
 
+    def render(self, focused: bool, width: int = 40) -> Text:
