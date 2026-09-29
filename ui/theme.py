@@ -159,3 +159,4 @@ STATUS_BAR_BORDER          = BORDER_DEFAULT        # #2e3342 slate
 STATUS_BAR_BG              = SURFACE_BASE          # #0d0e12 app bg
 
 # ── 9.2  Navigation BUTTONS (key caps) ───────────────────────────────
+#     Foreground = #0d0e12  (near-black)
