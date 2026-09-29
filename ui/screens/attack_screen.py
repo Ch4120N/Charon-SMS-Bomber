@@ -15,3 +15,4 @@ from core.history import append_history, make_entry
 from core.session import save_session
 from core.stats import export_csv, export_html, export_json
 from ui.theme import (
+    PRIMARY, PRIMARY_ALT, API_COLOR, ACCENT, OK, WARN, BAD,
