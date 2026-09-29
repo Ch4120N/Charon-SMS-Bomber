@@ -12,3 +12,4 @@ def save_session(
 ) -> None:
     SESSION_PATH.write_text(
         json.dumps(
+            {"targets": targets, "threads": threads, "rounds": rounds, "delay": delay},
