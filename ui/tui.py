@@ -248,3 +248,4 @@ class TuiApp:
         for i, (k, d) in enumerate(hints):
             if i > 0:
                 bar.append("  ", style=FOOTER_SEPARATOR)
+            bar.append_text(Text.from_markup(chip(k)))
