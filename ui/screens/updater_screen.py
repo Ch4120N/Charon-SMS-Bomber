@@ -165,3 +165,4 @@ class UpdaterScreen(Screen):
                 self.app.notify("apis.json updated", style=OK)
             except Exception as exc:
                 self.error = str(exc)
+                self.state = "error"
