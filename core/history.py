@@ -44,3 +44,4 @@ def load_history() -> list[HistoryEntry]:
     return out
 
 
+def append_history(entry: HistoryEntry) -> None:
