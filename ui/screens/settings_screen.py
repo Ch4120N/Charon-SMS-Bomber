@@ -30,3 +30,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("section", "ATTACK", "action", None),
         Field("attack.strategy", "Strategy", "cycle", A["strategy"],
               choices=list(STRATEGIES.keys())),
+        Field("attack.threads", "Threads", "int", A["threads"]),
