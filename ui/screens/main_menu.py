@@ -45,3 +45,4 @@ class MainMenuScreen(Screen):
     def render(self) -> Panel:
         grid = Table.grid(padding=(0, 3))
         grid.add_column(width=2)
+        grid.add_column(width=22)
