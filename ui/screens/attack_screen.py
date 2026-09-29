@@ -71,3 +71,4 @@ class AttackScreen(Screen):
     def _start_thread(self) -> None:
         if self.started:
             return
+        self.started = True
