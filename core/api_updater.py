@@ -124,3 +124,4 @@ def download_apis(
         r.raise_for_status()
         total = int(r.headers.get("Content-Length") or 0)
         written = 0
+        with tmp.open("wb") as fh:
