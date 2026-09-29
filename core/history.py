@@ -26,3 +26,4 @@ class HistoryEntry:
     failed: int
     rate: float
     elapsed: float
+
