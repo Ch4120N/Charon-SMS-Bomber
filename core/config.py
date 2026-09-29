@@ -18,3 +18,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "proxy_enabled": False,
         "proxy_pool": [],
     },
+    "attack": {
