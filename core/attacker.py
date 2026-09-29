@@ -128,3 +128,4 @@ class Attacker:
         unlimited = self.strategy in ("smart", "unlimited") and rounds <= 0
         return {
             "targets": targets,
+            "apis": len(self.apis),
