@@ -78,3 +78,4 @@ class SettingsScreen(Screen):
 
     def _first_editable(self, start: int) -> int:
         for i in range(start, len(self.fields)):
+            if self.fields[i].key != "section":
