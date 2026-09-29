@@ -162,3 +162,4 @@ class HelpScreen(Screen):
             g.add_row(title, body)
             rows.append(g)
             rows.append(Text(""))
+        return Group(*rows)
