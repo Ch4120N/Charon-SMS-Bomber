@@ -150,3 +150,4 @@ class Attacker:
             acc += w
             if r <= acc:
                 return api
+        return pool[-1]
