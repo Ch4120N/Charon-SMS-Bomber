@@ -121,3 +121,4 @@ class Sender:
             return None
         pool = self.cfg["network"].get("proxy_pool") or []
         if not pool:
+            return None
