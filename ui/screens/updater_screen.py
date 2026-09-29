@@ -136,3 +136,4 @@ class UpdaterScreen(Screen):
         )
 
     def handle_key(self, key: str) -> Optional[str]:
+        if key == KEY_ESC:
