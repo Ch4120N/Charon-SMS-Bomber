@@ -93,3 +93,4 @@ class Attacker:
         )
 
         self.sender = Sender(cfg)
+        self.health = (
