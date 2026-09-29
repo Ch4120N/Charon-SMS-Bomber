@@ -214,3 +214,4 @@ HEADER_SPINNER_IDLE       = TEXT_TERTIARY
 # ══════════════════════════════════════════════════════════════════════
 MENU_MARKER         = BRAND
 MENU_ITEM           = TEXT_PRIMARY
+MENU_ITEM_FOCUSED   = BRAND_BRIGHT
