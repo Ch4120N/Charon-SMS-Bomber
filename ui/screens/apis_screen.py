@@ -17,3 +17,4 @@ from ui.tui import Screen, KEY_UP, KEY_DOWN, KEY_ENTER, KEY_ESC
 from ui.widgets import TextInput
 
 
+class ApisScreen(Screen):
