@@ -53,3 +53,4 @@ def append_history(entry: HistoryEntry) -> None:
         encoding="utf-8",
     )
 
+
