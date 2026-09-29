@@ -149,3 +149,4 @@ class UpdaterScreen(Screen):
     def _download(self) -> None:
         self.state = "downloading"
         self.show_spinner = True
+        self.bytes_written = 0
