@@ -34,3 +34,4 @@ def parse_targets(raw: str) -> list[str]:
     return out
 
 
+__all__ = ["normalize_phone", "parse_targets"]
