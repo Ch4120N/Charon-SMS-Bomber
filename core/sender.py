@@ -28,3 +28,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
             if k in obj:
                 v = obj[k]
                 if v not in (None, "", [], {}, 0, "0"):
+                    return False
