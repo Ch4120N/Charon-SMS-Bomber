@@ -93,3 +93,4 @@ SUCCESS_BRIGHT     = _c("#a0e8a8", "bright_green")
 SUCCESS_ON_BG      = _c("#0d0e12", "black")
 
 # 5.2 Warning — Yellow
+WARNING            = _c("#f0d468", "bright_yellow")
