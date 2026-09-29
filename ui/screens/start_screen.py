@@ -101,3 +101,4 @@ class StartScreen(Screen):
         if self.editing:
             if key == KEY_ESC:
                 self.editing = False
+                return None
