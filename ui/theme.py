@@ -241,3 +241,4 @@ FORM_ACTION_DIM     = WARNING_DIM
 # 14. TOGGLES
 # ══════════════════════════════════════════════════════════════════════
 TOGGLE_ON_BG        = SUCCESS                      # green
+TOGGLE_ON_FG        = TEXT_INVERSE
