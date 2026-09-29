@@ -32,3 +32,4 @@ class NotificationCenter:
 
     def visible(self) -> list[Toast]:
         with self._lock:
+            self._items = deque(
