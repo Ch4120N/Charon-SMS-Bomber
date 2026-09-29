@@ -128,3 +128,4 @@ class UpdaterScreen(Screen):
         return self._panel([Text("\n  idle\n")], subtitle="")
 
     def _panel(self, body: list, subtitle: str) -> Panel:
+        return Panel(
