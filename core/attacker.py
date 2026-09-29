@@ -194,3 +194,4 @@ class Attacker:
         return jobs
 
     def _apply_jitter(self) -> None:
+        base = float(self.cfg["attack"]["delay"])
