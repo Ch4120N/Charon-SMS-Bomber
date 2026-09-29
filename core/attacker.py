@@ -222,3 +222,4 @@ class Attacker:
     def run(
         self, targets: list[str], threads: int, rounds: int, delay: float
     ) -> Stats:
+        self.current_targets = list(targets)
