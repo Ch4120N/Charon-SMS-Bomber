@@ -178,3 +178,4 @@ class SettingsScreen(Screen):
                 self._apply(f)
                 return None
         return None
+
