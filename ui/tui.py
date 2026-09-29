@@ -53,3 +53,4 @@ _ART_FULL = [
 ]
 _ART_COMPACT = "  ╭─ CHSMSBOMBER ─╮"
 
+
