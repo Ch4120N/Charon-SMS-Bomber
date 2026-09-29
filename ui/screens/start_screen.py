@@ -20,3 +20,4 @@ from ui.tui import (
     KEY_LEFT, KEY_RIGHT,
 )
 from ui.widgets import Field
+
