@@ -86,3 +86,4 @@ class LogsScreen(Screen):
             line = self.lines[i]
             focused = i == self.cursor
             style = FG
+            for level, lstyle in _LEVEL_STYLE.items():
