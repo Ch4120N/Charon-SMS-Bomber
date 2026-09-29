@@ -49,3 +49,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("api_health.enabled", "Enabled", "bool", H["enabled"]),
         Field("api_health.failure_threshold", "Failure threshold", "int", H["failure_threshold"]),
         Field("api_health.cooldown_seconds", "Cooldown (s)", "int", H["cooldown_seconds"]),
+        Field("section", "OUTPUT", "action", None),
