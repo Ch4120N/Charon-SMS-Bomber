@@ -23,3 +23,4 @@ from utils.paths import REPORTS_DIR
 from utils.version import NOTICE
 
 
+class AttackScreen(Screen):
