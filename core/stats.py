@@ -20,3 +20,4 @@ class Stats:
     success: int = 0
     failed: int = 0
     by_api: dict[str, dict[str, int]] = field(default_factory=dict)
+    recent: list[tuple[str, str, bool]] = field(default_factory=list)
