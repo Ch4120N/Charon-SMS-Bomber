@@ -34,3 +34,4 @@ class AboutScreen(Screen):
         t.add_row("License", APP_LICENSE)
         t.add_row("Config", str(CONFIG_PATH))
         t.add_row("APIs", str(APIS_PATH))
+        t.add_row("Notice", f"[bold {BAD}]{NOTICE}[/]")
