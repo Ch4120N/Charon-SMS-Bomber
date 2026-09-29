@@ -15,3 +15,4 @@ from ui.tui import Screen, KEY_ESC, KEY_ENTER
 from utils.paths import APIS_PATH, CONFIG_PATH
 from utils.version import (
     APP_AUTHOR, APP_LICENSE, APP_NAME, APP_REPO, APP_VERSION, NOTICE,
+)
