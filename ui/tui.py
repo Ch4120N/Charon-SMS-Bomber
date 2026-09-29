@@ -107,3 +107,4 @@ class Screen(ABC):
     def render(self) -> Panel: ...
 
     def handle_key(self, key: str) -> Optional[str]:
+        return None
