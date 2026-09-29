@@ -159,3 +159,4 @@ class UpdaterScreen(Screen):
         def _worker() -> None:
             try:
                 download_apis(DEFAULT_APIS_URL, progress_cb=_cb)
+                self.app.apis = load_apis()
