@@ -14,3 +14,4 @@ from core.sender import Sender
 from core.stats import Stats
 
 
+#  Strategy metadata
