@@ -179,3 +179,4 @@ class AttackScreen(Screen):
         api_tbl.add_column("Weight", justify="right", style=ACCENT)
         api_tbl.add_column("Status", style=WARN)
 
+        by_name = {a.get("name"): a for a in atk.apis}
