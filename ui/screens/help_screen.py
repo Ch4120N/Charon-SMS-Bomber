@@ -204,3 +204,4 @@ class HelpScreen(Screen):
             ("attack.round_cooldown", "Wait between finite rounds."),
             ("user_agent.rotate", "Fresh UA per request via fake-useragent."),
             ("user_agent.custom", "If set, chosen from randomly."),
+            ("api_health.failure_threshold", "Consecutive failures before cooldown."),
