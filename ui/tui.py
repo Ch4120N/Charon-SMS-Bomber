@@ -307,3 +307,4 @@ class TuiApp:
         self.console.clear()
         with Live(
             self._layout(),
+            console=self.console,
