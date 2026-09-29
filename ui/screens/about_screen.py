@@ -17,3 +17,4 @@ from utils.version import (
     APP_AUTHOR, APP_LICENSE, APP_NAME, APP_REPO, APP_VERSION, NOTICE,
 )
 
+
