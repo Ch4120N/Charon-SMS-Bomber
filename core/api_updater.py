@@ -91,3 +91,4 @@ def check_for_updates(
     except Exception:
         remote_count = 0
 
+    available = remote_hash != local_hash
