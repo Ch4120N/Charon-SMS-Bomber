@@ -41,3 +41,4 @@ class ApiHealthTracker:
                 st["disabled_until"] = 0
             else:
                 st["failures"] = st.get("failures", 0) + 1
+                if st["failures"] >= self.threshold:
