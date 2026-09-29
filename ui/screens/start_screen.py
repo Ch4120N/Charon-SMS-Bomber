@@ -169,3 +169,4 @@ class StartScreen(Screen):
             return
 
         strategy = self.fields[4].widget.value  # type: ignore
+        dry_run = self.fields[5].widget.value   # type: ignore
