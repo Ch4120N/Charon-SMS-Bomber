@@ -20,3 +20,4 @@ DEFAULT_HEADERS: dict[str, str] = {
 
 def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
     p = path or APIS_PATH
+    if not p.exists():
