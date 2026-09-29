@@ -395,3 +395,4 @@ def muted(text: str) -> str:
 
 def accent(text: str) -> str:
     return f"[{FOCUS}]{text}[/]"
+
