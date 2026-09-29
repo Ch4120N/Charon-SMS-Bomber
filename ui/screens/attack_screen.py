@@ -187,3 +187,4 @@ class AttackScreen(Screen):
                 rem = atk.health.remaining_cooldown(by_name[name])
                 if rem > 0:
                     status = f"[{BAD}]cooling {int(rem)}s[/]"
+            weight = ""
