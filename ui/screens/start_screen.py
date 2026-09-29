@@ -172,3 +172,4 @@ class StartScreen(Screen):
         dry_run = self.fields[5].widget.value   # type: ignore
 
         self.app.cfg["attack"]["threads"] = threads
+        self.app.cfg["attack"]["rounds"] = rounds
