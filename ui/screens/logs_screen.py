@@ -35,3 +35,4 @@ class LogsScreen(Screen):
         self.lines: list[str] = []
         self.cursor = 0
         self.top = 0
+        self.page_size = 24
