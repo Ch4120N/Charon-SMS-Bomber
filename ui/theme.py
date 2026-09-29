@@ -236,3 +236,4 @@ FORM_SECTION_LABEL  = FOCUS
 FORM_ACTION         = WARNING                      # yellow start-attack
 FORM_ACTION_FOCUS   = WARNING_BRIGHT
 FORM_ACTION_DIM     = WARNING_DIM
+
