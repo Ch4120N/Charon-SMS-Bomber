@@ -57,3 +57,4 @@ def filter_apis(
             continue
         if tagset:
             api_tags = {t.lower() for t in api.get("tags", [])}
+            if not (api_tags & tagset):
