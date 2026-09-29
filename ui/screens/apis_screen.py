@@ -80,3 +80,4 @@ class ApisScreen(Screen):
         lst.add_column("Tags", width=14, style=FG_DIM)
         lst.add_column("URL", style=FG, overflow="fold")
 
+        for i in range(self.top, min(self.top + self.page_size, len(items))):
