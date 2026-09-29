@@ -41,3 +41,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
     return out
 
 
+def api_key(api: dict[str, Any]) -> str:
