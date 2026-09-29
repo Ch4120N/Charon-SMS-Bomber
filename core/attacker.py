@@ -227,3 +227,4 @@ class Attacker:
         self.cfg["attack"]["delay"] = float(delay)
 
         self.strategy = self.cfg["attack"].get("strategy", DEFAULT_STRATEGY)
+        unlimited_by_strategy = self.strategy in ("smart", "unlimited")
