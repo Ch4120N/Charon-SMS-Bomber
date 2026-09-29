@@ -87,3 +87,4 @@ class HelpScreen(Screen):
         hint.append(" back", style=FG_DIM)
 
         return Panel(
+            Align.left(Group(tabs, search_line, Text(""), body,
