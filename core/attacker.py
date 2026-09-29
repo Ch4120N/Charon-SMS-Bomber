@@ -56,3 +56,4 @@ DEFAULT_STRATEGY = "smart"
 
 
 #  Rate limiter
+class RateLimiter:
