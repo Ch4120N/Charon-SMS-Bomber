@@ -208,3 +208,4 @@ class HelpScreen(Screen):
             ("api_health.cooldown_seconds", "Cooldown duration."),
             ("output.report_format", "json or csv. HTML is written alongside."),
             ("logging.level", "DEBUG / INFO / WARNING / ERROR."),
+        ]
