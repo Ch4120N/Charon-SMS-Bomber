@@ -60,3 +60,4 @@ class RateLimiter:
     def __init__(self, per_sec: float) -> None:
         self.min_interval = (1.0 / per_sec) if per_sec > 0 else 0.0
         self._lock = threading.Lock()
+        self._last = 0.0
