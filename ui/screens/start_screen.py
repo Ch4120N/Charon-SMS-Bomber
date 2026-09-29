@@ -61,3 +61,4 @@ class StartScreen(Screen):
         ]
         self.cursor = 0
         self.editing = False
+
