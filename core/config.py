@@ -99,3 +99,4 @@ def save_config(cfg: dict[str, Any], path: Optional[str | Path] = None) -> None:
     cfg["version"] = APP_VERSION
     p.write_text(
         json.dumps(cfg, indent=4, ensure_ascii=False),
+        encoding="utf-8",
