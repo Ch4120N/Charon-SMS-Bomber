@@ -462,3 +462,4 @@ __all__ = [
     "SPINNER_RUNNING", "SPINNER_IDLE", "SPINNER_LABEL",
     # 19. Status
     "STATUS_ACTIVE", "STATUS_COOLING", "STATUS_DISABLED", "STATUS_ERROR",
+    # 20. Scrollbar
