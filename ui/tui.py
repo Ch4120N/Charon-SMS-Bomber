@@ -43,3 +43,4 @@ KEY_CTRL_C = "\x03"
 
 
 #  ASCII wordmark
+_ART_FULL = [
