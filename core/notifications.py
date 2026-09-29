@@ -30,3 +30,4 @@ class NotificationCenter:
         with self._lock:
             self._items.append(Toast(text=text, style=style, ttl=ttl))
 
+    def visible(self) -> list[Toast]:
