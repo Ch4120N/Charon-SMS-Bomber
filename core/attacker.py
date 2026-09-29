@@ -196,3 +196,4 @@ class Attacker:
     def _apply_jitter(self) -> None:
         base = float(self.cfg["attack"]["delay"])
         jit = float(self.cfg["attack"]["jitter"])
+        if jit > 0:
