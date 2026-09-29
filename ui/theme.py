@@ -384,3 +384,4 @@ def chip_info(text: str) -> str:
 def link(text: str) -> str:
     return f"[underline {LINK}]{text}[/]"
 
+
