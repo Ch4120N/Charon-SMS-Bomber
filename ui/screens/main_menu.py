@@ -25,3 +25,4 @@ _ITEMS = [
     ("history",  "Session History",    "past attack results"),
     ("help",     "Help",               "strategies, hotkeys, concepts"),
     ("about",    "About",              "program info and credits"),
+    ("exit",     "Exit",               "quit ChSMSBomber"),
