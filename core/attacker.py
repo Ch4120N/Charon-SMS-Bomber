@@ -202,3 +202,4 @@ class Attacker:
             time.sleep(base)
 
     def _send_one(self, api: dict[str, Any], target: str) -> tuple[str, bool]:
+        name = api.get("name", "Unknown")
