@@ -146,3 +146,4 @@ class Field:
         t = Text()
         if focused:
             t.append(" ▌ ", style=f"bold {FORM_MARKER}")
+        else:
