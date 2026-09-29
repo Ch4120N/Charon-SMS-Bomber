@@ -74,3 +74,4 @@ class SettingsScreen(Screen):
         self.cursor = self._first_editable(0)
         self.editing = False
         self.top = 0
+        self.page_size = 18
