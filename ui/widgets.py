@@ -130,3 +130,4 @@ class Field:
             self.widget = TextInput(str(value))
         elif kind == "bool":
             self.widget = Toggle(bool(value))
+        elif kind == "cycle":
