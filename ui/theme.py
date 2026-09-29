@@ -138,3 +138,4 @@ BORDER_STATUS_BAD  = ERROR_DIM
 CHIP_BG_DEFAULT    = _c("#ffb88c", "color(216)")   # peach orange (key caps)
 CHIP_BG_ALT        = _c("#e8a0f5", "bright_magenta")   # magenta (help tabs)
 CHIP_BG_OK         = _c("#a0e8a8", "bright_green")     # green
+CHIP_BG_WARN       = _c("#ffe890", "bright_yellow")    # yellow
