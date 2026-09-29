@@ -152,3 +152,4 @@ class Attacker:
                 return api
         return pool[-1]
 
+    def _bump_weight(self, name: str, ok: bool) -> None:
