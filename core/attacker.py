@@ -76,3 +76,4 @@ class RateLimiter:
 
 #  Attacker
 class Attacker:
+    def __init__(
