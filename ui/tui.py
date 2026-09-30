@@ -326,3 +326,4 @@ class TuiApp:
                 # update frame counter
                 self.frame += 1
 
+                # render
