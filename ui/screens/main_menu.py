@@ -35,3 +35,4 @@ class MainMenuScreen(Screen):
     hotkeys = {
         "s": "start", "r": "resume", "e": "settings",
         "a": "apis", "u": "updates", "l": "logs",
+        "h": "history", "?": "help", "i": "about",
