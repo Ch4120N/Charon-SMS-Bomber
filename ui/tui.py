@@ -81,3 +81,4 @@ class KeyReader:
 
     def drain(self) -> None:
         try:
+            while True:
