@@ -6,3 +6,4 @@ Design principles
     2. Full-spectrum accents — magenta, orange, yellow, green, red,
        cyan, lavender. Each owns exactly one role.
     3. No single colour dominates the UI.
+    4. Cyan family is reserved for API names and hyperlinks only.
