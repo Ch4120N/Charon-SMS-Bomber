@@ -52,3 +52,4 @@ class HelpScreen(Screen):
         # Tabs
         tabs = Text("  ")
         for i, name in enumerate(_SECTIONS):
+            label = name.upper()
