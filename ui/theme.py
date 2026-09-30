@@ -291,3 +291,4 @@ STATUS_COOLING      = WARNING
 STATUS_DISABLED     = TEXT_TERTIARY
 STATUS_ERROR        = ERROR
 
+# ══════════════════════════════════════════════════════════════════════
