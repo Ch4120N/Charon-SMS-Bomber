@@ -244,3 +244,4 @@ class HelpScreen(Screen):
         ph.add_column(style=f"bold {API_COLOR}", width=18)
         ph.add_column(style=FG)
         ph.add_row("{cc}", "9123456789  (no country code, no leading zero)")
+        ph.add_row("{intl}", "+989123456789  (E.164)")
