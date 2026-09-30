@@ -37,3 +37,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("attack.round_cooldown", "Round cooldown", "float", A["round_cooldown"]),
         Field("attack.rate_limit_per_sec", "Rate cap (req/s)", "float", A["rate_limit_per_sec"]),
         Field("attack.dry_run", "Dry-run", "bool", A["dry_run"]),
+        Field("section", "NETWORK", "action", None),
