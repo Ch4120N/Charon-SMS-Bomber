@@ -124,3 +124,4 @@ class HelpScreen(Screen):
     def _render_concepts(self) -> Group:
         items = [
             ("Targets",
+             "Iranian mobile numbers. Formats: 0912..., 98912..., +98912.... "
