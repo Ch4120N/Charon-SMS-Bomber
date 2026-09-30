@@ -113,3 +113,4 @@ def download_apis(
     as data arrives. Backs up the existing apis.json before overwriting.
     Returns the path to the newly-installed file.
     """
+    # Backup existing
