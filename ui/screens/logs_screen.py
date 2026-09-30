@@ -112,3 +112,4 @@ class LogsScreen(Screen):
         foot.append(" back", style=FG_DIM)
 
         return Panel(
+            Align.left(Group(head, Text(""), body, foot), vertical="top"),
