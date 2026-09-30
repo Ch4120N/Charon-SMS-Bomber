@@ -65,3 +65,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 return True
             if low in _NEGATIVE_STRINGS:
                 return False
+
