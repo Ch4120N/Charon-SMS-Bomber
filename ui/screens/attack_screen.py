@@ -268,3 +268,4 @@ class AttackScreen(Screen):
             return
         try:
             REPORTS_DIR.mkdir(exist_ok=True)
+            cfg = self.app.cfg
