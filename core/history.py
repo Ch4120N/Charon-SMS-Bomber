@@ -79,3 +79,4 @@ def make_entry(
         success=success,
         failed=failed,
         rate=round(rate, 2),
+        elapsed=round(elapsed, 2),
