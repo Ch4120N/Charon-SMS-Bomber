@@ -17,3 +17,4 @@ _POSITIVE_STRINGS = {"ok", "success", "true", "sent", "done", "accepted"}
 _NEGATIVE_STRINGS = {"error", "failed", "fail", "false", "invalid", "denied", "rejected"}
 
 
+def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
