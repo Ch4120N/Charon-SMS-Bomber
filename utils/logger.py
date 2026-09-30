@@ -16,3 +16,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
     logger.handlers.clear()
     logger.propagate = False
 
+    if cfg["logging"]["enabled"]:
