@@ -21,3 +21,4 @@ class HistoryEntry:
     strategy: str
     threads: int
     rounds: int
+    sent: int
