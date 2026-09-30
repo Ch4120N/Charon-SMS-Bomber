@@ -46,3 +46,4 @@ class MainMenuScreen(Screen):
         grid = Table.grid(padding=(0, 3))
         grid.add_column(width=2)
         grid.add_column(width=22)
+        grid.add_column(ratio=1)
