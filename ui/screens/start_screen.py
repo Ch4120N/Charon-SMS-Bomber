@@ -32,3 +32,4 @@ class StartScreen(Screen):
         self.mode = mode
         cfg = app.cfg["attack"]
 
+        targets_val = ""
