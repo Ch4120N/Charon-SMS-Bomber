@@ -38,3 +38,4 @@ class UpdateCheck:
     remote_hash: str
     remote_version: str
     manifest: dict[str, Any]
+
