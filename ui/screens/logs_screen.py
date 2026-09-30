@@ -66,3 +66,4 @@ class LogsScreen(Screen):
         self._last_mtime = path.stat().st_mtime
         # jump to bottom on first load
         self.cursor = max(0, len(self.lines) - 1)
+        self.top = max(0, len(self.lines) - self.page_size)
