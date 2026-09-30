@@ -178,3 +178,4 @@ class TuiApp:
     #  Header
     def _header(self, screen: Screen) -> Panel:
         from ui.theme import (
+            HEADER_ART, HEADER_VERSION, HEADER_BREADCRUMB,
