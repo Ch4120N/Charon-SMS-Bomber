@@ -29,3 +29,4 @@ class LogsScreen(Screen):
     name = "logs"
     title = "Logs"
     hotkeys = {"r": "reload", "g/G": "jump"}
+
