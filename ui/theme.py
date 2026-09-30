@@ -303,3 +303,4 @@ SCROLLBAR_THUMB_HL  = BRAND
 # ══════════════════════════════════════════════════════════════════════
 HELP_TAB_ACTIVE     = CHIP_BG_ALT                  # magenta tab
 HELP_TAB_INACTIVE   = TEXT_TERTIARY
+HELP_TAB_FG         = TEXT_INVERSE
