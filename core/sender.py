@@ -86,3 +86,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
         return None
     try:
         data = json.loads(content)
+    except Exception:
