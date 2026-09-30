@@ -106,3 +106,4 @@ class MainMenuScreen(Screen):
         elif item_id == "history":
             self.app.push("history")
         elif item_id == "help":
+            self.app.push("help")
