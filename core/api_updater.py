@@ -109,3 +109,4 @@ def download_apis(
     progress_cb: Optional[Callable[[int, int], None]] = None,
 ) -> Path:
     """
+    Stream-download the remote apis.json. Calls progress_cb(chunk, total)
