@@ -52,3 +52,4 @@ def _count_apis(path: Path) -> int:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
         return len(data) if isinstance(data, list) else len(data.get("apis", []))
+    except Exception:
