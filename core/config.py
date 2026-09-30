@@ -92,3 +92,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
     except Exception:
         raw = {}
     return _migrate(raw)
+
