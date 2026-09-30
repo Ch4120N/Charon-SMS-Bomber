@@ -208,3 +208,4 @@ class Attacker:
         if self.health and not self.health.is_available(api):
             return name, False
 
+        self.rate.acquire()
