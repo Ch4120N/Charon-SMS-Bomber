@@ -134,3 +134,4 @@ class Sender:
             try:
                 return self._send_once(api)
             except Exception:
+                attempt += 1
