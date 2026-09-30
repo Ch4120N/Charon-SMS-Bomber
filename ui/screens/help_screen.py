@@ -168,3 +168,4 @@ class HelpScreen(Screen):
         rows = [
             ("↑ / ↓  or  k / j", "Move cursor in lists and forms"),
             ("← / →", "Change cycle fields, switch help tabs"),
+            ("Enter", "Select, activate, or commit edit"),
