@@ -79,3 +79,4 @@ class UpdaterScreen(Screen):
             t = Table.grid(padding=(0, 2))
             t.add_column(style=FG_MUTED)
             t.add_column(style=FG)
+            t.add_row("Local hash", info.local_hash[:16] or "(none)")
