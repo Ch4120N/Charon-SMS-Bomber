@@ -41,3 +41,4 @@ class Stats:
     @property
     def rate(self) -> float:
         return (self.success / self.sent * 100) if self.sent else 0.0
+
