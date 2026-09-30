@@ -78,3 +78,4 @@ class AttackScreen(Screen):
                 self.attacker.run(
                     self.targets, self.threads, self.rounds, self.delay
                 )
+            finally:
