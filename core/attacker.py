@@ -34,3 +34,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Stop with the space bar or Esc."
         ),
     },
+    "round-robin": {
