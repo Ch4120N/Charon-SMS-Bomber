@@ -19,3 +19,4 @@ from utils.paths import APIS_PATH, BASE_DIR
 #  Where to pull the manifest + latest apis.json from.
 #  Adjust these to your release URLs.
 # ──────────────────────────────────────────────────────────────────────
+DEFAULT_MANIFEST_URL = (
