@@ -40,3 +40,4 @@ class TextInput:
 
     def render(self, focused: bool, width: int = 40) -> Text:
         from ui.theme import (
+            FORM_VALUE, FORM_VALUE_FOCUSED, FORM_CURSOR_FG, FORM_CURSOR_BG,
