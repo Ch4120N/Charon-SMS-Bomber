@@ -136,3 +136,4 @@ class Field:
             self.widget = None
         else:
             raise ValueError(f"unknown field kind: {kind}")
+
