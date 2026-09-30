@@ -160,3 +160,4 @@ class Attacker:
             else:
                 self._weights[name] = max(0.05, cur * 0.65)
 
+    def _eligible(self, api: dict[str, Any]) -> bool:
