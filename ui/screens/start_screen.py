@@ -13,3 +13,4 @@ from core.phone import parse_targets
 from core.session import load_session
 from ui.theme import (
     PRIMARY, PRIMARY_ALT, ACCENT, OK, WARN, BAD,
+    FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN,
