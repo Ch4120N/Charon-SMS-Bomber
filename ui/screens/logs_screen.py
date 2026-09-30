@@ -24,3 +24,4 @@ _LEVEL_STYLE = {
     "CRITICAL": f"bold {BAD}",
 }
 
+
