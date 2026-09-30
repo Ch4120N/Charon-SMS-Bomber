@@ -73,3 +73,4 @@ class HistoryScreen(Screen):
                 ", ".join(e.targets)[:40],
                 str(e.sent),
                 str(e.success),
+                str(e.failed),
