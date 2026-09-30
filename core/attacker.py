@@ -226,3 +226,4 @@ class Attacker:
         self.cfg["attack"]["threads"] = int(threads)
         self.cfg["attack"]["delay"] = float(delay)
 
+        self.strategy = self.cfg["attack"].get("strategy", DEFAULT_STRATEGY)
