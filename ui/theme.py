@@ -449,3 +449,4 @@ __all__ = [
     "FORM_ACTION_DIM",
     # 14. Toggles
     "TOGGLE_ON_BG", "TOGGLE_ON_FG", "TOGGLE_OFF_BG", "TOGGLE_OFF_FG",
+    # 15. Cycles
