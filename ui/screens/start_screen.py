@@ -33,3 +33,4 @@ class StartScreen(Screen):
         cfg = app.cfg["attack"]
 
         targets_val = ""
+        threads_val = str(cfg["threads"])
