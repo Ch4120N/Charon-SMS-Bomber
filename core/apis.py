@@ -74,3 +74,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
       {ts}    → unix ms timestamp
     """
     cc = phone.replace("+98", "")
+    intl = phone
