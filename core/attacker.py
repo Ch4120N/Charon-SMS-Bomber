@@ -279,3 +279,4 @@ class Attacker:
         end = time.time() + seconds
         while time.time() < end and not self.stop_flag.is_set():
             time.sleep(0.1)
+
