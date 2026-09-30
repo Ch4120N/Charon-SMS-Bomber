@@ -102,3 +102,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
         f"<td class='bad'>{v['failed']}</td></tr>"
         for k, v in stats.by_api.items()
     )
+    doc = f"""<!doctype html>
