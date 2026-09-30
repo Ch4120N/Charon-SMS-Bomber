@@ -129,3 +129,4 @@ class Sender:
         """Return True only if transport succeeded AND body looks like success."""
         retries = int(self.cfg["network"]["retries"])
         backoff = float(self.cfg["network"]["retry_backoff"])
+        attempt = 0
