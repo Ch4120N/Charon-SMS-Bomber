@@ -222,3 +222,4 @@ class TuiApp:
             Group(Align.left(art), Align.left(line)),
             box=box.ROUNDED,
             border_style=BORDER_DEFAULT,
+            padding=(0, 1),
