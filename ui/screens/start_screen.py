@@ -129,3 +129,4 @@ class StartScreen(Screen):
                 self.editing = True
                 self.app.notify(f"editing {field.label} — Enter save, Esc cancel",
                                 style=WARN)
+                return None
