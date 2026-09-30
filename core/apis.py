@@ -36,3 +36,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
         e.setdefault("enabled", True)
         e.setdefault("tags", [])
         e.setdefault("weight", 1)
+        e.setdefault("headers", {})
