@@ -112,3 +112,4 @@ class Attacker:
 
         # Per-API success weights (smart strategy)
         self._weights: dict[str, float] = {a.get("name", "?"): 1.0 for a in self.apis}
+        self._weights_lock = threading.Lock()
