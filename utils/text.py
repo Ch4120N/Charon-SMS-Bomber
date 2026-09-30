@@ -13,3 +13,4 @@ def humanize_seconds(s: float) -> str:
     if s < 60:
         return f"{s}s"
     m, sec = divmod(s, 60)
+    if m < 60:
