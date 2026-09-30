@@ -74,3 +74,4 @@ def make_entry(
         targets=targets,
         strategy=strategy,
         threads=threads,
+        rounds=rounds,
