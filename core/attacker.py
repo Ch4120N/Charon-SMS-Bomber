@@ -41,3 +41,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Walks the API list in order, then repeats. "
             "Runs exactly 'rounds' times. Predictable, good for benchmarking."
         ),
+    },
