@@ -197,3 +197,4 @@ class HelpScreen(Screen):
     def _render_config(self) -> Group:
         items = [
             ("network.timeout", "Per-request timeout in seconds."),
+            ("network.retries", "Retry count with exponential backoff."),
