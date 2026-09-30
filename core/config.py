@@ -25,3 +25,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "jitter": 0.02,
         "strategy": "smart",
         "hard_max_rounds": 100,
+        "round_cooldown": 1.0,
