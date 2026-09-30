@@ -83,3 +83,4 @@ def check_for_updates(
 
     remote_hash = _sha256_bytes(remote_bytes)
     try:
+        remote_data = json.loads(remote_bytes)
