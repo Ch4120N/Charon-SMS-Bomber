@@ -102,3 +102,4 @@ class MainMenuScreen(Screen):
         elif item_id == "updates":
             self.app.push("updates")
         elif item_id == "logs":
+            self.app.push("logs")
