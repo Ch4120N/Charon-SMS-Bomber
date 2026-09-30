@@ -18,3 +18,4 @@ DEFAULT_HEADERS: dict[str, str] = {
 }
 
 
+def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
