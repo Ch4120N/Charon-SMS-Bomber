@@ -32,3 +32,4 @@ def _has_truecolor() -> bool:
     if os.environ.get("NO_COLOR"):
         return False
     ct = os.environ.get("COLORTERM", "").lower()
+    return ct in ("truecolor", "24bit")
