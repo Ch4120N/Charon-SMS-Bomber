@@ -49,3 +49,4 @@ class StartScreen(Screen):
         self.fields: list[Field] = [
             Field("targets", "Targets", "text", targets_val,
                   hint="sep ';'  e.g. 0912...;0935..."),
+            Field("threads", "Threads", "int", threads_val),
