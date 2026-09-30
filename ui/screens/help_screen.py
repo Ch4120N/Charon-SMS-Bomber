@@ -226,3 +226,4 @@ class HelpScreen(Screen):
             ("url", "Endpoint. Placeholders: {cc} {intl} {local} {ts} {ua}."),
             ("headers", "Per-API headers. {ua} = rotated user-agent."),
             ("payload", "JSON body (application/json)."),
+            ("data", "Form body (application/x-www-form-urlencoded)."),
