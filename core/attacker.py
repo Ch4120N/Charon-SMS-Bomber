@@ -45,3 +45,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
     "random": {
         "label": "Random",
         "summary": "Shuffles the API list every round.",
+        "details": (
