@@ -153,3 +153,4 @@ class Sender:
             "headers": headers,
             "timeout": self.cfg["network"]["timeout"],
             "verify": self.cfg["network"]["verify_ssl"],
+            "allow_redirects": True,
