@@ -15,3 +15,4 @@ def save_session(
             {"targets": targets, "threads": threads, "rounds": rounds, "delay": delay},
             indent=4,
         ),
+        encoding="utf-8",
