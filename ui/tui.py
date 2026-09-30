@@ -183,3 +183,4 @@ class TuiApp:
             HEADER_SPINNER, HEADER_SPINNER_IDLE,
             BORDER_DEFAULT,
         )
+
