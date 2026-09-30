@@ -4,3 +4,4 @@ from __future__ import annotations
 from typing import Optional
 
 
+def normalize_phone(raw: str) -> Optional[str]:
