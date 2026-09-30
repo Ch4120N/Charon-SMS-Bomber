@@ -171,3 +171,4 @@ class Sender:
             kwargs["params"] = api["params"]
 
         with requests.Session() as s:
+            r = s.request(method, url, **kwargs)
