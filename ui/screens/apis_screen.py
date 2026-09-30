@@ -140,3 +140,4 @@ class ApisScreen(Screen):
         if key == KEY_ESC:
             return "back"
         if key == "/":
+            self._searching = True
