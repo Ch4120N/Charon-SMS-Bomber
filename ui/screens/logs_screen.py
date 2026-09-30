@@ -39,3 +39,4 @@ class LogsScreen(Screen):
         self._last_mtime = 0.0
         self._path: Optional[Path] = None
 
+    def on_enter(self) -> None:
