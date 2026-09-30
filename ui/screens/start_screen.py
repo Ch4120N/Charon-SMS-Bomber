@@ -59,3 +59,4 @@ class StartScreen(Screen):
             Field("go", "START ATTACK", "action", None),
             Field("back", "Back to menu", "action", None),
         ]
+        self.cursor = 0
