@@ -182,3 +182,4 @@ class StartScreen(Screen):
             targets=targets, threads=threads, rounds=rounds,
             delay=delay, dry_run=bool(dry_run),
         )
+
