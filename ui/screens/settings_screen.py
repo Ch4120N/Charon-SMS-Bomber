@@ -196,3 +196,4 @@ class SettingsScreen(Screen):
         target = self.app.cfg.get(section, {})
         if f.kind in ("text", "int", "float"):
             val: object = f.widget.value  # type: ignore
+            if f.kind == "int":
