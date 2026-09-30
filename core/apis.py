@@ -47,3 +47,4 @@ def api_key(api: dict[str, Any]) -> str:
 
 def filter_apis(
     apis: list[dict[str, Any]],
+    tags: list[str] | None = None,
