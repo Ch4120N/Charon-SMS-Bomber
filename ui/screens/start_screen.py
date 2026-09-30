@@ -142,3 +142,4 @@ class StartScreen(Screen):
                 field.widget.next()  # type: ignore
                 return None
 
+        if field.kind == "bool" and key == KEY_SPACE:
