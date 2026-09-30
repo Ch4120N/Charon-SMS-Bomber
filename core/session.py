@@ -33,3 +33,4 @@ def load_session() -> Optional[dict[str, Any]]:
     data["delay"] = float(data.get("delay", 0.05))
     return data
 
+
