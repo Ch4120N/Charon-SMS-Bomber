@@ -42,3 +42,4 @@ class StartScreen(Screen):
             data = load_session()
             if data:
                 targets_val = ";".join(data["targets"])
+                threads_val = str(data["threads"])
