@@ -69,3 +69,4 @@ def check_for_updates(
     try:
         mr = requests.get(manifest_url, timeout=timeout)
         mr.raise_for_status()
+        manifest = mr.json()
