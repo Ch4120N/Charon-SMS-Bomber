@@ -16,3 +16,4 @@ from core.stats import Stats
 
 #  Strategy metadata
 STRATEGIES: dict[str, dict[str, str]] = {
+    "smart": {
