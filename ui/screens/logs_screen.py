@@ -128,3 +128,4 @@ class LogsScreen(Screen):
             self.cursor = 0
             return None
         if key == "G":
+            self.cursor = max(0, len(self.lines) - 1)
