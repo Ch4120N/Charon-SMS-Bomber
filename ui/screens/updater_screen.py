@@ -42,3 +42,4 @@ class UpdaterScreen(Screen):
         self.show_spinner = True
         self.error = None
         self.app.notify("contacting manifest…", style=WARN)
+
