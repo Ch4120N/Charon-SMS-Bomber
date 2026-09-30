@@ -152,3 +152,4 @@ class SettingsScreen(Screen):
             self._apply(f)
             return None
         if f.kind == "cycle":
+            if key == KEY_LEFT:
