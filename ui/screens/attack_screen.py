@@ -63,3 +63,4 @@ class AttackScreen(Screen):
             self.app.notify("dry-run complete", style=OK)
             return
         self._start_thread()
+        self.app.notify("attack running — Space to stop", style=WARN)
