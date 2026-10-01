@@ -155,3 +155,4 @@ class StartScreen(Screen):
             self._launch()
         return None
 
+    def _launch(self) -> None:
