@@ -132,3 +132,4 @@ class TuiApp:
 
         self.stack: list[Screen] = []
         self.running = True
+        self._screens: dict[str, type[Screen]] = {}
