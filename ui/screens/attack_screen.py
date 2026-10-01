@@ -75,3 +75,4 @@ class AttackScreen(Screen):
 
         def _run() -> None:
             try:
+                self.attacker.run(
