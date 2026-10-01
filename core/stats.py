@@ -111,3 +111,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  .meta {{ color:#888; margin-bottom:20px; }}
  table {{ border-collapse: collapse; width:100%; max-width:900px; }}
  th,td {{ padding:8px 12px; border-bottom:1px solid #222; text-align:left; }}
+ th {{ color:#5fd6ff; }}
