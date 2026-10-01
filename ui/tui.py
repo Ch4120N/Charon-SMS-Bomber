@@ -167,3 +167,4 @@ class TuiApp:
             top = self.stack.pop()
             top.on_exit()
             self.invalidate()
+
