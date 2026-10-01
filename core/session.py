@@ -27,3 +27,4 @@ def load_session() -> Optional[dict[str, Any]]:
     except Exception:
         return None
     if not data.get("targets"):
+        return None
