@@ -81,3 +81,4 @@ class HelpScreen(Screen):
         hint.append(" switch tabs   ", style=FG_DIM)
         hint.append("↑ ↓", style=f"bold {OK}")
         hint.append(" scroll   ", style=FG_DIM)
+        hint.append("/", style=f"bold {OK}")
