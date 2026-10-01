@@ -42,3 +42,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 if low in _NEGATIVE_STRINGS:
                     return False
 
+        # numeric codes — 0 / 200 / 201 = ok, >= 400 = bad
