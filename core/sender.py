@@ -55,3 +55,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 if n in (0, 200, 201, 202, 204):
                     return True
                 if n >= 400:
+                    return False
