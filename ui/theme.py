@@ -475,3 +475,4 @@ __all__ = [
     "PRIMARY", "PRIMARY_ALT", "ACCENT", "ACCENT_ALT",
     "OK", "OK_ALT", "WARN", "BAD", "BAD_ALT", "INFO",
     "API_COLOR", "API_BRIGHT", "CHIP_BG", "CHIP_FG",
+    "DIM", "FAINT", "HILITE", "BORDER", "BORDER_HL",
