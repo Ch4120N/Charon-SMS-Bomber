@@ -106,3 +106,4 @@ class Sender:
         self._fallback_ua = "Mozilla/5.0 (compatible; ChSMSBomber/5.0)"
 
     def _pick_ua(self) -> str:
+        ua_cfg = self.cfg["user_agent"]
