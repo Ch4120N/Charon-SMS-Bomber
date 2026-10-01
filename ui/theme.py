@@ -174,3 +174,4 @@ STATUS_BAR_KEY_BG_DISABLED = SURFACE_ELEVATED      # #1e2029
 # ── 9.3  Description text next to each key cap ───────────────────────
 STATUS_BAR_TEXT            = TEXT_SECONDARY        # #9fa5b2
 
+# ── 9.4  Gap between hotkey groups ───────────────────────────────────
