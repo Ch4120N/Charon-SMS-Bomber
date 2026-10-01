@@ -281,3 +281,4 @@ class HelpScreen(Screen):
             self.scroll = max(0, self.scroll - 1)
             return None
         if key in (KEY_DOWN, "j"):
+            self.scroll += 1
