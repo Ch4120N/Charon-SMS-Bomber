@@ -234,3 +234,4 @@ class AttackScreen(Screen):
         t.add_row("Threads", str(r.get("threads", 0)))
         rate = r.get("rate_limit", 0)
         t.add_row("Rate cap", f"{rate}/s" if rate else "off")
+
