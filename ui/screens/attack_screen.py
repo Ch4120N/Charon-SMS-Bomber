@@ -88,3 +88,4 @@ class AttackScreen(Screen):
         threading.Thread(target=_run, daemon=True).start()
 
     def _save_history_once(self) -> None:
+        if self._history_saved or self.dry_run:
