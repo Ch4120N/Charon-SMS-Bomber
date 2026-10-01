@@ -30,3 +30,4 @@ class AttackScreen(Screen):
     show_spinner = True
     animating = True
 
+    def __init__(
