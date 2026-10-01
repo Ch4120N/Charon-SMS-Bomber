@@ -15,3 +15,4 @@ DEFAULT_HEADERS: dict[str, str] = {
     "Cache-Control": "no-cache",
     "Pragma": "no-cache",
     "Connection": "keep-alive",
+}
