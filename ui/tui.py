@@ -120,3 +120,4 @@ class TuiApp:
     def __init__(
         self,
         console: Console,
+        cfg: dict[str, Any],
