@@ -53,3 +53,4 @@ class MainMenuScreen(Screen):
             marker = Text("▌", style=f"bold {PRIMARY}") if focused else Text(" ")
             name_style = f"bold {PRIMARY_ALT}" if focused else FG
             desc_style = FG_DIM if focused else FG_MUTED
+            grid.add_row(
