@@ -94,3 +94,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
     return _migrate(raw)
 
 
+def save_config(cfg: dict[str, Any], path: Optional[str | Path] = None) -> None:
