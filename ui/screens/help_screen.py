@@ -136,3 +136,4 @@ class HelpScreen(Screen):
              "Fixed wait plus random jitter between requests. Jitter breaks naive "
              "rate-limit fingerprinting."),
             ("Rate Cap",
+             "Global requests/sec ceiling across all threads. 0 = disabled. "
