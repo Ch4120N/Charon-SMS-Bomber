@@ -131,3 +131,4 @@ class StartScreen(Screen):
                                 style=WARN)
                 return None
             if field.kind == "bool":
+                field.widget.toggle()  # type: ignore
