@@ -38,3 +38,4 @@ class Stats:
     def elapsed(self) -> float:
         return time.time() - self.start_ts
 
+    @property
