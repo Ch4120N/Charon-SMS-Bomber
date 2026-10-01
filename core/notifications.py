@@ -22,3 +22,4 @@ class Toast:
 
 class NotificationCenter:
     def __init__(self, max_visible: int = 3) -> None:
+        self._items: Deque[Toast] = deque(maxlen=10)
