@@ -49,3 +49,4 @@ class ApisScreen(Screen):
             self.cursor = max(0, len(items) - 1)
         if self.cursor < self.top:
             self.top = self.cursor
+        elif self.cursor >= self.top + self.page_size:
