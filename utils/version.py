@@ -8,3 +8,4 @@ APP_LICENSE = "GPLv3.0"
 NOTICE = "This tool was made for fun, educational, and research purposes only."
 
 __all__ = [
+    "APP_NAME", "APP_VERSION", "APP_AUTHOR",
