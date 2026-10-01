@@ -9,3 +9,4 @@ from ui.theme import (
     PRIMARY, PRIMARY_ALT, ACCENT, OK, BAD, WARN,
     FG, FG_DIM, FG_MUTED,
 )
+from ui.tui import KEY_BACKSPACE, KEY_ENTER, KEY_LEFT, KEY_RIGHT
