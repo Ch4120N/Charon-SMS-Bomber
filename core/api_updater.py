@@ -30,3 +30,4 @@ DEFAULT_APIS_URL = (
 
 
 @dataclass
+class UpdateCheck:
