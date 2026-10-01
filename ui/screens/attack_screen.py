@@ -127,3 +127,4 @@ class AttackScreen(Screen):
 
         header = Table.grid(padding=(0, 2))
         header.add_column(style=FG_MUTED)
+        header.add_column(style=FG)
