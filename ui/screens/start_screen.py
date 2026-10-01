@@ -89,3 +89,4 @@ class StartScreen(Screen):
         desc.append("/", style=f"bold {OK}")
         desc.append(" to open the full help.", style=FG_MUTED)
 
+        return Panel(
