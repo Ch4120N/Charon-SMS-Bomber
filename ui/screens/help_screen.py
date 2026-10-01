@@ -62,3 +62,4 @@ class HelpScreen(Screen):
         # Search line
         search_line = Text()
         if self._searching:
+            search_line.append("  filter: ", style=f"bold {PRIMARY}")
