@@ -143,3 +143,4 @@ class Field:
             FORM_ACTION, FORM_ACTION_FOCUS, FORM_ACTION_DIM,
             TEXT_PRIMARY, TEXT_DISABLED,
         )
+        t = Text()
