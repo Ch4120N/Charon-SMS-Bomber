@@ -126,3 +126,4 @@ class TuiApp:
     ) -> None:
         self.console = console
         self.cfg = cfg
+        self.apis = apis
