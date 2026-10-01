@@ -86,3 +86,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
                    .replace("{local}", local)
                    .replace("{ts}", ts)
             )
+        if isinstance(obj, dict):
