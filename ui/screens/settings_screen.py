@@ -161,3 +161,4 @@ class SettingsScreen(Screen):
                 self._apply(f)
                 return None
 
+        if key == KEY_ENTER:
