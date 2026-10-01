@@ -81,3 +81,4 @@ class Toggle:
             TOGGLE_ON_BG, TOGGLE_ON_FG, TOGGLE_OFF_BG, TOGGLE_OFF_FG,
         )
         if self.value:
+            return Text(" ● ON  ", style=f"bold {TOGGLE_ON_FG} on {TOGGLE_ON_BG}")
