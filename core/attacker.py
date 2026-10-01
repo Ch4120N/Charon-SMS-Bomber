@@ -224,3 +224,4 @@ class Attacker:
     ) -> Stats:
         self.current_targets = list(targets)
         self.cfg["attack"]["threads"] = int(threads)
+        self.cfg["attack"]["delay"] = float(delay)
