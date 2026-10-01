@@ -303,3 +303,4 @@ class TuiApp:
 
 
     #  Main loop
+    def run(self) -> None:
