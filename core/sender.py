@@ -26,3 +26,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
         # error-bearing keys → failure
         for k in _NEGATIVE_KEYS:
             if k in obj:
+                v = obj[k]
