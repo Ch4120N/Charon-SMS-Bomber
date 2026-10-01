@@ -320,3 +320,4 @@ class TuiApp:
                 # adaptive fps
                 animating = top.animating or top.show_spinner
                 idle = (now - self._last_input_ts) > self._idle_after
+                fps = self._active_fps if (animating or not idle) else self._idle_fps
