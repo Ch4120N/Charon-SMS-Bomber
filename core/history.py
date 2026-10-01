@@ -23,3 +23,4 @@ class HistoryEntry:
     rounds: int
     sent: int
     success: int
+    failed: int
