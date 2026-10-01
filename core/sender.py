@@ -30,3 +30,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 if v not in (None, "", [], {}, 0, "0"):
                     return False
 
+        # positive booleans
