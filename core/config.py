@@ -13,3 +13,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "network": {
         "timeout": 5,
         "retries": 2,
+        "retry_backoff": 1.6,
