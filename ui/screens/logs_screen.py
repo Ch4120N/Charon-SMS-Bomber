@@ -133,3 +133,4 @@ class LogsScreen(Screen):
         if key == "r":
             self._load()
             self.app.notify("reloaded", style=OK)
+            return None
