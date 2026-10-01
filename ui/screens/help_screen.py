@@ -94,3 +94,4 @@ class HelpScreen(Screen):
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
 
+    
