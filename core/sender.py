@@ -115,3 +115,4 @@ class Sender:
             except Exception:
                 return self._fallback_ua
         return self._fallback_ua
+
