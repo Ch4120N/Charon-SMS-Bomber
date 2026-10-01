@@ -89,3 +89,4 @@ class Cycle:
     def __init__(self, choices: list[str], value: str) -> None:
         self.choices = choices
         self.value = value if value in choices else choices[0]
+
