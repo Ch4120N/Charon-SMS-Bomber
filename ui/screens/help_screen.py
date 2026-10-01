@@ -116,3 +116,4 @@ class HelpScreen(Screen):
         t.add_column("Summary", style=FG, width=42)
         t.add_column("Details", style=FG_DIM)
 
+        for key, info in STRATEGIES.items():
