@@ -134,3 +134,4 @@ class AttackScreen(Screen):
         header.add_row("Rounds", rounds_label)
 
         counters = Table.grid(expand=True)
+        for _ in range(4):
