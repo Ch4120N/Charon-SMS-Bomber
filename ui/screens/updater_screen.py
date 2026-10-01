@@ -38,3 +38,4 @@ class UpdaterScreen(Screen):
         self._start_check()
 
     def _start_check(self) -> None:
+        self.state = "checking"
