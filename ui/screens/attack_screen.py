@@ -32,3 +32,4 @@ class AttackScreen(Screen):
 
     def __init__(
         self,
+        app,
