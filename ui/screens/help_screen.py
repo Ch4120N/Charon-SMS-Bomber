@@ -53,3 +53,4 @@ class HelpScreen(Screen):
         tabs = Text("  ")
         for i, name in enumerate(_SECTIONS):
             label = name.upper()
+            if i == self.section_idx:
