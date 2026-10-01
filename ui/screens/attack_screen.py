@@ -185,3 +185,4 @@ class AttackScreen(Screen):
             status = f"[{OK}]active[/]"
             if atk.health and name in by_name:
                 rem = atk.health.remaining_cooldown(by_name[name])
+                if rem > 0:
