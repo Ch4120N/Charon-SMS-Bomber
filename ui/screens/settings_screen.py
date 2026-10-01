@@ -31,3 +31,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("attack.strategy", "Strategy", "cycle", A["strategy"],
               choices=list(STRATEGIES.keys())),
         Field("attack.threads", "Threads", "int", A["threads"]),
+        Field("attack.rounds", "Rounds", "int", A["rounds"], hint="0 = unlimited"),
