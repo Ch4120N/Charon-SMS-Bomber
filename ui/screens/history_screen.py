@@ -61,3 +61,4 @@ class HistoryScreen(Screen):
         t.add_column("Sent", justify="right", style=FG_DIM)
         t.add_column("OK", justify="right", style=OK)
         t.add_column("Fail", justify="right", style=BAD)
+        t.add_column("Rate", justify="right", style=WARN)
