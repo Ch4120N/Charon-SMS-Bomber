@@ -242,3 +242,4 @@ FORM_ACTION_DIM     = WARNING_DIM
 # ══════════════════════════════════════════════════════════════════════
 TOGGLE_ON_BG        = SUCCESS                      # green
 TOGGLE_ON_FG        = TEXT_INVERSE
+TOGGLE_OFF_BG       = ERROR_DIM                    # red
