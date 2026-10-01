@@ -25,3 +25,4 @@ from ui.theme import (
     BOX_MAIN,
 )
 from utils.version import APP_NAME, APP_VERSION
+
