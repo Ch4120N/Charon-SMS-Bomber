@@ -184,3 +184,4 @@ STATUS_BAR_BULLET          = TEXT_TERTIARY         # #6a7080
 STATUS_BAR_TOAST_INFO      = INFO                  # #a4b0f0 lavender
 STATUS_BAR_TOAST_OK        = SUCCESS               # #7fd68a green
 STATUS_BAR_TOAST_WARN      = WARNING               # #f0d468 yellow
+STATUS_BAR_TOAST_BAD       = ERROR                 # #e86b6b red
