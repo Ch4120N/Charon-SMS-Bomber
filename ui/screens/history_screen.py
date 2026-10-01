@@ -30,3 +30,4 @@ class HistoryScreen(Screen):
 
     def on_enter(self) -> None:
         self.entries = load_history()
+        self.cursor = max(0, len(self.entries) - 1)
