@@ -85,3 +85,4 @@ def export_csv(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     path = REPORTS_DIR / f"report_{_stamp()}.csv"
     with path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
+        w.writerow(["API", "Sent", "Success", "Failed"])
