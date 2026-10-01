@@ -51,3 +51,4 @@ class LogsScreen(Screen):
         files = sorted(LOGS_DIR.glob("*.log"), key=lambda p: p.stat().st_mtime)
         return files[-1] if files else None
 
+    def _load(self) -> None:
