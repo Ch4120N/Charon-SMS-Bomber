@@ -139,3 +139,4 @@ class UpdaterScreen(Screen):
         if key == KEY_ESC:
             return "back"
         if key == "r":
+            self._start_check()
