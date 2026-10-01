@@ -82,3 +82,4 @@ class MainMenuScreen(Screen):
         }
         if key in hk:
             self._activate(hk[key])
+            return None
