@@ -156,3 +156,4 @@ class UpdaterScreen(Screen):
             self.bytes_written = written
             self.bytes_total = total
 
+        def _worker() -> None:
