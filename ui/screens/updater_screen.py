@@ -14,3 +14,4 @@ from core.api_updater import (
     check_for_updates, download_apis,
 )
 from core.apis import load_apis
+from ui.theme import (
