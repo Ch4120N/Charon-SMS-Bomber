@@ -133,3 +133,4 @@ class Field:
         elif kind == "cycle":
             self.widget = Cycle(choices or [], str(value))
         elif kind == "action":
+            self.widget = None
