@@ -122,3 +122,4 @@ class Field:
     ) -> None:
         self.key = key
         self.label = label
+        self.kind = kind
