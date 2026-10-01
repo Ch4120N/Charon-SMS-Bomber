@@ -234,3 +234,4 @@ class Attacker:
             self.unlimited = False
 
         self.stats = Stats()
+
