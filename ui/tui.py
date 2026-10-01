@@ -168,3 +168,4 @@ class TuiApp:
             top.on_exit()
             self.invalidate()
 
+    def invalidate(self) -> None:
