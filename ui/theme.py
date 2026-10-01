@@ -255,3 +255,4 @@ CYCLE_BG_FOCUSED    = FOCUS                        # bright orange
 CYCLE_ARROW         = FOCUS_BRIGHT
 
 # ══════════════════════════════════════════════════════════════════════
+# 16. TABLES
