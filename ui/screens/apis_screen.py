@@ -152,3 +152,4 @@ class ApisScreen(Screen):
                 self.app.notify(f"reload failed: {exc}", style=BAD)
             return None
         if key == KEY_ENTER:
+            api = items[self.cursor]
