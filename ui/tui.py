@@ -259,3 +259,4 @@ class TuiApp:
                 toast_line.append("● ", style=FOOTER_TOAST_BULLET)
                 # style resolved by toast's own style field
                 toast_line.append(t.text, style=t.style)
+                toast_line.append("   ")
