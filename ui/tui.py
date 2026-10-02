@@ -160,3 +160,4 @@ class TuiApp:
         screen = cls(self, **kwargs)
         self.stack.append(screen)
         screen.on_enter()
+        self.invalidate()
