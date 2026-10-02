@@ -145,3 +145,4 @@ class ApisScreen(Screen):
             self.app.notify("typing filter — Enter apply, Esc cancel", style=WARN)
             return None
         if key == "r":
+            try:
