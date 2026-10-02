@@ -48,3 +48,4 @@ class TextInput:
         cur = self.value[self.cursor : self.cursor + 1] or " "
         after = self.value[self.cursor + 1 :]
         if self.mask:
+            before = "*" * len(before)
