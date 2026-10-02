@@ -234,3 +234,4 @@ class HelpScreen(Screen):
             ("success_regex", "Optional regex, overrides body check."),
         ]
         g = Table.grid(padding=(0, 2))
+        g.add_column(style=f"bold {API_COLOR}", width=18)
