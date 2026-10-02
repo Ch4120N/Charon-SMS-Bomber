@@ -7,3 +7,4 @@ Design principles
        cyan, lavender. Each owns exactly one role.
     3. No single colour dominates the UI.
     4. Cyan family is reserved for API names and hyperlinks only.
+    5. Status-bar chips use dark text on bright backgrounds (WCAG AA+).
