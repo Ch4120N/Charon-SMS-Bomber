@@ -310,3 +310,4 @@ HELP_DESC           = TEXT_SECONDARY
 HELP_CODE           = API_NAME
 
 # ══════════════════════════════════════════════════════════════════════
+# 22. BOXES + SPINNER FRAMES
