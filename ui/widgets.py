@@ -99,3 +99,4 @@ class Cycle:
         self.value = self.choices[(i - 1) % len(self.choices)]
 
     def render(self, focused: bool = False) -> Text:
+        from ui.theme import (
