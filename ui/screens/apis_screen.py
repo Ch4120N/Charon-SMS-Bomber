@@ -155,3 +155,4 @@ class ApisScreen(Screen):
             api = items[self.cursor]
             self.app.notify(f"{api.get('name')}: {api.get('url')}", style=FG)
             return None
+        return None
