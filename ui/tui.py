@@ -314,3 +314,4 @@ class TuiApp:
             auto_refresh=False,
         ) as live:
             while self.running and self.stack:
+                top = self.stack[-1]
