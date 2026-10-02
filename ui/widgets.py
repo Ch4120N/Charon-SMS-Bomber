@@ -50,3 +50,4 @@ class TextInput:
         if self.mask:
             before = "*" * len(before)
             cur = "*" if cur != " " else " "
+            after = "*" * len(after)
