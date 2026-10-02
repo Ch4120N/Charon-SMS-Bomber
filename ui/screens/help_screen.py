@@ -205,3 +205,4 @@ class HelpScreen(Screen):
             ("user_agent.rotate", "Fresh UA per request via fake-useragent."),
             ("user_agent.custom", "If set, chosen from randomly."),
             ("api_health.failure_threshold", "Consecutive failures before cooldown."),
+            ("api_health.cooldown_seconds", "Cooldown duration."),
