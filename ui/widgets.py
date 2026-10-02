@@ -53,3 +53,4 @@ class TextInput:
             after = "*" * len(after)
 
         if focused:
+            t.append(before, style=FORM_VALUE_FOCUSED)
