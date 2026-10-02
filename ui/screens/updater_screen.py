@@ -163,3 +163,4 @@ class UpdaterScreen(Screen):
                 self.state = "done"
                 self.show_spinner = False
                 self.app.notify("apis.json updated", style=OK)
+            except Exception as exc:
