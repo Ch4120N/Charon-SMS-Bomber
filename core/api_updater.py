@@ -40,3 +40,4 @@ class UpdateCheck:
     manifest: dict[str, Any]
 
 
+def _sha256_bytes(b: bytes) -> str:
