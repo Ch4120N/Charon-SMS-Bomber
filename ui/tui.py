@@ -225,3 +225,4 @@ class TuiApp:
             padding=(0, 1),
         )
 
+    #  Footer with hotkey chips + notifications
