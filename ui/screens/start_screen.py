@@ -75,3 +75,4 @@ class StartScreen(Screen):
                       style=FG_MUTED)
         rows.add_row(header)
         rows.add_row(Text(""))
+
