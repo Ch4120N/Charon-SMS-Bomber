@@ -25,3 +25,4 @@ from utils.version import NOTICE
 
 class AttackScreen(Screen):
     name = "attack"
+    title = "Attack"
