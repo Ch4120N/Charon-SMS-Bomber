@@ -248,3 +248,4 @@ class AttackScreen(Screen):
     
     def handle_key(self, key: str) -> Optional[str]:
         if key == "s":
+            self._save_reports()
