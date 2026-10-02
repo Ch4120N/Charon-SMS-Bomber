@@ -253,3 +253,4 @@ class AttackScreen(Screen):
         if key == KEY_SPACE and not self.finished:
             self.attacker.stop_flag.set()
             self.app.notify("stopping…", style=WARN)
+            return None
