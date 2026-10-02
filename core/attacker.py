@@ -124,3 +124,4 @@ class Attacker:
                 name = api.get("name", "?")
                 per_api[name] = per_api.get(name, 0) + w
                 total_jobs += w
+        rounds = int(self.cfg["attack"]["rounds"])
