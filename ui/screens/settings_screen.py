@@ -65,3 +65,4 @@ def _build_fields(cfg: dict) -> list[Field]:
 
 class SettingsScreen(Screen):
     name = "settings"
+    title = "Settings"
