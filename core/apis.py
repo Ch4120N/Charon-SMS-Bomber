@@ -79,3 +79,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
     ts = str(int(time.time() * 1000))
 
     def _sub(obj: Any) -> Any:
+        if isinstance(obj, str):
