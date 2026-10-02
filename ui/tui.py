@@ -180,3 +180,4 @@ class TuiApp:
         from ui.theme import (
             HEADER_ART, HEADER_VERSION, HEADER_BREADCRUMB,
             HEADER_BREADCRUMB_ACTIVE, HEADER_BREADCRUMB_SEP,
+            HEADER_SPINNER, HEADER_SPINNER_IDLE,
