@@ -116,3 +116,4 @@ class Sender:
                 return self._fallback_ua
         return self._fallback_ua
 
+    def _pick_proxy(self) -> Optional[dict[str, str]]:
