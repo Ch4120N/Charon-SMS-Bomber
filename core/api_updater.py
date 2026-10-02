@@ -77,3 +77,4 @@ def check_for_updates(
     try:
         ar = requests.get(apis_url, timeout=timeout)
         ar.raise_for_status()
+        remote_bytes = ar.content
