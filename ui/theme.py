@@ -360,3 +360,4 @@ def chip(text: str, bg: str | None = None) -> str:
     return f"[bold {STATUS_BAR_KEY_FG} on {bg or STATUS_BAR_KEY_BG}] {text} [/]"
 
 
+def chip_alt(text: str) -> str:
