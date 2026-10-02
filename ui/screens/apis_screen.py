@@ -112,3 +112,4 @@ class ApisScreen(Screen):
         )
 
     def handle_key(self, key: str) -> Optional[str]:
+        if self._searching:
