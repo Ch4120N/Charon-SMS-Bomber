@@ -42,3 +42,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
 
 
 def api_key(api: dict[str, Any]) -> str:
+    return f"{api.get('method', 'POST').upper()} {api.get('url', '?')}"
