@@ -17,3 +17,4 @@ def normalize_phone(raw: str) -> Optional[str]:
         s = "+98" + s[1:]
     else:
         return None
+    if len(s) != 13 or not s[1:].isdigit():
