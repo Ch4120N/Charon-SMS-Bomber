@@ -323,3 +323,4 @@ class TuiApp:
                 fps = self._active_fps if (animating or not idle) else self._idle_fps
                 frame_interval = 1.0 / max(1, fps)
 
+                # update frame counter
