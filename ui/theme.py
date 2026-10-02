@@ -288,3 +288,4 @@ SPINNER_LABEL       = TEXT_SECONDARY
 # ══════════════════════════════════════════════════════════════════════
 STATUS_ACTIVE       = SUCCESS
 STATUS_COOLING      = WARNING
+STATUS_DISABLED     = TEXT_TERTIARY
