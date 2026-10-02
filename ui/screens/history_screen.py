@@ -43,3 +43,4 @@ class HistoryScreen(Screen):
                              vertical="middle"),
                 title=f"[bold {PRIMARY}]  Session History  [/]",
                 border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
+            )
