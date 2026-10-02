@@ -124,3 +124,4 @@ class UpdaterScreen(Screen):
                 footer.append("\n  nothing to download, Esc to return\n",
                               style=FG_MUTED)
             return self._panel([header, t, footer], subtitle="ready")
+
