@@ -354,3 +354,4 @@ class TuiApp:
             return
         if key == "?":
             self.push("help")
+            return
