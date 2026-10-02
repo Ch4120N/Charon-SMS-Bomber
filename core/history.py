@@ -43,3 +43,4 @@ def load_history() -> list[HistoryEntry]:
             continue
     return out
 
+
