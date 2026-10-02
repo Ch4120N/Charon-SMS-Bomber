@@ -47,3 +47,4 @@ def _stamp() -> str:
     return datetime.now().strftime("%Y%m%d_%H%M%S")
 
 
+def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str, Any]:
