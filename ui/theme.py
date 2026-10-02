@@ -238,3 +238,4 @@ FORM_ACTION_FOCUS   = WARNING_BRIGHT
 FORM_ACTION_DIM     = WARNING_DIM
 
 # ══════════════════════════════════════════════════════════════════════
+# 14. TOGGLES
