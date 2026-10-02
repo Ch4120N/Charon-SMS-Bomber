@@ -317,3 +317,4 @@ BOX_SUB   = box.ROUNDED
 BOX_TABLE = box.SIMPLE_HEAD
 BOX_MIN   = box.MINIMAL
 
+SPINNER_DOTS  = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
