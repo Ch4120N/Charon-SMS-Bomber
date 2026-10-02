@@ -73,3 +73,4 @@ class ApisScreen(Screen):
             box=None, show_header=True, header_style=f"bold {API_BRIGHT}",
             padding=(0, 1), expand=True,
         )
+        lst.add_column("", width=2)
