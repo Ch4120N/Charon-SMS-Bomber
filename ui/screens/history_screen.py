@@ -19,3 +19,4 @@ from ui.tui import Screen, KEY_UP, KEY_DOWN, KEY_ESC, KEY_ENTER
 class HistoryScreen(Screen):
     name = "history"
     title = "Session History"
+    hotkeys = {"r": "reload", "c": "clear"}
