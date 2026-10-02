@@ -23,3 +23,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
     if not p.exists():
         raise FileNotFoundError(f"API registry not found: {p}")
     data = json.loads(p.read_text(encoding="utf-8"))
+    if not isinstance(data, list) or not data:
