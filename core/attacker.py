@@ -85,3 +85,4 @@ class Attacker:
         self.cfg = cfg
         self.all_apis = apis
         self.logger = logger
+
