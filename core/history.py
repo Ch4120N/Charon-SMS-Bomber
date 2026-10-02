@@ -71,3 +71,4 @@ def make_entry(
     rate = (success / sent * 100) if sent else 0.0
     return HistoryEntry(
         ts=datetime.now().isoformat(timespec="seconds"),
+        targets=targets,
