@@ -11,3 +11,4 @@ def rand_id(n: int = 8) -> str:
 def humanize_seconds(s: float) -> str:
     s = int(max(0, s))
     if s < 60:
+        return f"{s}s"
