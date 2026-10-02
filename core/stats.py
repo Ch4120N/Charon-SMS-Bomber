@@ -18,3 +18,4 @@ from utils.version import APP_NAME, APP_VERSION
 class Stats:
     sent: int = 0
     success: int = 0
+    failed: int = 0
