@@ -162,3 +162,4 @@ class Field:
             return t
 
         if isinstance(self.widget, TextInput):
+            t.append_text(self.widget.render(focused))
