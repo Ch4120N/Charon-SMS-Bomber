@@ -125,3 +125,4 @@ class SettingsScreen(Screen):
             if key == KEY_ESC:
                 self.editing = False
                 return None
+            result = f.widget.handle(key)  # type: ignore
