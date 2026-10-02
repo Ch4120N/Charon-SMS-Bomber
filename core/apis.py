@@ -8,3 +8,4 @@ from typing import Any
 
 from utils.paths import APIS_PATH
 
+# Applied to every request unless the API overrides them.
