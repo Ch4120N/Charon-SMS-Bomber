@@ -45,3 +45,4 @@ class AttackScreen(Screen):
         self.rounds = rounds
         self.delay = delay
         self.dry_run = dry_run
+
