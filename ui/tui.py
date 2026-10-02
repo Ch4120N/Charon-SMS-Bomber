@@ -125,3 +125,4 @@ class TuiApp:
         logger: Any,
     ) -> None:
         self.console = console
+        self.cfg = cfg
