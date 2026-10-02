@@ -204,3 +204,4 @@ class SettingsScreen(Screen):
             elif f.kind == "float":
                 try:
                     val = float(val)  # type: ignore
+                except ValueError:
