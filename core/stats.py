@@ -19,3 +19,4 @@ class Stats:
     sent: int = 0
     success: int = 0
     failed: int = 0
+    by_api: dict[str, dict[str, int]] = field(default_factory=dict)
