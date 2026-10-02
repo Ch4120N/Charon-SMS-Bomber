@@ -54,3 +54,4 @@ def _count_apis(path: Path) -> int:
         return len(data) if isinstance(data, list) else len(data.get("apis", []))
     except Exception:
         return 0
+
