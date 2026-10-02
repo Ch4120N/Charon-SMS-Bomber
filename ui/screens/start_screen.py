@@ -74,3 +74,4 @@ class StartScreen(Screen):
         header.append("  ↑ ↓ move   ⏎ edit/activate   ← → change   Esc back\n",
                       style=FG_MUTED)
         rows.add_row(header)
+        rows.add_row(Text(""))
