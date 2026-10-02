@@ -26,3 +26,4 @@ class UpdaterScreen(Screen):
     hotkeys = {"⏎": "download", "r": "re-check"}
     show_spinner = True
 
+    def __init__(self, app) -> None:
