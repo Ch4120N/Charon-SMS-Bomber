@@ -181,3 +181,4 @@ class HelpScreen(Screen):
             ("h", "Open session history"),
             ("i", "About"),
             ("g / G", "Jump to first / last item"),
+            ("/", "Search or filter"),
