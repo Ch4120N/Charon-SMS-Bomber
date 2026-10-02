@@ -279,3 +279,4 @@ class TuiApp:
         if top is None:
             return layout
 
+        cache_key = (
