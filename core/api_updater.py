@@ -49,3 +49,4 @@ def _sha256_file(p: Path) -> str:
 
 
 def _count_apis(path: Path) -> int:
+    try:
