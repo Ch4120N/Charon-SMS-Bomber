@@ -66,3 +66,4 @@ class KeyReader:
         self._t.start()
 
     def _run(self) -> None:
+        while not self.stop.is_set():
