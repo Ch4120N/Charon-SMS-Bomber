@@ -10,3 +10,4 @@ from utils.paths import APIS_PATH
 
 # Applied to every request unless the API overrides them.
 DEFAULT_HEADERS: dict[str, str] = {
+    "Accept": "application/json, text/plain, */*",
