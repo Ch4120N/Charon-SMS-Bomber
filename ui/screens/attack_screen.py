@@ -183,3 +183,4 @@ class AttackScreen(Screen):
         rows = list(stats.by_api.items())[-12:]
         for name, b in rows:
             status = f"[{OK}]active[/]"
+            if atk.health and name in by_name:
