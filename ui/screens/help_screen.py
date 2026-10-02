@@ -257,3 +257,4 @@ class HelpScreen(Screen):
         # Search mode
         if self._searching:
             if key == KEY_ESC:
+                self._searching = False
