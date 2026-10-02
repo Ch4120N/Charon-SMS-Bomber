@@ -59,3 +59,4 @@ class HelpScreen(Screen):
                 tabs.append(f" {label} ", style=FG_DIM)
             tabs.append("   ")
 
+        # Search line
