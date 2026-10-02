@@ -54,3 +54,4 @@ def append_history(entry: HistoryEntry) -> None:
     )
 
 
+def clear_history() -> None:
