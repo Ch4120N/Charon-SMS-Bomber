@@ -103,3 +103,4 @@ class ApisScreen(Screen):
             detail.append(str(api.get("weight", 1)), style=FG)
             detail.append("   enabled: ", style=FG_MUTED)
             detail.append("yes" if api.get("enabled", True) else "no",
+                          style=OK if api.get("enabled", True) else BAD)
