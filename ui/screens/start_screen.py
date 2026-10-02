@@ -90,3 +90,4 @@ class StartScreen(Screen):
         desc.append(" to open the full help.", style=FG_MUTED)
 
         return Panel(
+            Align.left(Group(rows, desc), vertical="top"),
