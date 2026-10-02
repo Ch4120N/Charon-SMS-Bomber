@@ -237,3 +237,4 @@ class Attacker:
 
         r = 0
         while True:
+            if self.stop_flag.is_set():
