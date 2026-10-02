@@ -32,3 +32,4 @@ class Stats:
         b["success" if ok else "failed"] += 1
         self.recent.append((api_name, target, ok))
         if len(self.recent) > 12:
+            self.recent = self.recent[-12:]
