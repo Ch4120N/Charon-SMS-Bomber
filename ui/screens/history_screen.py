@@ -37,3 +37,4 @@ class HistoryScreen(Screen):
         return (self.cursor, self.top, len(self.entries))
 
     def render(self) -> Panel:
+        if not self.entries:
