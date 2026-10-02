@@ -181,3 +181,4 @@ class Sender:
         if regex:
             try:
                 return bool(re.search(regex, r.text))
+            except re.error:
