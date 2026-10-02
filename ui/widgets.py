@@ -29,3 +29,4 @@ class TextInput:
             return None
         if key == KEY_LEFT:
             self.cursor = max(0, self.cursor - 1)
+            return None
