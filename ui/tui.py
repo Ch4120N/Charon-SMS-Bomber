@@ -60,3 +60,4 @@ class KeyReader:
     def __init__(self) -> None:
         self.q: "queue.Queue[str]" = queue.Queue()
         self.stop = threading.Event()
+        self._t = threading.Thread(target=self._run, daemon=True)
