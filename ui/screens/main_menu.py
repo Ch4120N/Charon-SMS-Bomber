@@ -33,3 +33,4 @@ class MainMenuScreen(Screen):
     name = "main_menu"
     title = "Home"
     hotkeys = {
+        "s": "start", "r": "resume", "e": "settings",
