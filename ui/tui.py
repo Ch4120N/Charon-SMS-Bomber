@@ -57,3 +57,4 @@ _ART_COMPACT = "  ╭─ CHSMSBOMBER ─╮"
 
 #  KeyReader
 class KeyReader:
+    def __init__(self) -> None:
