@@ -299,3 +299,4 @@ SCROLLBAR_THUMB     = TEXT_DISABLED
 SCROLLBAR_THUMB_HL  = BRAND
 
 # ══════════════════════════════════════════════════════════════════════
+# 21. HELP / DOCS
