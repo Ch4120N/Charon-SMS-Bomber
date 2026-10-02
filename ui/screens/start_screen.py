@@ -99,3 +99,4 @@ class StartScreen(Screen):
         field = self.fields[self.cursor]
 
         if self.editing:
+            if key == KEY_ESC:
