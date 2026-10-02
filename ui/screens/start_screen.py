@@ -64,3 +64,4 @@ class StartScreen(Screen):
 
     def render(self) -> Panel:
         strat = self.fields[4].widget.value  # type: ignore
+        info = STRATEGIES.get(strat, {})
