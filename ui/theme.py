@@ -143,3 +143,4 @@ CHIP_BG_BAD        = _c("#ff8888", "bright_red")       # red
 CHIP_BG_API        = _c("#96e8f5", "bright_cyan")      # cyan
 CHIP_BG_INFO       = _c("#c0c8ff", "bright_blue")      # lavender
 CHIP_FG_DEFAULT    = _c("#0d0e12", "black")
+
