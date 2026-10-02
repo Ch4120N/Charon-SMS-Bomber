@@ -162,3 +162,4 @@ class AttackScreen(Screen):
                 atk.round_idx / atk.total_rounds * 100
                 if atk.total_rounds else 0
             )
+            filled = int(bar_len * pct / 100)
