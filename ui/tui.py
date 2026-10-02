@@ -224,3 +224,4 @@ class TuiApp:
             border_style=BORDER_DEFAULT,
             padding=(0, 1),
         )
+
