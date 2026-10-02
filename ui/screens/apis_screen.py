@@ -122,3 +122,4 @@ class ApisScreen(Screen):
                 self.top = 0
             return None
 
+        items = self._visible()
