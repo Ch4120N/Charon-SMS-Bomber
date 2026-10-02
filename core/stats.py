@@ -98,3 +98,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     path = REPORTS_DIR / f"report_{_stamp()}.html"
     rows = "\n".join(
         f"<tr><td>{html.escape(k)}</td><td>{v['sent']}</td>"
+        f"<td class='ok'>{v['success']}</td>"
