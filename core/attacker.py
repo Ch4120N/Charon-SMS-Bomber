@@ -62,3 +62,4 @@ class RateLimiter:
         self._lock = threading.Lock()
         self._last = 0.0
 
+    def acquire(self) -> None:
