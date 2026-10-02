@@ -149,3 +149,4 @@ def list_backups() -> list[Path]:
 
 
 __all__ = [
+    "UpdateCheck",
