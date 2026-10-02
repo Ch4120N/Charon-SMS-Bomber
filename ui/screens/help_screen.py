@@ -183,3 +183,4 @@ class HelpScreen(Screen):
             ("g / G", "Jump to first / last item"),
             ("/", "Search or filter"),
             ("q", "Quit from the top-level menu"),
+        ]
