@@ -357,3 +357,4 @@ BORDER_HL   = BORDER_FOCUSED
 # ══════════════════════════════════════════════════════════════════════
 def chip(text: str, bg: str | None = None) -> str:
     """Key cap — dark text on bright peach-orange."""
+    return f"[bold {STATUS_BAR_KEY_FG} on {bg or STATUS_BAR_KEY_BG}] {text} [/]"
