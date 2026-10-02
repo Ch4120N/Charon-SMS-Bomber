@@ -61,3 +61,4 @@ class ApisScreen(Screen):
         if self.search:
             info.add_row("Filter", f"'{self.search}' → {len(items)} matches")
 
+        search_line = Text()
