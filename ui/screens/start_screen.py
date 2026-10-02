@@ -40,3 +40,4 @@ class StartScreen(Screen):
 
         if mode == "resume":
             data = load_session()
+            if data:
