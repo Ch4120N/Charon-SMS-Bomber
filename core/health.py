@@ -43,3 +43,4 @@ class ApiHealthTracker:
                 st["failures"] = st.get("failures", 0) + 1
                 if st["failures"] >= self.threshold:
                     st["disabled_until"] = time.time() + self.cooldown
+
