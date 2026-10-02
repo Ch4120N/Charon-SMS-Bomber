@@ -65,3 +65,4 @@ class AttackScreen(Screen):
         self._start_thread()
         self.app.notify("attack running — Space to stop", style=WARN)
 
+    def on_exit(self) -> None:
