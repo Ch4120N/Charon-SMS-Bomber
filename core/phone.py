@@ -5,3 +5,4 @@ from typing import Optional
 
 
 def normalize_phone(raw: str) -> Optional[str]:
+    """Return +98XXXXXXXXXX or None if invalid."""
