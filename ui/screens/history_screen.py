@@ -9,3 +9,4 @@ from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
 
+from core.history import clear_history, load_history
