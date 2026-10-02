@@ -385,3 +385,4 @@ def link(text: str) -> str:
     return f"[underline {LINK}]{text}[/]"
 
 
+def api(text: str) -> str:
