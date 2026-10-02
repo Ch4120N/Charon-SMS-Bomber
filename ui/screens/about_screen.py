@@ -42,3 +42,4 @@ class AboutScreen(Screen):
 
         return Panel(
             Align.left(Group(head, t, foot), vertical="top"),
+            title=f"[bold {PRIMARY}]  About  [/]",
