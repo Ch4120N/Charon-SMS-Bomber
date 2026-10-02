@@ -27,3 +27,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
     },
     "unlimited": {
         "label": "Unlimited",
+        "summary": "Every API, every cycle, forever, until you stop it.",
