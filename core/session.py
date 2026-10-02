@@ -8,3 +8,4 @@ from utils.paths import SESSION_PATH
 
 
 def save_session(
+    targets: list[str], threads: int, rounds: int, delay: float
