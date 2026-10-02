@@ -39,3 +39,4 @@ class UpdaterScreen(Screen):
 
     def _start_check(self) -> None:
         self.state = "checking"
+        self.show_spinner = True
