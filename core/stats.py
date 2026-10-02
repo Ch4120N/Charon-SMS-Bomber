@@ -62,3 +62,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
         },
         "by_api": stats.by_api,
         "config_snapshot": {
+            "threads": cfg["attack"]["threads"],
