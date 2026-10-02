@@ -141,3 +141,4 @@ class Attacker:
 
     #  Smart strategy: weight per-API by success rate, skip cooling APIs
     def _weighted_pick(self, pool: list[dict[str, Any]]) -> dict[str, Any]:
+        with self._weights_lock:
