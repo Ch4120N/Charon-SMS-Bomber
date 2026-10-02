@@ -68,3 +68,4 @@ class HelpScreen(Screen):
             search_line.append(f"  filter: {self.search}",
                                style=f"bold {PRIMARY}")
 
+        # Body
