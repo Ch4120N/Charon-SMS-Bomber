@@ -101,3 +101,4 @@ class ApisScreen(Screen):
                           style=FG)
             detail.append("   weight: ", style=FG_MUTED)
             detail.append(str(api.get("weight", 1)), style=FG)
+            detail.append("   enabled: ", style=FG_MUTED)
