@@ -72,3 +72,4 @@ class HistoryScreen(Screen):
                 e.strategy,
                 ", ".join(e.targets)[:40],
                 str(e.sent),
+                str(e.success),
