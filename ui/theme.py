@@ -145,3 +145,4 @@ CHIP_BG_INFO       = _c("#c0c8ff", "bright_blue")      # lavender
 CHIP_FG_DEFAULT    = _c("#0d0e12", "black")
 
 
+# ══════════════════════════════════════════════════════════════════════
