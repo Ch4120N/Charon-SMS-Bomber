@@ -258,3 +258,4 @@ class Attacker:
                 for fut in as_completed(futures_map):
                     api, tgt = futures_map[fut]
                     try:
+                        name, ok = fut.result()
