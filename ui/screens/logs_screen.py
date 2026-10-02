@@ -121,3 +121,4 @@ class LogsScreen(Screen):
         if key in (KEY_UP, "k"):
             self.cursor = max(0, self.cursor - 1)
             return None
+        if key in (KEY_DOWN, "j"):
