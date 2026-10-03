@@ -189,3 +189,4 @@ class AttackScreen(Screen):
                     status = f"[{BAD}]cooling {int(rem)}s[/]"
             weight = ""
             if atk.strategy == "smart":
+                with atk._weights_lock:  # type: ignore
