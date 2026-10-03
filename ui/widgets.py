@@ -75,3 +75,4 @@ class Toggle:
 
     def toggle(self) -> None:
         self.value = not self.value
+
