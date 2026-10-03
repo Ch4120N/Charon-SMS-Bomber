@@ -77,3 +77,4 @@ def export_json(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
         json.dumps(_payload(stats, targets, cfg), indent=4, ensure_ascii=False),
         encoding="utf-8",
     )
+    return path
