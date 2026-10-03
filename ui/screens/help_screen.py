@@ -156,3 +156,4 @@ class HelpScreen(Screen):
         ]
         rows = []
         for title, body in items:
+            g = Table.grid(padding=(0, 2))
