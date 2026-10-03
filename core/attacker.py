@@ -275,3 +275,4 @@ class Attacker:
 
         return self.stats
 
+    def _cooldown(self, seconds: float) -> None:
