@@ -97,3 +97,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
     merged_headers = dict(DEFAULT_HEADERS)
     merged_headers.update(expanded.get("headers", {}) or {})
     expanded["headers"] = merged_headers
+    return expanded
