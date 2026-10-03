@@ -150,3 +150,4 @@ class Sender:
         headers.setdefault("User-Agent", self._pick_ua())
 
         kwargs: dict[str, Any] = {
+            "headers": headers,
