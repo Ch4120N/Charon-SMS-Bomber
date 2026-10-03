@@ -73,3 +73,4 @@ class SettingsScreen(Screen):
         self.fields = _build_fields(app.cfg)
         self.cursor = self._first_editable(0)
         self.editing = False
+        self.top = 0
