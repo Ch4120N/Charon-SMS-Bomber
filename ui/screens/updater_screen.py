@@ -29,3 +29,4 @@ class UpdaterScreen(Screen):
     def __init__(self, app) -> None:
         super().__init__(app)
         self.state = "idle"
+        self.info = None
