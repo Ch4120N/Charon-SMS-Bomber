@@ -161,3 +161,4 @@ class TuiApp:
         self.stack.append(screen)
         screen.on_enter()
         self.invalidate()
+
