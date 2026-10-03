@@ -368,3 +368,4 @@ class TuiApp:
         elif result == "quit":
             self.running = False
         elif isinstance(result, str) and result in self._screens:
+            self.push(result)
