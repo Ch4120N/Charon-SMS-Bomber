@@ -206,3 +206,4 @@ class Attacker:
         if self.stop_flag.is_set():
             return name, False
         if self.health and not self.health.is_available(api):
+            return name, False
