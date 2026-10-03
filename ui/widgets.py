@@ -158,3 +158,4 @@ class Field:
             if focused:
                 t.append("[ Enter ]", style=f"bold {FORM_ACTION_FOCUS}")
             else:
+                t.append("[ Enter ]", style=FORM_ACTION_DIM)
