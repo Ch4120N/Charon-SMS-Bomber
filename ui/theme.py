@@ -17,3 +17,4 @@ Hue role assignment
     Cyan      #5fd4e8   APIs + links ONLY
     Green     #7fd68a   success:   OK, positive counters, progress
     Yellow    #f0d468   warning:   running spinner, warnings
+    Red       #e86b6b   error:     failures, error toasts
