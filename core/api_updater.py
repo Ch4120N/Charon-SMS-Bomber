@@ -141,3 +141,4 @@ def download_apis(
         raise RuntimeError(f"Downloaded apis.json is not valid JSON: {exc}") from exc
 
     tmp.replace(APIS_PATH)
+    return APIS_PATH
