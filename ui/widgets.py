@@ -26,3 +26,4 @@ class TextInput:
             if self.cursor > 0:
                 self.value = self.value[: self.cursor - 1] + self.value[self.cursor :]
                 self.cursor -= 1
+            return None
