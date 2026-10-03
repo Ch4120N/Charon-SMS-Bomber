@@ -82,3 +82,4 @@ class StartScreen(Screen):
         desc = Text()
         desc.append("\n  Strategy: ", style=FG_DIM)
         desc.append(f"{info.get('label', strat)}", style=f"bold {ACCENT}")
+        desc.append(f"  —  {info.get('summary', '')}\n", style=FG)
