@@ -77,3 +77,4 @@ def make_entry(
         rounds=rounds,
         sent=sent,
         success=success,
+        failed=failed,
