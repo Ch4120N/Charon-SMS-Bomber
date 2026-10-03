@@ -211,3 +211,4 @@ class HelpScreen(Screen):
         ]
         rows = []
         for k, v in items:
+            g = Table.grid(padding=(0, 2))
