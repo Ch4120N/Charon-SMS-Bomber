@@ -19,3 +19,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
     "smart": {
         "label": "Smart",
         "summary": "Adaptive, health-weighted, unlimited by default.",
+        "details": (
