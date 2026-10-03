@@ -95,3 +95,4 @@ class Cycle:
         self.value = self.choices[(i + 1) % len(self.choices)]
 
     def prev(self) -> None:
+        i = self.choices.index(self.value)
