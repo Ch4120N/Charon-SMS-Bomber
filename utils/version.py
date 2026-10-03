@@ -7,3 +7,4 @@ APP_REPO = "https://github.com/Ch4120N/Charon-SMS-Bomber"
 APP_LICENSE = "GPLv3.0"
 NOTICE = "This tool was made for fun, educational, and research purposes only."
 
+__all__ = [
