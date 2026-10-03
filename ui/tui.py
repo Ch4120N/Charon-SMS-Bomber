@@ -24,3 +24,4 @@ from ui.theme import (
     SPINNER_DOTS,
     BOX_MAIN,
 )
+from utils.version import APP_NAME, APP_VERSION
