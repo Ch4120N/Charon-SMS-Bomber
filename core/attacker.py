@@ -230,3 +230,4 @@ class Attacker:
         unlimited_by_strategy = self.strategy in ("smart", "unlimited")
         self.unlimited = unlimited_by_strategy and int(rounds) <= 0
         self.total_rounds = 0 if self.unlimited else int(rounds)
+        if not unlimited_by_strategy:
