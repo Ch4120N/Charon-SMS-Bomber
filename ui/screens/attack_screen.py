@@ -126,3 +126,4 @@ class AttackScreen(Screen):
         strat = STRATEGIES.get(atk.strategy, {}).get("label", atk.strategy)
 
         header = Table.grid(padding=(0, 2))
+        header.add_column(style=FG_MUTED)
