@@ -224,3 +224,4 @@ class HelpScreen(Screen):
             ("name", "Display name."),
             ("method", "POST or GET."),
             ("url", "Endpoint. Placeholders: {cc} {intl} {local} {ts} {ua}."),
+            ("headers", "Per-API headers. {ua} = rotated user-agent."),
