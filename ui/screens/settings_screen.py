@@ -189,3 +189,4 @@ class SettingsScreen(Screen):
                 return
 
     def _apply(self, f: Field) -> None:
+        parts = f.key.split(".")
