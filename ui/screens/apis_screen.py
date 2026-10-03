@@ -138,3 +138,4 @@ class ApisScreen(Screen):
             self.cursor = max(0, len(items) - 1)
             return None
         if key == KEY_ESC:
+            return "back"
