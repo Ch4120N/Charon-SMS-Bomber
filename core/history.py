@@ -82,3 +82,4 @@ def make_entry(
         elapsed=round(elapsed, 2),
     )
 
+
