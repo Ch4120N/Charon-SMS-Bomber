@@ -48,3 +48,4 @@ class HelpScreen(Screen):
         return (self.section_idx, self.scroll, self.search, self._searching)
 
     
+    def render(self) -> Panel:
