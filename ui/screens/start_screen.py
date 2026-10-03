@@ -55,3 +55,4 @@ class StartScreen(Screen):
             Field("delay", "Delay (s)", "float", delay_val),
             Field("strategy", "Strategy", "cycle", strategy_val,
                   choices=list(STRATEGIES.keys())),
+            Field("dry_run", "Dry-run (no send)", "bool", cfg.get("dry_run", False)),
