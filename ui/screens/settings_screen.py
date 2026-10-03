@@ -112,3 +112,4 @@ class SettingsScreen(Screen):
             style=FG_MUTED,
         )
 
+        return Panel(
