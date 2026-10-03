@@ -163,3 +163,4 @@ class TuiApp:
         self.invalidate()
 
     def pop(self) -> None:
+        if self.stack:
