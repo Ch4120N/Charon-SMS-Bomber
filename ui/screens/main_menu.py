@@ -96,3 +96,4 @@ class MainMenuScreen(Screen):
         elif item_id == "continue":
             self.app.push("start", mode="resume")
         elif item_id == "settings":
+            self.app.push("settings")
