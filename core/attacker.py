@@ -96,3 +96,4 @@ class Attacker:
         self.health = (
             ApiHealthTracker(
                 cfg["api_health"]["failure_threshold"],
+                cfg["api_health"]["cooldown_seconds"],
