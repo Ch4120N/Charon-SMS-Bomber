@@ -194,3 +194,4 @@ class AttackScreen(Screen):
             api_tbl.add_row(
                 name,
                 str(b.get("sent", 0)),
+                str(b.get("success", 0)),
