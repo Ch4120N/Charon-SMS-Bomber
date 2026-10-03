@@ -288,3 +288,4 @@ class HelpScreen(Screen):
             return None
         if key == "G":
             self.scroll += 20
+            return None
