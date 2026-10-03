@@ -28,3 +28,4 @@ class Stats:
         self.success += int(ok)
         self.failed += int(not ok)
         b = self.by_api.setdefault(api_name, {"sent": 0, "success": 0, "failed": 0})
+        b["sent"] += 1
