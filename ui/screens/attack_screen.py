@@ -262,3 +262,4 @@ class AttackScreen(Screen):
             return "back"
         return None
 
+    def _save_reports(self) -> None:
