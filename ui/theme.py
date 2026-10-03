@@ -37,3 +37,4 @@ def _has_truecolor() -> bool:
 
 TRUECOLOR = _has_truecolor()
 
+
