@@ -67,3 +67,4 @@ class HistoryScreen(Screen):
             e = self.entries[i]
             focused = i == self.cursor
             t.add_row(
+                "▌" if focused else " ",
