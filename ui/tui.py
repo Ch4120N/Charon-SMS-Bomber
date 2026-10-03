@@ -198,3 +198,4 @@ class TuiApp:
 
         line = Text(" ")
         if screen.show_spinner:
+            frame = SPINNER_DOTS[self.frame % len(SPINNER_DOTS)]
