@@ -55,3 +55,4 @@ class HelpScreen(Screen):
             label = name.upper()
             if i == self.section_idx:
                 tabs.append(f" {label} ", style=f"bold black on {PRIMARY_ALT}")
+            else:
