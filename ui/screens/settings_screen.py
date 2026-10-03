@@ -111,3 +111,4 @@ class SettingsScreen(Screen):
             f" of {len(self.fields)}",
             style=FG_MUTED,
         )
+
