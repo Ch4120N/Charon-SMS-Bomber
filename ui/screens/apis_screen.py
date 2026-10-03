@@ -129,3 +129,4 @@ class ApisScreen(Screen):
             return None
         if key in (KEY_DOWN, "j"):
             if items:
+                self.cursor = (self.cursor + 1) % len(items)
