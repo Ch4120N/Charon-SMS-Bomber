@@ -18,3 +18,4 @@ from utils.version import (
 )
 
 
+class AboutScreen(Screen):
