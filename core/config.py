@@ -23,3 +23,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "rounds": 0,
         "delay": 0.05,
         "jitter": 0.02,
+        "strategy": "smart",
