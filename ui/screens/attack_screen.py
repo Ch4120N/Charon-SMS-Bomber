@@ -19,3 +19,4 @@ from ui.theme import (
     FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN, SPINNER_BAR,
 )
 from ui.tui import Screen, KEY_ESC, KEY_ENTER, KEY_SPACE
+from utils.paths import REPORTS_DIR
