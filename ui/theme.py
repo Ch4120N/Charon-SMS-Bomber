@@ -202,3 +202,4 @@ FOOTER_TOAST_BULLET = STATUS_BAR_BULLET
 # 11. HEADER
 # ══════════════════════════════════════════════════════════════════════
 HEADER_ART                = BRAND                  # magenta wordmark
+HEADER_VERSION            = TEXT_TERTIARY
