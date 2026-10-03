@@ -56,3 +56,4 @@ class UpdaterScreen(Screen):
                 self.show_spinner = False
                 self.app.notify(f"check failed: {exc}", style=BAD)
 
+        threading.Thread(target=_worker, daemon=True).start()
