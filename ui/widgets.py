@@ -64,3 +64,4 @@ class TextInput:
                 pad = max(0, width - len(self.value))
             else:
                 t.append("-", style=FORM_PLACEHOLDER)
+                pad = max(0, width - 1)
