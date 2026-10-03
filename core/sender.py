@@ -43,3 +43,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                     return False
 
         # numeric codes — 0 / 200 / 201 = ok, >= 400 = bad
+        for k in ("code", "status_code", "statusCode", "status"):
