@@ -64,3 +64,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
         "config_snapshot": {
             "threads": cfg["attack"]["threads"],
             "rounds": cfg["attack"]["rounds"],
+            "delay": cfg["attack"]["delay"],
