@@ -40,3 +40,4 @@ class HistoryScreen(Screen):
         if not self.entries:
             return Panel(
                 Align.center(Text("\n  no sessions yet\n", style=FG_MUTED),
+                             vertical="middle"),
