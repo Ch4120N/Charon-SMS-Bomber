@@ -78,3 +78,4 @@ class MainMenuScreen(Screen):
             "s": "start", "r": "continue",
             "e": "settings", "a": "apis",
             "u": "updates", "l": "logs",
+            "h": "history", "i": "about", "x": "exit",
