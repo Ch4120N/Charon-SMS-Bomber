@@ -126,3 +126,4 @@ def download_apis(
         written = 0
         with tmp.open("wb") as fh:
             for chunk in r.iter_content(chunk_size=8192):
+                if not chunk:
