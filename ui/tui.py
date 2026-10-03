@@ -159,3 +159,4 @@ class TuiApp:
         cls = self._screens[name]
         screen = cls(self, **kwargs)
         self.stack.append(screen)
+        screen.on_enter()
