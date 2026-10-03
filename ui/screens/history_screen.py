@@ -42,3 +42,4 @@ class HistoryScreen(Screen):
                 Align.center(Text("\n  no sessions yet\n", style=FG_MUTED),
                              vertical="middle"),
                 title=f"[bold {PRIMARY}]  Session History  [/]",
+                border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
