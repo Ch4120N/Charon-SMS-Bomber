@@ -62,3 +62,4 @@ class AttackScreen(Screen):
             self.animating = False
             self.app.notify("dry-run complete", style=OK)
             return
+        self._start_thread()
