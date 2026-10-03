@@ -11,3 +11,4 @@ REPORTS_DIR: Path = BASE_DIR / "reports"
 
 __all__ = [
     "BASE_DIR", "CONFIG_PATH", "APIS_PATH",
+    "SESSION_PATH", "LOGS_DIR", "REPORTS_DIR",
