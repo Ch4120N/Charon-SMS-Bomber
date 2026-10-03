@@ -216,3 +216,4 @@ class TuiApp:
                 line.append(label, style=f"bold {HEADER_BREADCRUMB_ACTIVE}")
             else:
                 line.append(label, style=HEADER_BREADCRUMB)
+                line.append("  ›  ", style=HEADER_BREADCRUMB_SEP)
