@@ -227,3 +227,4 @@ class HelpScreen(Screen):
             ("headers", "Per-API headers. {ua} = rotated user-agent."),
             ("payload", "JSON body (application/json)."),
             ("data", "Form body (application/x-www-form-urlencoded)."),
+            ("params", "Query string parameters."),
