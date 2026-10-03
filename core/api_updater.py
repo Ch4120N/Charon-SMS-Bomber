@@ -100,3 +100,4 @@ def check_for_updates(
         remote_hash=remote_hash,
         remote_version=str(manifest.get("version", "unknown")),
         manifest=manifest,
+    )
