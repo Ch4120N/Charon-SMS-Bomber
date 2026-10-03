@@ -14,3 +14,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "timeout": 5,
         "retries": 2,
         "retry_backoff": 1.6,
+        "verify_ssl": False,
