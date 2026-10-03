@@ -46,3 +46,4 @@ class TextInput:
         t = Text()
         before = self.value[: self.cursor]
         cur = self.value[self.cursor : self.cursor + 1] or " "
+        after = self.value[self.cursor + 1 :]
