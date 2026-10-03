@@ -116,3 +116,4 @@ class Screen(ABC):
 
 
 #  TuiApp
+class TuiApp:
