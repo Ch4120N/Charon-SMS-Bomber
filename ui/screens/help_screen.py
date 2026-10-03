@@ -105,3 +105,4 @@ class HelpScreen(Screen):
         if self.section == "config":
             return self._render_config()
         return self._render_apis()
+
