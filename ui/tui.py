@@ -306,3 +306,4 @@ class TuiApp:
     def run(self) -> None:
         self.console.clear()
         with Live(
+            self._layout(),
