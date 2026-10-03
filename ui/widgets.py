@@ -39,3 +39,4 @@ class TextInput:
         return None
 
     def render(self, focused: bool, width: int = 40) -> Text:
+        from ui.theme import (
