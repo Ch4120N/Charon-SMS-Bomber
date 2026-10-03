@@ -48,3 +48,4 @@ class AttackScreen(Screen):
 
         self.attacker = Attacker(app.cfg, app.apis, app.logger)
         self.started = False
+        self.finished = False
