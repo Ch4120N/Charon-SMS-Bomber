@@ -49,3 +49,4 @@ class UpdaterScreen(Screen):
                 self.info = info
                 self.state = "ready"
                 self.show_spinner = False
+                self.app.notify("check complete", style=OK)
