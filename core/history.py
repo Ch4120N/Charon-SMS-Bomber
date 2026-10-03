@@ -69,3 +69,4 @@ def make_entry(
     elapsed: float,
 ) -> HistoryEntry:
     rate = (success / sent * 100) if sent else 0.0
+    return HistoryEntry(
