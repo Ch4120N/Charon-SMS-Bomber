@@ -298,3 +298,4 @@ SCROLLBAR_TRACK     = SURFACE_PANEL
 SCROLLBAR_THUMB     = TEXT_DISABLED
 SCROLLBAR_THUMB_HL  = BRAND
 
+# ══════════════════════════════════════════════════════════════════════
