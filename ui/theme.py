@@ -35,3 +35,4 @@ def _has_truecolor() -> bool:
     return ct in ("truecolor", "24bit")
 
 
+TRUECOLOR = _has_truecolor()
