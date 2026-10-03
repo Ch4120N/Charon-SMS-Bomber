@@ -116,3 +116,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  .totals {{ margin-top:20px; font-size:1.1em; }}
 </style></head><body>
 <h1>{APP_NAME} v{APP_VERSION} — attack report</h1>
+<div class="meta">{datetime.now().isoformat()} · targets: {html.escape(", ".join(targets))}</div>
