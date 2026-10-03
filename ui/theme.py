@@ -442,3 +442,4 @@ __all__ = [
     # 12. Menus
     "MENU_MARKER", "MENU_ITEM", "MENU_ITEM_FOCUSED", "MENU_DESC",
     "MENU_DESC_FOCUSED", "MENU_SEPARATOR", "MENU_GROUP_LABEL",
+    # 13. Forms
