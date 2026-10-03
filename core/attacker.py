@@ -214,3 +214,4 @@ class Attacker:
 
         if self.health:
             self.health.record(api, ok)
+        if self.strategy == "smart":
