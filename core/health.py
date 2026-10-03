@@ -47,3 +47,4 @@ class ApiHealthTracker:
     def snapshot(self) -> dict[str, dict[str, float]]:
         with self._lock:
             return {k: dict(v) for k, v in self._state.items()}
+
