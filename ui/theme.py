@@ -302,3 +302,4 @@ SCROLLBAR_THUMB_HL  = BRAND
 # 21. HELP / DOCS
 # ══════════════════════════════════════════════════════════════════════
 HELP_TAB_ACTIVE     = CHIP_BG_ALT                  # magenta tab
+HELP_TAB_INACTIVE   = TEXT_TERTIARY
