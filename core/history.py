@@ -31,3 +31,4 @@ class HistoryEntry:
 def load_history() -> list[HistoryEntry]:
     if not HISTORY_PATH.exists():
         return []
+    try:
