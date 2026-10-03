@@ -32,3 +32,4 @@ class AboutScreen(Screen):
         t.add_row("Author", APP_AUTHOR)
         t.add_row("Repository", f"[underline {ACCENT}]{APP_REPO}[/]")
         t.add_row("License", APP_LICENSE)
+        t.add_row("Config", str(CONFIG_PATH))
