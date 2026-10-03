@@ -170,3 +170,4 @@ class Sender:
         elif "params" in api:
             kwargs["params"] = api["params"]
 
+        with requests.Session() as s:
