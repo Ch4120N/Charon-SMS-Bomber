@@ -187,3 +187,4 @@ class Attacker:
             for target in self.current_targets:
                 for api in pool:
                     jobs.append((api, target))
+        else:  # round-robin
