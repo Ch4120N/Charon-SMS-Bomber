@@ -43,3 +43,4 @@ class StartScreen(Screen):
             if data:
                 targets_val = ";".join(data["targets"])
                 threads_val = str(data["threads"])
+                rounds_val = str(data["rounds"])
