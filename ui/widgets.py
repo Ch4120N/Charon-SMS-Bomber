@@ -137,3 +137,4 @@ class Field:
         else:
             raise ValueError(f"unknown field kind: {kind}")
 
+    def render(self, focused: bool) -> Text:
