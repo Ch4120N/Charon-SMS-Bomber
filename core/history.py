@@ -47,3 +47,4 @@ def load_history() -> list[HistoryEntry]:
 def append_history(entry: HistoryEntry) -> None:
     items = load_history()
     items.append(entry)
+    items = items[-MAX_ENTRIES:]
