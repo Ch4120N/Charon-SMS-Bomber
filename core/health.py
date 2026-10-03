@@ -28,3 +28,4 @@ class ApiHealthTracker:
     def remaining_cooldown(self, api: dict[str, Any]) -> float:
         with self._lock:
             st = self._state.get(api_key(api))
+            if not st:
