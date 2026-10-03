@@ -313,3 +313,4 @@ class TuiApp:
             screen=True,
             auto_refresh=False,
         ) as live:
+            while self.running and self.stack:
