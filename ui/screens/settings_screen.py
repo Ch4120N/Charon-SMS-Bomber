@@ -162,3 +162,4 @@ class SettingsScreen(Screen):
                 return None
 
         if key == KEY_ENTER:
+            if f.kind == "action" and f.key == "action.save":
