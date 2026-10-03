@@ -176,3 +176,4 @@ class HelpScreen(Screen):
             ("r", "Resume / reload / re-check"),
             ("e", "Open Settings"),
             ("a", "Open API Manager"),
+            ("u", "Check for API updates"),
