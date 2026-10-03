@@ -246,3 +246,4 @@ class TuiApp:
 
         bar = Text()
         for i, (k, d) in enumerate(hints):
+            if i > 0:
