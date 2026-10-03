@@ -190,3 +190,4 @@ class Attacker:
         else:  # round-robin
             for target in self.current_targets:
                 for api in eligible:
+                    jobs.append((api, target))
