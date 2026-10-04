@@ -467,3 +467,4 @@ __all__ = [
     # 21. Help
     "HELP_TAB_ACTIVE", "HELP_TAB_INACTIVE", "HELP_TAB_FG",
     "HELP_SECTION", "HELP_TERM", "HELP_DESC", "HELP_CODE",
+    # 22. Boxes + frames
