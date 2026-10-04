@@ -65,3 +65,4 @@ class KeyReader:
     def start(self) -> None:
         self._t.start()
 
+    def _run(self) -> None:
