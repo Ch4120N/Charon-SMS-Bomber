@@ -43,3 +43,4 @@ class HelpScreen(Screen):
     def section(self) -> str:
         return _SECTIONS[self.section_idx]
 
+    
