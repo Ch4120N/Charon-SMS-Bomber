@@ -264,3 +264,4 @@ class Attacker:
                     self.stats.record(name, tgt, ok)
                     self._apply_jitter()
 
+            r += 1
