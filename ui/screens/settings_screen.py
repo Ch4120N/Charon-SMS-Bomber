@@ -126,3 +126,4 @@ class SettingsScreen(Screen):
                 self.editing = False
                 return None
             result = f.widget.handle(key)  # type: ignore
+            if result is not None:
