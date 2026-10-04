@@ -38,3 +38,4 @@ class StartScreen(Screen):
         delay_val = str(cfg["delay"])
         strategy_val = cfg["strategy"]
 
+        if mode == "resume":
