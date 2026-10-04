@@ -156,3 +156,4 @@ class StartScreen(Screen):
         return None
 
     def _launch(self) -> None:
+        targets = parse_targets(self.fields[0].widget.value)  # type: ignore
