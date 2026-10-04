@@ -200,3 +200,4 @@ class AttackScreen(Screen):
                 status,
             )
         if not rows:
+            api_tbl.add_row(f"[{FG_MUTED}]- no data yet -[/]", "", "", "", "", "")
