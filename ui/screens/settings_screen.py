@@ -116,3 +116,4 @@ class SettingsScreen(Screen):
             Align.left(Group(body, info), vertical="top"),
             title=f"[bold {PRIMARY}]  Settings  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
+        )
