@@ -48,3 +48,4 @@ def append_history(entry: HistoryEntry) -> None:
     items = load_history()
     items.append(entry)
     items = items[-MAX_ENTRIES:]
+    HISTORY_PATH.write_text(
