@@ -110,3 +110,4 @@ class StartScreen(Screen):
                 field.widget.value = result  # type: ignore
                 self.editing = False
             return None
+
