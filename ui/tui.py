@@ -89,3 +89,4 @@ class KeyReader:
 
 
 #  Screen base
+class Screen(ABC):
