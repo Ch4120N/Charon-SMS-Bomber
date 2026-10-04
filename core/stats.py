@@ -15,3 +15,4 @@ from utils.version import APP_NAME, APP_VERSION
 
 
 @dataclass
+class Stats:
