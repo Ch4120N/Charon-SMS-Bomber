@@ -68,3 +68,4 @@ class ApisScreen(Screen):
         elif self.search:
             search_line.append(f"  filter: {self.search}",
                                style=f"bold {API_BRIGHT}")
+
