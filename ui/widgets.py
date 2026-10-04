@@ -166,3 +166,4 @@ class Field:
             if focused and self.hint:
                 t.append(f"   {self.hint}", style=FORM_HINT)
         elif isinstance(self.widget, Toggle):
+            t.append_text(self.widget.render())
