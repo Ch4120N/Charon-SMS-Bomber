@@ -134,3 +134,4 @@ class StartScreen(Screen):
                 field.widget.toggle()  # type: ignore
                 return None
 
+        if field.kind == "cycle":
