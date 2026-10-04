@@ -68,3 +68,4 @@ class KeyReader:
     def _run(self) -> None:
         while not self.stop.is_set():
             try:
+                k = readchar.readkey()
