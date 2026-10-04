@@ -246,3 +246,4 @@ class HelpScreen(Screen):
         ph.add_row("{cc}", "9123456789  (no country code, no leading zero)")
         ph.add_row("{intl}", "+989123456789  (E.164)")
         ph.add_row("{local}", "09123456789  (leading zero)")
+        ph.add_row("{ts}", "unix ms timestamp")
