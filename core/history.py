@@ -37,3 +37,4 @@ def load_history() -> list[HistoryEntry]:
         return []
     out: list[HistoryEntry] = []
     for item in raw:
+        try:
