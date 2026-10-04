@@ -159,3 +159,4 @@ class AttackScreen(Screen):
             bar.append(f"   elapsed {int(stats.elapsed)}s", style=FG_DIM)
         else:
             pct = (
+                atk.round_idx / atk.total_rounds * 100
