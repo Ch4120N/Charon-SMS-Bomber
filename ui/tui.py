@@ -92,3 +92,4 @@ class KeyReader:
 class Screen(ABC):
     name: str = "screen"
     title: str = ""
+    hotkeys: dict[str, str] = {}
