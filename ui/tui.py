@@ -31,3 +31,4 @@ from utils.version import APP_NAME, APP_VERSION
 #  Key constants
 KEY_UP = readchar.key.UP
 KEY_DOWN = readchar.key.DOWN
+KEY_LEFT = readchar.key.LEFT
