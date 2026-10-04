@@ -68,3 +68,4 @@ class LogsScreen(Screen):
         self.cursor = max(0, len(self.lines) - 1)
         self.top = max(0, len(self.lines) - self.page_size)
 
+
