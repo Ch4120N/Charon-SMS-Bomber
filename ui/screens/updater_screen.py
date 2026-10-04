@@ -104,3 +104,4 @@ class UpdaterScreen(Screen):
                 bar.append(f"  {pct:5.1f}%   ", style=FG)
                 bar.append(
                     f"{self.bytes_written // 1024} / {self.bytes_total // 1024} KiB",
+                    style=FG_DIM,
