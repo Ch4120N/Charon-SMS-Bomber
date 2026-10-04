@@ -269,3 +269,4 @@ class TuiApp:
             Group(*body),
             box=box.ROUNDED,
             border_style=BORDER_DEFAULT,
+            padding=(0, 1),
