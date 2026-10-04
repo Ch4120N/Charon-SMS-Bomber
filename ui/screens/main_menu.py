@@ -30,3 +30,4 @@ _ITEMS = [
 
 
 class MainMenuScreen(Screen):
+    name = "main_menu"
