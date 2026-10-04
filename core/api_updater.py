@@ -132,3 +132,4 @@ def download_apis(
                 written += len(chunk)
                 if progress_cb:
                     progress_cb(written, total)
+
