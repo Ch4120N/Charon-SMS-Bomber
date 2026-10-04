@@ -35,3 +35,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("attack.delay", "Delay (s)", "float", A["delay"]),
         Field("attack.jitter", "Jitter (s)", "float", A["jitter"]),
         Field("attack.round_cooldown", "Round cooldown", "float", A["round_cooldown"]),
+        Field("attack.rate_limit_per_sec", "Rate cap (req/s)", "float", A["rate_limit_per_sec"]),
