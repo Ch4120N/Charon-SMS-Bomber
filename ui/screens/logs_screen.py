@@ -61,3 +61,4 @@ class LogsScreen(Screen):
             raw = path.read_text(encoding="utf-8", errors="ignore").splitlines()
         except Exception as exc:
             raw = [f"(failed to read {path.name}: {exc})"]
+        self._path = path
