@@ -304,3 +304,4 @@ class TuiApp:
 
     #  Main loop
     def run(self) -> None:
+        self.console.clear()
