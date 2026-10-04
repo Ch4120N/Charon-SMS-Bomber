@@ -35,3 +35,4 @@ class ApiHealthTracker:
     def record(self, api: dict[str, Any], success: bool) -> None:
         with self._lock:
             k = api_key(api)
+            st = self._state.setdefault(k, {"failures": 0, "disabled_until": 0})
