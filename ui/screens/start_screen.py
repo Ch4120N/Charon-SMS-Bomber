@@ -189,3 +189,4 @@ def _valid_number(s: str, kind: str) -> bool:
         int(s) if kind == "int" else float(s)
         return True
     except ValueError:
+        return False
