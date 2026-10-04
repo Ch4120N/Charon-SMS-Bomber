@@ -151,3 +151,4 @@ class UpdaterScreen(Screen):
         self.show_spinner = True
         self.bytes_written = 0
         self.bytes_total = 0
+
