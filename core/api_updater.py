@@ -125,3 +125,4 @@ def download_apis(
         total = int(r.headers.get("Content-Length") or 0)
         written = 0
         with tmp.open("wb") as fh:
+            for chunk in r.iter_content(chunk_size=8192):
