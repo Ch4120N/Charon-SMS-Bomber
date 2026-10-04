@@ -81,3 +81,4 @@ def make_entry(
         rate=round(rate, 2),
         elapsed=round(elapsed, 2),
     )
+
