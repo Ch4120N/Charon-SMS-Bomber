@@ -117,3 +117,4 @@ class Sender:
         return self._fallback_ua
 
     def _pick_proxy(self) -> Optional[dict[str, str]]:
+        if not self.cfg["network"]["proxy_enabled"]:
