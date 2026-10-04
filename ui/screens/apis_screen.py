@@ -107,3 +107,4 @@ class ApisScreen(Screen):
 
         return Panel(
             Align.left(Group(search_line, Text(""), lst, detail), vertical="top"),
+            title=f"[bold {PRIMARY}]  API Manager  [/]",
