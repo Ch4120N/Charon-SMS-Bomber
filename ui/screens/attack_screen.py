@@ -136,3 +136,4 @@ class AttackScreen(Screen):
         counters = Table.grid(expand=True)
         for _ in range(4):
             counters.add_column(justify="center")
+        counters.add_row(
