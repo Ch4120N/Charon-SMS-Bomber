@@ -170,3 +170,4 @@ class HelpScreen(Screen):
             ("← / →", "Change cycle fields, switch help tabs"),
             ("Enter", "Select, activate, or commit edit"),
             ("Esc", "Go back, cancel edit, or stop attack"),
+            ("Space", "Toggle boolean, stop attack"),
