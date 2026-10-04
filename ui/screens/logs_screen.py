@@ -135,3 +135,4 @@ class LogsScreen(Screen):
             self.app.notify("reloaded", style=OK)
             return None
         if key == KEY_ESC:
+            return "back"
