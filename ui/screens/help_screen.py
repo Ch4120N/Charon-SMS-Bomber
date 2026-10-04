@@ -259,3 +259,4 @@ class HelpScreen(Screen):
             if key == KEY_ESC:
                 self._searching = False
                 self._search_widget = None
+                return None
