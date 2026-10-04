@@ -267,3 +267,4 @@ class TuiApp:
 
         return Panel(
             Group(*body),
+            box=box.ROUNDED,
