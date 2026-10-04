@@ -86,3 +86,4 @@ class Attacker:
         self.all_apis = apis
         self.logger = logger
 
+        self.apis = filter_apis(
