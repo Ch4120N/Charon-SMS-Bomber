@@ -45,3 +45,4 @@ class StartScreen(Screen):
                 threads_val = str(data["threads"])
                 rounds_val = str(data["rounds"])
                 delay_val = str(data["delay"])
+
