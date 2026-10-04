@@ -243,3 +243,4 @@ class HelpScreen(Screen):
         ph = Table.grid(padding=(0, 2))
         ph.add_column(style=f"bold {API_COLOR}", width=18)
         ph.add_column(style=FG)
+        ph.add_row("{cc}", "9123456789  (no country code, no leading zero)")
