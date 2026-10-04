@@ -192,3 +192,4 @@ STATUS_BAR_TOAST_BAD       = ERROR                 # #e86b6b red
 # ══════════════════════════════════════════════════════════════════════
 FOOTER_HINT_TEXT    = STATUS_BAR_TEXT
 FOOTER_SEPARATOR    = STATUS_BAR_SEPARATOR
+FOOTER_TOAST_INFO   = STATUS_BAR_TOAST_INFO
