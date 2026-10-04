@@ -64,3 +64,4 @@ def _deep_merge(base: dict, override: dict) -> dict:
     out = dict(base)
     for k, v in override.items():
         if isinstance(v, dict) and isinstance(out.get(k), dict):
+            out[k] = _deep_merge(out[k], v)
