@@ -169,3 +169,4 @@ class TuiApp:
             self.invalidate()
 
     def invalidate(self) -> None:
+        self._cached_layout = None
