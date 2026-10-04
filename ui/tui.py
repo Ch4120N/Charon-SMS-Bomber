@@ -310,3 +310,4 @@ class TuiApp:
             console=self.console,
             refresh_per_second=self._active_fps,
             transient=False,
+            screen=True,
