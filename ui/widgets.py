@@ -7,3 +7,4 @@ from rich.text import Text
 
 from ui.theme import (
     PRIMARY, PRIMARY_ALT, ACCENT, OK, BAD, WARN,
+    FG, FG_DIM, FG_MUTED,
