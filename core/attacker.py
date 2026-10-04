@@ -205,3 +205,4 @@ class Attacker:
         name = api.get("name", "Unknown")
         if self.stop_flag.is_set():
             return name, False
+        if self.health and not self.health.is_available(api):
