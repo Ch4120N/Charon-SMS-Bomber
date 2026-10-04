@@ -38,3 +38,4 @@ class AttackScreen(Screen):
         rounds: int,
         delay: float,
         dry_run: bool = False,
+    ) -> None:
