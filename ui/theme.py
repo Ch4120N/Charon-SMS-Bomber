@@ -258,3 +258,4 @@ CYCLE_ARROW         = FOCUS_BRIGHT
 # 16. TABLES
 # ══════════════════════════════════════════════════════════════════════
 TABLE_HEADER        = FOCUS                        # orange column titles
+TABLE_ROW           = TEXT_PRIMARY
