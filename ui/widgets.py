@@ -17,3 +17,4 @@ class TextInput:
         self.value = value
         self.cursor = len(value)
         self.mask = mask
+
