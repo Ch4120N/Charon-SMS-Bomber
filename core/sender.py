@@ -16,3 +16,4 @@ _NEGATIVE_KEYS = {"error", "errors", "err", "exception", "fault"}
 _POSITIVE_STRINGS = {"ok", "success", "true", "sent", "done", "accepted"}
 _NEGATIVE_STRINGS = {"error", "failed", "fail", "false", "invalid", "denied", "rejected"}
 
+
