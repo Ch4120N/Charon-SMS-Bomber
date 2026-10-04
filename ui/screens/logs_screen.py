@@ -45,3 +45,4 @@ class LogsScreen(Screen):
     def render_cache_key(self):
         return (self.cursor, self.top, len(self.lines))
 
+    def _latest_log(self) -> Optional[Path]:
