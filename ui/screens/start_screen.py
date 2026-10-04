@@ -126,3 +126,4 @@ class StartScreen(Screen):
             if field.kind == "action":
                 return self._handle_action(field.key)
             if field.kind in ("text", "int", "float"):
+                self.editing = True
