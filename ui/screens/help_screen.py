@@ -255,3 +255,4 @@ class HelpScreen(Screen):
     #  Input
     def handle_key(self, key: str) -> Optional[str]:
         # Search mode
+        if self._searching:
