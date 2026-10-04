@@ -174,3 +174,4 @@ class StartScreen(Screen):
         self.app.cfg["attack"]["threads"] = threads
         self.app.cfg["attack"]["rounds"] = rounds
         self.app.cfg["attack"]["delay"] = delay
+        self.app.cfg["attack"]["strategy"] = strategy
