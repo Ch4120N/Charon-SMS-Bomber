@@ -116,3 +116,4 @@ class Attacker:
 
 
     def dry_run(self, targets: list[str]) -> dict[str, Any]:
+        total_jobs = 0
