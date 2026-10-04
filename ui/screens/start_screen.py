@@ -52,3 +52,4 @@ class StartScreen(Screen):
             Field("threads", "Threads", "int", threads_val),
             Field("rounds", "Rounds", "int", rounds_val,
                   hint="0 = unlimited"),
+            Field("delay", "Delay (s)", "float", delay_val),
