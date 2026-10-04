@@ -89,3 +89,4 @@ def check_for_updates(
             else len(remote_data.get("apis", []))
         )
     except Exception:
+        remote_count = 0
