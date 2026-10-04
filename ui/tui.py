@@ -127,3 +127,4 @@ class TuiApp:
         self.console = console
         self.cfg = cfg
         self.apis = apis
+        self.logger = logger
