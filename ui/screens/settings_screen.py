@@ -28,3 +28,4 @@ def _build_fields(cfg: dict) -> list[Field]:
     )
     return [
         Field("section", "ATTACK", "action", None),
+        Field("attack.strategy", "Strategy", "cycle", A["strategy"],
