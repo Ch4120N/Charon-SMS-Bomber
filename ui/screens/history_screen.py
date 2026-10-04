@@ -120,3 +120,4 @@ class HistoryScreen(Screen):
         if key == "G":
             self.cursor = max(0, len(self.entries) - 1)
             return None
+        if key == "r":
