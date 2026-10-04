@@ -286,3 +286,4 @@ class TuiApp:
             self.console.width,
             self.console.height,
         )
+
