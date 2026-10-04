@@ -24,3 +24,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
             backupCount=int(cfg["logging"]["backup_count"]),
             encoding="utf-8",
         )
+        handler.setFormatter(logging.Formatter(
