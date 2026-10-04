@@ -30,3 +30,4 @@ def parse_targets(raw: str) -> list[str]:
         n = normalize_phone(token)
         if n and n not in seen:
             seen.add(n)
+            out.append(n)
