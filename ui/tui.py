@@ -176,3 +176,4 @@ class TuiApp:
         self.notifications.push(text, style, ttl)
 
     #  Header
+    def _header(self, screen: Screen) -> Panel:
