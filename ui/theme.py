@@ -233,3 +233,4 @@ FORM_HINT           = TEXT_TERTIARY
 FORM_PLACEHOLDER    = TEXT_DISABLED
 FORM_MARKER         = BRAND
 FORM_SECTION_LABEL  = FOCUS
+FORM_ACTION         = WARNING                      # yellow start-attack
