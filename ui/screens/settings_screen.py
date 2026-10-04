@@ -171,3 +171,4 @@ class SettingsScreen(Screen):
             if f.kind in ("text", "int", "float"):
                 self.editing = True
                 self.app.notify(f"editing {f.label} — Enter save, Esc cancel",
+                                style=WARN)
