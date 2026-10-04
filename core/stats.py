@@ -43,3 +43,4 @@ class Stats:
         return (self.success / self.sent * 100) if self.sent else 0.0
 
 
+def _stamp() -> str:
