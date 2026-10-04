@@ -74,3 +74,4 @@ class MainMenuScreen(Screen):
             self.cursor = (self.cursor + 1) % len(_ITEMS)
             return None
 
+        hk = {
