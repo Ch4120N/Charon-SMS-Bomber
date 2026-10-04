@@ -242,3 +242,4 @@ class AttackScreen(Screen):
                 t,
                 Text("\n  Press s to save, Esc to return.\n", style=FG_MUTED),
             ), vertical="top"),
+            title=f"[bold {PRIMARY}]  Dry Run  [/]",
