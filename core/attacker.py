@@ -101,3 +101,4 @@ class Attacker:
             if cfg["api_health"]["enabled"] else None
         )
         self.rate = RateLimiter(float(cfg["attack"].get("rate_limit_per_sec", 0)))
+
