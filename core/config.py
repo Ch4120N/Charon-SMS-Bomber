@@ -96,3 +96,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
 
 def save_config(cfg: dict[str, Any], path: Optional[str | Path] = None) -> None:
     p = Path(path) if path else CONFIG_PATH
+    cfg["version"] = APP_VERSION
