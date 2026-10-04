@@ -16,3 +16,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "retry_backoff": 1.6,
         "verify_ssl": False,
         "proxy_enabled": False,
+        "proxy_pool": [],
