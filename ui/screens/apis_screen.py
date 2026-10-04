@@ -63,3 +63,4 @@ class ApisScreen(Screen):
 
         search_line = Text()
         if self._searching:
+            search_line.append("  filter: ", style=f"bold {API_BRIGHT}")
