@@ -148,3 +148,4 @@ class TuiApp:
 
         self.keys = KeyReader()
         self.keys.start()
+
