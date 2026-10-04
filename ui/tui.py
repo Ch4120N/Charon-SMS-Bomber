@@ -136,3 +136,4 @@ class TuiApp:
         self._lock = threading.Lock()
         self.frame = 0
 
+        # adaptive refresh
