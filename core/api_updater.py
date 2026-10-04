@@ -59,3 +59,4 @@ def _count_apis(path: Path) -> int:
 def check_for_updates(
     manifest_url: str = DEFAULT_MANIFEST_URL,
     apis_url: str = DEFAULT_APIS_URL,
+    timeout: int = 10,
