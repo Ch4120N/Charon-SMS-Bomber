@@ -7,3 +7,4 @@ from typing import Any, Optional
 from rich.align import Align
 from rich.console import Group
 from rich.panel import Panel
+from rich.text import Text
