@@ -128,3 +128,4 @@ class HelpScreen(Screen):
              "Separate multiple targets with ';'. Duplicates are removed."),
             ("Threads",
              "Concurrent HTTP requests. Higher = faster but easier to rate-limit. "
+             "8-20 is a safe range on a typical connection."),
