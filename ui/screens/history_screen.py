@@ -53,3 +53,4 @@ class HistoryScreen(Screen):
         t = Table(
             box=None, show_header=True, header_style=f"bold {PRIMARY}",
             padding=(0, 1), expand=True,
+        )
