@@ -95,3 +95,4 @@ class UpdaterScreen(Screen):
                 pct = (
                     self.bytes_written / self.bytes_total * 100
                     if self.bytes_total else 0
+                )
