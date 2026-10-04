@@ -51,3 +51,4 @@ class TextInput:
             before = "*" * len(before)
             cur = "*" if cur != " " else " "
             after = "*" * len(after)
+
