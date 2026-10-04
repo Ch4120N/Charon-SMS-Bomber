@@ -39,3 +39,4 @@ class HelpScreen(Screen):
         self._searching = False
         self._search_widget: Optional[TextInput] = None
 
+    @property
