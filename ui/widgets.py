@@ -173,3 +173,4 @@ class Field:
             t.append_text(self.widget.render(focused))
             if focused:
                 t.append("   ← →", style=FORM_HINT)
+        return t
