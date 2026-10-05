@@ -273,3 +273,4 @@ class TuiApp:
         )
 
     #  Layout + cache
+    def _layout(self) -> Layout:
