@@ -45,3 +45,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "idle_refresh_per_second": 4,
         "idle_after_seconds": 1.5,
         "show_banner": True,
+    },
