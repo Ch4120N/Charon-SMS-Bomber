@@ -102,3 +102,4 @@ class StartScreen(Screen):
             if key == KEY_ESC:
                 self.editing = False
                 return None
+            result = field.widget.handle(key)  # type: ignore
