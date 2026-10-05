@@ -40,3 +40,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("section", "NETWORK", "action", None),
         Field("network.timeout", "Timeout (s)", "int", N["timeout"]),
         Field("network.retries", "Retries", "int", N["retries"]),
+        Field("network.retry_backoff", "Backoff factor", "float", N["retry_backoff"]),
