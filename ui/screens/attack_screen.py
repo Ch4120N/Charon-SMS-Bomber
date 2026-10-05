@@ -172,3 +172,4 @@ class AttackScreen(Screen):
             title=f"[bold {API_COLOR}]  API Health  [/]",
             box=None, show_edge=False, expand=True, padding=(0, 1),
         )
+        api_tbl.add_column("API", style=API_COLOR, no_wrap=True)
