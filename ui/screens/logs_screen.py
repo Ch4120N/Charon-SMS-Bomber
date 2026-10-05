@@ -77,3 +77,4 @@ class LogsScreen(Screen):
             self._load()
 
         if self.cursor < self.top:
+            self.top = self.cursor
