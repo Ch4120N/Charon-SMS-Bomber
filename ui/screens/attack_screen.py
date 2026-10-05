@@ -73,3 +73,4 @@ class AttackScreen(Screen):
             return
         self.started = True
 
+        def _run() -> None:
