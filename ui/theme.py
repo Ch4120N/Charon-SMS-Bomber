@@ -314,3 +314,4 @@ HELP_CODE           = API_NAME
 # ══════════════════════════════════════════════════════════════════════
 BOX_MAIN  = box.ROUNDED
 BOX_SUB   = box.ROUNDED
+BOX_TABLE = box.SIMPLE_HEAD
