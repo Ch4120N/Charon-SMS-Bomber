@@ -45,3 +45,4 @@ class ApisScreen(Screen):
 
     def render(self) -> Panel:
         items = self._visible()
+        if self.cursor >= len(items):
