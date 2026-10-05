@@ -69,3 +69,4 @@ class KeyReader:
         while not self.stop.is_set():
             try:
                 k = readchar.readkey()
+            except Exception:
