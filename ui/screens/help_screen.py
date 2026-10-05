@@ -151,3 +151,4 @@ class HelpScreen(Screen):
              "Plans the attack (targets, jobs, rounds) but sends nothing. "
              "Great for checking config before committing."),
             ("Reports",
+             "Every finished attack can be exported to ./reports/ as JSON, CSV, "
