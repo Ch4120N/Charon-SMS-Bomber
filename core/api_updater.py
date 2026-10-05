@@ -120,3 +120,4 @@ def download_apis(
         shutil.copy2(APIS_PATH, backup)
 
     tmp = APIS_PATH.with_suffix(".json.tmp")
+    with requests.get(apis_url, stream=True, timeout=timeout) as r:
