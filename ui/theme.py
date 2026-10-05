@@ -76,3 +76,4 @@ BRAND_ON_BG        = _c("#0d0e12", "black")
 #  4. FOCUS — Orange (#ff9d6b)
 #     Role: focused field labels, cycle pickers, section titles,
 #           form cursor background, tab highlights
+# ══════════════════════════════════════════════════════════════════════
