@@ -108,3 +108,4 @@ class HistoryScreen(Screen):
     def handle_key(self, key: str) -> Optional[str]:
         if key in (KEY_UP, "k"):
             if self.entries:
+                self.cursor = (self.cursor - 1) % len(self.entries)
