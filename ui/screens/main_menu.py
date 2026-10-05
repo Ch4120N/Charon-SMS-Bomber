@@ -81,3 +81,4 @@ class MainMenuScreen(Screen):
             "h": "history", "i": "about", "x": "exit",
         }
         if key in hk:
+            self._activate(hk[key])
