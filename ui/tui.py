@@ -187,3 +187,4 @@ class TuiApp:
         width = self.console.width
         use_full = width >= 118
 
+        if use_full:
