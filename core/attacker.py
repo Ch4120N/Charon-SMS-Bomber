@@ -107,3 +107,4 @@ class Attacker:
         self.round_idx = 0
         self.total_rounds = 0
         self.unlimited = False
+        self.current_targets: list[str] = []
