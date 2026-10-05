@@ -92,3 +92,4 @@ class AttackScreen(Screen):
             return
         self._history_saved = True
         s = self.attacker.stats
+        try:
