@@ -218,3 +218,4 @@ class Attacker:
             self._bump_weight(name, ok)
         return name, ok
 
+
