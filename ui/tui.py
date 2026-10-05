@@ -80,3 +80,4 @@ class KeyReader:
             return None
 
     def drain(self) -> None:
+        try:
