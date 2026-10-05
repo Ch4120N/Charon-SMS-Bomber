@@ -163,3 +163,4 @@ class AttackScreen(Screen):
                 if atk.total_rounds else 0
             )
             filled = int(bar_len * pct / 100)
+            bar = Text("  ")
