@@ -255,3 +255,4 @@ class AttackScreen(Screen):
             self.app.notify("stopping…", style=WARN)
             return None
         if key == KEY_ESC:
+            if not self.finished:
