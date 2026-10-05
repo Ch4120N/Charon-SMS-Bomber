@@ -35,3 +35,4 @@ class NotificationCenter:
             self._items = deque(
                 (t for t in self._items if not t.expired),
                 maxlen=self._items.maxlen,
+            )
