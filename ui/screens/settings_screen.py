@@ -179,3 +179,4 @@ class SettingsScreen(Screen):
                 return None
         return None
 
+    def _move(self, delta: int) -> None:
