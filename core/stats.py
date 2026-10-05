@@ -133,3 +133,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     return path
 
 
+__all__ = ["Stats", "export_json", "export_csv", "export_html"]
