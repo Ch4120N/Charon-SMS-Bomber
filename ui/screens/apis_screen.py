@@ -148,3 +148,4 @@ class ApisScreen(Screen):
             try:
                 self.app.apis = load_apis()
                 self.app.notify(f"reloaded {len(self.app.apis)} APIs", style=OK)
+            except Exception as exc:
