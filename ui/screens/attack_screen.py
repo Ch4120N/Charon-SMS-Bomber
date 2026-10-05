@@ -53,3 +53,4 @@ class AttackScreen(Screen):
         self.dry_run_report: Optional[dict] = None
         self._history_saved = False
 
+    def on_enter(self) -> None:
