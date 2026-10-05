@@ -14,3 +14,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
     logger = logging.getLogger(APP_NAME)
     logger.setLevel(getattr(logging, cfg["logging"]["level"].upper(), logging.INFO))
     logger.handlers.clear()
+    logger.propagate = False
