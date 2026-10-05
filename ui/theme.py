@@ -472,3 +472,4 @@ __all__ = [
     "SPINNER_DOTS", "SPINNER_PULSE", "SPINNER_BAR",
     # Aliases
     "BG", "BG_PANEL", "BG_HILITE", "FG", "FG_DIM", "FG_MUTED",
+    "PRIMARY", "PRIMARY_ALT", "ACCENT", "ACCENT_ALT",
