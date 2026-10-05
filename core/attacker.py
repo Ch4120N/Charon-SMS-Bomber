@@ -25,3 +25,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Runs without a round cap unless 'rounds' is set > 0."
         ),
     },
+    "unlimited": {
