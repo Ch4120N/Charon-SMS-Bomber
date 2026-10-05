@@ -351,3 +351,4 @@ class TuiApp:
             return
         if key == "q" and len(self.stack) <= 1:
             self.running = False
+            return
