@@ -106,3 +106,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
 <html><head><meta charset="utf-8"/>
 <title>{APP_NAME} report</title>
 <style>
+ body {{ font-family: system-ui, sans-serif; background:#0f1116; color:#e6e6e6; padding:32px; }}
