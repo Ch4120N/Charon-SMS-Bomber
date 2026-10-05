@@ -123,3 +123,4 @@ class Field:
         self.key = key
         self.label = label
         self.kind = kind
+        self.hint = hint
