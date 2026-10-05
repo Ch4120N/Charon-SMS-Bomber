@@ -79,3 +79,4 @@ class AttackScreen(Screen):
                     self.targets, self.threads, self.rounds, self.delay
                 )
             finally:
+                self.finished = True
