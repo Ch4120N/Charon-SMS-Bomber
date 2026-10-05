@@ -68,3 +68,4 @@ def check_for_updates(
     # Remote manifest
     try:
         mr = requests.get(manifest_url, timeout=timeout)
+        mr.raise_for_status()
