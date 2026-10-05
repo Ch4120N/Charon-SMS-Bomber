@@ -43,3 +43,4 @@ class UpdaterScreen(Screen):
         self.error = None
         self.app.notify("contacting manifest…", style=WARN)
 
+        def _worker() -> None:
