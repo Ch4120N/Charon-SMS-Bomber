@@ -58,3 +58,4 @@ class UpdaterScreen(Screen):
 
         threading.Thread(target=_worker, daemon=True).start()
 
+    def render_cache_key(self):
