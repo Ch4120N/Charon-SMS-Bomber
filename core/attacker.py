@@ -24,3 +24,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Failing APIs drop in priority; cooling APIs are skipped. "
             "Runs without a round cap unless 'rounds' is set > 0."
         ),
+    },
