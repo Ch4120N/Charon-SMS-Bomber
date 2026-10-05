@@ -127,3 +127,4 @@ class Sender:
 
     def send(self, api: dict[str, Any]) -> bool:
         """Return True only if transport succeeded AND body looks like success."""
+        retries = int(self.cfg["network"]["retries"])
