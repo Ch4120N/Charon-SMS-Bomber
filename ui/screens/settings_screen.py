@@ -164,3 +164,4 @@ class SettingsScreen(Screen):
         if key == KEY_ENTER:
             if f.kind == "action" and f.key == "action.save":
                 save_config(self.app.cfg)
+                self.app.notify("settings saved", style=OK)
