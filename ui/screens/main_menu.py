@@ -57,3 +57,4 @@ class MainMenuScreen(Screen):
                 marker,
                 Text(name, style=name_style),
                 Text(desc, style=desc_style),
+            )
