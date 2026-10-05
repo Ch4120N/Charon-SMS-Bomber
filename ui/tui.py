@@ -367,3 +367,4 @@ class TuiApp:
             self.pop()
         elif result == "quit":
             self.running = False
+        elif isinstance(result, str) and result in self._screens:
