@@ -84,3 +84,4 @@ class HistoryScreen(Screen):
             detail.append(f"{e.elapsed}s", style=FG)
             detail.append("   threads: ", style=FG_MUTED)
             detail.append(str(e.threads), style=FG)
+            detail.append("   rounds: ", style=FG_MUTED)
