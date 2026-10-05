@@ -60,3 +60,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
         # status string
         v = obj.get("status")
         if isinstance(v, str):
+            low = v.lower()
