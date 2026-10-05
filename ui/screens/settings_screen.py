@@ -144,3 +144,4 @@ class SettingsScreen(Screen):
         if key in (KEY_DOWN, "j"):
             self._move(1)
             return None
+        if key == KEY_ESC:
