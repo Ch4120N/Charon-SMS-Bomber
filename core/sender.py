@@ -73,3 +73,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 if verdict is not None:
                     return verdict
 
+    elif isinstance(obj, list) and obj:
