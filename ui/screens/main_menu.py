@@ -32,3 +32,4 @@ _ITEMS = [
 class MainMenuScreen(Screen):
     name = "main_menu"
     title = "Home"
+    hotkeys = {
