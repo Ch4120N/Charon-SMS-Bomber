@@ -224,3 +224,4 @@ MENU_GROUP_LABEL    = FOCUS                        # orange section header
 # 13. FORMS
 # ══════════════════════════════════════════════════════════════════════
 FORM_LABEL          = TEXT_PRIMARY
+FORM_LABEL_FOCUSED  = FOCUS                        # orange
