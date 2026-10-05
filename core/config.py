@@ -75,3 +75,4 @@ def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
     if merged["attack"].get("strategy") not in (
         "smart", "unlimited", "round-robin", "random"
     ):
+        merged["attack"]["strategy"] = "smart"
