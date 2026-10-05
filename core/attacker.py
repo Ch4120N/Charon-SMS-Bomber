@@ -197,3 +197,4 @@ class Attacker:
         base = float(self.cfg["attack"]["delay"])
         jit = float(self.cfg["attack"]["jitter"])
         if jit > 0:
+            time.sleep(max(0.0, base + random.uniform(-jit, jit)))
