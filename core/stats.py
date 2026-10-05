@@ -113,3 +113,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  th,td {{ padding:8px 12px; border-bottom:1px solid #222; text-align:left; }}
  th {{ color:#5fd6ff; }}
  .ok {{ color:#6ee787; }} .bad {{ color:#ff6b6b; }}
+ .totals {{ margin-top:20px; font-size:1.1em; }}
