@@ -102,3 +102,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
 class Sender:
     def __init__(self, cfg: dict[str, Any]) -> None:
         self.cfg = cfg
+        self.ua = UserAgent()
