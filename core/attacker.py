@@ -129,3 +129,4 @@ class Attacker:
         return {
             "targets": targets,
             "apis": len(self.apis),
+            "jobs_per_round": total_jobs,
