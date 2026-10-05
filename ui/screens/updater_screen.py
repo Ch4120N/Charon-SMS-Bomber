@@ -92,3 +92,4 @@ class UpdaterScreen(Screen):
                 header.append("\n  Already up to date\n\n", style=f"bold {OK}")
 
             if self.state == "downloading":
+                pct = (
