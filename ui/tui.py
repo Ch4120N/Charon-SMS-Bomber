@@ -164,3 +164,4 @@ class TuiApp:
 
     def pop(self) -> None:
         if self.stack:
+            top = self.stack.pop()
