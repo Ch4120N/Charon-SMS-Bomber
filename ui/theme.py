@@ -474,3 +474,4 @@ __all__ = [
     "BG", "BG_PANEL", "BG_HILITE", "FG", "FG_DIM", "FG_MUTED",
     "PRIMARY", "PRIMARY_ALT", "ACCENT", "ACCENT_ALT",
     "OK", "OK_ALT", "WARN", "BAD", "BAD_ALT", "INFO",
+    "API_COLOR", "API_BRIGHT", "CHIP_BG", "CHIP_FG",
