@@ -223,3 +223,4 @@ class HelpScreen(Screen):
         fields = [
             ("name", "Display name."),
             ("method", "POST or GET."),
+            ("url", "Endpoint. Placeholders: {cc} {intl} {local} {ts} {ua}."),
