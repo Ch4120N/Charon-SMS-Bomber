@@ -60,3 +60,4 @@ class UpdaterScreen(Screen):
 
     def render_cache_key(self):
         return (self.state, self.bytes_written)
+
