@@ -16,3 +16,4 @@ def save_session(
             indent=4,
         ),
         encoding="utf-8",
+    )
