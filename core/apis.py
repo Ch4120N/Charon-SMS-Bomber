@@ -51,3 +51,4 @@ def filter_apis(
     enabled_only: bool = True,
 ) -> list[dict[str, Any]]:
     out = []
+    tagset = {t.lower() for t in (tags or [])}
