@@ -149,3 +149,4 @@ class SettingsScreen(Screen):
 
         if f.kind == "bool" and key == KEY_SPACE:
             f.widget.toggle()  # type: ignore
+            self._apply(f)
