@@ -237,3 +237,4 @@ class TuiApp:
             ("↑↓", "move"),
             ("⏎", "select"),
         ]
+        for k, d in screen.hotkeys.items():
