@@ -110,3 +110,4 @@ class Screen(ABC):
         return None
 
     def render_cache_key(self) -> Any:
+        """Override to enable dirty-flag caching of rendered panels."""
