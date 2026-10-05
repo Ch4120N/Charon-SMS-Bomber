@@ -27,3 +27,4 @@ from ui.theme import (
 from utils.version import APP_NAME, APP_VERSION
 
 
+
