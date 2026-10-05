@@ -22,3 +22,4 @@ def normalize_phone(raw: str) -> Optional[str]:
     return s
 
 
+def parse_targets(raw: str) -> list[str]:
