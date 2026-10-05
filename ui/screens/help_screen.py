@@ -73,3 +73,4 @@ class HelpScreen(Screen):
 
         # Scroll indicator (only if content taller than viewport)
         scroll_note = Text()
+        if self.scroll > 0:
