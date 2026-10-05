@@ -18,3 +18,4 @@ class TextInput:
         self.cursor = len(value)
         self.mask = mask
 
+    def handle(self, key: str) -> Optional[str]:
