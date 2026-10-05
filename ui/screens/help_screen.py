@@ -231,3 +231,4 @@ class HelpScreen(Screen):
             ("enabled", "false skips this API."),
             ("weight", "Integer 1+ — firings per cycle."),
             ("tags", "Labels used by the tag filter."),
+            ("success_regex", "Optional regex, overrides body check."),
