@@ -111,3 +111,4 @@ class UpdaterScreen(Screen):
 
             if self.state == "done":
                 return self._panel([
+                    header, t,
