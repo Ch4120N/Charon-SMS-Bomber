@@ -137,3 +137,4 @@ class TuiApp:
         self.frame = 0
 
         # adaptive refresh
+        self._active_fps = int(cfg["ui"]["refresh_per_second"])
