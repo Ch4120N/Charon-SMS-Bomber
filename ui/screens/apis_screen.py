@@ -91,3 +91,4 @@ class ApisScreen(Screen):
                 ",".join(api.get("tags", []))[:12] or "-",
                 api.get("url", "?"),
             )
+
