@@ -203,3 +203,4 @@ class SettingsScreen(Screen):
                     return
             elif f.kind == "float":
                 try:
+                    val = float(val)  # type: ignore
