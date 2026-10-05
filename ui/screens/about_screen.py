@@ -41,3 +41,4 @@ class AboutScreen(Screen):
                     style=FG_MUTED)
 
         return Panel(
+            Align.left(Group(head, t, foot), vertical="top"),
