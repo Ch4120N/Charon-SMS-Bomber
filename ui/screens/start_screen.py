@@ -135,3 +135,4 @@ class StartScreen(Screen):
                 return None
 
         if field.kind == "cycle":
+            if key == KEY_LEFT:
