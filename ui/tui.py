@@ -140,3 +140,4 @@ class TuiApp:
         self._active_fps = int(cfg["ui"]["refresh_per_second"])
         self._idle_fps = int(cfg["ui"].get("idle_refresh_per_second", 4))
         self._last_input_ts = time.time()
+        self._idle_after = float(cfg["ui"].get("idle_after_seconds", 1.5))
