@@ -137,3 +137,4 @@ class StartScreen(Screen):
         if field.kind == "cycle":
             if key == KEY_LEFT:
                 field.widget.prev()  # type: ignore
+                return None
