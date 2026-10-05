@@ -142,3 +142,4 @@ class Sender:
 
     def _send_once(self, api: dict[str, Any]) -> bool:
         method = api.get("method", "POST").upper()
+        url = api["url"]
