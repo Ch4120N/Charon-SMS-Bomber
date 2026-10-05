@@ -259,3 +259,4 @@ class Attacker:
                     api, tgt = futures_map[fut]
                     try:
                         name, ok = fut.result()
+                    except Exception:
