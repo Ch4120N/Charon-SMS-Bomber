@@ -34,3 +34,4 @@ class HelpScreen(Screen):
     def __init__(self, app) -> None:
         super().__init__(app)
         self.section_idx = 0
+        self.scroll = 0
