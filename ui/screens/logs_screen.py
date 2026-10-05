@@ -94,3 +94,4 @@ class LogsScreen(Screen):
             body.append(f"{marker} ", style=f"bold {PRIMARY}")
             body.append(line + "\n", style=style)
 
+        head = Text()
