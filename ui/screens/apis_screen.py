@@ -88,3 +88,4 @@ class ApisScreen(Screen):
                 str(i + 1),
                 api.get("name", "?"),
                 api.get("method", "POST"),
+                ",".join(api.get("tags", []))[:12] or "-",
