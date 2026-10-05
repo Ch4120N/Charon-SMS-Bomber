@@ -210,3 +210,4 @@ class Attacker:
 
         self.rate.acquire()
         expanded = expand_api(api, target)
+        ok = self.sender.send(expanded)
