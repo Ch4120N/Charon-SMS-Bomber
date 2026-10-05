@@ -72,3 +72,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
                 verdict = _walk(obj[k], depth + 1)
                 if verdict is not None:
                     return verdict
+
