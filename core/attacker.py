@@ -215,3 +215,4 @@ class Attacker:
         if self.health:
             self.health.record(api, ok)
         if self.strategy == "smart":
+            self._bump_weight(name, ok)
