@@ -317,3 +317,4 @@ class TuiApp:
                 top = self.stack[-1]
                 now = time.time()
 
+                # adaptive fps
