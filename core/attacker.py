@@ -146,3 +146,4 @@ class Attacker:
         total = sum(weights) or 1.0
         r = random.uniform(0, total)
         acc = 0.0
+        for api, w in zip(pool, weights):
