@@ -18,3 +18,4 @@ class Toast:
     @property
     def expired(self) -> bool:
         return time.time() - self.created > self.ttl
+
