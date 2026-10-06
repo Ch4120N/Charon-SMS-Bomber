@@ -87,3 +87,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
             encoding="utf-8",
         )
         return dict(DEFAULT_CONFIG)
+    try:
