@@ -75,3 +75,4 @@ def make_entry(
         strategy=strategy,
         threads=threads,
         rounds=rounds,
+        sent=sent,
