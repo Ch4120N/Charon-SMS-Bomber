@@ -32,3 +32,4 @@ class LogsScreen(Screen):
 
     def __init__(self, app) -> None:
         super().__init__(app)
+        self.lines: list[str] = []
