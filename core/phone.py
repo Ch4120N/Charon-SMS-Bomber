@@ -27,3 +27,4 @@ def parse_targets(raw: str) -> list[str]:
     out: list[str] = []
     seen: set[str] = set()
     for token in raw.replace(",", ";").split(";"):
+        n = normalize_phone(token)
