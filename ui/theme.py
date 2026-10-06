@@ -198,3 +198,4 @@ FOOTER_TOAST_WARN   = STATUS_BAR_TOAST_WARN
 FOOTER_TOAST_BAD    = STATUS_BAR_TOAST_BAD
 FOOTER_TOAST_BULLET = STATUS_BAR_BULLET
 
+# ══════════════════════════════════════════════════════════════════════
