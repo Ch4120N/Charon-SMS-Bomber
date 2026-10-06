@@ -160,3 +160,4 @@ class Sender:
             kwargs["proxies"] = proxies
 
         if "payload" in api:
+            kwargs["json"] = api["payload"]
