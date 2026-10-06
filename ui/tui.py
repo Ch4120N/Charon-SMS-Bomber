@@ -245,3 +245,4 @@ class TuiApp:
             hints.append(("q", "quit"))
 
         bar = Text()
+        for i, (k, d) in enumerate(hints):
