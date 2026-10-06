@@ -19,3 +19,4 @@ class ApiHealthTracker:
         with self._lock:
             st = self._state.get(api_key(api))
             if not st:
+                return True
