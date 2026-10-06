@@ -148,3 +148,4 @@ class AttackScreen(Screen):
             frame = self.app.frame
             pos = frame % (bar_len * 2)
             head = pos if pos < bar_len else bar_len * 2 - pos
+            bar = Text("  ")
