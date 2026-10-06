@@ -240,3 +240,4 @@ class TuiApp:
         for k, d in screen.hotkeys.items():
             hints.append((k, d))
         hints.append(("?", "help"))
+        hints.append(("Esc", "back"))
