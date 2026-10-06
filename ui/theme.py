@@ -22,3 +22,4 @@ Hue role assignment
     Grey      #9fa5b2   all other text
 """
 from __future__ import annotations
+
