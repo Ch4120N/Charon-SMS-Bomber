@@ -199,3 +199,4 @@ class SettingsScreen(Screen):
             if f.kind == "int":
                 try:
                     val = int(val)  # type: ignore
+                except ValueError:
