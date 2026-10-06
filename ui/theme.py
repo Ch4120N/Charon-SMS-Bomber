@@ -292,3 +292,4 @@ STATUS_DISABLED     = TEXT_TERTIARY
 STATUS_ERROR        = ERROR
 
 # ══════════════════════════════════════════════════════════════════════
+# 20. SCROLLBAR
