@@ -152,3 +152,4 @@ class TuiApp:
         self._toast_lock = threading.Lock()
 
     #  API surface for screens
+    def register(self, cls: type[Screen]) -> None:
