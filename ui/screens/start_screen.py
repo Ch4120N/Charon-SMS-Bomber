@@ -46,3 +46,4 @@ class StartScreen(Screen):
                 rounds_val = str(data["rounds"])
                 delay_val = str(data["delay"])
 
+        self.fields: list[Field] = [
