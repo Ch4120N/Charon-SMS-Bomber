@@ -65,3 +65,4 @@ def make_entry(
     rounds: int,
     sent: int,
     success: int,
+    failed: int,
