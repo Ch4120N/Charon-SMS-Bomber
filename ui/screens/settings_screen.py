@@ -85,3 +85,4 @@ class SettingsScreen(Screen):
     def _is_section(self, i: int) -> bool:
         return self.fields[i].key == "section"
 
+    def render_cache_key(self):
