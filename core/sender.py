@@ -145,3 +145,4 @@ class Sender:
         url = api["url"]
 
         headers = dict(api.get("headers", {}))
+        if any("{ua}" in str(v) for v in headers.values()):
