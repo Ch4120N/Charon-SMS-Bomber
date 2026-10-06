@@ -70,3 +70,4 @@ class ApisScreen(Screen):
                                style=f"bold {API_BRIGHT}")
 
         lst = Table(
+            box=None, show_header=True, header_style=f"bold {API_BRIGHT}",
