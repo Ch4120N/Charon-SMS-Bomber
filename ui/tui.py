@@ -78,3 +78,4 @@ class KeyReader:
             return self.q.get(timeout=timeout)
         except queue.Empty:
             return None
+
