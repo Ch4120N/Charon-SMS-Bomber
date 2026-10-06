@@ -263,3 +263,4 @@ class HelpScreen(Screen):
             result = self._search_widget.handle(key)  # type: ignore
             if result is not None:
                 self.search = result
+                self._searching = False
