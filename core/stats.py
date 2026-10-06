@@ -109,3 +109,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  body {{ font-family: system-ui, sans-serif; background:#0f1116; color:#e6e6e6; padding:32px; }}
  h1 {{ color:#5fd6ff; margin-bottom:4px; }}
  .meta {{ color:#888; margin-bottom:20px; }}
+ table {{ border-collapse: collapse; width:100%; max-width:900px; }}
