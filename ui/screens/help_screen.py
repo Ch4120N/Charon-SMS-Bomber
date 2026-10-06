@@ -172,3 +172,4 @@ class HelpScreen(Screen):
             ("Esc", "Go back, cancel edit, or stop attack"),
             ("Space", "Toggle boolean, stop attack"),
             ("?", "Open this help screen from anywhere"),
+            ("s", "Start (menu) / save reports (attack)"),
