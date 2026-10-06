@@ -23,3 +23,4 @@ class AboutScreen(Screen):
     title = "About"
     hotkeys = {"o": "open repo"}
 
+    def render(self) -> Panel:
