@@ -174,3 +174,4 @@ class TuiApp:
 
     def notify(self, text: str, style: str = "white", ttl: float = 3.5) -> None:
         self.notifications.push(text, style, ttl)
+
