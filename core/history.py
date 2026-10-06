@@ -63,3 +63,4 @@ def make_entry(
     strategy: str,
     threads: int,
     rounds: int,
+    sent: int,
