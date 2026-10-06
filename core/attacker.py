@@ -246,3 +246,4 @@ class Attacker:
             jobs = self._build_jobs()
 
             if not jobs:
+                # all APIs cooling — back off
