@@ -68,3 +68,4 @@ TEXT_INVERSE       = _c("#0d0e12", "black")
 #           focused borders, scrollbar thumb
 # ══════════════════════════════════════════════════════════════════════
 BRAND              = _c("#e879f9", "bright_magenta")
+BRAND_DIM          = _c("#b85cc8", "magenta")
