@@ -232,3 +232,4 @@ class Attacker:
         self.total_rounds = 0 if self.unlimited else int(rounds)
         if not unlimited_by_strategy:
             self.unlimited = False
+
