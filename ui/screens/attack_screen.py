@@ -117,3 +117,4 @@ class AttackScreen(Screen):
             return self._render_dry_run()
 
         atk = self.attacker
+        stats = atk.stats
