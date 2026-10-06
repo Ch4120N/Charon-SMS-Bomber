@@ -11,3 +11,4 @@ from utils.paths import BASE_DIR
 
 
 HISTORY_PATH = BASE_DIR / "history.json"
+MAX_ENTRIES = 50
