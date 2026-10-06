@@ -154,3 +154,4 @@ class Attacker:
 
     def _bump_weight(self, name: str, ok: bool) -> None:
         with self._weights_lock:
+            cur = self._weights.get(name, 1.0)
