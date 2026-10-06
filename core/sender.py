@@ -176,3 +176,4 @@ class Sender:
         if not (200 <= r.status_code < 300):
             return False
 
+        # Per-API explicit override
