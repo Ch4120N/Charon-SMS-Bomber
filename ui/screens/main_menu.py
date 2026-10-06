@@ -89,3 +89,4 @@ class MainMenuScreen(Screen):
         return None
 
     def _activate(self, item_id: str) -> None:
+        if item_id == "exit":
