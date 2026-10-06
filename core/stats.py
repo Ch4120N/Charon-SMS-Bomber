@@ -103,3 +103,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
         for k, v in stats.by_api.items()
     )
     doc = f"""<!doctype html>
+<html><head><meta charset="utf-8"/>
