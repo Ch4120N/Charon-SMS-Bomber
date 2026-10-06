@@ -53,3 +53,4 @@ class LogsScreen(Screen):
 
     def _load(self) -> None:
         path = self._latest_log()
+        if not path:
