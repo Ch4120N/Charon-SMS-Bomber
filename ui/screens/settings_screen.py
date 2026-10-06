@@ -105,3 +105,4 @@ class SettingsScreen(Screen):
             body.add_row(f.render(i == self.cursor))
 
         info = Text()
+        info.append(
