@@ -26,3 +26,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "strategy": "smart",
         "hard_max_rounds": 100,
         "round_cooldown": 1.0,
+        "rate_limit_per_sec": 0,
