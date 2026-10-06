@@ -59,3 +59,4 @@ class MainMenuScreen(Screen):
                 Text(desc, style=desc_style),
             )
 
+        return Panel(
