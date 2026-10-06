@@ -53,3 +53,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("output.save_report", "Save report", "bool", O["save_report"]),
         Field("output.report_format", "Format", "cycle", O["report_format"],
               choices=["json", "csv"]),
+        Field("output.include_html", "Include HTML", "bool", O["include_html"]),
