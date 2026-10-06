@@ -36,3 +36,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
             if isinstance(v, bool):
                 return v
             if isinstance(v, str):
+                low = v.lower()
