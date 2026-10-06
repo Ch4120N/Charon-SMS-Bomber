@@ -44,3 +44,4 @@ class AboutScreen(Screen):
             Align.left(Group(head, t, foot), vertical="top"),
             title=f"[bold {PRIMARY}]  About  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
+        )
