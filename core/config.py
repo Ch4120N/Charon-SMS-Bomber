@@ -22,3 +22,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "threads": 10,
         "rounds": 0,
         "delay": 0.05,
+        "jitter": 0.02,
