@@ -24,3 +24,4 @@ class ApiHealthTracker:
                 return False
             self._state.pop(api_key(api), None)
             return True
+
