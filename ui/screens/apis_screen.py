@@ -150,3 +150,4 @@ class ApisScreen(Screen):
                 self.app.notify(f"reloaded {len(self.app.apis)} APIs", style=OK)
             except Exception as exc:
                 self.app.notify(f"reload failed: {exc}", style=BAD)
+            return None
