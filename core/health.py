@@ -11,3 +11,4 @@ from core.apis import api_key
 class ApiHealthTracker:
     def __init__(self, threshold: int, cooldown: int) -> None:
         self.threshold = max(1, int(threshold))
+        self.cooldown = max(1, int(cooldown))
