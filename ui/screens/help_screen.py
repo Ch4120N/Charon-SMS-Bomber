@@ -117,3 +117,4 @@ class HelpScreen(Screen):
         t.add_column("Details", style=FG_DIM)
 
         for key, info in STRATEGIES.items():
+            tag = "  ⭐ default" if key == "smart" else ""
