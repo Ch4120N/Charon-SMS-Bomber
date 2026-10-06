@@ -121,3 +121,4 @@ class Attacker:
         for _t in targets:
             for api in self.apis:
                 w = max(1, int(api.get("weight", 1)))
+                name = api.get("name", "?")
