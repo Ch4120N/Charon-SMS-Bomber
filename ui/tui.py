@@ -360,3 +360,4 @@ class TuiApp:
             return
 
         top = self.stack[-1]
+        result = top.handle_key(key)
