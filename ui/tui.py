@@ -172,3 +172,4 @@ class TuiApp:
         self._cached_layout = None
         self._cached_key = None
 
+    def notify(self, text: str, style: str = "white", ttl: float = 3.5) -> None:
