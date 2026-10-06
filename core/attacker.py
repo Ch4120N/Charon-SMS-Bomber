@@ -125,3 +125,4 @@ class Attacker:
                 per_api[name] = per_api.get(name, 0) + w
                 total_jobs += w
         rounds = int(self.cfg["attack"]["rounds"])
+        unlimited = self.strategy in ("smart", "unlimited") and rounds <= 0
