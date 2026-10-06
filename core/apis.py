@@ -14,3 +14,4 @@ DEFAULT_HEADERS: dict[str, str] = {
     "Accept-Language": "en-US,en;q=0.9,fa;q=0.8",
     "Cache-Control": "no-cache",
     "Pragma": "no-cache",
+    "Connection": "keep-alive",
