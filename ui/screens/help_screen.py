@@ -193,3 +193,4 @@ class HelpScreen(Screen):
         for k, v in rows:
             t.add_row(k, v)
         return t
+
