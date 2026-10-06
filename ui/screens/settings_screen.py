@@ -134,3 +134,4 @@ class SettingsScreen(Screen):
                         self.app.notify(f"invalid {f.kind}", style=BAD)
                         return None
                 f.widget.value = result  # type: ignore
+                self.editing = False
