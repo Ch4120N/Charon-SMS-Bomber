@@ -108,3 +108,4 @@ class Cycle:
         else:
             bg, fg = CYCLE_BG, CYCLE_FG
         t = Text()
+        t.append(" ‹ ", style=f"bold {fg} on {bg}")
