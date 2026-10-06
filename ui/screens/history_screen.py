@@ -75,3 +75,4 @@ class HistoryScreen(Screen):
                 str(e.success),
                 str(e.failed),
                 f"{e.rate:.1f}%",
+            )
