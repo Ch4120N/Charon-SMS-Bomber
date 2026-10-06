@@ -31,3 +31,4 @@ class LogsScreen(Screen):
     hotkeys = {"r": "reload", "g/G": "jump"}
 
     def __init__(self, app) -> None:
+        super().__init__(app)
