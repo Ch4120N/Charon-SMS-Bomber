@@ -69,3 +69,4 @@ class UpdaterScreen(Screen):
             ], subtitle="please wait")
 
         if self.state == "error":
+            return self._panel([
