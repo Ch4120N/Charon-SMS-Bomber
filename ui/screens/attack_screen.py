@@ -42,3 +42,4 @@ class AttackScreen(Screen):
         super().__init__(app)
         self.targets = targets
         self.threads = threads
+        self.rounds = rounds
