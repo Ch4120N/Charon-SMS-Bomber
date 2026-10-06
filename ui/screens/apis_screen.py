@@ -111,3 +111,4 @@ class ApisScreen(Screen):
             border_style=BORDER, box=BOX_MAIN, padding=(1, 1),
         )
 
+    def handle_key(self, key: str) -> Optional[str]:
