@@ -88,3 +88,4 @@ class HelpScreen(Screen):
 
         return Panel(
             Align.left(Group(tabs, search_line, Text(""), body,
+                             Text(""), scroll_note, hint),
