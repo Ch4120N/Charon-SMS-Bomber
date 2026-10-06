@@ -109,3 +109,4 @@ class UpdaterScreen(Screen):
                 return self._panel([header, t, Text(""), bar],
                                    subtitle="downloading…")
 
+            if self.state == "done":
