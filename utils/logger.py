@@ -23,3 +23,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
             maxBytes=int(cfg["logging"]["max_bytes"]),
             backupCount=int(cfg["logging"]["backup_count"]),
             encoding="utf-8",
+        )
