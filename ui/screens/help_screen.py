@@ -221,3 +221,4 @@ class HelpScreen(Screen):
 
     def _render_apis(self) -> Group:
         fields = [
+            ("name", "Display name."),
