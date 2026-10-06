@@ -43,3 +43,4 @@ class ApisScreen(Screen):
     def render_cache_key(self):
         return (self.cursor, self.top, self.search, len(self.app.apis))
 
+    def render(self) -> Panel:
