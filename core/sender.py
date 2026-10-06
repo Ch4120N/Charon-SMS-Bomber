@@ -35,3 +35,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
             v = obj.get(k)
             if isinstance(v, bool):
                 return v
+            if isinstance(v, str):
