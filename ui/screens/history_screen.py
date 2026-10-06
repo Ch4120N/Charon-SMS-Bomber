@@ -34,3 +34,4 @@ class HistoryScreen(Screen):
         self.top = max(0, len(self.entries) - self.page_size)
 
     def render_cache_key(self):
+        return (self.cursor, self.top, len(self.entries))
