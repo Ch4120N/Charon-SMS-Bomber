@@ -201,3 +201,4 @@ class HelpScreen(Screen):
             ("network.verify_ssl", "false skips TLS verification."),
             ("network.proxy_enabled", "Route via network.proxy_pool."),
             ("attack.hard_max_rounds", "Hard cap on rounds."),
+            ("attack.round_cooldown", "Wait between finite rounds."),
