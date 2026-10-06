@@ -400,3 +400,4 @@ def accent(text: str) -> str:
 __all__ = [
     "TRUECOLOR",
     # 1. Surfaces
+    "SURFACE_BASE", "SURFACE_PANEL", "SURFACE_ELEVATED", "SURFACE_HOVER",
