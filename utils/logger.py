@@ -8,3 +8,4 @@ from typing import Any
 from utils.paths import LOGS_DIR
 from utils.version import APP_NAME
 
+
