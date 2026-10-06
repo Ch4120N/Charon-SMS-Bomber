@@ -209,3 +209,4 @@ class HelpScreen(Screen):
             ("output.report_format", "json or csv. HTML is written alongside."),
             ("logging.level", "DEBUG / INFO / WARNING / ERROR."),
         ]
+        rows = []
