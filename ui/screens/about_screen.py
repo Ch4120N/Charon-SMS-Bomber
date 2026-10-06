@@ -53,3 +53,4 @@ class AboutScreen(Screen):
             self.app.notify("opening repository…", style=OK)
             return None
         if key in (KEY_ESC, KEY_ENTER):
+            return "back"
