@@ -98,3 +98,4 @@ class StartScreen(Screen):
     def handle_key(self, key: str) -> Optional[str]:
         field = self.fields[self.cursor]
 
+        if self.editing:
