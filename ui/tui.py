@@ -263,3 +263,4 @@ class TuiApp:
 
         body: list[Any] = [Align.left(bar)]
         if toasts:
+            body.append(Align.left(toast_line))
