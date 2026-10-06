@@ -71,3 +71,4 @@ class HelpScreen(Screen):
         # Body
         body = self._render_section()
 
+        # Scroll indicator (only if content taller than viewport)
