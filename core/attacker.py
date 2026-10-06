@@ -139,3 +139,4 @@ class Attacker:
         }
 
 
+    #  Smart strategy: weight per-API by success rate, skip cooling APIs
