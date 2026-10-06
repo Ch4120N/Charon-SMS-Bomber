@@ -42,3 +42,4 @@ def _c(hex_hi: str, fallback: str) -> str:
     return hex_hi if TRUECOLOR else fallback
 
 
+# ══════════════════════════════════════════════════════════════════════
