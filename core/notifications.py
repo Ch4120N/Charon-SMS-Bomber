@@ -40,3 +40,4 @@ class NotificationCenter:
 
     def clear(self) -> None:
         with self._lock:
+            self._items.clear()
