@@ -190,3 +190,4 @@ class HelpScreen(Screen):
         )
         t.add_column("Key", style=f"bold {PRIMARY}", width=24)
         t.add_column("Action", style=FG)
+        for k, v in rows:
