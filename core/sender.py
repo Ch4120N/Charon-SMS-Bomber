@@ -70,3 +70,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
         for k in ("data", "result", "response", "body", "payload"):
             if k in obj:
                 verdict = _walk(obj[k], depth + 1)
+                if verdict is not None:
