@@ -272,3 +272,4 @@ class AttackScreen(Screen):
             fmt = cfg["output"]["report_format"].lower()
             if fmt == "csv":
                 export_csv(self.attacker.stats, self.targets, cfg)
+            else:
