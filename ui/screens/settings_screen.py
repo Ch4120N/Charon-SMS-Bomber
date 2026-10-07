@@ -167,3 +167,4 @@ class SettingsScreen(Screen):
                 self.app.notify("settings saved", style=OK)
                 return None
             if f.kind == "action" and f.key == "action.back":
+                return "back"
