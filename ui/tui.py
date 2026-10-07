@@ -280,3 +280,4 @@ class TuiApp:
             return layout
 
         cache_key = (
+            top.name,
