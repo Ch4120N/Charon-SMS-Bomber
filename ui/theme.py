@@ -99,3 +99,4 @@ WARNING_BRIGHT     = _c("#ffe890", "bright_yellow")
 WARNING_ON_BG      = _c("#0d0e12", "black")
 
 # 5.3 Error — Red
+ERROR              = _c("#e86b6b", "bright_red")
