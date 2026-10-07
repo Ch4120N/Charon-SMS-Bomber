@@ -213,3 +213,4 @@ HEADER_SPINNER_IDLE       = TEXT_TERTIARY
 # 12. MENUS
 # ══════════════════════════════════════════════════════════════════════
 MENU_MARKER         = BRAND
+MENU_ITEM           = TEXT_PRIMARY
