@@ -265,3 +265,4 @@ class TuiApp:
         if toasts:
             body.append(Align.left(toast_line))
 
+        return Panel(
