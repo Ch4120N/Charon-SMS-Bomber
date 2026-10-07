@@ -177,3 +177,4 @@ class SettingsScreen(Screen):
                 f.widget.toggle()  # type: ignore
                 self._apply(f)
                 return None
+        return None
