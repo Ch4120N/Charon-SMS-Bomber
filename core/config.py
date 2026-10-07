@@ -49,3 +49,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "logging": {
         "enabled": True,
         "level": "INFO",
+        "max_bytes": 5242880,
