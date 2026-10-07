@@ -28,3 +28,4 @@ class HistoryEntry:
     elapsed: float
 
 
+def load_history() -> list[HistoryEntry]:
