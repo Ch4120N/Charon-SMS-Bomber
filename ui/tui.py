@@ -142,3 +142,4 @@ class TuiApp:
         self._last_input_ts = time.time()
         self._idle_after = float(cfg["ui"].get("idle_after_seconds", 1.5))
 
+        # dirty flag cache
