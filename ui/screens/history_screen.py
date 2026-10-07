@@ -129,3 +129,4 @@ class HistoryScreen(Screen):
             self.entries = []
             self.app.notify("history cleared", style=WARN)
             return None
+        if key == KEY_ESC:
