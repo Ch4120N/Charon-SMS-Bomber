@@ -160,3 +160,4 @@ class StartScreen(Screen):
         if not targets:
             self.app.notify("no valid targets", style=BAD)
             return
+        try:
