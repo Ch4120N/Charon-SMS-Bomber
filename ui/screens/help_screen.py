@@ -90,3 +90,4 @@ class HelpScreen(Screen):
             Align.left(Group(tabs, search_line, Text(""), body,
                              Text(""), scroll_note, hint),
                        vertical="top"),
+            title=f"[bold {PRIMARY}]  Help  [/]",
