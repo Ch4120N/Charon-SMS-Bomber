@@ -345,3 +345,4 @@ class TuiApp:
                     # force redraw after input
                     live.update(self._layout(), refresh=True)
 
+    def _dispatch(self, key: str) -> None:
