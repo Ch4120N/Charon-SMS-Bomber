@@ -274,3 +274,4 @@ class Attacker:
                     self._cooldown(cooldown)
 
         return self.stats
+
