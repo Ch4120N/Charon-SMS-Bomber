@@ -28,3 +28,4 @@ class NotificationCenter:
 
     def push(self, text: str, style: str = "white", ttl: float = 3.5) -> None:
         with self._lock:
+            self._items.append(Toast(text=text, style=style, ttl=ttl))
