@@ -37,3 +37,4 @@ class AboutScreen(Screen):
         t.add_row("Notice", f"[bold {BAD}]{NOTICE}[/]")
 
         head = Text("\n  About\n\n", style=f"bold {ACCENT}")
+        foot = Text("\n  press o to open the repository in your browser\n",
