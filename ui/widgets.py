@@ -113,3 +113,4 @@ class Cycle:
         t.append(" › ", style=f"bold {CYCLE_ARROW} on {bg}")
         return t
 
+
