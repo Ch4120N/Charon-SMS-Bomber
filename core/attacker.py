@@ -70,3 +70,4 @@ class RateLimiter:
             wait = self._last + self.min_interval - now
             if wait > 0:
                 time.sleep(wait)
+                now = time.time()
