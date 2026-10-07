@@ -328,3 +328,4 @@ SPINNER_BAR   = ["▏", "▎", "▍", "▌", "▋", "▊", "▉", "█",
 # ══════════════════════════════════════════════════════════════════════
 BG          = SURFACE_BASE
 BG_PANEL    = SURFACE_PANEL
+BG_HILITE   = SURFACE_SELECTED
