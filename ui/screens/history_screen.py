@@ -71,3 +71,4 @@ class HistoryScreen(Screen):
                 e.ts.replace("T", " "),
                 e.strategy,
                 ", ".join(e.targets)[:40],
+                str(e.sent),
