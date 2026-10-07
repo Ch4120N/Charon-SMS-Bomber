@@ -349,3 +349,4 @@ class TuiApp:
         if key == KEY_CTRL_C:
             self.running = False
             return
+        if key == "q" and len(self.stack) <= 1:
