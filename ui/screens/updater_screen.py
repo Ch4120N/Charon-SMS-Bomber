@@ -66,3 +66,4 @@ class UpdaterScreen(Screen):
             return self._panel([
                 Text("\n  Checking for API updates…\n", style=f"bold {WARN}"),
                 Text("  fetching manifest and apis.json\n", style=FG_MUTED),
+            ], subtitle="please wait")
