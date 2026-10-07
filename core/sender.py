@@ -131,3 +131,4 @@ class Sender:
         backoff = float(self.cfg["network"]["retry_backoff"])
         attempt = 0
         while attempt <= retries:
+            try:
