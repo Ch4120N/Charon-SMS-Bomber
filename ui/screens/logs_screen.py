@@ -65,3 +65,4 @@ class LogsScreen(Screen):
         self.lines = raw[-2000:] if raw else ["(empty log)"]
         self._last_mtime = path.stat().st_mtime
         # jump to bottom on first load
+        self.cursor = max(0, len(self.lines) - 1)
