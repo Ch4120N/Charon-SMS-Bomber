@@ -48,3 +48,4 @@ def _sha256_file(p: Path) -> str:
     return _sha256_bytes(p.read_bytes())
 
 
+def _count_apis(path: Path) -> int:
