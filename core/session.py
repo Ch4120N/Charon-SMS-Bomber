@@ -20,3 +20,4 @@ def save_session(
 
 
 def load_session() -> Optional[dict[str, Any]]:
+    if not SESSION_PATH.exists():
