@@ -75,3 +75,4 @@ class MainMenuScreen(Screen):
             return None
 
         hk = {
+            "s": "start", "r": "continue",
