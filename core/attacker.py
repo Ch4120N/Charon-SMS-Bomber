@@ -166,3 +166,4 @@ class Attacker:
         return True
 
     def _build_jobs(self) -> list[tuple[dict[str, Any], str]]:
+        jobs: list[tuple[dict[str, Any], str]] = []
