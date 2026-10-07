@@ -142,3 +142,4 @@ class AttackScreen(Screen):
             f"[{FG_DIM}]Failed[/]\n[bold {BAD}]{stats.failed}[/]",
             f"[{FG_DIM}]Rate[/]\n[bold {WARN}]{stats.rate:.1f}%[/]",
         )
+
