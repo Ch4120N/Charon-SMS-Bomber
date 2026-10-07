@@ -229,3 +229,4 @@ class HelpScreen(Screen):
             ("data", "Form body (application/x-www-form-urlencoded)."),
             ("params", "Query string parameters."),
             ("enabled", "false skips this API."),
+            ("weight", "Integer 1+ — firings per cycle."),
