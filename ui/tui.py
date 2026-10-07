@@ -131,3 +131,4 @@ class TuiApp:
         self.notifications = NotificationCenter()
 
         self.stack: list[Screen] = []
+        self.running = True
