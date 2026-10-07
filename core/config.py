@@ -28,3 +28,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "round_cooldown": 1.0,
         "rate_limit_per_sec": 0,
         "dry_run": False,
+        "api_filter_tags": [],
