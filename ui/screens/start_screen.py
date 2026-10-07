@@ -111,3 +111,4 @@ class StartScreen(Screen):
                 self.editing = False
             return None
 
+        if key in (KEY_UP, "k"):
