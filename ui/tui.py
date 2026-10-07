@@ -189,3 +189,4 @@ class TuiApp:
 
         if use_full:
             art = Text()
+            for i, line in enumerate(_ART_FULL):
