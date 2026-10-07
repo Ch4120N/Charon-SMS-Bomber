@@ -139,3 +139,4 @@ class HelpScreen(Screen):
              "Global requests/sec ceiling across all threads. 0 = disabled. "
              "Use if you start seeing HTTP 429."),
             ("API Health",
+             "Per-API failure counter. N consecutive failures triggers M seconds "
