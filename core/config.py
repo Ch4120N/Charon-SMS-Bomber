@@ -82,3 +82,4 @@ def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
 def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
     p = Path(path) if path else CONFIG_PATH
     if not p.exists():
+        p.write_text(
