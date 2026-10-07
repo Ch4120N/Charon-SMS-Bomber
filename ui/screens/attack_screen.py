@@ -193,3 +193,4 @@ class AttackScreen(Screen):
                     weight = f"{atk._weights.get(name, 1.0):.2f}"  # type: ignore
             api_tbl.add_row(
                 name,
+                str(b.get("sent", 0)),
