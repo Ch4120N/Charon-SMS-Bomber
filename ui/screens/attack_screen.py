@@ -274,3 +274,4 @@ class AttackScreen(Screen):
                 export_csv(self.attacker.stats, self.targets, cfg)
             else:
                 export_json(self.attacker.stats, self.targets, cfg)
+            if cfg["output"].get("include_html", True):
