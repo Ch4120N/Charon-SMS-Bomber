@@ -2,3 +2,4 @@
 
 Design principles
 ─────────────────
+    1. Deep near-black base — modern dark terminal feel
