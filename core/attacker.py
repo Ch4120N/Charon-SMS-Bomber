@@ -277,3 +277,4 @@ class Attacker:
 
     def _cooldown(self, seconds: float) -> None:
         end = time.time() + seconds
+        while time.time() < end and not self.stop_flag.is_set():
