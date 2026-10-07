@@ -205,3 +205,4 @@ class SettingsScreen(Screen):
                 try:
                     val = float(val)  # type: ignore
                 except ValueError:
+                    return
