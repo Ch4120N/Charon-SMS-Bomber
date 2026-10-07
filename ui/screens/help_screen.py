@@ -228,3 +228,4 @@ class HelpScreen(Screen):
             ("payload", "JSON body (application/json)."),
             ("data", "Form body (application/x-www-form-urlencoded)."),
             ("params", "Query string parameters."),
+            ("enabled", "false skips this API."),
