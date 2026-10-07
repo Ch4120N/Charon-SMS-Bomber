@@ -89,3 +89,4 @@ class AttackScreen(Screen):
 
     def _save_history_once(self) -> None:
         if self._history_saved or self.dry_run:
+            return
