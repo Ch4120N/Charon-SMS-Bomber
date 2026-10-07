@@ -239,3 +239,4 @@ class AttackScreen(Screen):
             Align.left(Group(
                 Text("\n  DRY RUN — no requests were sent.\n\n",
                      style=f"bold {WARN}"),
+                t,
