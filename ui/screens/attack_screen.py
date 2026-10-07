@@ -81,3 +81,4 @@ class AttackScreen(Screen):
             finally:
                 self.finished = True
                 self.show_spinner = False
+                self.animating = False
