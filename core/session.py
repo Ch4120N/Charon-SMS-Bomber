@@ -14,3 +14,4 @@ def save_session(
         json.dumps(
             {"targets": targets, "threads": threads, "rounds": rounds, "delay": delay},
             indent=4,
+        ),
