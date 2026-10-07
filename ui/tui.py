@@ -146,3 +146,4 @@ class TuiApp:
         self._cached_layout: Any = None
         self._cached_key: Any = None
 
+        self.keys = KeyReader()
