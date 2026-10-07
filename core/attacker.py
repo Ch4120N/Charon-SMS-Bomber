@@ -78,3 +78,4 @@ class RateLimiter:
 class Attacker:
     def __init__(
         self,
+        cfg: dict[str, Any],
