@@ -162,3 +162,4 @@ class TuiApp:
         screen.on_enter()
         self.invalidate()
 
+    def pop(self) -> None:
