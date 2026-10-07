@@ -1,2 +1,3 @@
 [
     {"name": "Snapp", "method": "POST", "enabled": true, "weight": 1, "tags": ["sms", "ride"], "url": "https://app.snapp.taxi/api/api-passenger-oauth/v3/mutotp", "headers": {"Content-Type": "application/json", "Accept": "application/json, text/plain, */*", "Origin": "https://app.snapp.taxi", "Referer": "https://app.snapp.taxi/", "X-Requested-With": "XMLHttpRequest", "User-Agent": "{ua}"}, "payload": {"cellphone": "{cc}"}},
+    {"name": "Snapp V2", "method": "POST", "enabled": true, "weight": 1, "tags": ["sms", "ride"], "url": "https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", "headers": {"Content-Type": "application/json", "Accept": "application/json", "Origin": "https://app.snapp.taxi", "User-Agent": "{ua}"}, "payload": {"cellphone": "{intl}"}},
