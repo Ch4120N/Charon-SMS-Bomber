@@ -60,3 +60,4 @@ def filter_apis(
             if not (api_tags & tagset):
                 continue
         out.append(api)
+    return out
