@@ -155,3 +155,4 @@ class TuiApp:
     def register(self, cls: type[Screen]) -> None:
         self._screens[cls.name] = cls
 
+    def push(self, name: str, **kwargs: Any) -> None:
