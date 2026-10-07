@@ -99,3 +99,4 @@ class HelpScreen(Screen):
         if self.section == "strategies":
             return self._render_strategies()
         if self.section == "concepts":
+            return self._render_concepts()
