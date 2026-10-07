@@ -98,3 +98,4 @@ def check_for_updates(
         remote_count=remote_count,
         local_hash=local_hash,
         remote_hash=remote_hash,
+        remote_version=str(manifest.get("version", "unknown")),
