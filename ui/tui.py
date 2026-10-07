@@ -95,3 +95,4 @@ class Screen(ABC):
     hotkeys: dict[str, str] = {}
     show_spinner: bool = False
     # If True, TUI keeps 30 FPS even when nothing changes (for animations)
+    animating: bool = False
