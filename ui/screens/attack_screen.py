@@ -186,3 +186,4 @@ class AttackScreen(Screen):
             if atk.health and name in by_name:
                 rem = atk.health.remaining_cooldown(by_name[name])
                 if rem > 0:
+                    status = f"[{BAD}]cooling {int(rem)}s[/]"
