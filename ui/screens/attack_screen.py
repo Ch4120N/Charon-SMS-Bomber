@@ -34,3 +34,4 @@ class AttackScreen(Screen):
         self,
         app,
         targets: list[str],
+        threads: int,
