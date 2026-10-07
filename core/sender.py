@@ -156,3 +156,4 @@ class Sender:
             "allow_redirects": True,
         }
         proxies = self._pick_proxy()
+        if proxies:
