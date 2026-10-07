@@ -149,3 +149,4 @@ class Attacker:
         for api, w in zip(pool, weights):
             acc += w
             if r <= acc:
+                return api
