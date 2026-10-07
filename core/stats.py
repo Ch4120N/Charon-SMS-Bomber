@@ -129,3 +129,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
  <b>Elapsed:</b> {stats.elapsed:.1f}s
 </div>
 </body></html>"""
+    path.write_text(doc, encoding="utf-8")
