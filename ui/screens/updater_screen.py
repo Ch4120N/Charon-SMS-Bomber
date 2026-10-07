@@ -121,3 +121,4 @@ class UpdaterScreen(Screen):
                 footer.append("\n  press Enter to download and install, "
                               "Esc to return\n", style=f"bold {WARN}")
             else:
+                footer.append("\n  nothing to download, Esc to return\n",
