@@ -179,3 +179,4 @@ class StartScreen(Screen):
 
         self.app.push(
             "attack",
+            targets=targets, threads=threads, rounds=rounds,
