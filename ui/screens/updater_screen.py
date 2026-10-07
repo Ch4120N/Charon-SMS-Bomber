@@ -48,3 +48,4 @@ class UpdaterScreen(Screen):
                 info = check_for_updates(DEFAULT_MANIFEST_URL, DEFAULT_APIS_URL)
                 self.info = info
                 self.state = "ready"
+                self.show_spinner = False
