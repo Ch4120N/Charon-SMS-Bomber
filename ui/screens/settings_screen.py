@@ -210,3 +210,4 @@ class SettingsScreen(Screen):
             val = f.widget.value  # type: ignore
         else:
             return
+        target[key] = val
