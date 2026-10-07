@@ -252,3 +252,4 @@ class TuiApp:
             bar.append(f" {d}", style=FOOTER_HINT_TEXT)
 
         toasts = self.notifications.visible()
+        toast_line = Text()
