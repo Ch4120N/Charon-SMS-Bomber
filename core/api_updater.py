@@ -121,3 +121,4 @@ def download_apis(
 
     tmp = APIS_PATH.with_suffix(".json.tmp")
     with requests.get(apis_url, stream=True, timeout=timeout) as r:
+        r.raise_for_status()
