@@ -129,3 +129,4 @@ class UpdaterScreen(Screen):
 
     def _panel(self, body: list, subtitle: str) -> Panel:
         return Panel(
+            Align.left(Group(*body), vertical="top"),
