@@ -32,3 +32,4 @@ class ApiHealthTracker:
                 return 0.0
             return max(0.0, st.get("disabled_until", 0) - time.time())
 
+    def record(self, api: dict[str, Any], success: bool) -> None:
