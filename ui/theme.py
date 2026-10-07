@@ -109,3 +109,4 @@ INFO               = _c("#a4b0f0", "bright_blue")
 INFO_DIM           = _c("#7a88c8", "blue")
 INFO_BRIGHT        = _c("#c0c8ff", "bright_blue")
 INFO_ON_BG         = _c("#0d0e12", "black")
+
