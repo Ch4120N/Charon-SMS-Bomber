@@ -16,3 +16,4 @@ from utils.version import NOTICE
 
 
 _ITEMS = [
+    ("start",    "Start Attack",       "launch a new SMS attack"),
