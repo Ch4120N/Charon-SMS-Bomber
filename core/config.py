@@ -67,3 +67,4 @@ def _deep_merge(base: dict, override: dict) -> dict:
             out[k] = _deep_merge(out[k], v)
         else:
             out[k] = v
+    return out
