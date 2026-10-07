@@ -144,3 +144,4 @@ class Field:
             TEXT_PRIMARY, TEXT_DISABLED,
         )
         t = Text()
+        if focused:
