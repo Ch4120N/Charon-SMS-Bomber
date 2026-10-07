@@ -54,3 +54,4 @@ def filter_apis(
     tagset = {t.lower() for t in (tags or [])}
     for api in apis:
         if enabled_only and not api.get("enabled", True):
+            continue
