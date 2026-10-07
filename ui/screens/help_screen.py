@@ -126,3 +126,4 @@ class HelpScreen(Screen):
             ("Targets",
              "Iranian mobile numbers. Formats: 0912..., 98912..., +98912.... "
              "Separate multiple targets with ';'. Duplicates are removed."),
+            ("Threads",
