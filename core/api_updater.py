@@ -153,3 +153,4 @@ __all__ = [
     "check_for_updates",
     "download_apis",
     "list_backups",
+    "DEFAULT_MANIFEST_URL",
