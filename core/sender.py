@@ -158,3 +158,4 @@ class Sender:
         proxies = self._pick_proxy()
         if proxies:
             kwargs["proxies"] = proxies
+
