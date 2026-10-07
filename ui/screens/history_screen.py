@@ -98,3 +98,4 @@ class HistoryScreen(Screen):
         foot.append("Esc", style=f"bold {OK}")
         foot.append(" back", style=FG_DIM)
 
+        return Panel(
