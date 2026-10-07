@@ -173,3 +173,4 @@ class SettingsScreen(Screen):
                 self.app.notify(f"editing {f.label} — Enter save, Esc cancel",
                                 style=WARN)
                 return None
+            if f.kind == "bool":
