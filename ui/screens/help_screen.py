@@ -108,3 +108,4 @@ class HelpScreen(Screen):
 
     
     def _render_strategies(self) -> Table:
+        t = Table(
