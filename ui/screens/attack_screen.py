@@ -231,3 +231,4 @@ class AttackScreen(Screen):
         t.add_row("Jobs / round", str(r.get("jobs_per_round", 0)))
         t.add_row("Rounds", str(r.get("rounds", 0)))
         t.add_row("Total requests", str(r.get("total_requests", 0)))
+        t.add_row("Threads", str(r.get("threads", 0)))
