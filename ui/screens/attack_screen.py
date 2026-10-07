@@ -124,3 +124,4 @@ class AttackScreen(Screen):
             else f"{atk.round_idx} / {atk.total_rounds}"
         )
         strat = STRATEGIES.get(atk.strategy, {}).get("label", atk.strategy)
+
