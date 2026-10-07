@@ -188,3 +188,4 @@ class TuiApp:
         use_full = width >= 118
 
         if use_full:
+            art = Text()
