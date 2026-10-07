@@ -299,3 +299,4 @@ class TuiApp:
         layout["footer"].update(self._footer(top))
 
         self._cached_key = cache_key
+        return layout
