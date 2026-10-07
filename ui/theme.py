@@ -469,3 +469,4 @@ __all__ = [
     "HELP_SECTION", "HELP_TERM", "HELP_DESC", "HELP_CODE",
     # 22. Boxes + frames
     "BOX_MAIN", "BOX_SUB", "BOX_TABLE", "BOX_MIN",
+    "SPINNER_DOTS", "SPINNER_PULSE", "SPINNER_BAR",
