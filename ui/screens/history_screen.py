@@ -36,3 +36,4 @@ class HistoryScreen(Screen):
     def render_cache_key(self):
         return (self.cursor, self.top, len(self.entries))
 
+    def render(self) -> Panel:
