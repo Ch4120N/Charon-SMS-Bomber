@@ -180,3 +180,4 @@ class AttackScreen(Screen):
         api_tbl.add_column("Status", style=WARN)
 
         by_name = {a.get("name"): a for a in atk.apis}
+        rows = list(stats.by_api.items())[-12:]
