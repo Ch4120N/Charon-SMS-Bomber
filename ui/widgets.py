@@ -102,3 +102,4 @@ class Cycle:
         from ui.theme import (
             CYCLE_BG, CYCLE_FG, CYCLE_BG_FOCUSED, CYCLE_FG_FOCUSED,
             CYCLE_ARROW,
+        )
