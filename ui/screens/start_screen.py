@@ -178,3 +178,4 @@ class StartScreen(Screen):
         self.app.cfg["attack"]["dry_run"] = bool(dry_run)
 
         self.app.push(
+            "attack",
