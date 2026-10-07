@@ -37,3 +37,4 @@ class MainMenuScreen(Screen):
         "a": "apis", "u": "updates", "l": "logs",
         "h": "history", "?": "help", "i": "about",
     }
+
