@@ -200,3 +200,4 @@ class SettingsScreen(Screen):
                 try:
                     val = int(val)  # type: ignore
                 except ValueError:
+                    return
