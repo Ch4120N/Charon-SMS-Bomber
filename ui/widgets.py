@@ -76,3 +76,4 @@ class Toggle:
     def toggle(self) -> None:
         self.value = not self.value
 
+    def render(self) -> Text:
