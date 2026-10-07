@@ -161,3 +161,4 @@ class UpdaterScreen(Screen):
                 download_apis(DEFAULT_APIS_URL, progress_cb=_cb)
                 self.app.apis = load_apis()
                 self.state = "done"
+                self.show_spinner = False
