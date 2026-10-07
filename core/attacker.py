@@ -63,3 +63,4 @@ class RateLimiter:
         self._last = 0.0
 
     def acquire(self) -> None:
+        if self.min_interval <= 0:
