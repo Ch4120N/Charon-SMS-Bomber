@@ -69,3 +69,4 @@ class StartScreen(Screen):
         rows = Table.grid(padding=(0, 2))
         rows.add_column(ratio=1)
 
+        header = Text()
