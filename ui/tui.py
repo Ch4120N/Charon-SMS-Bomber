@@ -100,3 +100,4 @@ class Screen(ABC):
     def __init__(self, app: "TuiApp", **kwargs: Any) -> None:
         self.app = app
 
+    def on_enter(self) -> None: ...
