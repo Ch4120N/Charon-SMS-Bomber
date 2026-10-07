@@ -16,3 +16,4 @@ DEFAULT_HEADERS: dict[str, str] = {
     "Pragma": "no-cache",
     "Connection": "keep-alive",
 }
+
