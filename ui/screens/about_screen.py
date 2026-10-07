@@ -50,3 +50,4 @@ class AboutScreen(Screen):
         if key == "o":
             import webbrowser
             webbrowser.open(APP_REPO)
+            self.app.notify("opening repository…", style=OK)
