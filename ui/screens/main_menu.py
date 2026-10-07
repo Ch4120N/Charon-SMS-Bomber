@@ -52,3 +52,4 @@ class MainMenuScreen(Screen):
             focused = i == self.cursor
             marker = Text("▌", style=f"bold {PRIMARY}") if focused else Text(" ")
             name_style = f"bold {PRIMARY_ALT}" if focused else FG
+            desc_style = FG_DIM if focused else FG_MUTED
