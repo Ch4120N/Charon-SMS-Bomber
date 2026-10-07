@@ -96,3 +96,4 @@ class HistoryScreen(Screen):
         foot.append("c", style=f"bold {OK}")
         foot.append(" clear history   ", style=FG_DIM)
         foot.append("Esc", style=f"bold {OK}")
+        foot.append(" back", style=FG_DIM)
