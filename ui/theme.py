@@ -295,3 +295,4 @@ STATUS_ERROR        = ERROR
 # 20. SCROLLBAR
 # ══════════════════════════════════════════════════════════════════════
 SCROLLBAR_TRACK     = SURFACE_PANEL
+SCROLLBAR_THUMB     = TEXT_DISABLED
