@@ -126,3 +126,4 @@ class Sender:
         return {"http": raw, "https": raw}
 
     def send(self, api: dict[str, Any]) -> bool:
+        """Return True only if transport succeeded AND body looks like success."""
