@@ -273,3 +273,4 @@ class Attacker:
                 if cooldown > 0:
                     self._cooldown(cooldown)
 
+        return self.stats
