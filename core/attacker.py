@@ -126,3 +126,4 @@ class Attacker:
                 total_jobs += w
         rounds = int(self.cfg["attack"]["rounds"])
         unlimited = self.strategy in ("smart", "unlimited") and rounds <= 0
+        return {
