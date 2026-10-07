@@ -348,3 +348,4 @@ class TuiApp:
     def _dispatch(self, key: str) -> None:
         if key == KEY_CTRL_C:
             self.running = False
+            return
