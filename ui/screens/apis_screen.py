@@ -104,3 +104,4 @@ class ApisScreen(Screen):
             detail.append("   enabled: ", style=FG_MUTED)
             detail.append("yes" if api.get("enabled", True) else "no",
                           style=OK if api.get("enabled", True) else BAD)
+
