@@ -101,3 +101,4 @@ def check_for_updates(
         remote_version=str(manifest.get("version", "unknown")),
         manifest=manifest,
     )
+
