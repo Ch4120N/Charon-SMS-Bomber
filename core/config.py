@@ -44,3 +44,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "refresh_per_second": 30,
         "idle_refresh_per_second": 4,
         "idle_after_seconds": 1.5,
+        "show_banner": True,
