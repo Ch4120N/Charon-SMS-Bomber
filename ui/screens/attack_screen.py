@@ -169,3 +169,4 @@ class AttackScreen(Screen):
             bar.append(f"  {pct:5.1f}%   elapsed {int(stats.elapsed)}s", style=FG_DIM)
 
         api_tbl = Table(
+            title=f"[bold {API_COLOR}]  API Health  [/]",
