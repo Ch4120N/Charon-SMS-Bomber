@@ -174,3 +174,4 @@ class HelpScreen(Screen):
             ("?", "Open this help screen from anywhere"),
             ("s", "Start (menu) / save reports (attack)"),
             ("r", "Resume / reload / re-check"),
+            ("e", "Open Settings"),
