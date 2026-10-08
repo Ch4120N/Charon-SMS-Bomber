@@ -42,3 +42,4 @@ class MainMenuScreen(Screen):
         super().__init__(app)
         self.cursor = 0
 
+    def render(self) -> Panel:
