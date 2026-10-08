@@ -276,3 +276,4 @@ PROGRESS_TAIL       = SUCCESS_DIM
 PROGRESS_LABEL      = TEXT_SECONDARY
 PROGRESS_PCT        = TEXT_PRIMARY
 
+# ══════════════════════════════════════════════════════════════════════
