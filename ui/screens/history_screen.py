@@ -51,3 +51,4 @@ class HistoryScreen(Screen):
             self.top = self.cursor - self.page_size + 1
 
         t = Table(
+            box=None, show_header=True, header_style=f"bold {PRIMARY}",
