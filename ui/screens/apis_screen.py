@@ -19,3 +19,4 @@ from ui.widgets import TextInput
 
 class ApisScreen(Screen):
     name = "apis"
+    title = "API Manager"
