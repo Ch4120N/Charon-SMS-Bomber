@@ -186,3 +186,4 @@ class HelpScreen(Screen):
         ]
         t = Table(
             box=None, show_header=True, header_style=f"bold {API_COLOR}",
+            padding=(0, 2), expand=True,
