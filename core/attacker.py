@@ -38,3 +38,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         "label": "Round-Robin",
         "summary": "Classic fixed sequence, configurable rounds.",
         "details": (
+            "Walks the API list in order, then repeats. "
