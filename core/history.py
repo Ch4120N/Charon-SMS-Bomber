@@ -86,3 +86,4 @@ def make_entry(
 __all__ = [
     "HistoryEntry", "load_history", "append_history",
     "clear_history", "make_entry", "HISTORY_PATH",
+]
