@@ -115,3 +115,4 @@ INFO_ON_BG         = _c("#0d0e12", "black")
 #     Role: API names in tables, hyperlinks, inline `code` in help
 # ══════════════════════════════════════════════════════════════════════
 API_NAME           = _c("#5fd4e8", "bright_cyan")
+API_NAME_FOCUSED   = _c("#96e8f5", "bright_cyan")
