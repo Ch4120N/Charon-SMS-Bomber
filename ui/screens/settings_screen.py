@@ -62,3 +62,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("action.back", "Back", "action", None),
     ]
 
+
