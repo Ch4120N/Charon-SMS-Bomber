@@ -62,3 +62,4 @@ class UpdaterScreen(Screen):
         return (self.state, self.bytes_written)
 
     def render(self) -> Panel:
+        if self.state == "checking":
