@@ -167,3 +167,4 @@ class StartScreen(Screen):
         except ValueError:
             self.app.notify("invalid numeric field", style=BAD)
             return
+
