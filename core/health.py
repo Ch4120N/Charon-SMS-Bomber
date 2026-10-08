@@ -20,3 +20,4 @@ class ApiHealthTracker:
             st = self._state.get(api_key(api))
             if not st:
                 return True
+            if st.get("disabled_until", 0) > time.time():
