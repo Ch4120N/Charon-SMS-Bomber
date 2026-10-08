@@ -31,3 +31,4 @@ class UpdaterScreen(Screen):
         self.state = "idle"
         self.info = None
         self.error: Optional[str] = None
+        self.bytes_written = 0
