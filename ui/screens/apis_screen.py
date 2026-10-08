@@ -136,3 +136,4 @@ class ApisScreen(Screen):
             return None
         if key == "G":
             self.cursor = max(0, len(items) - 1)
+            return None
