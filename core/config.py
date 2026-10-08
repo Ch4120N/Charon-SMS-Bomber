@@ -47,3 +47,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "show_banner": True,
     },
     "logging": {
+        "enabled": True,
