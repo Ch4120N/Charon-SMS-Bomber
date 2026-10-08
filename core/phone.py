@@ -21,3 +21,4 @@ def normalize_phone(raw: str) -> Optional[str]:
         return None
     return s
 
+
