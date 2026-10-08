@@ -228,3 +228,4 @@ class Attacker:
 
         self.strategy = self.cfg["attack"].get("strategy", DEFAULT_STRATEGY)
         unlimited_by_strategy = self.strategy in ("smart", "unlimited")
+        self.unlimited = unlimited_by_strategy and int(rounds) <= 0
