@@ -36,3 +36,4 @@ KEY_RIGHT = readchar.key.RIGHT
 KEY_ENTER = readchar.key.ENTER
 KEY_ESC = readchar.key.ESC
 KEY_BACKSPACE = readchar.key.BACKSPACE
+KEY_TAB = "\t"
