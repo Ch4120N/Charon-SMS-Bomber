@@ -121,3 +121,4 @@ class AttackScreen(Screen):
 
         rounds_label = (
             "unlimited" if atk.unlimited
+            else f"{atk.round_idx} / {atk.total_rounds}"
