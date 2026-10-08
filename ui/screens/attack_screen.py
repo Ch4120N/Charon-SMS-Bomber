@@ -227,3 +227,4 @@ class AttackScreen(Screen):
         t.add_column(style=FG)
         t.add_row("Targets", ", ".join(r.get("targets", [])))
         t.add_row("APIs", str(r.get("apis", 0)))
+        t.add_row("Strategy", r.get("strategy", ""))
