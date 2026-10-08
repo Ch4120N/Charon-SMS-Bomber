@@ -95,3 +95,4 @@ class AttackScreen(Screen):
         try:
             append_history(make_entry(
                 targets=self.targets,
+                strategy=self.attacker.strategy,
