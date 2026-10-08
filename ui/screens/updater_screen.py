@@ -30,3 +30,4 @@ class UpdaterScreen(Screen):
         super().__init__(app)
         self.state = "idle"
         self.info = None
+        self.error: Optional[str] = None
