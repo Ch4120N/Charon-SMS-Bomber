@@ -72,3 +72,4 @@ class KeyReader:
             except Exception:
                 break
             self.q.put(k)
+
