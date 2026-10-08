@@ -300,3 +300,4 @@ class TuiApp:
 
         self._cached_key = cache_key
         return layout
+
