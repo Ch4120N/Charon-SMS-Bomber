@@ -20,3 +20,4 @@ from ui.theme import (
 from ui.tui import Screen, KEY_ENTER, KEY_ESC
 
 
+class UpdaterScreen(Screen):
