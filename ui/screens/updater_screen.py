@@ -122,3 +122,4 @@ class UpdaterScreen(Screen):
                               "Esc to return\n", style=f"bold {WARN}")
             else:
                 footer.append("\n  nothing to download, Esc to return\n",
+                              style=FG_MUTED)
