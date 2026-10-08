@@ -25,3 +25,4 @@ class UpdaterScreen(Screen):
     title = "Check for Updates"
     hotkeys = {"⏎": "download", "r": "re-check"}
     show_spinner = True
+
