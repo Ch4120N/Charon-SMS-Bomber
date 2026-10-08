@@ -213,3 +213,4 @@ class TuiApp:
             is_last = i == len(crumbs) - 1
             label = s.title or s.name
             if is_last:
+                line.append(label, style=f"bold {HEADER_BREADCRUMB_ACTIVE}")
