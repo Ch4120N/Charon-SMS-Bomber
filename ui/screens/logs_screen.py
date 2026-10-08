@@ -52,3 +52,4 @@ class LogsScreen(Screen):
         return files[-1] if files else None
 
     def _load(self) -> None:
+        path = self._latest_log()
