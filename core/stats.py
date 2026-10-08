@@ -39,3 +39,4 @@ class Stats:
         return time.time() - self.start_ts
 
     @property
+    def rate(self) -> float:
