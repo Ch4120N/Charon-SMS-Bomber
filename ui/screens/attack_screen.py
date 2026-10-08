@@ -31,3 +31,4 @@ class AttackScreen(Screen):
     animating = True
 
     def __init__(
+        self,
