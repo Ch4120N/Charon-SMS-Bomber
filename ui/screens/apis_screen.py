@@ -87,3 +87,4 @@ class ApisScreen(Screen):
                 "▌" if focused else " ",
                 str(i + 1),
                 api.get("name", "?"),
+                api.get("method", "POST"),
