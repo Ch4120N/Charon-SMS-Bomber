@@ -26,3 +26,4 @@ class StartScreen(Screen):
     name = "start"
     title = "New Attack"
     hotkeys = {"⏎": "edit", "space": "toggle", "/": "help"}
+
