@@ -120,3 +120,4 @@ class StartScreen(Screen):
         if key == KEY_ESC:
             return "back"
         if key == "/":
+            return "help"
