@@ -129,3 +129,4 @@ class SettingsScreen(Screen):
             if result is not None:
                 if f.kind in ("int", "float"):
                     try:
+                        int(result) if f.kind == "int" else float(result)
