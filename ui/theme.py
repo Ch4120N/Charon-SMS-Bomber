@@ -356,3 +356,4 @@ BORDER_HL   = BORDER_FOCUSED
 #  INLINE STYLE HELPERS
 # ══════════════════════════════════════════════════════════════════════
 def chip(text: str, bg: str | None = None) -> str:
+    """Key cap — dark text on bright peach-orange."""
