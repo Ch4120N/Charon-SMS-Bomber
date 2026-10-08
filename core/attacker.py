@@ -145,3 +145,4 @@ class Attacker:
             weights = [self._weights.get(a.get("name", "?"), 1.0) for a in pool]
         total = sum(weights) or 1.0
         r = random.uniform(0, total)
+        acc = 0.0
