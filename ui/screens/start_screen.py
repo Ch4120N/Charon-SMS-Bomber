@@ -27,3 +27,4 @@ class StartScreen(Screen):
     title = "New Attack"
     hotkeys = {"⏎": "edit", "space": "toggle", "/": "help"}
 
+    def __init__(self, app, mode: str = "new") -> None:
