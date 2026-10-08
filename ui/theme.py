@@ -374,3 +374,4 @@ def chip_warn(text: str) -> str:
 
 
 def chip_bad(text: str) -> str:
+    return f"[bold {CHIP_FG_DEFAULT} on {CHIP_BG_BAD}] {text} [/]"
