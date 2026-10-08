@@ -97,3 +97,4 @@ def check_for_updates(
         local_count=local_count,
         remote_count=remote_count,
         local_hash=local_hash,
+        remote_hash=remote_hash,
