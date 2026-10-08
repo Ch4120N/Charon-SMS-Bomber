@@ -31,3 +31,4 @@ class ApisScreen(Screen):
         self._searching = False
         self._search_widget: Optional[TextInput] = None
 
+    def _visible(self) -> list[dict]:
