@@ -20,3 +20,4 @@ class HistoryScreen(Screen):
     name = "history"
     title = "Session History"
     hotkeys = {"r": "reload", "c": "clear"}
+
