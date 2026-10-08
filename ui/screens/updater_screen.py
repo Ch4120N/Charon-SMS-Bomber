@@ -77,3 +77,4 @@ class UpdaterScreen(Screen):
         if self.state in ("ready", "downloading", "done") and self.info:
             info = self.info
             t = Table.grid(padding=(0, 2))
+            t.add_column(style=FG_MUTED)
