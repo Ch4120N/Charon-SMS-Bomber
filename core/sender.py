@@ -180,3 +180,4 @@ class Sender:
         regex = api.get("success_regex")
         if regex:
             try:
+                return bool(re.search(regex, r.text))
