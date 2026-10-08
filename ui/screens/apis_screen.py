@@ -125,3 +125,4 @@ class ApisScreen(Screen):
         items = self._visible()
         if key in (KEY_UP, "k"):
             if items:
+                self.cursor = (self.cursor - 1) % len(items)
