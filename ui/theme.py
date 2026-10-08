@@ -425,3 +425,4 @@ __all__ = [
     "CHIP_BG_BAD", "CHIP_BG_API", "CHIP_BG_INFO", "CHIP_FG_DEFAULT",
     # 9. Status bar
     "STATUS_BAR_BORDER", "STATUS_BAR_BG",
+    "STATUS_BAR_KEY_FG", "STATUS_BAR_KEY_BG",
