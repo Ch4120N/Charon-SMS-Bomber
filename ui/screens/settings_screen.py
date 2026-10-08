@@ -83,3 +83,4 @@ class SettingsScreen(Screen):
         return start
 
     def _is_section(self, i: int) -> bool:
+        return self.fields[i].key == "section"
