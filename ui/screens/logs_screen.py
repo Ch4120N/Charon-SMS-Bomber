@@ -55,3 +55,4 @@ class LogsScreen(Screen):
         path = self._latest_log()
         if not path:
             self.lines = ["(no log files yet)"]
+            self._path = None
