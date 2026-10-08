@@ -195,3 +195,4 @@ class AttackScreen(Screen):
                 name,
                 str(b.get("sent", 0)),
                 str(b.get("success", 0)),
+                str(b.get("failed", 0)),
