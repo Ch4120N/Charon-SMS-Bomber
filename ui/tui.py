@@ -202,3 +202,4 @@ class TuiApp:
             line.append(frame, style=f"bold {HEADER_SPINNER}")
             line.append("  ")
         else:
+            line.append("·", style=HEADER_SPINNER_IDLE)
