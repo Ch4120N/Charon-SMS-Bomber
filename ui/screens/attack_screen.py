@@ -181,3 +181,4 @@ class AttackScreen(Screen):
 
         by_name = {a.get("name"): a for a in atk.apis}
         rows = list(stats.by_api.items())[-12:]
+        for name, b in rows:
