@@ -109,3 +109,4 @@ class SettingsScreen(Screen):
             f"\n  showing "
             f"{self.top + 1}-{min(self.top + self.page_size, len(self.fields))}"
             f" of {len(self.fields)}",
+            style=FG_MUTED,
