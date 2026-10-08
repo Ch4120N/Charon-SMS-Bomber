@@ -21,3 +21,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         "summary": "Adaptive, health-weighted, unlimited by default.",
         "details": (
             "Continuously picks APIs weighted by their observed success rate. "
+            "Failing APIs drop in priority; cooling APIs are skipped. "
