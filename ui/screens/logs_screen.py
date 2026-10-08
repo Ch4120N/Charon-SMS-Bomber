@@ -115,3 +115,4 @@ class LogsScreen(Screen):
             Align.left(Group(head, Text(""), body, foot), vertical="top"),
             title=f"[bold {PRIMARY}]  Live Logs  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
+        )
