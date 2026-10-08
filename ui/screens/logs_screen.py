@@ -118,3 +118,4 @@ class LogsScreen(Screen):
         )
 
     def handle_key(self, key: str) -> Optional[str]:
+        if key in (KEY_UP, "k"):
