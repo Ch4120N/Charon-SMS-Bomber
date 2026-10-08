@@ -94,3 +94,4 @@ class UpdaterScreen(Screen):
             if self.state == "downloading":
                 pct = (
                     self.bytes_written / self.bytes_total * 100
+                    if self.bytes_total else 0
