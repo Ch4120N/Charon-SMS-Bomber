@@ -54,3 +54,4 @@ class TextInput:
 
         if focused:
             t.append(before, style=FORM_VALUE_FOCUSED)
+            t.append(cur, style=f"bold {FORM_CURSOR_FG} on {FORM_CURSOR_BG}")
