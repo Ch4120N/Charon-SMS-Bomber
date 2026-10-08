@@ -380,3 +380,4 @@ def chip_bad(text: str) -> str:
 def chip_info(text: str) -> str:
     return f"[bold {CHIP_FG_DEFAULT} on {CHIP_BG_INFO}] {text} [/]"
 
+
