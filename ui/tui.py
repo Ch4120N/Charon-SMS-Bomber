@@ -346,3 +346,4 @@ class TuiApp:
                     live.update(self._layout(), refresh=True)
 
     def _dispatch(self, key: str) -> None:
+        if key == KEY_CTRL_C:
