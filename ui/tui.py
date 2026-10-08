@@ -193,3 +193,4 @@ class TuiApp:
                 art.append(line, style=f"bold {HEADER_ART}")
                 if i < len(_ART_FULL) - 1:
                     art.append("\n")
+        else:
