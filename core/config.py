@@ -43,3 +43,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "ui": {
         "refresh_per_second": 30,
         "idle_refresh_per_second": 4,
+        "idle_after_seconds": 1.5,
