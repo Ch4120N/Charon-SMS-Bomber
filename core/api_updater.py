@@ -111,3 +111,4 @@ def download_apis(
     """
     Stream-download the remote apis.json. Calls progress_cb(chunk, total)
     as data arrives. Backs up the existing apis.json before overwriting.
+    Returns the path to the newly-installed file.
