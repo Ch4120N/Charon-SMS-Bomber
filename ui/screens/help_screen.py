@@ -145,3 +145,4 @@ class HelpScreen(Screen):
              "For the smart strategy: each API carries a weight that grows with "
              "success and shrinks with failure. Weights drive selection."),
             ("Body Verification",
+             "2xx alone is not success. ChSMSBomber inspects the response body "
