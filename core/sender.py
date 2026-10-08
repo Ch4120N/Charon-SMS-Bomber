@@ -108,3 +108,4 @@ class Sender:
     def _pick_ua(self) -> str:
         ua_cfg = self.cfg["user_agent"]
         if ua_cfg["custom"]:
+            return random.choice(ua_cfg["custom"])
