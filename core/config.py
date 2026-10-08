@@ -52,3 +52,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "max_bytes": 5242880,
         "backup_count": 3,
     },
+    "output": {
