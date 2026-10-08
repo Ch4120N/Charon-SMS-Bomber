@@ -74,3 +74,4 @@ def _migrate(cfg: dict[str, Any]) -> dict[str, Any]:
     merged = _deep_merge(DEFAULT_CONFIG, cfg)
     if merged["attack"].get("strategy") not in (
         "smart", "unlimited", "round-robin", "random"
+    ):
