@@ -239,3 +239,4 @@ class Attacker:
         while True:
             if self.stop_flag.is_set():
                 break
+            if not self.unlimited and r >= self.total_rounds:
