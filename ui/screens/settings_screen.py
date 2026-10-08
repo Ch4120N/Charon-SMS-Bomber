@@ -182,3 +182,4 @@ class SettingsScreen(Screen):
     def _move(self, delta: int) -> None:
         n = len(self.fields)
         i = self.cursor
+        for _ in range(n):
