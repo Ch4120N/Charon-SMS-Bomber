@@ -9,3 +9,4 @@ from rich.table import Table
 from rich.text import Text
 
 from core.apis import load_apis
+from ui.theme import (
