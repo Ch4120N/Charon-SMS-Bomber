@@ -367,3 +367,4 @@ def chip_alt(text: str) -> str:
 
 def chip_ok(text: str) -> str:
     return f"[bold {CHIP_FG_DEFAULT} on {CHIP_BG_OK}] {text} [/]"
+
