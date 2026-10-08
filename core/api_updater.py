@@ -82,3 +82,4 @@ def check_for_updates(
         raise RuntimeError(f"Failed to fetch apis.json: {exc}") from exc
 
     remote_hash = _sha256_bytes(remote_bytes)
+    try:
