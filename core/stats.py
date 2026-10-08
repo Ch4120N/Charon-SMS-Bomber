@@ -57,3 +57,4 @@ def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str,
         "totals": {
             "sent": stats.sent,
             "success": stats.success,
+            "failed": stats.failed,
