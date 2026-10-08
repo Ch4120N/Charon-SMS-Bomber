@@ -181,3 +181,4 @@ class StartScreen(Screen):
             "attack",
             targets=targets, threads=threads, rounds=rounds,
             delay=delay, dry_run=bool(dry_run),
+        )
