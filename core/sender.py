@@ -136,3 +136,4 @@ class Sender:
             except Exception:
                 attempt += 1
                 if attempt > retries:
+                    break
