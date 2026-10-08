@@ -452,3 +452,4 @@ __all__ = [
     # 15. Cycles
     "CYCLE_BG", "CYCLE_FG", "CYCLE_FG_FOCUSED", "CYCLE_BG_FOCUSED",
     "CYCLE_ARROW",
+    # 16. Tables
