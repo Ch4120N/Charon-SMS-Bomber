@@ -27,3 +27,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
         handler.setFormatter(logging.Formatter(
             "%(asctime)s [%(levelname)s] %(message)s"
         ))
+        logger.addHandler(handler)
