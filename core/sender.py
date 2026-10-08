@@ -84,3 +84,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
     """Best-effort body verdict. None = can't determine."""
     if not content:
         return None
+    try:
