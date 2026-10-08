@@ -255,3 +255,4 @@ class Attacker:
                     ex.submit(self._send_one, api, tgt): (api, tgt)
                     for api, tgt in jobs
                 }
+                for fut in as_completed(futures_map):
