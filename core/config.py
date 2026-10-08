@@ -15,3 +15,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "retries": 2,
         "retry_backoff": 1.6,
         "verify_ssl": False,
+        "proxy_enabled": False,
