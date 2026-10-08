@@ -28,3 +28,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
     # Normalize: ensure every entry has sane fields.
     out: list[dict[str, Any]] = []
     for entry in data:
+        if not isinstance(entry, dict) or "url" not in entry:
