@@ -105,3 +105,4 @@ class ApisScreen(Screen):
             detail.append("yes" if api.get("enabled", True) else "no",
                           style=OK if api.get("enabled", True) else BAD)
 
+        return Panel(
