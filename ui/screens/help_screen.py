@@ -36,3 +36,4 @@ class HelpScreen(Screen):
         self.section_idx = 0
         self.scroll = 0
         self.search = ""
+        self._searching = False
