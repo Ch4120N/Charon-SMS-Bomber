@@ -273,3 +273,4 @@ class AttackScreen(Screen):
             if fmt == "csv":
                 export_csv(self.attacker.stats, self.targets, cfg)
             else:
+                export_json(self.attacker.stats, self.targets, cfg)
