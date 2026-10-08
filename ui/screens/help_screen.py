@@ -120,3 +120,4 @@ class HelpScreen(Screen):
             tag = "  ⭐ default" if key == "smart" else ""
             t.add_row(key + tag, info.get("summary", ""), info.get("details", ""))
         return t
+
