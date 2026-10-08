@@ -80,3 +80,4 @@ class StartScreen(Screen):
             rows.add_row(f.render(i == self.cursor))
 
         desc = Text()
+        desc.append("\n  Strategy: ", style=FG_DIM)
