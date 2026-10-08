@@ -58,3 +58,4 @@ class LogsScreen(Screen):
             self._path = None
             return
         try:
+            raw = path.read_text(encoding="utf-8", errors="ignore").splitlines()
