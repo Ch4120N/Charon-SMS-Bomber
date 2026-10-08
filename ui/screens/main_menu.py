@@ -65,3 +65,4 @@ class MainMenuScreen(Screen):
             subtitle=f"[{FG_MUTED}]{NOTICE}[/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 4),
         )
+
