@@ -23,3 +23,4 @@ def normalize_phone(raw: str) -> Optional[str]:
 
 
 def parse_targets(raw: str) -> list[str]:
+    """Split by ';' or ',', normalize, dedupe, preserve order."""
