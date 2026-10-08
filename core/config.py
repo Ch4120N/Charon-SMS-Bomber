@@ -36,3 +36,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "custom": [],
     },
     "api_health": {
+        "enabled": True,
