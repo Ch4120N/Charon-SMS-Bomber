@@ -153,3 +153,4 @@ class Field:
             f"{self.label:<24}",
             style=f"bold {FORM_LABEL_FOCUSED}" if focused else FORM_LABEL,
         )
+
