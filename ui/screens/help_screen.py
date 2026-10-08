@@ -260,3 +260,4 @@ class HelpScreen(Screen):
                 self._searching = False
                 self._search_widget = None
                 return None
+            result = self._search_widget.handle(key)  # type: ignore
