@@ -58,3 +58,4 @@ def clear_history() -> None:
     HISTORY_PATH.write_text("[]", encoding="utf-8")
 
 
+def make_entry(
