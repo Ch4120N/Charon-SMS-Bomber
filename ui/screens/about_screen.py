@@ -45,3 +45,4 @@ class AboutScreen(Screen):
             title=f"[bold {PRIMARY}]  About  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
+
