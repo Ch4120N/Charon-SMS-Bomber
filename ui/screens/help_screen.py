@@ -121,3 +121,4 @@ class HelpScreen(Screen):
             t.add_row(key + tag, info.get("summary", ""), info.get("details", ""))
         return t
 
+    def _render_concepts(self) -> Group:
