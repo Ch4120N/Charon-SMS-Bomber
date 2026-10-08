@@ -144,3 +144,4 @@ class HelpScreen(Screen):
             ("Smart Weight",
              "For the smart strategy: each API carries a weight that grows with "
              "success and shrinks with failure. Weights drive selection."),
+            ("Body Verification",
