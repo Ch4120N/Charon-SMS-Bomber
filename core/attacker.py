@@ -82,3 +82,4 @@ class Attacker:
         apis: list[dict[str, Any]],
         logger: logging.Logger,
     ) -> None:
+        self.cfg = cfg
