@@ -294,3 +294,4 @@ class TuiApp:
             Layout(name="body", ratio=1),
             Layout(name="footer", size=3),
         )
+        layout["header"].update(self._header(top))
