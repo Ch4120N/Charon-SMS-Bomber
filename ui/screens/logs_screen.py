@@ -107,3 +107,4 @@ class LogsScreen(Screen):
         foot.append("↑ ↓", style=f"bold {OK}")
         foot.append(" scroll   ", style=FG_DIM)
         foot.append("r", style=f"bold {OK}")
+        foot.append(" reload   ", style=FG_DIM)
