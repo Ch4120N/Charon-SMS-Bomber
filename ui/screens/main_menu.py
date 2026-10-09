@@ -87,3 +87,4 @@ class MainMenuScreen(Screen):
             self._activate(_ITEMS[self.cursor][0])
             return None
         return None
+
