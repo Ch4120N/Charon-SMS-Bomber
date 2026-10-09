@@ -256,3 +256,4 @@ class TuiApp:
         if toasts:
             toast_line.append(" ")
             for t in toasts:
+                toast_line.append("● ", style=FOOTER_TOAST_BULLET)
