@@ -88,3 +88,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
         data = json.loads(content)
     except Exception:
         # plaintext fallback
+        text = content[:512].decode("utf-8", errors="ignore").lower()
