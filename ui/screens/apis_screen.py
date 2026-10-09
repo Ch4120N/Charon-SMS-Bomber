@@ -22,3 +22,4 @@ class ApisScreen(Screen):
     title = "API Manager"
     hotkeys = {"r": "reload", "/": "filter", "g/G": "jump"}
 
+    def __init__(self, app) -> None:
