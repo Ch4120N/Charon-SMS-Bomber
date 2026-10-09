@@ -53,3 +53,4 @@ class StartScreen(Screen):
             Field("rounds", "Rounds", "int", rounds_val,
                   hint="0 = unlimited"),
             Field("delay", "Delay (s)", "float", delay_val),
+            Field("strategy", "Strategy", "cycle", strategy_val,
