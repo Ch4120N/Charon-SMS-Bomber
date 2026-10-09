@@ -132,3 +132,4 @@ class Attacker:
             "jobs_per_round": total_jobs,
             "rounds": "unlimited" if unlimited else rounds,
             "total_requests": "unlimited" if unlimited else total_jobs * rounds,
+            "threads": int(self.cfg["attack"]["threads"]),
