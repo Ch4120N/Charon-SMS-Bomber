@@ -264,3 +264,4 @@ class AttackScreen(Screen):
 
     def _save_reports(self) -> None:
         if not self.attacker.stats.sent and not self.dry_run:
+            self.app.notify("no data to save", style=WARN)
