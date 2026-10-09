@@ -36,3 +36,4 @@ def load_history() -> list[HistoryEntry]:
     except Exception:
         return []
     out: list[HistoryEntry] = []
+    for item in raw:
