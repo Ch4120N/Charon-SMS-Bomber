@@ -119,3 +119,4 @@ class Attacker:
         total_jobs = 0
         per_api: dict[str, int] = {}
         for _t in targets:
+            for api in self.apis:
