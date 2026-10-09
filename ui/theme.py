@@ -20,3 +20,4 @@ Hue role assignment
     Red       #e86b6b   error:     failures, error toasts
     Lavender  #a4b0f0   info:      informational toasts, neutral accent
     Grey      #9fa5b2   all other text
+"""
