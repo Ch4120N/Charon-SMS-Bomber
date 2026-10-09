@@ -48,3 +48,4 @@ class LogsScreen(Screen):
     def _latest_log(self) -> Optional[Path]:
         if not LOGS_DIR.exists():
             return None
+        files = sorted(LOGS_DIR.glob("*.log"), key=lambda p: p.stat().st_mtime)
