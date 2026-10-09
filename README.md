@@ -1,8 +1,13 @@
 <div align="center">
 
-<img src="./images/logo.jpg" alt="ChSMSBomber Charon SMS Bomber Logo" width="60%">
+<img src="./images/logo.jpg" alt="ChSMSBomber - Charon SMS Bomber Logo" width="60%">
 
-### Multi-threaded SMS prank tool with a keyboard-driven terminal UI
+### Multi-threaded SMS Bomber · Iranian OTP Stress Tester · Keyboard-Driven Terminal UI
+
+**ChSMSBomber** is a fast, modern, multi-threaded **SMS bomber** and **SMS prank tool** built in Python.<br>
+It cycles through **Iranian OTP-enabled service endpoints** to send test SMS messages to a target phone number.<br>
+Features adaptive attack strategies, live API health tracking, response-body verification, proxy support,<br>
+and a fully keyboard-driven terminal UI (TUI) — all configurable via external JSON files.
 
 <br>
 
@@ -14,14 +19,7 @@
 
 <br>
 
-**ChSMSBomber** is a fast, configurable, terminal-native SMS stress-testing tool.<br>
-It cycles through Iranian OTP-enabled service endpoints to send test SMS messages<br>
-to a target phone number — with adaptive strategies, live health tracking,<br>
-response-body verification, and a fully keyboard-driven TUI.
-
-<br>
-
-[Features](#-features) · [Installation](#-installation) · [Usage](#-usage) · [Configuration](#-configuration) · [Strategies](#-strategies) · [API Registry](#-api-registry) · [FAQ](#-faq) · [License](#-license)
+[Features](#-features) · [Screenshots](#-screenshots) · [Installation](#-installation) · [Usage](#-usage) · [Configuration](#-configuration) · [Strategies](#-strategies) · [API Registry](#-api-registry) · [FAQ](#-faq) · [Donate](#-support-the-project) · [License](#-license)
 
 </div>
 
@@ -41,6 +39,7 @@ response-body verification, and a fully keyboard-driven TUI.
 - [Reports](#-reports)
 - [FAQ](#-faq)
 - [Contributing](#-contributing)
+- [Support the Project](#-support-the-project)
 - [License](#-license)
 - [Disclaimer](#-disclaimer)
 
@@ -115,7 +114,7 @@ response-body verification, and a fully keyboard-driven TUI.
 
 <h4>Main Menu</h4>
 
-<img src="./images/main_menu.jpg" alt="Main Menu" width="100%">
+<img src="./images/main_menu.jpg" alt="ChSMSBomber main menu with keyboard-driven navigation" width="100%">
 
 <sub>Arrow keys · hotkeys on every screen</sub>
 
@@ -124,7 +123,7 @@ response-body verification, and a fully keyboard-driven TUI.
 
 <h4>Start Settings</h4>
 
-<img src="./images/start_settings.jpg" alt="Start Settings" width="100%">
+<img src="./images/start_settings.jpg" alt="Start attack settings input screen" width="100%">
 
 <sub>Input fields · fully customizable</sub>
 
@@ -133,7 +132,7 @@ response-body verification, and a fully keyboard-driven TUI.
 
 <h4>Live Attack</h4>
 
-<img src="./images/live_attack.jpg" alt="Live Attack" width="100%">
+<img src="./images/live_attack.jpg" alt="Live attack dashboard with spinner and API health" width="100%">
 
 <sub>Live spinner · progress bar · API table</sub>
 
@@ -149,7 +148,7 @@ response-body verification, and a fully keyboard-driven TUI.
 
 <h4>API Manager</h4>
 
-<img src="./images/api_manager.jpg" alt="API Manager" width="100%">
+<img src="./images/api_manager.jpg" alt="API Manager browsing endpoints with live filter" width="100%">
 
 <sub>Live filter · per-API headers · reload</sub>
 
@@ -158,7 +157,7 @@ response-body verification, and a fully keyboard-driven TUI.
 
 <h4>Settings Editor</h4>
 
-<img src="./images/settings_editor.jpg" alt="Settings Editor" width="100%">
+<img src="./images/settings_editor.jpg" alt="In-TUI settings editor with cycle and toggle widgets" width="100%">
 
 <sub>Every value editable in-place · no file editing required</sub>
 
@@ -167,7 +166,7 @@ response-body verification, and a fully keyboard-driven TUI.
 
 <h4>Help — Strategies</h4>
 
-<img src="./images/help_menu.jpg" alt="Help — Strategies" width="100%">
+<img src="./images/help_menu.jpg" alt="Help screen with strategy documentation and tab navigation" width="100%">
 
 <sub>Working tab navigation · scroll · search</sub>
 
@@ -190,8 +189,8 @@ response-body verification, and a fully keyboard-driven TUI.
 
 ```bash
 # Clone the repository
-git clone https://github.com/Ch4120N/Charon-SMS-Bomber.git
-cd Charon-SMS-Bomber
+git clone https://github.com/Ch4120N/ChSMSBomber.git
+cd ChSMSBomber
 
 # Create a virtual environment
 python -m venv venv
@@ -616,9 +615,31 @@ The simplest contribution is a new endpoint. Add it to `apis.json`, test it via 
 
 ---
 
+## ❤️ Support the Project
+
+If you find ChSMSBomber useful — or if it saved you time, taught you something, or just made you smile — consider supporting its continued development. Every contribution helps keep the project alive, maintained, and improving.
+
+<br>
+
+<div align="center">
+
+| Cryptocurrency | Address |
+|:---|:---|
+| **BTC** | `bc1ql4syps7qpa3djqrxwht3g66tldyh4j7qsyjkq0` |
+| **ETH** | `0xfddbd535a4ad28792cbebceee3d6982d774e6d13` |
+| **USDT** | `3Cq6HRQsiwZFmPEQfG9eJkZE2QGChvf2VN` |
+
+<br>
+
+**💖 Your support helps keep the project alive and improving!**
+
+</div>
+
+---
+
 ## ✦ License
 
-Distributed under the **GPL v3.0**. See `LICENSE` for full text.
+Distributed under the **GPL v3.0 (GNU General Public License v3.0)**. See `LICENSE` for full text.
 
 ---
 
