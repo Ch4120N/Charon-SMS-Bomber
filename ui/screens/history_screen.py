@@ -56,3 +56,4 @@ class HistoryScreen(Screen):
         )
         t.add_column("", width=2)
         t.add_column("When", style=FG_DIM, width=20)
+        t.add_column("Strategy", style=ACCENT, width=12)
