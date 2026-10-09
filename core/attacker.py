@@ -185,3 +185,4 @@ class Attacker:
             pool = list(eligible)
             random.shuffle(pool)
             for target in self.current_targets:
+                for api in pool:
