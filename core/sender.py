@@ -99,3 +99,4 @@ def inspect_response_body(content: bytes) -> Optional[bool]:
 
 
 #  Sender
+class Sender:
