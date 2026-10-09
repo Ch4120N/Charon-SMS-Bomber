@@ -40,3 +40,4 @@ class HelpScreen(Screen):
         self._search_widget: Optional[TextInput] = None
 
     @property
+    def section(self) -> str:
