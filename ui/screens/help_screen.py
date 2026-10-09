@@ -185,3 +185,4 @@ class HelpScreen(Screen):
             ("q", "Quit from the top-level menu"),
         ]
         t = Table(
+            box=None, show_header=True, header_style=f"bold {API_COLOR}",
