@@ -163,3 +163,4 @@ class Attacker:
     def _eligible(self, api: dict[str, Any]) -> bool:
         if self.health and not self.health.is_available(api):
             return False
+        return True
