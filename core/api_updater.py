@@ -39,3 +39,4 @@ class UpdateCheck:
     remote_version: str
     manifest: dict[str, Any]
 
+
