@@ -108,3 +108,4 @@ class StartScreen(Screen):
                     self.app.notify(f"invalid {field.kind}: {result!r}", style=BAD)
                     return None
                 field.widget.value = result  # type: ignore
+                self.editing = False
