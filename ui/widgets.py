@@ -115,3 +115,4 @@ class Cycle:
 
 
 class Field:
+    def __init__(
