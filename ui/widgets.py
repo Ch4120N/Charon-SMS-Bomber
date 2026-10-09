@@ -80,3 +80,4 @@ class Toggle:
         from ui.theme import (
             TOGGLE_ON_BG, TOGGLE_ON_FG, TOGGLE_OFF_BG, TOGGLE_OFF_FG,
         )
+        if self.value:
