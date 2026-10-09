@@ -83,3 +83,4 @@ class MainMenuScreen(Screen):
         if key in hk:
             self._activate(hk[key])
             return None
+        if key == KEY_ENTER:
