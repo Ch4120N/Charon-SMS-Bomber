@@ -295,3 +295,4 @@ class HelpScreen(Screen):
             self.app.notify("typing filter — Enter apply, Esc cancel", style=WARN)
             return None
         if key == KEY_ESC:
+            return "back"
