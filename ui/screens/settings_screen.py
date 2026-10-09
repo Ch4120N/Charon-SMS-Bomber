@@ -80,3 +80,4 @@ class SettingsScreen(Screen):
         for i in range(start, len(self.fields)):
             if self.fields[i].key != "section":
                 return i
+        return start
