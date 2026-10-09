@@ -241,3 +241,4 @@ class Attacker:
                 break
             if not self.unlimited and r >= self.total_rounds:
                 break
+
