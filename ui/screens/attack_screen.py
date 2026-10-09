@@ -40,3 +40,4 @@ class AttackScreen(Screen):
         dry_run: bool = False,
     ) -> None:
         super().__init__(app)
+        self.targets = targets
