@@ -34,3 +34,4 @@ def load_apis(path: Path | None = None) -> list[dict[str, Any]]:
         e.setdefault("name", e["url"])
         e.setdefault("method", "POST")
         e.setdefault("enabled", True)
+        e.setdefault("tags", [])
