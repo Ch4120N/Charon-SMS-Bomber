@@ -52,3 +52,4 @@ class UpdaterScreen(Screen):
                 self.app.notify("check complete", style=OK)
             except Exception as exc:
                 self.error = str(exc)
+                self.state = "error"
