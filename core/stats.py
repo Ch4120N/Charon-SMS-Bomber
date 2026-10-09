@@ -88,3 +88,4 @@ def export_csv(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
         w.writerow(["API", "Sent", "Success", "Failed"])
         for name, b in stats.by_api.items():
             w.writerow([name, b["sent"], b["success"], b["failed"]])
+        w.writerow([])
