@@ -80,3 +80,4 @@ def _walk(obj: Any, depth: int = 0) -> Optional[bool]:
     return None
 
 
+def inspect_response_body(content: bytes) -> Optional[bool]:
