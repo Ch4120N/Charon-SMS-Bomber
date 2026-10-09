@@ -143,3 +143,4 @@ class Attacker:
     def _weighted_pick(self, pool: list[dict[str, Any]]) -> dict[str, Any]:
         with self._weights_lock:
             weights = [self._weights.get(a.get("name", "?"), 1.0) for a in pool]
+        total = sum(weights) or 1.0
