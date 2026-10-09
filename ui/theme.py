@@ -149,3 +149,4 @@ CHIP_FG_DEFAULT    = _c("#0d0e12", "black")
 #  9. STATUS BAR / FOOTER — every colour used here, defined in-place
 #
 #     ┌──────────────────────────────────────────────────────────┐
+#     │  [↑↓] move   [⏎] select   [?] help   [Esc] back    ● OK  │
