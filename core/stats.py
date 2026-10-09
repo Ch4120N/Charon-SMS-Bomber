@@ -34,3 +34,4 @@ class Stats:
         if len(self.recent) > 12:
             self.recent = self.recent[-12:]
 
+    @property
