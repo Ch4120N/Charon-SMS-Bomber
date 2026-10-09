@@ -148,3 +148,4 @@ class Sender:
         if any("{ua}" in str(v) for v in headers.values()):
             headers = {k: v.replace("{ua}", self._pick_ua()) for k, v in headers.items()}
         headers.setdefault("User-Agent", self._pick_ua())
+
