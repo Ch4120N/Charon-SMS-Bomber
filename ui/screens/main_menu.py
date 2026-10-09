@@ -76,3 +76,4 @@ class MainMenuScreen(Screen):
 
         hk = {
             "s": "start", "r": "continue",
+            "e": "settings", "a": "apis",
