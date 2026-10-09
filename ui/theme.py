@@ -209,3 +209,4 @@ HEADER_BREADCRUMB_SEP     = TEXT_DISABLED
 HEADER_SPINNER            = SUCCESS
 HEADER_SPINNER_IDLE       = TEXT_TERTIARY
 
+# ══════════════════════════════════════════════════════════════════════
