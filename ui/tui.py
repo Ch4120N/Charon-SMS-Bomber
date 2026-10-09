@@ -184,3 +184,4 @@ class TuiApp:
             BORDER_DEFAULT,
         )
 
+        width = self.console.width
