@@ -92,3 +92,4 @@ class LogsScreen(Screen):
                     break
             marker = "▌" if focused else " "
             body.append(f"{marker} ", style=f"bold {PRIMARY}")
+            body.append(line + "\n", style=style)
