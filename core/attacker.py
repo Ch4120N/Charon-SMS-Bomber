@@ -98,3 +98,4 @@ class Attacker:
                 cfg["api_health"]["failure_threshold"],
                 cfg["api_health"]["cooldown_seconds"],
             )
+            if cfg["api_health"]["enabled"] else None
