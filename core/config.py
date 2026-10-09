@@ -39,3 +39,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "enabled": True,
         "failure_threshold": 5,
         "cooldown_seconds": 60,
+    },
