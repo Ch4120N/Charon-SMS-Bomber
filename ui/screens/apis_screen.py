@@ -117,3 +117,4 @@ class ApisScreen(Screen):
             if result is not None:
                 self.search = result
                 self._searching = False
+                self._search_widget = None
