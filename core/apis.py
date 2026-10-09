@@ -85,3 +85,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
                    .replace("{intl}", intl)
                    .replace("{local}", local)
                    .replace("{ts}", ts)
+            )
