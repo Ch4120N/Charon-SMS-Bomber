@@ -76,3 +76,4 @@ class SettingsScreen(Screen):
         self.top = 0
         self.page_size = 18
 
+    def _first_editable(self, start: int) -> int:
