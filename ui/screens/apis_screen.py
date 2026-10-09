@@ -47,3 +47,4 @@ class ApisScreen(Screen):
         items = self._visible()
         if self.cursor >= len(items):
             self.cursor = max(0, len(items) - 1)
+        if self.cursor < self.top:
