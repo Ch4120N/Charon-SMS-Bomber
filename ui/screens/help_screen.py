@@ -86,3 +86,4 @@ class HelpScreen(Screen):
         hint.append("Esc", style=f"bold {OK}")
         hint.append(" back", style=FG_DIM)
 
+        return Panel(
