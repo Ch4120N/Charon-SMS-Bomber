@@ -290,3 +290,4 @@ class HelpScreen(Screen):
             self.scroll += 20
             return None
         if key == "/":
+            self._searching = True
