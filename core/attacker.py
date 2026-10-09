@@ -51,3 +51,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         ),
     },
 }
+
