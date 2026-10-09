@@ -102,3 +102,4 @@ class HelpScreen(Screen):
             return self._render_concepts()
         if self.section == "hotkeys":
             return self._render_hotkeys()
+        if self.section == "config":
