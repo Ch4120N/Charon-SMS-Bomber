@@ -189,3 +189,4 @@ class Sender:
         if verdict is None:
             # Can't determine → assume success (2xx is the best signal we have)
             return True
+        return verdict
