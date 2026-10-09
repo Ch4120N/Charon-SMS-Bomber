@@ -166,3 +166,4 @@ class HelpScreen(Screen):
 
     def _render_hotkeys(self) -> Table:
         rows = [
+            ("↑ / ↓  or  k / j", "Move cursor in lists and forms"),
