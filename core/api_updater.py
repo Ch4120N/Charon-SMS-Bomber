@@ -29,3 +29,4 @@ DEFAULT_APIS_URL = (
 )
 
 
+@dataclass
