@@ -294,3 +294,4 @@ class HelpScreen(Screen):
             self._search_widget = TextInput(self.search)
             self.app.notify("typing filter — Enter apply, Esc cancel", style=WARN)
             return None
+        if key == KEY_ESC:
