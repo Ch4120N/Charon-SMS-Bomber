@@ -140,3 +140,4 @@ class Sender:
                 time.sleep(backoff ** attempt)
         return False
 
+    def _send_once(self, api: dict[str, Any]) -> bool:
