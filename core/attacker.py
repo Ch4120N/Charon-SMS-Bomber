@@ -171,3 +171,4 @@ class Attacker:
         if not eligible:
             return jobs
 
+        if self.strategy == "smart":
