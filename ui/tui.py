@@ -122,3 +122,4 @@ class TuiApp:
         console: Console,
         cfg: dict[str, Any],
         apis: list[dict[str, Any]],
+        logger: Any,
