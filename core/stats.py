@@ -132,3 +132,4 @@ def export_html(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
     path.write_text(doc, encoding="utf-8")
     return path
 
+
