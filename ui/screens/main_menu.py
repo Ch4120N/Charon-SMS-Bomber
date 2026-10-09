@@ -98,3 +98,4 @@ class MainMenuScreen(Screen):
         elif item_id == "settings":
             self.app.push("settings")
         elif item_id == "apis":
+            self.app.push("apis")
