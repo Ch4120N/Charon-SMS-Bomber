@@ -465,3 +465,4 @@ __all__ = [
     # 20. Scrollbar
     "SCROLLBAR_TRACK", "SCROLLBAR_THUMB", "SCROLLBAR_THUMB_HL",
     # 21. Help
+    "HELP_TAB_ACTIVE", "HELP_TAB_INACTIVE", "HELP_TAB_FG",
