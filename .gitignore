@@ -210,3 +210,4 @@ __marimo__/
 # Required to exclude files
 continue.json
 history.json
+reports/
