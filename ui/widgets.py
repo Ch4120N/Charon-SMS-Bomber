@@ -161,3 +161,4 @@ class Field:
                 t.append("[ Enter ]", style=FORM_ACTION_DIM)
             return t
 
+        if isinstance(self.widget, TextInput):
