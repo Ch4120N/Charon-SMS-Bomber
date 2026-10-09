@@ -60,3 +60,4 @@ class AttackScreen(Screen):
             self.finished = True
             self.show_spinner = False
             self.animating = False
+            self.app.notify("dry-run complete", style=OK)
