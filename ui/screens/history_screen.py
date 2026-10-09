@@ -22,3 +22,4 @@ class HistoryScreen(Screen):
     hotkeys = {"r": "reload", "c": "clear"}
 
     def __init__(self, app) -> None:
+        super().__init__(app)
