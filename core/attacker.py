@@ -55,3 +55,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
 DEFAULT_STRATEGY = "smart"
 
 
+#  Rate limiter
