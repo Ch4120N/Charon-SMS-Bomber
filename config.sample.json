@@ -1,0 +1,50 @@
+{
+    "version": "4.0.0",
+    "network": {
+        "timeout": 5,
+        "retries": 2,
+        "retry_backoff": 1.6,
+        "verify_ssl": false,
+        "proxy_enabled": false,
+        "proxy_pool": []
+    },
+    "attack": {
+        "threads": 10,
+        "rounds": 0,
+        "delay": 0.05,
+        "jitter": 0.02,
+        "strategy": "smart",
+        "hard_max_rounds": 100,
+        "round_cooldown": 1.0,
+        "rate_limit_per_sec": 0,
+        "dry_run": false,
+        "api_filter_tags": [],
+        "api_filter_enabled_only": true
+    },
+    "user_agent": {
+        "rotate": true,
+        "custom": []
+    },
+    "api_health": {
+        "enabled": true,
+        "failure_threshold": 5,
+        "cooldown_seconds": 60
+    },
+    "ui": {
+        "refresh_per_second": 30,
+        "idle_refresh_per_second": 4,
+        "idle_after_seconds": 1.5,
+        "show_banner": true
+    },
+    "logging": {
+        "enabled": true,
+        "level": "INFO",
+        "max_bytes": 5242880,
+        "backup_count": 3
+    },
+    "output": {
+        "save_report": true,
+        "report_format": "json",
+        "include_html": true
+    }
+}
