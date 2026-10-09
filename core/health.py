@@ -48,3 +48,4 @@ class ApiHealthTracker:
         with self._lock:
             return {k: dict(v) for k, v in self._state.items()}
 
+
