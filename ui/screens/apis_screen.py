@@ -55,3 +55,4 @@ class ApisScreen(Screen):
         info = Table.grid(padding=(0, 2))
         info.add_column(style=FG_MUTED)
         info.add_column(style=FG)
+        info.add_row("Total", str(len(self.app.apis)))
