@@ -193,3 +193,4 @@ class SettingsScreen(Screen):
         if len(parts) != 2:
             return
         section, key = parts
+        target = self.app.cfg.get(section, {})
