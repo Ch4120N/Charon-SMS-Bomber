@@ -85,3 +85,4 @@ class LogsScreen(Screen):
         for i in range(self.top, min(self.top + self.page_size, len(self.lines))):
             line = self.lines[i]
             focused = i == self.cursor
+            style = FG
