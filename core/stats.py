@@ -33,3 +33,4 @@ class Stats:
         self.recent.append((api_name, target, ok))
         if len(self.recent) > 12:
             self.recent = self.recent[-12:]
+
