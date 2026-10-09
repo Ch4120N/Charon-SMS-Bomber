@@ -128,3 +128,4 @@ class TuiApp:
         self.cfg = cfg
         self.apis = apis
         self.logger = logger
+        self.notifications = NotificationCenter()
