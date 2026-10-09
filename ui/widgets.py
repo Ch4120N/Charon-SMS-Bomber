@@ -112,3 +112,4 @@ class Cycle:
         t.append(self.value, style=f"bold {fg} on {bg}")
         t.append(" › ", style=f"bold {CYCLE_ARROW} on {bg}")
         return t
+
