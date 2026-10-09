@@ -146,3 +146,4 @@ class HelpScreen(Screen):
              "success and shrinks with failure. Weights drive selection."),
             ("Body Verification",
              "2xx alone is not success. ChSMSBomber inspects the response body "
+             "for error fields. Only requests where the body agrees count as wins."),
