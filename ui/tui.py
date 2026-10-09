@@ -109,3 +109,4 @@ class Screen(ABC):
     def handle_key(self, key: str) -> Optional[str]:
         return None
 
+    def render_cache_key(self) -> Any:
