@@ -42,3 +42,4 @@ class LogsScreen(Screen):
     def on_enter(self) -> None:
         self._load()
 
+    def render_cache_key(self):
