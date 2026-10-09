@@ -15,3 +15,4 @@ from ui.tui import KEY_BACKSPACE, KEY_ENTER, KEY_LEFT, KEY_RIGHT
 class TextInput:
     def __init__(self, value: str = "", mask: bool = False) -> None:
         self.value = value
+        self.cursor = len(value)
