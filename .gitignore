@@ -206,3 +206,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 .version
+
+# Required to exclude files
+continue.json
+history.json
+manifest.json
