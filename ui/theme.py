@@ -88,3 +88,4 @@ FOCUS_ON_BG        = _c("#0d0e12", "black")
 
 # 5.1 Success — Green
 SUCCESS            = _c("#7fd68a", "bright_green")
+SUCCESS_DIM        = _c("#5cb068", "green")
