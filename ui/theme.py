@@ -339,3 +339,4 @@ ACCENT_ALT  = FOCUS_DIM
 OK          = SUCCESS
 OK_ALT      = SUCCESS_DIM
 WARN        = WARNING
+BAD         = ERROR
