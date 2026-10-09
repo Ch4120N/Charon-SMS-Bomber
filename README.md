@@ -189,8 +189,8 @@ and a fully keyboard-driven terminal UI (TUI) — all configurable via external 
 
 ```bash
 # Clone the repository
-git clone https://github.com/Ch4120N/ChSMSBomber.git
-cd ChSMSBomber
+git clone https://github.com/Ch4120N/Charon-SMS-Bomber.git
+cd Charon-SMS-Bomber
 
 # Create a virtual environment
 python -m venv venv
