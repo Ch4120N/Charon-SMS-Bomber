@@ -116,3 +116,4 @@ class LogsScreen(Screen):
             title=f"[bold {PRIMARY}]  Live Logs  [/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
+
