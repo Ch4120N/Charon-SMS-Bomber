@@ -115,3 +115,4 @@ class Attacker:
         self._weights_lock = threading.Lock()
 
 
+    def dry_run(self, targets: list[str]) -> dict[str, Any]:
