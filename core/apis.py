@@ -72,3 +72,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
       {intl}  → +989123456789     (E.164)
       {local} → 09123456789       (leading zero)
       {ts}    → unix ms timestamp
+    """
