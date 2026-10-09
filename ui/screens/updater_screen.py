@@ -13,3 +13,4 @@ from core.api_updater import (
     DEFAULT_APIS_URL, DEFAULT_MANIFEST_URL,
     check_for_updates, download_apis,
 )
+from core.apis import load_apis
