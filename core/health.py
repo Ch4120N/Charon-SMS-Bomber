@@ -37,3 +37,4 @@ class ApiHealthTracker:
             k = api_key(api)
             st = self._state.setdefault(k, {"failures": 0, "disabled_until": 0})
             if success:
+                st["failures"] = 0
