@@ -106,3 +106,4 @@ class Cycle:
         if focused:
             bg, fg = CYCLE_BG_FOCUSED, CYCLE_FG_FOCUSED
         else:
+            bg, fg = CYCLE_BG, CYCLE_FG
