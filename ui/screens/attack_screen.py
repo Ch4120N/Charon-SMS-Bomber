@@ -220,3 +220,4 @@ class AttackScreen(Screen):
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
 
+    def _render_dry_run(self) -> Panel:
