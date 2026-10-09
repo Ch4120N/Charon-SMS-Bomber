@@ -50,3 +50,4 @@ def _stamp() -> str:
 def _payload(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> dict[str, Any]:
     return {
         "app": APP_NAME,
+        "version": APP_VERSION,
