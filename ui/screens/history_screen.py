@@ -65,3 +65,4 @@ class HistoryScreen(Screen):
 
         for i in range(self.top, min(self.top + self.page_size, len(self.entries))):
             e = self.entries[i]
+            focused = i == self.cursor
