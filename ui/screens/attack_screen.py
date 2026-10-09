@@ -85,3 +85,4 @@ class AttackScreen(Screen):
                 self._save_history_once()
                 self.app.notify("attack complete", style=OK)
 
+        threading.Thread(target=_run, daemon=True).start()
