@@ -271,3 +271,4 @@ class HelpScreen(Screen):
         # Navigation
         if key in (KEY_LEFT, "h"):
             self.section_idx = (self.section_idx - 1) % len(_SECTIONS)
+            self.scroll = 0
