@@ -42,3 +42,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Runs exactly 'rounds' times. Predictable, good for benchmarking."
         ),
     },
+    "random": {
