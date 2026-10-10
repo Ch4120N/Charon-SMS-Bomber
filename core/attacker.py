@@ -172,3 +172,4 @@ class Attacker:
             return jobs
 
         if self.strategy == "smart":
+            # Weighted random per target, single pass per cycle
