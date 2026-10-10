@@ -17,3 +17,4 @@ def setup_logger(cfg: dict[str, Any]) -> logging.Logger:
     logger.propagate = False
 
     if cfg["logging"]["enabled"]:
+        stamp = datetime.now().strftime("%Y%m%d")
