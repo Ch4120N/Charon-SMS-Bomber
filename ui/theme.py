@@ -160,3 +160,4 @@ STATUS_BAR_BG              = SURFACE_BASE          # #0d0e12 app bg
 
 # ── 9.2  Navigation BUTTONS (key caps) ───────────────────────────────
 #     Foreground = #0d0e12  (near-black)
+#     Background = #ffb88c  (bright peach-orange)
