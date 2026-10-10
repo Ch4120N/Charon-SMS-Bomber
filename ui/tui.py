@@ -192,3 +192,4 @@ class TuiApp:
             for i, line in enumerate(_ART_FULL):
                 art.append(line, style=f"bold {HEADER_ART}")
                 if i < len(_ART_FULL) - 1:
+                    art.append("\n")
