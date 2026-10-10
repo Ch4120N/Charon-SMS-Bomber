@@ -36,3 +36,4 @@ class NotificationCenter:
                 (t for t in self._items if not t.expired),
                 maxlen=self._items.maxlen,
             )
+            return list(self._items)[-self.max_visible :]
