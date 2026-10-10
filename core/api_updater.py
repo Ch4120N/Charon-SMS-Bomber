@@ -21,3 +21,4 @@ from utils.paths import APIS_PATH, BASE_DIR
 # ──────────────────────────────────────────────────────────────────────
 DEFAULT_MANIFEST_URL = (
     "https://raw.githubusercontent.com/Ch4120N/Charon-SMS-Bomber/"
+    "master/manifest.json"
