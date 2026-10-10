@@ -183,3 +183,4 @@ class SettingsScreen(Screen):
         n = len(self.fields)
         i = self.cursor
         for _ in range(n):
+            i = (i + delta) % n
