@@ -233,3 +233,4 @@ class TuiApp:
             FOOTER_TOAST_BAD, FOOTER_TOAST_BULLET, BORDER_DEFAULT,
         )
 
+        hints: list[tuple[str, str]] = [
