@@ -104,3 +104,4 @@ ERROR_DIM          = _c("#c04848", "red")
 ERROR_BRIGHT       = _c("#ff8888", "bright_red")
 ERROR_ON_BG        = _c("#0d0e12", "black")
 
+# 5.4 Info — Lavender
