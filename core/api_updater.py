@@ -135,3 +135,4 @@ def download_apis(
 
     # Validate before replacing
     try:
+        json.loads(tmp.read_text(encoding="utf-8"))
