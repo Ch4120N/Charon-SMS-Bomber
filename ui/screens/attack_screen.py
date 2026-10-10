@@ -241,3 +241,4 @@ class AttackScreen(Screen):
                      style=f"bold {WARN}"),
                 t,
                 Text("\n  Press s to save, Esc to return.\n", style=FG_MUTED),
+            ), vertical="top"),
