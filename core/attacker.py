@@ -50,3 +50,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
             "Runs exactly 'rounds' times. Useful for avoiding trivial patterns."
         ),
     },
+}
