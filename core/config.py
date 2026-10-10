@@ -41,3 +41,4 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "cooldown_seconds": 60,
     },
     "ui": {
+        "refresh_per_second": 30,
