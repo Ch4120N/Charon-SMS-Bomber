@@ -147,3 +147,4 @@ class TuiApp:
         self._cached_key: Any = None
 
         self.keys = KeyReader()
+        self.keys.start()
