@@ -95,3 +95,4 @@ def check_for_updates(
     return UpdateCheck(
         available=available,
         local_count=local_count,
+        remote_count=remote_count,
