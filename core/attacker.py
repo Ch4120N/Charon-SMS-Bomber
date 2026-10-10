@@ -251,3 +251,4 @@ class Attacker:
                 continue
 
             with ThreadPoolExecutor(max_workers=max(1, threads)) as ex:
+                futures_map = {
