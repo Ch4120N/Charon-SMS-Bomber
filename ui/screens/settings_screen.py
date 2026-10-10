@@ -42,3 +42,4 @@ def _build_fields(cfg: dict) -> list[Field]:
         Field("network.retries", "Retries", "int", N["retries"]),
         Field("network.retry_backoff", "Backoff factor", "float", N["retry_backoff"]),
         Field("network.verify_ssl", "Verify SSL", "bool", N["verify_ssl"]),
+        Field("network.proxy_enabled", "Proxy enabled", "bool", N["proxy_enabled"]),
