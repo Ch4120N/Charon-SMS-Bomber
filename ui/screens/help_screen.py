@@ -283,3 +283,4 @@ class HelpScreen(Screen):
         if key in (KEY_DOWN, "j"):
             self.scroll += 1
             return None
+        if key == "g":
