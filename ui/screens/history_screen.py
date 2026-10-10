@@ -104,3 +104,4 @@ class HistoryScreen(Screen):
             subtitle=f"[{FG_MUTED}]{len(self.entries)} entries[/]",
             border_style=BORDER, box=BOX_MAIN, padding=(1, 2),
         )
+
