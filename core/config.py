@@ -7,3 +7,4 @@ from typing import Any, Optional
 
 from utils.paths import CONFIG_PATH
 from utils.version import APP_VERSION
+
