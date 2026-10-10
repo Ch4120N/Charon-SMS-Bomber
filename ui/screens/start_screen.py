@@ -139,3 +139,4 @@ class StartScreen(Screen):
                 field.widget.prev()  # type: ignore
                 return None
             if key == KEY_RIGHT:
+                field.widget.next()  # type: ignore
