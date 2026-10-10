@@ -96,3 +96,4 @@ class ApisScreen(Screen):
         if items:
             api = items[self.cursor]
             detail.append("\n  Headers: ", style=FG_MUTED)
+            hdrs = api.get("headers") or {}
