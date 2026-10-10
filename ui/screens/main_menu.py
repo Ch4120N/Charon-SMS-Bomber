@@ -85,3 +85,4 @@ class MainMenuScreen(Screen):
             return None
         if key == KEY_ENTER:
             self._activate(_ITEMS[self.cursor][0])
+            return None
