@@ -68,3 +68,4 @@ class SettingsScreen(Screen):
     title = "Settings"
     hotkeys = {"⏎": "edit", "space": "toggle", "←→": "change"}
 
+    def __init__(self, app) -> None:
