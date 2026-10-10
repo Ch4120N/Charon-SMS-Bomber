@@ -101,3 +101,4 @@ class UpdaterScreen(Screen):
                 bar = Text("  ")
                 bar.append("█" * filled, style=f"bold {OK}")
                 bar.append("░" * (bar_len - filled), style=FG_MUTED)
+                bar.append(f"  {pct:5.1f}%   ", style=FG)
