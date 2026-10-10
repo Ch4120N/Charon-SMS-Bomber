@@ -76,3 +76,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
     cc = phone.replace("+98", "")
     intl = phone
     local = "0" + cc
+    ts = str(int(time.time() * 1000))
