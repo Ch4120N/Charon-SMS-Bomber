@@ -78,3 +78,4 @@ class ApisScreen(Screen):
         lst.add_column("Name", style=API_COLOR, no_wrap=True, width=22)
         lst.add_column("Method", width=6, style=WARN)
         lst.add_column("Tags", width=14, style=FG_DIM)
+        lst.add_column("URL", style=FG, overflow="fold")
