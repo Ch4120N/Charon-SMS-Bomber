@@ -184,3 +184,4 @@ class SettingsScreen(Screen):
         i = self.cursor
         for _ in range(n):
             i = (i + delta) % n
+            if not self._is_section(i):
