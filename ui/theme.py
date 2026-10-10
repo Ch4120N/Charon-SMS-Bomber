@@ -77,3 +77,4 @@ BRAND_ON_BG        = _c("#0d0e12", "black")
 #     Role: focused field labels, cycle pickers, section titles,
 #           form cursor background, tab highlights
 # ══════════════════════════════════════════════════════════════════════
+FOCUS              = _c("#ff9d6b", "color(215)")
