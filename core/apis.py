@@ -49,3 +49,4 @@ def filter_apis(
     apis: list[dict[str, Any]],
     tags: list[str] | None = None,
     enabled_only: bool = True,
+) -> list[dict[str, Any]]:
