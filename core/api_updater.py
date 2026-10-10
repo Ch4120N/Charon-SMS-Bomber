@@ -128,3 +128,4 @@ def download_apis(
             for chunk in r.iter_content(chunk_size=8192):
                 if not chunk:
                     continue
+                fh.write(chunk)
