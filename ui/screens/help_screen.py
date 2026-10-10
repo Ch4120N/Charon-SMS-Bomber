@@ -143,3 +143,4 @@ class HelpScreen(Screen):
              "of cooldown. Live status is on the attack screen."),
             ("Smart Weight",
              "For the smart strategy: each API carries a weight that grows with "
+             "success and shrinks with failure. Weights drive selection."),
