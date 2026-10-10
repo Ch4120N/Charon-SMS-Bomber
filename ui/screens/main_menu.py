@@ -71,3 +71,4 @@ class MainMenuScreen(Screen):
             self.cursor = (self.cursor - 1) % len(_ITEMS)
             return None
         if key in (KEY_DOWN, "j"):
+            self.cursor = (self.cursor + 1) % len(_ITEMS)
