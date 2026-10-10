@@ -340,3 +340,4 @@ OK          = SUCCESS
 OK_ALT      = SUCCESS_DIM
 WARN        = WARNING
 BAD         = ERROR
+BAD_ALT     = ERROR_DIM
