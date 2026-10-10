@@ -88,3 +88,4 @@ class Attacker:
 
         self.apis = filter_apis(
             apis,
+            tags=cfg["attack"].get("api_filter_tags") or [],
