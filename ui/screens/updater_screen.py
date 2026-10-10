@@ -141,3 +141,4 @@ class UpdaterScreen(Screen):
         if key == "r":
             self._start_check()
             return None
+        if key == KEY_ENTER and self.state == "ready" and self.info and self.info.available:
