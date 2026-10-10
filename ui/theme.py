@@ -132,3 +132,4 @@ BORDER_STATUS_OK   = SUCCESS_DIM
 BORDER_STATUS_WARN = WARNING_DIM
 BORDER_STATUS_BAD  = ERROR_DIM
 
+# ══════════════════════════════════════════════════════════════════════
