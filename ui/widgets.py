@@ -22,3 +22,4 @@ class TextInput:
         from ui.tui import KEY_ENTER, KEY_BACKSPACE, KEY_LEFT, KEY_RIGHT
         if key == KEY_ENTER:
             return self.value
+        if key == KEY_BACKSPACE:
