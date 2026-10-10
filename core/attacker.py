@@ -272,3 +272,4 @@ class Attacker:
                 cooldown = float(self.cfg["attack"]["round_cooldown"])
                 if cooldown > 0:
                     self._cooldown(cooldown)
+
