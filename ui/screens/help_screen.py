@@ -171,3 +171,4 @@ class HelpScreen(Screen):
             ("Enter", "Select, activate, or commit edit"),
             ("Esc", "Go back, cancel edit, or stop attack"),
             ("Space", "Toggle boolean, stop attack"),
+            ("?", "Open this help screen from anywhere"),
