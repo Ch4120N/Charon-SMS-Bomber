@@ -291,3 +291,4 @@ class HelpScreen(Screen):
             return None
         if key == "/":
             self._searching = True
+            self._search_widget = TextInput(self.search)
