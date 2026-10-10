@@ -86,3 +86,4 @@ class UpdaterScreen(Screen):
             t.add_row("Remote version", info.remote_version)
 
             header = Text()
+            if info.available:
