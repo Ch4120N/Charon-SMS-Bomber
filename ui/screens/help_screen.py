@@ -163,3 +163,4 @@ class HelpScreen(Screen):
             rows.append(g)
             rows.append(Text(""))
         return Group(*rows)
+
