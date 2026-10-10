@@ -89,3 +89,4 @@ def load_config(path: Optional[str | Path] = None) -> dict[str, Any]:
         return dict(DEFAULT_CONFIG)
     try:
         raw = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
