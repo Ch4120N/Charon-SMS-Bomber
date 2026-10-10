@@ -56,3 +56,4 @@ class AttackScreen(Screen):
     def on_enter(self) -> None:
         save_session(self.targets, self.threads, self.rounds, self.delay)
         if self.dry_run:
+            self.dry_run_report = self.attacker.dry_run(self.targets)
