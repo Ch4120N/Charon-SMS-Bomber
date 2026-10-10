@@ -78,3 +78,4 @@ def export_json(stats: Stats, targets: list[str], cfg: dict[str, Any]) -> Path:
         encoding="utf-8",
     )
     return path
+
