@@ -39,3 +39,4 @@ class ApiHealthTracker:
             if success:
                 st["failures"] = 0
                 st["disabled_until"] = 0
+            else:
