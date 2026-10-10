@@ -245,3 +245,4 @@ TOGGLE_ON_FG        = TEXT_INVERSE
 TOGGLE_OFF_BG       = ERROR_DIM                    # red
 TOGGLE_OFF_FG       = TEXT_INVERSE
 
+# ══════════════════════════════════════════════════════════════════════
