@@ -187,3 +187,4 @@ class StartScreen(Screen):
 def _valid_number(s: str, kind: str) -> bool:
     try:
         int(s) if kind == "int" else float(s)
+        return True
