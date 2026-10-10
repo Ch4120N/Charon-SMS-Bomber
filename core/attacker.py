@@ -183,3 +183,4 @@ class Attacker:
                     jobs.append((api, target))
         elif self.strategy == "random":
             pool = list(eligible)
+            random.shuffle(pool)
