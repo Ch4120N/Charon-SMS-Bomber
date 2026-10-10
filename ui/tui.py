@@ -90,3 +90,4 @@ class KeyReader:
 
 #  Screen base
 class Screen(ABC):
+    name: str = "screen"
