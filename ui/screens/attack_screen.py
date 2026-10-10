@@ -114,3 +114,4 @@ class AttackScreen(Screen):
 
     def render(self) -> Panel:
         if self.dry_run and self.dry_run_report:
+            return self._render_dry_run()
