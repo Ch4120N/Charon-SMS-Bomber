@@ -54,3 +54,4 @@ class MainMenuScreen(Screen):
             name_style = f"bold {PRIMARY_ALT}" if focused else FG
             desc_style = FG_DIM if focused else FG_MUTED
             grid.add_row(
+                marker,
