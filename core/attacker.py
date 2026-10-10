@@ -252,3 +252,4 @@ class Attacker:
 
             with ThreadPoolExecutor(max_workers=max(1, threads)) as ex:
                 futures_map = {
+                    ex.submit(self._send_one, api, tgt): (api, tgt)
