@@ -477,3 +477,4 @@ __all__ = [
     "API_COLOR", "API_BRIGHT", "CHIP_BG", "CHIP_FG",
     "DIM", "FAINT", "HILITE", "BORDER", "BORDER_HL",
     # Helpers
+    "chip", "chip_alt", "chip_ok", "chip_warn", "chip_bad", "chip_info",
