@@ -3,3 +3,4 @@
 Design principles
 ─────────────────
     1. Deep near-black base — modern dark terminal feel
+    2. Full-spectrum accents — magenta, orange, yellow, green, red,
