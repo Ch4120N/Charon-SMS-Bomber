@@ -69,3 +69,4 @@ class HistoryScreen(Screen):
             t.add_row(
                 "▌" if focused else " ",
                 e.ts.replace("T", " "),
+                e.strategy,
