@@ -199,3 +199,4 @@ class HelpScreen(Screen):
             ("network.timeout", "Per-request timeout in seconds."),
             ("network.retries", "Retry count with exponential backoff."),
             ("network.verify_ssl", "false skips TLS verification."),
+            ("network.proxy_enabled", "Route via network.proxy_pool."),
