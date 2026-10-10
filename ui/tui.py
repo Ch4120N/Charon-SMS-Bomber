@@ -73,3 +73,4 @@ class KeyReader:
                 break
             self.q.put(k)
 
+    def get(self, timeout: float = 0.05) -> Optional[str]:
