@@ -283,3 +283,4 @@ SPINNER_RUNNING     = WARNING                      # yellow running spinner
 SPINNER_IDLE        = TEXT_TERTIARY
 SPINNER_LABEL       = TEXT_SECONDARY
 
+# ══════════════════════════════════════════════════════════════════════
