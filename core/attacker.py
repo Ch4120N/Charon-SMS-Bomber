@@ -39,3 +39,4 @@ STRATEGIES: dict[str, dict[str, str]] = {
         "summary": "Classic fixed sequence, configurable rounds.",
         "details": (
             "Walks the API list in order, then repeats. "
+            "Runs exactly 'rounds' times. Predictable, good for benchmarking."
