@@ -11,3 +11,4 @@ from rich.text import Text
 from core.apis import load_apis
 from ui.theme import (
     PRIMARY, API_COLOR, API_BRIGHT, OK, WARN, BAD,
+    FG, FG_DIM, FG_MUTED, BORDER, BOX_MAIN,
