@@ -80,3 +80,4 @@ def expand_api(api: dict[str, Any], phone: str) -> dict[str, Any]:
 
     def _sub(obj: Any) -> Any:
         if isinstance(obj, str):
+            return (
