@@ -106,3 +106,4 @@ class ApisScreen(Screen):
                           style=OK if api.get("enabled", True) else BAD)
 
         return Panel(
+            Align.left(Group(search_line, Text(""), lst, detail), vertical="top"),
