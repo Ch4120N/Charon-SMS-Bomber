@@ -180,3 +180,4 @@ STATUS_BAR_SEPARATOR       = TEXT_DISABLED         # #454a55
 # ── 9.5  Toast bullet prefix "●" ─────────────────────────────────────
 STATUS_BAR_BULLET          = TEXT_TERTIARY         # #6a7080
 
+# ── 9.6  Toast notification text, per level ──────────────────────────
