@@ -218,3 +218,4 @@ class TuiApp:
                 line.append(label, style=HEADER_BREADCRUMB)
                 line.append("  ›  ", style=HEADER_BREADCRUMB_SEP)
 
+        return Panel(
