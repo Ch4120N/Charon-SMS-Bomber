@@ -333,3 +333,4 @@ class TuiApp:
                     top.render_cache_key(),
                     self.console.width,
                     self.console.height,
+                )
