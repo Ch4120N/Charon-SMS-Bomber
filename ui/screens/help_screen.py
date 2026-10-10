@@ -37,3 +37,4 @@ class HelpScreen(Screen):
         self.scroll = 0
         self.search = ""
         self._searching = False
+        self._search_widget: Optional[TextInput] = None
