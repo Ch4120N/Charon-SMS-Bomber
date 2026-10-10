@@ -10,3 +10,4 @@ Design principles
     5. Status-bar chips use dark text on bright backgrounds (WCAG AA+).
     6. Every UI element has an explicit token.
 
+Hue role assignment
