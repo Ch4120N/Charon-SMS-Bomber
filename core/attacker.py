@@ -192,3 +192,4 @@ class Attacker:
                 for api in eligible:
                     jobs.append((api, target))
         return jobs
+
