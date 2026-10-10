@@ -265,3 +265,4 @@ class HelpScreen(Screen):
                 self.search = result
                 self._searching = False
                 self._search_widget = None
+                self.scroll = 0
