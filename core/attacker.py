@@ -209,3 +209,4 @@ class Attacker:
             return name, False
 
         self.rate.acquire()
+        expanded = expand_api(api, target)
