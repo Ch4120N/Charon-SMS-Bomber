@@ -36,3 +36,4 @@ class StartScreen(Screen):
         threads_val = str(cfg["threads"])
         rounds_val = str(cfg["rounds"])
         delay_val = str(cfg["delay"])
+        strategy_val = cfg["strategy"]
