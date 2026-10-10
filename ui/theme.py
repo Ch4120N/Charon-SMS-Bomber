@@ -94,3 +94,4 @@ SUCCESS_ON_BG      = _c("#0d0e12", "black")
 
 # 5.2 Warning — Yellow
 WARNING            = _c("#f0d468", "bright_yellow")
+WARNING_DIM        = _c("#c8a848", "yellow")
