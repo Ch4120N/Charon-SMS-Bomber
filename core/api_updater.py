@@ -86,3 +86,4 @@ def check_for_updates(
         remote_data = json.loads(remote_bytes)
         remote_count = (
             len(remote_data) if isinstance(remote_data, list)
+            else len(remote_data.get("apis", []))
