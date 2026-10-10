@@ -83,3 +83,4 @@ class HelpScreen(Screen):
         hint.append(" scroll   ", style=FG_DIM)
         hint.append("/", style=f"bold {OK}")
         hint.append(" filter   ", style=FG_DIM)
+        hint.append("Esc", style=f"bold {OK}")
