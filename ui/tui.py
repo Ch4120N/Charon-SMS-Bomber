@@ -244,3 +244,4 @@ class TuiApp:
         if len(self.stack) <= 1:
             hints.append(("q", "quit"))
 
+        bar = Text()
