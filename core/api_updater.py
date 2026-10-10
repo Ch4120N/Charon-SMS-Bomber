@@ -50,3 +50,4 @@ def _sha256_file(p: Path) -> str:
 
 def _count_apis(path: Path) -> int:
     try:
+        data = json.loads(path.read_text(encoding="utf-8"))
