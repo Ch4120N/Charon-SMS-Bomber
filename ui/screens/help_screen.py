@@ -64,3 +64,4 @@ class HelpScreen(Screen):
         if self._searching:
             search_line.append("  filter: ", style=f"bold {PRIMARY}")
             search_line.append_text(self._search_widget.render(True, 40))  # type: ignore
+        elif self.search:
